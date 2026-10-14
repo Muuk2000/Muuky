@@ -9,6 +9,8 @@ import json, sys, math, datetime as dt
 from pathlib import Path
 
 OUT = Path(__file__).parent / "data" / "briefing.json"
+BENCH = "ACWI"  # Welt-Aktien-ETF als Vergleichsmaßstab für die relative Stärke
+SECTORS = {"XLF", "KBE", "KIE", "EUFN", "XLI", "ITA", "IYT", "XLE", "XLB", "SMH", "AIQ", "BOTZ"}
 
 UNIVERSE = {
     "Welt-Indizes": {
@@ -46,7 +48,7 @@ def rsi(close, n=14):
 def pct(a, b):
     return None if b in (0, None) or a is None else (a / b - 1) * 100
 
-def analyse(sym, name, df):
+def analyse(sym, name, df, bench=None):
     """df: DataFrame mit Close (und optional Volume), mind. ~60 Zeilen."""
     close = df["Close"].dropna()
     if len(close) < 30:
@@ -98,6 +100,29 @@ def analyse(sym, name, df):
                 item["vol_ratio"] = round(ratio, 2)
             if 2 <= ratio <= 30 and abs(d1) >= 1.5:
                 sig.append((7 + ratio, f"Volumen {ratio:.1f}x über Schnitt bei {d1:+.1f} % - Bewegung mit Überzeugung"))
+    # --- Frühindikator: relative Stärke gegenüber dem Weltmarkt ---
+    if bench is not None and not sym.endswith("=F") and sym != BENCH and len(close) > 40:
+        b = bench.reindex(close.index, method="ffill")
+        rs = (close / b).dropna()
+        if len(rs) > 40:
+            rs_sma = rs.rolling(20).mean()
+            rs5 = pct(float(rs.iloc[-1]), float(rs.iloc[-6]))
+            rs20 = pct(float(rs.iloc[-1]), float(rs.iloc[-21]))
+            rs_up = float(rs.iloc[-1]) > float(rs_sma.iloc[-1])
+            item["rs5"], item["rs20"] = round(rs5, 2), round(rs20, 2)
+            v50 = item["vs_sma50"]
+            state = "neutral"
+            if rs5 > 0.5 and rs_up and (v50 is None or v50 < 0 or (item["m1"] or 0) < 0):
+                state = "frueh_rein"
+                sig.append((10, f"Frühsignal: relative Stärke dreht nach oben ({rs5:+.1f} % in 5 Tagen), Kurs noch nicht bestätigt"))
+            elif rs5 < -0.5 and not rs_up and (v50 is not None and v50 > 0):
+                state = "frueh_raus"
+                sig.append((10, f"Frühwarnung: relative Stärke lässt nach ({rs5:+.1f} % in 5 Tagen), Kurs hält noch"))
+            elif rs20 > 3 and rs_up:
+                state = "fuehrend"
+            elif rs20 < -3 and not rs_up:
+                state = "schwach"
+            item["rs_state"] = state
     sig.sort(reverse=True)
     item["signals"] = [t for _, t in sig]
     item["score"] = round(sum(s for s, _ in sig), 1)
@@ -127,7 +152,7 @@ def group_comment(name, items):
 
 def load_real():
     import yfinance as yf
-    syms = [s for g in UNIVERSE.values() for s in g]
+    syms = [s for g in UNIVERSE.values() for s in g] + [BENCH]
     raw = yf.download(syms, period="1y", interval="1d", group_by="ticker",
                       auto_adjust=True, progress=False, threads=True)
     return {s: raw[s].dropna(how="all") for s in syms if s in raw.columns.get_level_values(0)}
@@ -137,8 +162,8 @@ def load_demo():
     rng = np.random.default_rng(42)
     idx = pd.bdate_range(end=dt.date.today(), periods=260)
     out = {}
-    for g in UNIVERSE.values():
-        for s in g:
+    for s in [s for g in UNIVERSE.values() for s in g] + [BENCH]:
+        if True:
             steps = rng.normal(0.0004, 0.014, len(idx))
             out[s] = pd.DataFrame({"Close": 100 * np.exp(np.cumsum(steps)),
                                    "Volume": rng.integers(1_000_000, 3_000_000, len(idx))}, index=idx)
@@ -147,13 +172,14 @@ def load_demo():
 def main():
     demo = "--demo" in sys.argv
     data = load_demo() if demo else load_real()
+    bench = data[BENCH]["Close"].dropna() if BENCH in data else None
     groups, all_items = [], []
     for gname, members in UNIVERSE.items():
         items = []
         for sym, name in members.items():
             if sym in data:
                 try:
-                    it = analyse(sym, name, data[sym])
+                    it = analyse(sym, name, data[sym], bench)
                     if it:
                         it["group"] = gname
                         items.append(it)
@@ -164,7 +190,13 @@ def main():
     if not all_items:
         sys.exit("Keine Daten geladen - breche ab, alte briefing.json bleibt erhalten.")
     top = sorted([i for i in all_items if i["signals"]], key=lambda i: -i["score"])[:10]
+    rotation = sorted(
+        [{"symbol": i["symbol"], "name": i["name"], "group": i["group"], "rs5": i["rs5"], "rs20": i["rs20"],
+          "state": i["rs_state"], "d1": i["d1"]}
+         for i in all_items if i["symbol"] in SECTORS and "rs20" in i],
+        key=lambda r: -r["rs20"])
     out = {
+        "rotation": rotation,
         "generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"),
         "demo": demo,
         "top_signals": [{"symbol": i["symbol"], "name": i["name"], "group": i["group"],

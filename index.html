@@ -32,6 +32,13 @@ nav button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);colo
 .tag{font-size:.74rem;background:color-mix(in srgb,var(--acc) 12%,transparent);color:var(--ink);padding:2px 8px;border-radius:6px}
 svg.sp{width:70px;height:26px;flex:none}
 h2{font-size:1rem;margin:18px 0 4px}
+.st{font-size:.74rem;padding:2px 8px;border-radius:6px;white-space:nowrap}
+.st.frueh_rein{background:color-mix(in srgb,var(--up) 20%,transparent);color:var(--up)}
+.st.frueh_raus{background:color-mix(in srgb,var(--down) 20%,transparent);color:var(--down)}
+.st.fuehrend{border:1px solid var(--up);color:var(--up)}
+.st.schwach{border:1px solid var(--down);color:var(--down)}
+.st.neutral{border:1px solid var(--line);color:var(--mute)}
+.note{color:var(--mute);font-size:.8rem;margin-top:8px}
 .warn{background:color-mix(in srgb,#e6a700 18%,transparent);border:1px solid #e6a700;border-radius:10px;padding:8px 12px;font-size:.85rem}
 footer{color:var(--mute);font-size:.78rem;margin-top:20px}
 </style>
@@ -49,6 +56,12 @@ function spark(a){if(!a||a.length<2)return'';const mn=Math.min(...a),mx=Math.max
  const p=a.map((v,i)=>`${(i/(a.length-1)*70).toFixed(1)},${(24-(v-mn)/r*22).toFixed(1)}`).join(' ');
  const c=a[a.length-1]>=a[0]?'var(--up)':'var(--down)';
  return `<svg class="sp" viewBox="0 0 70 26" aria-hidden="true"><polyline points="${p}" fill="none" stroke="${c}" stroke-width="1.6"/></svg>`}
+const ST={frueh_rein:'Frühsignal ↑',frueh_raus:'Frühwarnung ↓',fuehrend:'führend',schwach:'schwach',neutral:'neutral'};
+function rot(){if(!D.rotation||!D.rotation.length)return'';
+ return `<h2>Branchen-Rotation (Frühindikator)</h2><div class="card">`+D.rotation.map(r=>`<div class="row"><div><div class="nm">${esc(r.name)}</div>
+  <div class="sym">${esc(r.group)} · rel. Stärke 5T ${fmt(r.rs5)} · 20T ${fmt(r.rs20)}</div></div>
+  <span class="st ${r.state}">${ST[r.state]||''}</span></div>`).join('')+
+ `<div class="note">Relative Stärke = Branche gegenüber dem Weltmarkt (ACWI). „Frühsignal“: Branche holt auf, Kurs noch nicht bestätigt. „Frühwarnung“: Branche verliert relativ, Kurs hält noch. Hinweis, keine Prognose.</div></div>`}
 let D,cur='Überblick';
 function row(i){return `<div class="row"><div><div class="nm">${esc(i.name)} <span class="sym">${esc(i.symbol)}</span></div>
  ${i.signals&&i.signals.length?`<div class="tags">${i.signals.slice(0,2).map(s=>`<span class="tag">${esc(s)}</span>`).join('')}</div>`:''}</div>
@@ -59,7 +72,7 @@ function render(){
   m.innerHTML=(D.demo?'<div class="warn">Testdaten – keine echten Kurse.</div>':'')+
    `<h2>Top-Signale heute</h2><div class="card">${D.top_signals.length?D.top_signals.map(t=>`<div class="row"><div><div class="nm">${esc(t.name)} <span class="sym">${esc(t.group)}</span></div>
    <div class="tags">${t.signals.slice(0,3).map(s=>`<span class="tag">${esc(s)}</span>`).join('')}</div></div><div class="num ${cls(t.d1)}">${fmt(t.d1)}</div></div>`).join(''):'<div class="comment">Keine auffälligen Signale.</div>'}</div>`+
-   `<h2>Lage je Bereich</h2>`+D.groups.map(g=>`<div class="card"><div class="comment">${esc(g.comment)}</div></div>`).join('');
+   rot()+`<h2>Lage je Bereich</h2>`+D.groups.map(g=>`<div class="card"><div class="comment">${esc(g.comment)}</div></div>`).join('');
  }else{
   const g=D.groups.find(x=>x.name===cur);
   m.innerHTML=`<div class="card"><div class="comment">${esc(g.comment)}</div></div><div class="card">${g.items.map(row).join('')}</div>`;
