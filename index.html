@@ -98,7 +98,19 @@ function statsView(){const L=S.live,K=S.backtest;
  if(K&&K.n){h+=`<h2>Rückschau nach Bereich</h2><div class="card">${tbl(K.by_group)}</div><h2>Rückschau nach Indikator (allein)</h2><div class="card">${tbl(K.by_component)}</div><h2>Nach Richtung</h2><div class="card">${tbl(K.by_direction)}</div>`}
  if(S.recent&&S.recent.length)h+=`<h2>Zuletzt ausgewertet</h2><div class="card">`+S.recent.map(r=>`<div class="row"><div><div class="nm">${esc(r.name)}</div><div class="sym">${esc(r.date)} · Prognose ${r.pred>0?'↑':'↓'}</div></div><div class="num"><div class="${cls(r.chg)}">${fmt(r.chg)}</div><div class="${r.hit?'up':'down'}">${r.hit?'✓ Treffer':'✗ daneben'}</div></div></div>`).join('')+`</div>`;
  return h+`<div class="note">${esc(S.method||'')}</div>`}
-let D,S,G,B,cur='Überblick';
+const GAS={'Preisdruck steigt':'frueh_raus','eher steigend':'schwach','neutral':'neutral','eher fallend':'fuehrend','Preisdruck lässt nach':'frueh_rein'};
+function gasView(){const g=X,st=g.storage;
+ return `<div class="card"><div class="row" style="border:0;padding:0"><div><div class="big">${g.price.toLocaleString('de-DE')} €/MWh</div>
+  <div class="sym">TTF Front-Month · Tag <span class="${cls(g.d1)}">${fmt(g.d1)}</span> · 7T <span class="${cls(g.d7)}">${fmt(g.d7,0)}</span> · 30T <span class="${cls(g.d30)}">${fmt(g.d30,0)}</span></div></div>
+  <span class="st ${GAS[g.state]||'neutral'}">${esc(g.state)}</span></div><div style="margin-top:8px">${spark(g.spark)}</div>
+  <ul class="why">${(g.why||[]).map(w=>`<li>${esc(w)}</li>`).join('')}</ul></div>
+  <div class="card"><div class="kv"><div>vs. SMA50<b class="${cls(g.vs_sma50)}">${fmt(g.vs_sma50)}</b></div><div>vs. SMA200<b class="${cls(g.vs_sma200)}">${fmt(g.vs_sma200)}</b></div>
+  <div>RSI (14)<b>${g.rsi}</b></div><div>Position in 1-Jahres-Spanne<b>${g.range_pctile}. Perzentil</b></div>
+  <div>1-Jahres-Tief / -Hoch<b>${g.low_1y} / ${g.high_1y}</b></div><div>Schwankung 30T (p. a.)<b>${g.vol30} %</b></div>
+  ${g.premium_x?`<div>US-Gas (Henry Hub)<b>${g.henry_hub_eur_mwh} €/MWh</b></div><div>Europa-Aufschlag<b>${g.premium_x}×</b></div>`:''}
+  ${st?`<div>Speicher EU gefüllt<b>${st.full} %</b></div><div>Gegenüber Vorjahr<b class="${st.vs_last_year>0?'up':'down'}">${st.vs_last_year>0?'+':''}${st.vs_last_year} Pkt.</b></div>`:'<div style="grid-column:1/-1">Speicherstand: nicht aktiv (benötigt kostenlosen GIE-API-Key als Secret <b>GIE_API_KEY</b>).</div>'}</div>
+  <div class="note">Regelbasiertes Punktesystem (${g.points>0?'+':''}${g.points}), keine Prognose und keine Anlageberatung. Wetter (Heizbedarf) und LNG-Lieferungen sind nicht enthalten. Stand ${stamp(g.generated)}.</div></div>`}
+let D,S,G,B,X,cur='Überblick';
 function row(i){return `<div class="row"><div><div class="nm">${esc(i.name)} <span class="sym">${esc(i.symbol)}</span>${i.forecast?`<span class="sym"> · Prognose ${i.forecast==='up'?'↑':'↓'}</span>`:''}</div>
  ${i.signals&&i.signals.length?`<div class="tags">${i.signals.slice(0,2).map(s=>`<span class="tag">${esc(s)}</span>`).join('')}</div>`:''}</div>
  ${spark(i.spark)}<div class="num"><div class="${cls(i.d1)}">${fmt(i.d1)}</div><div class="sym">RSI ${i.rsi??'–'} · 1M ${fmt(i.m1,0)}</div></div></div>`}
@@ -110,6 +122,7 @@ function render(){
    <div class="tags">${t.signals.slice(0,3).map(s=>`<span class="tag">${esc(s)}</span>`).join('')}</div></div><div class="num ${cls(t.d1)}">${fmt(t.d1)}</div></div>`).join(''):'<div class="comment">Keine auffälligen Signale.</div>'}</div>`+
    rot()+geoMini()+`<h2>Lage je Bereich</h2>`+D.groups.map(g=>`<div class="card"><div class="comment">${esc(g.comment)}</div></div>`).join('');
  }else if(cur==='Geopolitik'){m.innerHTML=geoView()
+ }else if(cur==='Erdgas EU'){m.innerHTML=gasView()
  }else if(cur==='Bitcoin'){m.innerHTML=btcView()
  }else if(cur==='Trefferquote'){m.innerHTML=statsView()
  }else{
@@ -119,8 +132,8 @@ function render(){
  document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.t===cur));
 }
 const J=u=>fetch(u,{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null);
-Promise.all([J('data/briefing.json'),J('data/stats.json'),J('data/geo.json'),J('data/btc.json')]).then(([d,s,g,b])=>{if(!d)throw 0;D=d;S=s;G=g;B=b;
- const names=['Überblick',...d.groups.map(g=>g.name),...(G&&G.pairs?['Geopolitik']:[]),...(B?['Bitcoin']:[]),...(S?['Trefferquote']:[])];
+Promise.all([J('data/briefing.json'),J('data/stats.json'),J('data/geo.json'),J('data/btc.json'),J('data/gas.json')]).then(([d,s,g,b,x])=>{if(!d)throw 0;D=d;S=s;G=g;B=b;X=x;
+ const names=['Überblick',...d.groups.map(g=>g.name),...(G&&G.pairs?['Geopolitik']:[]),...(X?['Erdgas EU']:[]),...(B?['Bitcoin']:[]),...(S?['Trefferquote']:[])];
  document.getElementById('tabs').innerHTML=names.map(n=>`<button data-t="${esc(n)}">${esc(n)}</button>`).join('');
  document.getElementById('tabs').onclick=e=>{const b=e.target.closest('button');if(b){cur=b.dataset.t;render();scrollTo(0,0)}};
  const t=new Date(d.generated);

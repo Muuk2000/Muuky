@@ -18,20 +18,24 @@ PAIRS = {
 
 def fetch_json(url):
     req = urllib.request.Request(url, headers={"User-Agent": "markt-briefing/1.0"})
-    with urllib.request.urlopen(req, timeout=40) as r:
+    with urllib.request.urlopen(req, timeout=20) as r:
         return json.loads(r.read().decode("utf-8", "replace"))
+
+DEADLINE = [float("inf")]
 
 def timeline(query, mode, fetch=fetch_json, pause=6.0):
     q = urllib.parse.urlencode({"query": query + " sourcelang:english", "mode": mode,
                                 "timespan": "30d", "format": "json"})
-    for attempt in range(3):
+    for attempt in range(2):
+        if time.time() > DEADLINE[0]:
+            raise TimeoutError("GDELT-Zeitbudget aufgebraucht")
         try:
             d = fetch(f"{API}?{q}")
             break
         except Exception:
-            if attempt == 2:
+            if attempt == 1:
                 raise
-            time.sleep(pause * 2)
+            time.sleep(pause)
     time.sleep(pause)                       # GDELT erlaubt ca. 1 Anfrage je 5 s
     days = {}
     for s in d.get("timeline", []):
@@ -62,7 +66,8 @@ def pair_metrics(tone, vol):
             "tension_ratio": round(vr, 2), "state": label(z, vr),
             "spark": [round(x, 2) for x in t[-30:]]}
 
-def build(fetch=fetch_json, pause=6.0):
+def build(fetch=fetch_json, pause=6.0, budget=150):
+    DEADLINE[0] = time.time() + budget          # Gesamtbudget in Sekunden, danach wird abgebrochen
     out = []
     for name, q in PAIRS.items():
         try:

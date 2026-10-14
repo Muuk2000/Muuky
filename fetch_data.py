@@ -345,6 +345,7 @@ def extras(all_items, data):
             print("Geopolitik:", ", ".join(f"{p['pair']}={p['state']}" for p in pairs))
     except Exception as e:
         print("Geopolitik fehlgeschlagen:", e, file=sys.stderr)
+    extras_gas(gen)
     try:
         import yfinance as yf, btc
         raw = yf.download("BTC-USD", period="2y", interval="1d", auto_adjust=True, progress=False)
@@ -357,6 +358,20 @@ def extras(all_items, data):
             print("Bitcoin:", res["state"], res["price"])
     except Exception as e:
         print("Bitcoin fehlgeschlagen:", e, file=sys.stderr)
+
+def extras_gas(gen):
+    try:
+        import yfinance as yf, gas
+        raw = yf.download(["TTF=F", "NG=F", "EURUSD=X"], period="2y", interval="1d", group_by="ticker",
+                          auto_adjust=True, progress=False)
+        g = lambda t: norm_df(raw[t])["Close"].dropna()
+        res = gas.analyse(g("TTF=F"), g("NG=F"), g("EURUSD=X"), gas.storage())
+        if res:
+            res["generated"] = gen
+            (OUT.parent / "gas.json").write_text(json.dumps(res, ensure_ascii=False, indent=1))
+            print("Erdgas EU:", res["state"], res["price"])
+    except Exception as e:
+        print("Erdgas fehlgeschlagen:", e, file=sys.stderr)
 
 def main():
     demo = "--demo" in sys.argv
