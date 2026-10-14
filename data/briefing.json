@@ -109,7 +109,7 @@
    "d1": -0.67
   }
  ],
- "generated": "2026-10-14T20:57+00:00",
+ "generated": "2026-10-14T20:59+00:00",
  "demo": false,
  "top_signals": [
   {
@@ -1680,19 +1680,19 @@
   },
   {
    "name": "Rohstoffe",
-   "comment": "Rohstoffe: Tagesstimmung schwach (Ø -0.8 %, 3 von 8 im Plus). Stärkster: WTI Öl (+1.0 %), schwächster: Silber (-5.9 %). Auf Monatssicht Ø -1.5 %.",
+   "comment": "Rohstoffe: Tagesstimmung schwach (Ø -0.8 %, 3 von 8 im Plus). Stärkster: WTI Öl (+1.0 %), schwächster: Silber (-5.8 %). Auf Monatssicht Ø -1.5 %.",
    "items": [
     {
      "symbol": "GC=F",
      "name": "Gold",
-     "price": 4119.3,
-     "d1": -1.39,
-     "d5": -0.52,
-     "m1": -4.93,
-     "rsi": 35.8,
-     "vs_sma50": -5.95,
-     "vs_sma200": -9.32,
-     "from_high": -22.55,
+     "price": 4120.9,
+     "d1": -1.35,
+     "d5": -0.48,
+     "m1": -4.89,
+     "rsi": 35.9,
+     "vs_sma50": -5.91,
+     "vs_sma200": -9.28,
+     "from_high": -22.52,
      "spark": [
       4414.6,
       4539.9,
@@ -1723,7 +1723,7 @@
       4216.3,
       4190.6,
       4177.3,
-      4119.3
+      4120.9
      ],
      "vol_ratio": 1.25,
      "signals": [],
@@ -1735,14 +1735,14 @@
     {
      "symbol": "SI=F",
      "name": "Silber",
-     "price": 55.67,
-     "d1": -5.91,
-     "d5": -7.07,
-     "m1": -11.97,
-     "rsi": 30.4,
-     "vs_sma50": -13.16,
-     "vs_sma200": -22.99,
-     "from_high": -51.63,
+     "price": 55.7,
+     "d1": -5.85,
+     "d5": -7.01,
+     "m1": -11.92,
+     "rsi": 30.5,
+     "vs_sma50": -13.1,
+     "vs_sma200": -22.94,
+     "from_high": -51.6,
      "spark": [
       64.72,
       66.97,
@@ -1773,12 +1773,12 @@
       60.67,
       60.14,
       59.16,
-      55.67
+      55.7
      ],
      "signals": [
-      "Starke Tagesbewegung -5.9 %"
+      "Starke Tagesbewegung -5.8 %"
      ],
-     "score": 5.9,
+     "score": 5.8,
      "trend": "ab",
      "group": "Rohstoffe",
      "forecast": "down"
@@ -1786,14 +1786,14 @@
     {
      "symbol": "CL=F",
      "name": "WTI Öl",
-     "price": 95.12,
-     "d1": 1.04,
-     "d5": 7.75,
-     "m1": -10.12,
-     "rsi": 56.4,
-     "vs_sma50": 5.64,
-     "vs_sma200": 13.54,
-     "from_high": -15.79,
+     "price": 95.09,
+     "d1": 1.01,
+     "d5": 7.71,
+     "m1": -10.15,
+     "rsi": 56.3,
+     "vs_sma50": 5.6,
+     "vs_sma200": 13.51,
+     "from_high": -15.81,
      "spark": [
       91.01,
       91.3,
@@ -1824,7 +1824,7 @@
       91.85,
       93.74,
       94.14,
-      95.12
+      95.09
      ],
      "vol_ratio": 0.68,
      "signals": [],
@@ -1836,14 +1836,14 @@
     {
      "symbol": "BZ=F",
      "name": "Brent Öl",
-     "price": 105.98,
-     "d1": 0.27,
-     "d5": 5.77,
-     "m1": -2.55,
+     "price": 105.97,
+     "d1": 0.26,
+     "d5": 5.76,
+     "m1": -2.56,
      "rsi": 59.4,
-     "vs_sma50": 8.88,
-     "vs_sma200": 18.48,
-     "from_high": -10.45,
+     "vs_sma50": 8.87,
+     "vs_sma200": 18.47,
+     "from_high": -10.46,
      "spark": [
       95.63,
       95.52,
@@ -1874,7 +1874,7 @@
       104.72,
       106.65,
       105.69,
-      105.98
+      105.97
      ],
      "vol_ratio": 0.85,
      "signals": [],

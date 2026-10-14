@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-14T20:57+00:00",
+ "generated": "2026-10-14T20:59+00:00",
  "pairs": [
   {
    "tone_now": -1.51,
    "tone_base": -0.6,
    "tone_z": -1.53,
-   "tension_ratio": 0.54,
+   "tension_ratio": null,
    "state": "Anspannung steigt",
    "spark": [
     -1.08,
@@ -25,6 +25,31 @@
     -2.29
    ],
    "pair": "USA – China"
+  },
+  {
+   "tone_now": -2.85,
+   "tone_base": -2.16,
+   "tone_z": -1.35,
+   "tension_ratio": null,
+   "state": "Anspannung steigt",
+   "spark": [
+    -1.93,
+    -1.6,
+    -1.59,
+    -2.17,
+    -1.84,
+    -1.27,
+    -2.97,
+    -2.96,
+    -2.51,
+    -2.25,
+    -2.26,
+    -2.53,
+    -6.42,
+    0.0,
+    -2.13
+   ],
+   "pair": "USA – Russland"
   }
  ],
  "markets": [
@@ -45,13 +70,13 @@
   },
   {
    "name": "Gold",
-   "d1": -1.39,
-   "m1": -4.93
+   "d1": -1.35,
+   "m1": -4.89
   },
   {
    "name": "Öl (WTI)",
-   "d1": 1.04,
-   "m1": -10.12
+   "d1": 1.01,
+   "m1": -10.15
   }
  ],
  "note": "Automatische Auswertung der Medien-Stimmung (GDELT), kein Lagebericht. Viel Rauschen."
