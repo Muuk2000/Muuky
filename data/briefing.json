@@ -1,17 +1,7 @@
 {
- "generated": "2026-10-14T20:10+00:00",
+ "generated": "2026-10-14T20:17+00:00",
  "demo": false,
  "top_signals": [
-  {
-   "symbol": "SI=F",
-   "name": "Silber",
-   "group": "Rohstoffe",
-   "d1": -5.71,
-   "signals": [
-    "Volumen 312.1x über Schnitt bei -5.7 % - Bewegung mit Überzeugung",
-    "Starke Tagesbewegung -5.7 %"
-   ]
-  },
   {
    "symbol": "^KS11",
    "name": "Kospi",
@@ -26,7 +16,7 @@
    "symbol": "XLE",
    "name": "Energie (US, ETF)",
    "group": "Rohstoffe",
-   "d1": 0.61,
+   "d1": 0.64,
    "signals": [
     "RSI 72: überkauft - Rücksetzer-Risiko",
     "Nahe/auf 52-Wochen-Hoch - Ausbruch/Trendstärke"
@@ -39,6 +29,15 @@
    "d1": -0.24,
    "signals": [
     "RSI 74: überkauft - Rücksetzer-Risiko"
+   ]
+  },
+  {
+   "symbol": "SI=F",
+   "name": "Silber",
+   "group": "Rohstoffe",
+   "d1": -5.81,
+   "signals": [
+    "Starke Tagesbewegung -5.8 %"
    ]
   },
   {
@@ -72,7 +71,7 @@
    "symbol": "TSM",
    "name": "TSMC",
    "group": "AI",
-   "d1": -3.38,
+   "d1": -3.4,
    "signals": [
     "Starke Tagesbewegung -3.4 %"
    ]
@@ -90,7 +89,7 @@
    "symbol": "CAT",
    "name": "Caterpillar",
    "group": "Industrie",
-   "d1": -3.1,
+   "d1": -3.08,
    "signals": [
     "Starke Tagesbewegung -3.1 %"
    ]
@@ -144,7 +143,7 @@
       7805.45,
       7718.94
      ],
-     "vol_ratio": 0.63,
+     "vol_ratio": 0.64,
      "signals": [],
      "score": 0,
      "trend": "auf",
@@ -487,7 +486,6 @@
       3797.24,
       3800.86
      ],
-     "vol_ratio": 3447.91,
      "signals": [],
      "score": 0,
      "trend": "ab",
@@ -752,14 +750,14 @@
     {
      "symbol": "KBE",
      "name": "Banken (US, ETF)",
-     "price": 62.51,
-     "d1": -0.68,
-     "d5": -0.6,
-     "m1": -7.49,
-     "rsi": 32.3,
-     "vs_sma50": -6.59,
-     "vs_sma200": -2.7,
-     "from_high": -12.29,
+     "price": 62.5,
+     "d1": -0.7,
+     "d5": -0.62,
+     "m1": -7.5,
+     "rsi": 32.2,
+     "vs_sma50": -6.6,
+     "vs_sma200": -2.72,
+     "from_high": -12.3,
      "spark": [
       67.97,
       68.72,
@@ -790,7 +788,7 @@
       63.13,
       63.39,
       62.94,
-      62.51
+      62.5
      ],
      "vol_ratio": 1.54,
      "signals": [],
@@ -801,14 +799,14 @@
     {
      "symbol": "KIE",
      "name": "Versicherer (US, ETF)",
-     "price": 60.92,
-     "d1": 0.26,
-     "d5": 2.34,
-     "m1": -3.19,
-     "rsi": 51.2,
-     "vs_sma50": -1.87,
-     "vs_sma200": 3.17,
-     "from_high": -8.04,
+     "price": 60.91,
+     "d1": 0.23,
+     "d5": 2.32,
+     "m1": -3.21,
+     "rsi": 51.1,
+     "vs_sma50": -1.9,
+     "vs_sma200": 3.15,
+     "from_high": -8.06,
      "spark": [
       63.43,
       64.61,
@@ -839,7 +837,7 @@
       60.08,
       60.55,
       60.77,
-      60.92
+      60.91
      ],
      "vol_ratio": 0.93,
      "signals": [],
@@ -899,14 +897,14 @@
     {
      "symbol": "JPM",
      "name": "JPMorgan",
-     "price": 335.32,
-     "d1": 1.17,
-     "d5": 1.74,
-     "m1": -4.4,
+     "price": 335.28,
+     "d1": 1.16,
+     "d5": 1.73,
+     "m1": -4.41,
      "rsi": 45.5,
-     "vs_sma50": -3.49,
-     "vs_sma200": 5.03,
-     "from_high": -7.72,
+     "vs_sma50": -3.5,
+     "vs_sma200": 5.02,
+     "from_high": -7.73,
      "spark": [
       354.45,
       360.26,
@@ -937,7 +935,7 @@
       332.99,
       334.3,
       331.43,
-      335.32
+      335.28
      ],
      "vol_ratio": 0.93,
      "signals": [],
@@ -948,14 +946,14 @@
     {
      "symbol": "GS",
      "name": "Goldman Sachs",
-     "price": 878.43,
-     "d1": -1.51,
-     "d5": -0.99,
-     "m1": -10.06,
+     "price": 878.72,
+     "d1": -1.48,
+     "d5": -0.96,
+     "m1": -10.03,
      "rsi": 30.9,
-     "vs_sma50": -10.3,
-     "vs_sma200": -7.78,
-     "from_high": -23.38,
+     "vs_sma50": -10.27,
+     "vs_sma200": -7.75,
+     "from_high": -23.35,
      "spark": [
       1004.42,
       1037.93,
@@ -986,7 +984,7 @@
       895.32,
       893.95,
       891.91,
-      878.43
+      878.72
      ],
      "vol_ratio": 1.23,
      "signals": [],
@@ -1101,14 +1099,14 @@
     {
      "symbol": "XLI",
      "name": "Industrials (US, ETF)",
-     "price": 167.05,
-     "d1": -0.96,
-     "d5": -0.47,
-     "m1": -0.8,
+     "price": 167.04,
+     "d1": -0.97,
+     "d5": -0.48,
+     "m1": -0.81,
      "rsi": 38.9,
-     "vs_sma50": -4.28,
-     "vs_sma200": -2.91,
-     "from_high": -10.19,
+     "vs_sma50": -4.29,
+     "vs_sma200": -2.92,
+     "from_high": -10.2,
      "spark": [
       172.32,
       174.09,
@@ -1139,7 +1137,7 @@
       169.25,
       169.15,
       168.67,
-      167.05
+      167.04
      ],
      "vol_ratio": 1.47,
      "signals": [],
@@ -1150,14 +1148,14 @@
     {
      "symbol": "ITA",
      "name": "Luft/Rüstung (ETF)",
-     "price": 204.18,
-     "d1": 0.09,
-     "d5": 0.28,
-     "m1": -4.59,
-     "rsi": 30.3,
-     "vs_sma50": -9.16,
-     "vs_sma200": -11.13,
-     "from_high": -19.27,
+     "price": 204.24,
+     "d1": 0.12,
+     "d5": 0.31,
+     "m1": -4.56,
+     "rsi": 30.5,
+     "vs_sma50": -9.13,
+     "vs_sma200": -11.1,
+     "from_high": -19.25,
      "spark": [
       223.11,
       225.72,
@@ -1188,7 +1186,7 @@
       206.65,
       206.03,
       204.0,
-      204.18
+      204.24
      ],
      "vol_ratio": 0.81,
      "signals": [],
@@ -1199,14 +1197,14 @@
     {
      "symbol": "IYT",
      "name": "Transport (ETF)",
-     "price": 79.53,
-     "d1": -0.41,
-     "d5": 0.77,
-     "m1": -2.8,
+     "price": 79.52,
+     "d1": -0.43,
+     "d5": 0.76,
+     "m1": -2.81,
      "rsi": 41.7,
-     "vs_sma50": -4.06,
-     "vs_sma200": -1.97,
-     "from_high": -11.44,
+     "vs_sma50": -4.07,
+     "vs_sma200": -1.98,
+     "from_high": -11.45,
      "spark": [
       83.13,
       83.41,
@@ -1237,7 +1235,7 @@
       80.15,
       80.0,
       79.86,
-      79.53
+      79.52
      ],
      "vol_ratio": 0.65,
      "signals": [],
@@ -1248,14 +1246,14 @@
     {
      "symbol": "CAT",
      "name": "Caterpillar",
-     "price": 748.82,
-     "d1": -3.1,
-     "d5": -7.99,
-     "m1": -4.43,
+     "price": 748.98,
+     "d1": -3.08,
+     "d5": -7.97,
+     "m1": -4.41,
      "rsi": 33.7,
-     "vs_sma50": -8.46,
-     "vs_sma200": -6.7,
-     "from_high": -29.55,
+     "vs_sma50": -8.44,
+     "vs_sma200": -6.68,
+     "from_high": -29.54,
      "spark": [
       792.28,
       800.14,
@@ -1286,7 +1284,7 @@
       800.47,
       799.37,
       772.78,
-      748.82
+      748.98
      ],
      "vol_ratio": 1.1,
      "signals": [
@@ -1299,14 +1297,14 @@
     {
      "symbol": "GE",
      "name": "GE Aerospace",
-     "price": 307.05,
-     "d1": -0.19,
-     "d5": 1.13,
-     "m1": 0.15,
+     "price": 307.02,
+     "d1": -0.2,
+     "d5": 1.12,
+     "m1": 0.14,
      "rsi": 37.9,
-     "vs_sma50": -7.68,
-     "vs_sma200": -4.93,
-     "from_high": -19.33,
+     "vs_sma50": -7.69,
+     "vs_sma200": -4.94,
+     "from_high": -19.34,
      "spark": [
       329.0,
       332.97,
@@ -1337,9 +1335,9 @@
       308.2,
       308.64,
       307.63,
-      307.05
+      307.02
      ],
-     "vol_ratio": 0.59,
+     "vol_ratio": 0.74,
      "signals": [],
      "score": 0,
      "trend": "ab",
@@ -1449,19 +1447,19 @@
   },
   {
    "name": "Rohstoffe",
-   "comment": "Rohstoffe: Tagesstimmung schwach (Ø -0.8 %, 3 von 8 im Plus). Stärkster: WTI Öl (+1.1 %), schwächster: Silber (-5.7 %). Auf Monatssicht Ø -1.5 %.",
+   "comment": "Rohstoffe: Tagesstimmung schwach (Ø -0.8 %, 3 von 8 im Plus). Stärkster: WTI Öl (+1.0 %), schwächster: Silber (-5.8 %). Auf Monatssicht Ø -1.5 %.",
    "items": [
     {
      "symbol": "GC=F",
      "name": "Gold",
-     "price": 4123.9,
-     "d1": -1.28,
-     "d5": -0.41,
-     "m1": -4.82,
-     "rsi": 36.1,
-     "vs_sma50": -5.84,
-     "vs_sma200": -9.22,
-     "from_high": -22.46,
+     "price": 4121.6,
+     "d1": -1.33,
+     "d5": -0.46,
+     "m1": -4.87,
+     "rsi": 35.9,
+     "vs_sma50": -5.89,
+     "vs_sma200": -9.27,
+     "from_high": -22.5,
      "spark": [
       4414.6,
       4539.9,
@@ -1492,7 +1490,7 @@
       4216.3,
       4190.6,
       4177.3,
-      4123.9
+      4121.6
      ],
      "vol_ratio": 1.25,
      "signals": [],
@@ -1503,14 +1501,14 @@
     {
      "symbol": "SI=F",
      "name": "Silber",
-     "price": 55.78,
-     "d1": -5.71,
-     "d5": -6.88,
-     "m1": -11.79,
-     "rsi": 30.6,
-     "vs_sma50": -12.98,
-     "vs_sma200": -22.83,
-     "from_high": -51.53,
+     "price": 55.72,
+     "d1": -5.81,
+     "d5": -6.97,
+     "m1": -11.88,
+     "rsi": 30.5,
+     "vs_sma50": -13.07,
+     "vs_sma200": -22.9,
+     "from_high": -51.58,
      "spark": [
       64.72,
       66.97,
@@ -1541,28 +1539,26 @@
       60.67,
       60.14,
       59.16,
-      55.78
+      55.72
      ],
-     "vol_ratio": 312.11,
      "signals": [
-      "Volumen 312.1x über Schnitt bei -5.7 % - Bewegung mit Überzeugung",
-      "Starke Tagesbewegung -5.7 %"
+      "Starke Tagesbewegung -5.8 %"
      ],
-     "score": 324.8,
+     "score": 5.8,
      "trend": "ab",
      "group": "Rohstoffe"
     },
     {
      "symbol": "CL=F",
      "name": "WTI Öl",
-     "price": 95.15,
-     "d1": 1.07,
-     "d5": 7.78,
-     "m1": -10.09,
-     "rsi": 56.5,
-     "vs_sma50": 5.67,
-     "vs_sma200": 13.58,
-     "from_high": -15.76,
+     "price": 95.07,
+     "d1": 0.99,
+     "d5": 7.69,
+     "m1": -10.17,
+     "rsi": 56.3,
+     "vs_sma50": 5.58,
+     "vs_sma200": 13.48,
+     "from_high": -15.83,
      "spark": [
       91.01,
       91.3,
@@ -1593,7 +1589,7 @@
       91.85,
       93.74,
       94.14,
-      95.15
+      95.07
      ],
      "vol_ratio": 0.67,
      "signals": [],
@@ -1604,14 +1600,14 @@
     {
      "symbol": "BZ=F",
      "name": "Brent Öl",
-     "price": 106.04,
-     "d1": 0.33,
-     "d5": 5.83,
-     "m1": -2.49,
-     "rsi": 59.5,
-     "vs_sma50": 8.94,
-     "vs_sma200": 18.55,
-     "from_high": -10.4,
+     "price": 105.99,
+     "d1": 0.28,
+     "d5": 5.78,
+     "m1": -2.54,
+     "rsi": 59.4,
+     "vs_sma50": 8.89,
+     "vs_sma200": 18.49,
+     "from_high": -10.44,
      "spark": [
       95.63,
       95.52,
@@ -1642,7 +1638,7 @@
       104.72,
       106.65,
       105.69,
-      106.04
+      105.99
      ],
      "vol_ratio": 0.82,
      "signals": [],
@@ -1654,13 +1650,13 @@
      "symbol": "NG=F",
      "name": "Erdgas",
      "price": 3.27,
-     "d1": -0.34,
-     "d5": 2.15,
-     "m1": 12.09,
-     "rsi": 62.9,
-     "vs_sma50": 11.87,
-     "vs_sma200": 5.1,
-     "from_high": -56.14,
+     "d1": -0.27,
+     "d5": 2.22,
+     "m1": 12.16,
+     "rsi": 63.1,
+     "vs_sma50": 11.93,
+     "vs_sma200": 5.17,
+     "from_high": -56.11,
      "spark": [
       2.96,
       2.91,
@@ -1693,7 +1689,7 @@
       3.28,
       3.27
      ],
-     "vol_ratio": 1.31,
+     "vol_ratio": 1.33,
      "signals": [],
      "score": 0,
      "trend": "auf",
@@ -1742,7 +1738,6 @@
       6.68,
       6.6
      ],
-     "vol_ratio": 40.47,
      "signals": [],
      "score": 0,
      "trend": "auf",
@@ -1751,13 +1746,13 @@
     {
      "symbol": "XLE",
      "name": "Energie (US, ETF)",
-     "price": 67.61,
-     "d1": 0.61,
-     "d5": 6.71,
-     "m1": 3.16,
-     "rsi": 71.9,
-     "vs_sma50": 7.47,
-     "vs_sma200": 19.12,
+     "price": 67.63,
+     "d1": 0.64,
+     "d5": 6.74,
+     "m1": 3.19,
+     "rsi": 72.0,
+     "vs_sma50": 7.5,
+     "vs_sma200": 19.16,
      "from_high": 0.0,
      "spark": [
       64.72,
@@ -1789,28 +1784,28 @@
       65.08,
       66.01,
       67.2,
-      67.61
+      67.63
      ],
      "vol_ratio": 0.73,
      "signals": [
       "RSI 72: überkauft - Rücksetzer-Risiko",
       "Nahe/auf 52-Wochen-Hoch - Ausbruch/Trendstärke"
      ],
-     "score": 19.9,
+     "score": 20.0,
      "trend": "auf",
      "group": "Rohstoffe"
     },
     {
      "symbol": "XLB",
      "name": "Materialien (US, ETF)",
-     "price": 49.66,
-     "d1": -0.12,
-     "d5": 1.39,
-     "m1": -1.66,
-     "rsi": 46.7,
-     "vs_sma50": -2.78,
-     "vs_sma200": -1.52,
-     "from_high": -7.05,
+     "price": 49.67,
+     "d1": -0.1,
+     "d5": 1.41,
+     "m1": -1.64,
+     "rsi": 46.8,
+     "vs_sma50": -2.76,
+     "vs_sma200": -1.5,
+     "from_high": -7.03,
      "spark": [
       52.71,
       52.38,
@@ -1841,7 +1836,7 @@
       49.43,
       49.44,
       49.72,
-      49.66
+      49.67
      ],
      "vol_ratio": 0.76,
      "signals": [],
@@ -1898,7 +1893,7 @@
       228.52,
       221.3
      ],
-     "vol_ratio": 1.06,
+     "vol_ratio": 1.1,
      "signals": [
       "Starke Tagesbewegung -3.2 %"
      ],
@@ -1949,7 +1944,7 @@
       543.45,
       533.69
      ],
-     "vol_ratio": 0.9,
+     "vol_ratio": 0.94,
      "signals": [],
      "score": 0,
      "trend": "auf",
@@ -1998,7 +1993,7 @@
       605.53,
       570.82
      ],
-     "vol_ratio": 0.98,
+     "vol_ratio": 1.01,
      "signals": [
       "Starke Tagesbewegung -5.7 %"
      ],
@@ -2009,14 +2004,14 @@
     {
      "symbol": "TSM",
      "name": "TSMC",
-     "price": 430.08,
-     "d1": -3.38,
-     "d5": -8.92,
-     "m1": 4.23,
+     "price": 430.0,
+     "d1": -3.4,
+     "d5": -8.94,
+     "m1": 4.21,
      "rsi": 41.0,
-     "vs_sma50": -0.83,
-     "vs_sma200": 9.65,
-     "from_high": -11.47,
+     "vs_sma50": -0.84,
+     "vs_sma200": 9.63,
+     "from_high": -11.49,
      "spark": [
       414.39,
       415.89,
@@ -2047,7 +2042,7 @@
       453.31,
       444.35,
       445.12,
-      430.08
+      430.0
      ],
      "vol_ratio": 1.33,
      "signals": [
@@ -2100,7 +2095,7 @@
       208.67,
       200.97
      ],
-     "vol_ratio": 1.0,
+     "vol_ratio": 1.03,
      "signals": [
       "Starke Tagesbewegung -3.7 %"
      ],
@@ -2151,7 +2146,7 @@
       588.12,
       564.74
      ],
-     "vol_ratio": 1.82,
+     "vol_ratio": 1.83,
      "signals": [
       "Starke Tagesbewegung -4.0 %"
      ],
