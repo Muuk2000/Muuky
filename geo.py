@@ -53,29 +53,39 @@ def label(tone_z, vol_ratio):
     return "unverändert"
 
 def pair_metrics(tone, vol):
-    if len(tone) < 15 or len(vol) < 15:
+    if len(tone) < 15:
         return None
     t = [v for _, v in tone]
     now, base = mean(t[-3:]), mean(t[:-3])
     sd = pstdev(t[:-3]) or 1.0
     z = (now - base) / sd
-    v = [x for _, x in vol]
-    vbase = mean(v[:-3]) or 1e-9
-    vr = mean(v[-3:]) / vbase
+    vr = None
+    if vol and len(vol) >= 15:
+        v = [x for _, x in vol]
+        vr = mean(v[-3:]) / (mean(v[:-3]) or 1e-9)
     return {"tone_now": round(now, 2), "tone_base": round(base, 2), "tone_z": round(z, 2),
-            "tension_ratio": round(vr, 2), "state": label(z, vr),
+            "tension_ratio": None if vr is None else round(vr, 2), "state": label(z, 1.0 if vr is None else vr),
             "spark": [round(x, 2) for x in t[-30:]]}
 
-def build(fetch=fetch_json, pause=6.0, budget=150):
-    DEADLINE[0] = time.time() + budget          # Gesamtbudget in Sekunden, danach wird abgebrochen
-    out = []
+def build(fetch=fetch_json, pause=6.0, budget=270):
+    """Erst alle Ton-Zeitreihen (wichtigster Teil), dann die Konflikt-Anteile, solange das Zeitbudget reicht."""
+    DEADLINE[0] = time.time() + budget
+    tones, vols = {}, {}
     for name, q in PAIRS.items():
         try:
-            m = pair_metrics(timeline(q, "timelinetone", fetch, pause),
-                             timeline(f"{q} {CONFLICT}", "timelinevol", fetch, pause))
+            tones[name] = timeline(q, "timelinetone", fetch, pause)
         except Exception as e:
-            print("GDELT-Fehler", name, e)
-            m = None
+            print("GDELT-Ton-Fehler", name, e)
+    for name, q in PAIRS.items():
+        if name not in tones:
+            continue
+        try:
+            vols[name] = timeline(f"{q} {CONFLICT}", "timelinevol", fetch, pause)
+        except Exception as e:
+            print("GDELT-Konflikt-Fehler", name, e)
+    out = []
+    for name in PAIRS:
+        m = pair_metrics(tones.get(name, []), vols.get(name))
         if m:
             m["pair"] = name
             out.append(m)

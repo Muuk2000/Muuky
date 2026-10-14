@@ -74,7 +74,7 @@ function geoMini(){if(!G||!G.pairs)return'';
 function geoView(){
  return `<div class="card"><div class="comment">Wie angespannt berichten englischsprachige Medien über das Länderpaar? Vergleich: letzte 3 Tage gegen die 27 Tage davor (Ton und Anteil von Konfliktbegriffen).</div></div>`+
  G.pairs.map(p=>`<div class="card"><div class="row" style="border:0;padding:0"><div><div class="nm">${esc(p.pair)}</div>
-  <div class="sym">Ton ${p.tone_now} (30-Tage-Schnitt ${p.tone_base}) · Konflikt-Anteil ${p.tension_ratio}× des Üblichen</div></div>
+  <div class="sym">Ton ${p.tone_now} (30-Tage-Schnitt ${p.tone_base}) · ${p.tension_ratio==null?'Konflikt-Anteil: keine Daten':'Konflikt-Anteil '+p.tension_ratio+'× des Üblichen'}</div></div>
   <span class="st ${GS[p.state]||'neutral'}">${esc(p.state)}</span></div><div style="margin-top:8px">${spark(p.spark)}</div></div>`).join('')+
  (G.markets&&G.markets.length?`<h2>Marktreaktion heute</h2><div class="card">`+G.markets.map(m=>`<div class="row"><div class="nm">${esc(m.name)}</div><div class="num"><div class="${cls(m.d1)}">${fmt(m.d1)}</div><div class="sym">1M ${fmt(m.m1,0)}</div></div></div>`).join('')+`</div>`:'')+
  `<div class="note">${esc(G.note||'')} Stand ${stamp(G.generated)}.</div>`}
