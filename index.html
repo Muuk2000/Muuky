@@ -39,6 +39,10 @@ h2{font-size:1rem;margin:18px 0 4px}
 .st.schwach{border:1px solid var(--down);color:var(--down)}
 .st.neutral{border:1px solid var(--line);color:var(--mute)}
 .note{color:var(--mute);font-size:.8rem;margin-top:8px}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px;margin-top:10px}
+.kv div{font-size:.82rem;color:var(--mute)}.kv b{display:block;color:var(--ink);font-size:1rem}
+ul.why{margin:8px 0 0;padding-left:18px;color:var(--mute);font-size:.88rem}
+.big{font-size:1.7rem;font-weight:700}
 .warn{background:color-mix(in srgb,#e6a700 18%,transparent);border:1px solid #e6a700;border-radius:10px;padding:8px 12px;font-size:.85rem}
 footer{color:var(--mute);font-size:.78rem;margin-top:20px}
 </style>
@@ -62,8 +66,40 @@ function rot(){if(!D.rotation||!D.rotation.length)return'';
   <div class="sym">${esc(r.group)} · rel. Stärke 5T ${fmt(r.rs5)} · 20T ${fmt(r.rs20)}</div></div>
   <span class="st ${r.state}">${ST[r.state]||''}</span></div>`).join('')+
  `<div class="note">Relative Stärke = Branche gegenüber dem Weltmarkt (ACWI). „Frühsignal“: Branche holt auf, Kurs noch nicht bestätigt. „Frühwarnung“: Branche verliert relativ, Kurs hält noch. Hinweis, keine Prognose.</div></div>`}
-let D,cur='Überblick';
-function row(i){return `<div class="row"><div><div class="nm">${esc(i.name)} <span class="sym">${esc(i.symbol)}</span></div>
+const GS={'eskalierend':'frueh_raus','Anspannung steigt':'schwach','Entspannung':'frueh_rein','unverändert':'neutral'};
+const BS={'klar bullisch':'frueh_rein','eher bullisch':'fuehrend','neutral':'neutral','eher bärisch':'schwach','klar bärisch':'frueh_raus'};
+const stamp=x=>x?new Date(x).toLocaleString('de-DE',{dateStyle:'medium',timeStyle:'short'}):'';
+function geoMini(){if(!G||!G.pairs)return'';
+ return `<h2>Geopolitik-Lage</h2><div class="card">`+G.pairs.map(p=>`<div class="row"><div class="nm">${esc(p.pair)}</div><span class="st ${GS[p.state]||'neutral'}">${esc(p.state)}</span></div>`).join('')+`</div>`}
+function geoView(){
+ return `<div class="card"><div class="comment">Wie angespannt berichten englischsprachige Medien über das Länderpaar? Vergleich: letzte 3 Tage gegen die 27 Tage davor (Ton und Anteil von Konfliktbegriffen).</div></div>`+
+ G.pairs.map(p=>`<div class="card"><div class="row" style="border:0;padding:0"><div><div class="nm">${esc(p.pair)}</div>
+  <div class="sym">Ton ${p.tone_now} (30-Tage-Schnitt ${p.tone_base}) · Konflikt-Anteil ${p.tension_ratio}× des Üblichen</div></div>
+  <span class="st ${GS[p.state]||'neutral'}">${esc(p.state)}</span></div><div style="margin-top:8px">${spark(p.spark)}</div></div>`).join('')+
+ (G.markets&&G.markets.length?`<h2>Marktreaktion heute</h2><div class="card">`+G.markets.map(m=>`<div class="row"><div class="nm">${esc(m.name)}</div><div class="num"><div class="${cls(m.d1)}">${fmt(m.d1)}</div><div class="sym">1M ${fmt(m.m1,0)}</div></div></div>`).join('')+`</div>`:'')+
+ `<div class="note">${esc(G.note||'')} Stand ${stamp(G.generated)}.</div>`}
+function btcView(){const b=B,f=b.fear_greed;
+ return `<div class="card"><div class="row" style="border:0;padding:0"><div><div class="big">${b.price.toLocaleString('de-DE')} $</div>
+  <div class="sym">Tag <span class="${cls(b.d1)}">${fmt(b.d1)}</span> · 7T <span class="${cls(b.d7)}">${fmt(b.d7,0)}</span> · 30T <span class="${cls(b.d30)}">${fmt(b.d30,0)}</span></div></div>
+  <span class="st ${BS[b.state]||'neutral'}">${esc(b.state)}</span></div><div style="margin-top:8px">${spark(b.spark)}</div>
+  <ul class="why">${(b.why||[]).map(w=>`<li>${esc(w)}</li>`).join('')}</ul></div>
+  <div class="card"><div class="kv"><div>RSI (14)<b>${b.rsi}</b></div><div>Mayer-Multiple (Kurs/SMA200)<b>${b.mayer}</b></div>
+  <div>vs. SMA50<b class="${cls(b.vs_sma50)}">${fmt(b.vs_sma50)}</b></div><div>vs. SMA200<b class="${cls(b.vs_sma200)}">${fmt(b.vs_sma200)}</b></div>
+  <div>Abstand zum 1-Jahres-Hoch<b>${fmt(b.from_high)}</b></div><div>Schwankung 30T (p. a.)<b>${b.vol30} %</b></div>
+  <div>Korrelation Nasdaq (30T)<b>${b.corr_nasdaq??'–'}</b></div><div>Fear &amp; Greed<b>${f?f.value+' · '+esc(f.label):'–'}</b></div></div>
+  <div class="note">Regelbasiertes Punktesystem (${b.points>0?'+':''}${b.points} von ±4), keine Prognose und keine Anlageberatung. Stand ${stamp(b.generated)}.</div></div>`}
+function rateLine(x){if(!x||!x.n)return null;const sig=Math.abs(x.edge)>x.ci;
+ return `<div class="big">${x.rate} %</div><div class="sym">Trefferquote bei ${x.n} Prognosen (±${x.ci} Prozentpunkte)</div>
+  <div class="sym">Zum Vergleich: stur immer „${x.base_up>=50?'steigt':'fällt'}“ träfe ${Math.max(x.base_up,100-x.base_up).toFixed(1)} %. Vorsprung <b class="${cls(x.edge)}">${x.edge>0?'+':''}${x.edge}</b> Punkte${sig?'':' – statistisch nicht von Zufall zu unterscheiden'}.</div>`}
+function tbl(o){return o?Object.entries(o).map(([k,v])=>`<div class="row"><div>${esc(k)}</div><div class="num">${v.rate} % <span class="sym">(${v.n})</span></div></div>`).join(''):''}
+function statsView(){const L=S.live,K=S.backtest;
+ let h=`<div class="card"><div class="nm">Live (echte Prognosen)</div>`+(L&&L.n?rateLine(L)+`<div class="sym">Offen (Abend steht noch aus): ${S.live_offen}</div>`:`<div class="comment">Noch keine ausgewerteten Live-Prognosen. Das Skript schreibt die Prognosen morgens fest und wertet sie abends aus, die Zahlen füllen sich ab dem ersten Handelstag.${S.live_offen?` Offen: ${S.live_offen}.`:''}</div>`)+`</div>`;
+ h+=`<div class="card"><div class="nm">Rückschau (letzte ~200 Handelstage)</div>${K&&K.n?rateLine(K)+`<div class="sym">Prognose bei ${K.abdeckung} % der Tage/Werte, sonst keine Richtung.</div>`:'<div class="comment">Keine Daten.</div>'}</div>`;
+ if(K&&K.n){h+=`<h2>Rückschau nach Bereich</h2><div class="card">${tbl(K.by_group)}</div><h2>Rückschau nach Indikator (allein)</h2><div class="card">${tbl(K.by_component)}</div><h2>Nach Richtung</h2><div class="card">${tbl(K.by_direction)}</div>`}
+ if(S.recent&&S.recent.length)h+=`<h2>Zuletzt ausgewertet</h2><div class="card">`+S.recent.map(r=>`<div class="row"><div><div class="nm">${esc(r.name)}</div><div class="sym">${esc(r.date)} · Prognose ${r.pred>0?'↑':'↓'}</div></div><div class="num"><div class="${cls(r.chg)}">${fmt(r.chg)}</div><div class="${r.hit?'up':'down'}">${r.hit?'✓ Treffer':'✗ daneben'}</div></div></div>`).join('')+`</div>`;
+ return h+`<div class="note">${esc(S.method||'')}</div>`}
+let D,S,G,B,cur='Überblick';
+function row(i){return `<div class="row"><div><div class="nm">${esc(i.name)} <span class="sym">${esc(i.symbol)}</span>${i.forecast?`<span class="sym"> · Prognose ${i.forecast==='up'?'↑':'↓'}</span>`:''}</div>
  ${i.signals&&i.signals.length?`<div class="tags">${i.signals.slice(0,2).map(s=>`<span class="tag">${esc(s)}</span>`).join('')}</div>`:''}</div>
  ${spark(i.spark)}<div class="num"><div class="${cls(i.d1)}">${fmt(i.d1)}</div><div class="sym">RSI ${i.rsi??'–'} · 1M ${fmt(i.m1,0)}</div></div></div>`}
 function render(){
@@ -72,15 +108,19 @@ function render(){
   m.innerHTML=(D.demo?'<div class="warn">Testdaten – keine echten Kurse.</div>':'')+
    `<h2>Top-Signale heute</h2><div class="card">${D.top_signals.length?D.top_signals.map(t=>`<div class="row"><div><div class="nm">${esc(t.name)} <span class="sym">${esc(t.group)}</span></div>
    <div class="tags">${t.signals.slice(0,3).map(s=>`<span class="tag">${esc(s)}</span>`).join('')}</div></div><div class="num ${cls(t.d1)}">${fmt(t.d1)}</div></div>`).join(''):'<div class="comment">Keine auffälligen Signale.</div>'}</div>`+
-   rot()+`<h2>Lage je Bereich</h2>`+D.groups.map(g=>`<div class="card"><div class="comment">${esc(g.comment)}</div></div>`).join('');
+   rot()+geoMini()+`<h2>Lage je Bereich</h2>`+D.groups.map(g=>`<div class="card"><div class="comment">${esc(g.comment)}</div></div>`).join('');
+ }else if(cur==='Geopolitik'){m.innerHTML=geoView()
+ }else if(cur==='Bitcoin'){m.innerHTML=btcView()
+ }else if(cur==='Trefferquote'){m.innerHTML=statsView()
  }else{
   const g=D.groups.find(x=>x.name===cur);
   m.innerHTML=`<div class="card"><div class="comment">${esc(g.comment)}</div></div><div class="card">${g.items.map(row).join('')}</div>`;
  }
  document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.t===cur));
 }
-fetch('data/briefing.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{D=d;
- const names=['Überblick',...d.groups.map(g=>g.name)];
+const J=u=>fetch(u,{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null);
+Promise.all([J('data/briefing.json'),J('data/stats.json'),J('data/geo.json'),J('data/btc.json')]).then(([d,s,g,b])=>{if(!d)throw 0;D=d;S=s;G=g;B=b;
+ const names=['Überblick',...d.groups.map(g=>g.name),...(G&&G.pairs?['Geopolitik']:[]),...(B?['Bitcoin']:[]),...(S?['Trefferquote']:[])];
  document.getElementById('tabs').innerHTML=names.map(n=>`<button data-t="${esc(n)}">${esc(n)}</button>`).join('');
  document.getElementById('tabs').onclick=e=>{const b=e.target.closest('button');if(b){cur=b.dataset.t;render();scrollTo(0,0)}};
  const t=new Date(d.generated);

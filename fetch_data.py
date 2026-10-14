@@ -7,6 +7,8 @@ Keine Anlageberatung - rein regelbasierte Auswertung von Kursdaten.
 """
 import json, sys, math, datetime as dt
 from pathlib import Path
+import numpy as np
+import pandas as pd
 
 OUT = Path(__file__).parent / "data" / "briefing.json"
 BENCH = "ACWI"  # Welt-Aktien-ETF als Vergleichsmaßstab für die relative Stärke
@@ -169,10 +171,214 @@ def load_demo():
                                    "Volume": rng.integers(1_000_000, 3_000_000, len(idx))}, index=idx)
     return out
 
+# ---------------------------------------------------------------------------
+# Prognose-Protokoll: Tagesrichtung aus Indikatoren, abends gegen den Schlusskurs geprüft
+# ---------------------------------------------------------------------------
+LOG = OUT.parent / "forecasts.json"
+STATS = OUT.parent / "stats.json"
+THRESH = 1.0          # ab diesem Punktestand (Betrag) wird eine Richtung prognostiziert
+COMPS = {"trend": "Trend (Kurs über/unter SMA50)", "momentum": "Momentum (5 Tage)",
+         "rsi": "RSI-Extreme (Gegenbewegung)", "rs": "Relative Stärke (Frühindikator)"}
+GROUP_OF = {sym: g for g, m in UNIVERSE.items() for sym in m}
+
+def norm_df(df):
+    df = df.copy()
+    idx = pd.to_datetime(df.index)
+    if idx.tz is not None:
+        idx = idx.tz_localize(None)
+    df.index = idx.normalize()
+    return df[~df.index.duplicated(keep="last")]
+
+def features(close, bench, futures=False):
+    """Indikator-Beiträge je Tag; jeder Wert nutzt nur Daten bis einschließlich dieses Tages."""
+    sma50 = close.rolling(50).mean()
+    trend = pd.Series(np.where(close > sma50, 1.0, -1.0), index=close.index).where(sma50.notna(), 0.0)
+    momentum = (np.sign(close.pct_change(5)) * 0.5).fillna(0.0)
+    r = rsi(close)
+    rsi_c = pd.Series(np.where(r > 70, -1.0, np.where(r < 30, 1.0, 0.0)), index=close.index).where(r.notna(), 0.0)
+    rs_c = pd.Series(0.0, index=close.index)
+    if bench is not None and not futures:
+        b = bench.reindex(close.index, method="ffill")
+        rs = close / b
+        rs_up = rs > rs.rolling(20).mean()
+        rs5, rs20 = rs.pct_change(5) * 100, rs.pct_change(20) * 100
+        weak = (close < sma50) | (close.pct_change(21) < 0)
+        rs_c = pd.Series(np.select(
+            [(rs5 > 0.5) & rs_up & weak, (rs5 < -0.5) & ~rs_up & (close > sma50),
+             (rs20 > 3) & rs_up, (rs20 < -3) & ~rs_up],
+            [1.0, -1.0, 0.5, -0.5], default=0.0), index=close.index)
+    f = pd.DataFrame({"trend": trend, "momentum": momentum, "rsi": rsi_c, "rs": rs_c})
+    f["score"] = f.sum(axis=1)
+    return f
+
+def hit_of(sign, chg):
+    return None if chg == 0 else (sign * chg > 0)
+
+def summarize(rows, base_rows=None):
+    """rows: dicts mit pred(+1/-1), chg(%), group, comps. base_rows: alle Tage (für die Basisrate)."""
+    res = [(r, hit_of(r["pred"], r["chg"])) for r in rows]
+    res = [(r, h) for r, h in res if h is not None]
+    n = len(res)
+    if n == 0:
+        return {"n": 0}
+    hits = sum(1 for _, h in res if h)
+    rate = hits / n
+    allr = base_rows if base_rows is not None else rows
+    ups = [r["chg"] for r in allr if r["chg"] != 0]
+    base_up = (sum(1 for c in ups if c > 0) / len(ups)) if ups else 0.5
+    const = max(base_up, 1 - base_up)
+    out = {"n": n, "hits": hits, "rate": round(rate * 100, 1),
+           "ci": round(1.96 * math.sqrt(rate * (1 - rate) / n) * 100, 1),
+           "base_up": round(base_up * 100, 1), "edge": round((rate - const) * 100, 1)}
+    by_group = {}
+    for g in UNIVERSE:
+        gr = [(r, h) for r, h in res if r["group"] == g]
+        if gr:
+            by_group[g] = {"n": len(gr), "rate": round(100 * sum(1 for _, h in gr if h) / len(gr), 1)}
+    out["by_group"] = by_group
+    by_dir = {}
+    for key, lab in ((1, "steigt"), (-1, "fällt")):
+        dr = [(r, h) for r, h in res if r["pred"] == key]
+        if dr:
+            by_dir[lab] = {"n": len(dr), "rate": round(100 * sum(1 for _, h in dr if h) / len(dr), 1)}
+    out["by_direction"] = by_dir
+    by_comp = {}
+    for c, lab in COMPS.items():
+        cr = [(r, hit_of(np.sign(r["comps"][c]), r["chg"])) for r in rows if r["comps"].get(c, 0) != 0]
+        cr = [x for x in cr if x[1] is not None]
+        if cr:
+            by_comp[lab] = {"n": len(cr), "rate": round(100 * sum(1 for _, h in cr if h) / len(cr), 1)}
+    out["by_component"] = by_comp
+    return out
+
+def backtest(data, bench, days=200):
+    rows, base = [], []
+    for sym, df in data.items():
+        if sym == BENCH or sym not in GROUP_OF:
+            continue
+        close = df["Close"].dropna()
+        if len(close) < 120:
+            continue
+        f = features(close, bench, futures=sym.endswith("=F"))
+        nxt = (close.shift(-1) / close - 1) * 100
+        valid = f.index[60:]
+        valid = [t for t in valid if not math.isnan(nxt.loc[t])][-days:]
+        for t in valid:
+            chg = float(nxt.loc[t])
+            base.append({"chg": chg})
+            sc = float(f.loc[t, "score"])
+            if abs(sc) >= THRESH:
+                rows.append({"pred": 1 if sc > 0 else -1, "chg": chg, "group": GROUP_OF[sym],
+                             "comps": {c: float(f.loc[t, c]) for c in COMPS}})
+    out = summarize(rows, base)
+    out["tage_x_werte"] = len(base)
+    out["abdeckung"] = round(100 * len(rows) / max(len(base), 1), 1)
+    return out
+
+def load_log():
+    try:
+        return json.loads(LOG.read_text())
+    except Exception:
+        return []
+
+def evaluate(log, data, now):
+    """Offene Prognosen gegen den Schlusskurs des Prognosetags prüfen."""
+    today = pd.Timestamp(now.date())
+    done = 0
+    for e in log:
+        if e.get("res") is not None:
+            continue
+        d = pd.Timestamp(e["date"])
+        if d > today or (d == today and now.hour < 21):   # Tag noch nicht abgeschlossen
+            continue
+        df = data.get(e["symbol"])
+        if df is None:
+            continue
+        close = df["Close"].dropna()
+        if d in close.index:
+            chg = (float(close.loc[d]) / e["ref"] - 1) * 100
+            e["res"] = {"chg": round(chg, 2), "close": round(float(close.loc[d]), 2)}
+            done += 1
+        elif (today - d).days > 6:
+            e["res"] = {"chg": None}        # kein Handelstag / keine Daten
+    return done
+
+def live_rows(log):
+    rows = []
+    for e in log:
+        r = e.get("res")
+        if r and r.get("chg") is not None:
+            rows.append({"pred": e["pred"], "chg": r["chg"], "group": e["group"], "comps": e["comps"],
+                         "date": e["date"], "name": e.get("name", e["symbol"]), "symbol": e["symbol"]})
+    return rows
+
+def build_stats(log, data, bench, demo):
+    rows = live_rows(log)
+    recent = sorted(rows, key=lambda r: (r["date"], abs(r["chg"])), reverse=True)[:15]
+    return {
+        "generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"),
+        "demo": demo,
+        "live": summarize(rows),
+        "live_offen": sum(1 for e in log if e.get("res") is None),
+        "backtest": backtest(data, bench),
+        "recent": [{"date": r["date"], "name": r["name"], "symbol": r["symbol"], "pred": r["pred"],
+                    "chg": r["chg"], "hit": hit_of(r["pred"], r["chg"])} for r in recent],
+        "method": ("Prognose = Vorzeichen eines Punktesystems aus vier Indikatoren (" + "; ".join(COMPS.values()) +
+                   f"), nur ab Betrag {THRESH}. Sie nutzt ausschließlich Daten bis zum Vortagesschluss und wird "
+                   "morgens im Repo festgeschrieben. Bewertung: Schlusskurs des Tages gegen Vortagesschluss. "
+                   "Rückschau = dieselben Regeln auf die letzten 200 Handelstage, ohne spätere Daten; die Regeln wurden "
+                   "nicht an diesen Daten optimiert, sind aber vor der Rückschau festgelegt worden - Zufallstreffer sind möglich."),
+    }
+
+def extras(all_items, data):
+    """Geopolitik (GDELT) und Bitcoin; jeder Teil darf ausfallen, ohne das Briefing zu stoppen."""
+    gen = dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes")
+    try:
+        import geo
+        pairs = geo.build()
+        if pairs:
+            want = {"GC=F": "Gold", "CL=F": "Öl (WTI)", "ITA": "Luft/Rüstung (ETF)", "RHM.DE": "Rheinmetall", "^GSPC": "S&P 500"}
+            mk = [{"name": want[i["symbol"]], "d1": i["d1"], "m1": i["m1"]} for i in all_items if i["symbol"] in want]
+            (OUT.parent / "geo.json").write_text(json.dumps({"generated": gen, "pairs": pairs, "markets": mk,
+                "note": "Automatische Auswertung der Medien-Stimmung (GDELT), kein Lagebericht. Viel Rauschen."},
+                ensure_ascii=False, indent=1))
+            print("Geopolitik:", ", ".join(f"{p['pair']}={p['state']}" for p in pairs))
+    except Exception as e:
+        print("Geopolitik fehlgeschlagen:", e, file=sys.stderr)
+    try:
+        import yfinance as yf, btc
+        raw = yf.download("BTC-USD", period="2y", interval="1d", auto_adjust=True, progress=False)
+        raw = norm_df(raw.droplevel(1, axis=1) if hasattr(raw.columns, "levels") and raw.columns.nlevels > 1 else raw)
+        ref = data["^NDX"]["Close"].dropna() if "^NDX" in data else None
+        res = btc.analyse(raw["Close"], ref, btc.fear_greed())
+        if res:
+            res["generated"] = gen
+            (OUT.parent / "btc.json").write_text(json.dumps(res, ensure_ascii=False, indent=1))
+            print("Bitcoin:", res["state"], res["price"])
+    except Exception as e:
+        print("Bitcoin fehlgeschlagen:", e, file=sys.stderr)
+
 def main():
     demo = "--demo" in sys.argv
+    evening = "--evening" in sys.argv
+    now = dt.datetime.now(dt.timezone.utc)
+    today = pd.Timestamp(now.date())
     data = load_demo() if demo else load_real()
+    data = {k: norm_df(v) for k, v in data.items()}
     bench = data[BENCH]["Close"].dropna() if BENCH in data else None
+    log = load_log()
+    if not demo:
+        n = evaluate(log, data, now)
+        print(f"{n} Prognosen ausgewertet")
+    if evening:
+        if demo:
+            sys.exit("--evening nicht mit --demo")
+        log = [e for e in log if (today - pd.Timestamp(e["date"])).days <= 400]
+        LOG.write_text(json.dumps(log, ensure_ascii=False, separators=(",", ":")))
+        STATS.write_text(json.dumps(build_stats(log, data, bench, demo), ensure_ascii=False, indent=1))
+        print("Abendauswertung geschrieben")
+        return
+
     groups, all_items = [], []
     for gname, members in UNIVERSE.items():
         items = []
@@ -182,6 +388,15 @@ def main():
                     it = analyse(sym, name, data[sym], bench)
                     if it:
                         it["group"] = gname
+                        # Prognose nur aus Daten bis zum Vortagesschluss
+                        cl = data[sym]["Close"].dropna()
+                        cl = cl[cl.index < today]
+                        if len(cl) > 80:
+                            f = features(cl, bench[bench.index < today] if bench is not None else None,
+                                         futures=sym.endswith("=F")).iloc[-1]
+                            if abs(f["score"]) >= THRESH:
+                                it["forecast"] = "up" if f["score"] > 0 else "down"
+                                it["_fc"] = (float(f["score"]), {c: float(f[c]) for c in COMPS}, float(cl.iloc[-1]), name)
                         items.append(it)
                 except Exception as e:
                     print("Fehler bei", sym, e, file=sys.stderr)
@@ -189,6 +404,26 @@ def main():
         all_items += items
     if not all_items:
         sys.exit("Keine Daten geladen - breche ab, alte briefing.json bleibt erhalten.")
+
+    # Prognosen für heute festschreiben (nur morgens, nur Werktage, nur einmal je Tag)
+    if not demo and now.hour < 13 and today.weekday() < 5:
+        have = {(e["date"], e["symbol"]) for e in log}
+        for it in all_items:
+            fc = it.get("_fc")
+            if fc and (str(today.date()), it["symbol"]) not in have:
+                log.append({"date": str(today.date()), "made_at": now.isoformat(timespec="minutes"),
+                            "symbol": it["symbol"], "name": fc[3], "group": it["group"],
+                            "pred": 1 if fc[0] > 0 else -1, "score": round(fc[0], 1),
+                            "comps": fc[1], "ref": round(fc[2], 4), "res": None})
+    for it in all_items:
+        it.pop("_fc", None)
+    log = [e for e in log if (today - pd.Timestamp(e["date"])).days <= 400]
+    if not demo:
+        LOG.write_text(json.dumps(log, ensure_ascii=False, separators=(",", ":")))
+    STATS.write_text(json.dumps(build_stats(log, data, bench, demo), ensure_ascii=False, indent=1))
+
+    if not demo:
+        extras(all_items, data)
     top = sorted([i for i in all_items if i["signals"]], key=lambda i: -i["score"])[:10]
     rotation = sorted(
         [{"symbol": i["symbol"], "name": i["name"], "group": i["group"], "rs5": i["rs5"], "rs20": i["rs20"],
@@ -197,7 +432,7 @@ def main():
         key=lambda r: -r["rs20"])
     out = {
         "rotation": rotation,
-        "generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"),
+        "generated": now.isoformat(timespec="minutes"),
         "demo": demo,
         "top_signals": [{"symbol": i["symbol"], "name": i["name"], "group": i["group"],
                          "d1": i["d1"], "signals": i["signals"]} for i in top],
