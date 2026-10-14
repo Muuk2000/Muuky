@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Markt-Briefing</title>
+<meta name="theme-color" content="#0f1720">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Briefing">
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#0f1720;--mute:#5d6b7a;--line:#e3e7ec;--up:#0a7d4f;--down:#c0392b;--acc:#1f5eff}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1720;--card:#17212c;--ink:#eaf0f6;--mute:#93a1b0;--line:#26323f;--up:#3ddc97;--down:#ff6b5e;--acc:#6b9bff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:0 16px calc(24px + env(safe-area-inset-bottom))}
+header{padding:calc(16px + env(safe-area-inset-top)) 0 8px}
+h1{font-size:1.35rem;margin:0}
+.sub{color:var(--mute);font-size:.85rem}
+nav{display:flex;gap:8px;overflow-x:auto;padding:10px 0;position:sticky;top:0;background:var(--bg);scrollbar-width:none}
+nav button{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 14px;border-radius:999px;font:inherit;font-size:.9rem}
+nav button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:#fff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:10px 0}
+.comment{color:var(--mute);font-size:.92rem}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0}
+.nm{font-weight:600}.sym{color:var(--mute);font-size:.78rem}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+.up{color:var(--up)}.down{color:var(--down)}
+.tags{margin-top:4px;display:flex;flex-wrap:wrap;gap:4px}
+.tag{font-size:.74rem;background:color-mix(in srgb,var(--acc) 12%,transparent);color:var(--ink);padding:2px 8px;border-radius:6px}
+svg.sp{width:70px;height:26px;flex:none}
+h2{font-size:1rem;margin:18px 0 4px}
+.warn{background:color-mix(in srgb,#e6a700 18%,transparent);border:1px solid #e6a700;border-radius:10px;padding:8px 12px;font-size:.85rem}
+footer{color:var(--mute);font-size:.78rem;margin-top:20px}
+</style>
+</head>
+<body>
+<header><h1>Markt-Briefing</h1><div class="sub" id="stamp">lade …</div></header>
+<nav id="tabs" aria-label="Bereiche"></nav>
+<main id="main"></main>
+<footer id="foot"></footer>
+<script>
+const fmt=(v,d=1)=>v==null?'–':(v>0?'+':'')+v.toFixed(d)+' %';
+const cls=v=>v==null?'':v>0?'up':v<0?'down':'';
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function spark(a){if(!a||a.length<2)return'';const mn=Math.min(...a),mx=Math.max(...a),r=mx-mn||1;
+ const p=a.map((v,i)=>`${(i/(a.length-1)*70).toFixed(1)},${(24-(v-mn)/r*22).toFixed(1)}`).join(' ');
+ const c=a[a.length-1]>=a[0]?'var(--up)':'var(--down)';
+ return `<svg class="sp" viewBox="0 0 70 26" aria-hidden="true"><polyline points="${p}" fill="none" stroke="${c}" stroke-width="1.6"/></svg>`}
+let D,cur='Überblick';
+function row(i){return `<div class="row"><div><div class="nm">${esc(i.name)} <span class="sym">${esc(i.symbol)}</span></div>
+ ${i.signals&&i.signals.length?`<div class="tags">${i.signals.slice(0,2).map(s=>`<span class="tag">${esc(s)}</span>`).join('')}</div>`:''}</div>
+ ${spark(i.spark)}<div class="num"><div class="${cls(i.d1)}">${fmt(i.d1)}</div><div class="sym">RSI ${i.rsi??'–'} · 1M ${fmt(i.m1,0)}</div></div></div>`}
+function render(){
+ const m=document.getElementById('main');
+ if(cur==='Überblick'){
+  m.innerHTML=(D.demo?'<div class="warn">Testdaten – keine echten Kurse.</div>':'')+
+   `<h2>Top-Signale heute</h2><div class="card">${D.top_signals.length?D.top_signals.map(t=>`<div class="row"><div><div class="nm">${esc(t.name)} <span class="sym">${esc(t.group)}</span></div>
+   <div class="tags">${t.signals.slice(0,3).map(s=>`<span class="tag">${esc(s)}</span>`).join('')}</div></div><div class="num ${cls(t.d1)}">${fmt(t.d1)}</div></div>`).join(''):'<div class="comment">Keine auffälligen Signale.</div>'}</div>`+
+   `<h2>Lage je Bereich</h2>`+D.groups.map(g=>`<div class="card"><div class="comment">${esc(g.comment)}</div></div>`).join('');
+ }else{
+  const g=D.groups.find(x=>x.name===cur);
+  m.innerHTML=`<div class="card"><div class="comment">${esc(g.comment)}</div></div><div class="card">${g.items.map(row).join('')}</div>`;
+ }
+ document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.t===cur));
+}
+fetch('data/briefing.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{D=d;
+ const names=['Überblick',...d.groups.map(g=>g.name)];
+ document.getElementById('tabs').innerHTML=names.map(n=>`<button data-t="${esc(n)}">${esc(n)}</button>`).join('');
+ document.getElementById('tabs').onclick=e=>{const b=e.target.closest('button');if(b){cur=b.dataset.t;render();scrollTo(0,0)}};
+ const t=new Date(d.generated);
+ document.getElementById('stamp').textContent='Stand '+t.toLocaleString('de-DE',{dateStyle:'medium',timeStyle:'short'});
+ document.getElementById('foot').textContent=d.disclaimer;
+ render();
+}).catch(()=>{document.getElementById('main').innerHTML='<div class="card">Daten konnten nicht geladen werden.</div>'});
+if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script>
+</body>
+</html>
