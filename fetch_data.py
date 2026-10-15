@@ -348,17 +348,24 @@ def parse_news(raw, limit=3):
 def add_news(all_items, budget=120):
     import time, yfinance as yf
     end = time.time() + budget
-    n = 0
+    n, errs, sample = 0, [], None
     for it in all_items:
         if time.time() > end:
-            print("Schlagzeilen: Zeitbudget aufgebraucht")
+            errs.append("Zeitbudget aufgebraucht")
             break
         try:
-            it["news"] = parse_news(yf.Ticker(it["symbol"]).news)
+            raw = yf.Ticker(it["symbol"]).news
+            if sample is None:
+                sample = {"symbol": it["symbol"], "type": type(raw).__name__, "len": len(raw or []),
+                          "first_keys": sorted((raw[0].get("content") or raw[0]).keys())[:12] if raw else None}
+            it["news"] = parse_news(raw)
             n += 1 if it["news"] else 0
         except Exception as e:
-            print("Schlagzeilen-Fehler", it["symbol"], str(e)[:80])
+            if len(errs) < 4:
+                errs.append(f"{it['symbol']}: {str(e)[:120]}")
     print(f"Schlagzeilen für {n} Instrumente")
+    (OUT.parent / "diag.json").write_text(json.dumps({"news_ok": n, "news_errors": errs, "sample": sample,
+                                                      "yfinance": getattr(yf, "__version__", "?")}, ensure_ascii=False, indent=1))
 
 def extras(all_items, data):
     """Geopolitik (GDELT) und Bitcoin; jeder Teil darf ausfallen, ohne das Briefing zu stoppen."""
