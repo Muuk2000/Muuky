@@ -109,17 +109,26 @@
    "d1": -0.67
   }
  ],
- "generated": "2026-10-14T20:59+00:00",
+ "generated": "2026-10-15T06:07+00:00",
  "demo": false,
  "top_signals": [
   {
    "symbol": "^KS11",
    "name": "Kospi",
    "group": "Welt-Indizes",
-   "d1": -5.46,
+   "d1": -8.79,
    "signals": [
-    "RSI 30: überverkauft - mögliche Gegenbewegung",
-    "Starke Tagesbewegung -5.5 %"
+    "RSI 22: überverkauft - mögliche Gegenbewegung",
+    "Starke Tagesbewegung -8.8 %"
+   ]
+  },
+  {
+   "symbol": "000001.SS",
+   "name": "Shanghai Comp.",
+   "group": "Welt-Indizes",
+   "d1": -2.0,
+   "signals": [
+    "RSI 25: überverkauft - mögliche Gegenbewegung"
    ]
   },
   {
@@ -152,16 +161,6 @@
    ]
   },
   {
-   "symbol": "RHM.DE",
-   "name": "Rheinmetall",
-   "group": "Industrie",
-   "d1": 3.14,
-   "signals": [
-    "Frühsignal: relative Stärke dreht nach oben (+7.5 % in 5 Tagen), Kurs noch nicht bestätigt",
-    "Starke Tagesbewegung +3.1 %"
-   ]
-  },
-  {
    "symbol": "^NDX",
    "name": "Nasdaq 100",
    "group": "Welt-Indizes",
@@ -189,28 +188,28 @@
    ]
   },
   {
-   "symbol": "^AXJO",
-   "name": "ASX 200",
+   "symbol": "^NSEI",
+   "name": "Nifty 50",
    "group": "Welt-Indizes",
-   "d1": -0.64,
+   "d1": 1.46,
    "signals": [
-    "Frühsignal: relative Stärke dreht nach oben (+1.2 % in 5 Tagen), Kurs noch nicht bestätigt"
+    "Frühsignal: relative Stärke dreht nach oben (+3.9 % in 5 Tagen), Kurs noch nicht bestätigt"
    ]
   },
   {
-   "symbol": "XLF",
-   "name": "Financials (US, ETF)",
-   "group": "Finanzen",
-   "d1": -0.55,
+   "symbol": "^AXJO",
+   "name": "ASX 200",
+   "group": "Welt-Indizes",
+   "d1": -0.09,
    "signals": [
-    "Frühsignal: relative Stärke dreht nach oben (+2.7 % in 5 Tagen), Kurs noch nicht bestätigt"
+    "Frühsignal: relative Stärke dreht nach oben (+1.3 % in 5 Tagen), Kurs noch nicht bestätigt"
    ]
   }
  ],
  "groups": [
   {
    "name": "Welt-Indizes",
-   "comment": "Welt-Indizes: Tagesstimmung schwach (Ø -0.7 %, 6 von 12 im Plus). Stärkster: Nifty 50 (+1.6 %), schwächster: Kospi (-5.5 %). Auf Monatssicht Ø -0.1 %.",
+   "comment": "Welt-Indizes: Tagesstimmung schwach (Ø -1.5 %, 4 von 12 im Plus). Stärkster: Nifty 50 (+1.5 %), schwächster: Kospi (-8.8 %). Auf Monatssicht Ø -1.4 %.",
    "items": [
     {
      "symbol": "^GSPC",
@@ -255,7 +254,7 @@
       7805.45,
       7718.94
      ],
-     "vol_ratio": 0.64,
+     "vol_ratio": 1.13,
      "rs5": 0.16,
      "rs20": 1.48,
      "rs_state": "neutral",
@@ -307,7 +306,7 @@
       30569.48,
       29950.82
      ],
-     "vol_ratio": 0.16,
+     "vol_ratio": 1.04,
      "rs5": -2.69,
      "rs20": 2.73,
      "rs_state": "frueh_raus",
@@ -316,8 +315,7 @@
      ],
      "score": 10,
      "trend": "auf",
-     "group": "Welt-Indizes",
-     "forecast": "up"
+     "group": "Welt-Indizes"
     },
     {
      "symbol": "^GDAXI",
@@ -362,7 +360,7 @@
       25259.9,
       25298.61
      ],
-     "vol_ratio": 0.0,
+     "vol_ratio": 1.0,
      "rs5": 2.02,
      "rs20": -1.65,
      "rs_state": "frueh_rein",
@@ -371,8 +369,7 @@
      ],
      "score": 10,
      "trend": "seitwärts",
-     "group": "Welt-Indizes",
-     "forecast": "down"
+     "group": "Welt-Indizes"
     },
     {
      "symbol": "^STOXX50E",
@@ -417,7 +414,7 @@
       6167.01,
       6190.37
      ],
-     "vol_ratio": 0.0,
+     "vol_ratio": 0.88,
      "rs5": 1.4,
      "rs20": -1.92,
      "rs_state": "frueh_rein",
@@ -426,13 +423,12 @@
      ],
      "score": 10,
      "trend": "seitwärts",
-     "group": "Welt-Indizes",
-     "forecast": "down"
+     "group": "Welt-Indizes"
     },
     {
      "symbol": "^FTSE",
      "name": "FTSE 100",
-     "price": 10724.86,
+     "price": 10724.9,
      "d1": 0.7,
      "d5": 2.55,
      "m1": 0.63,
@@ -470,31 +466,30 @@
       10552.1,
       10656.3,
       10650.3,
-      10724.86
+      10724.9
      ],
-     "vol_ratio": 0.0,
+     "vol_ratio": 0.75,
      "rs5": 3.81,
      "rs20": -0.38,
      "rs_state": "neutral",
      "signals": [],
      "score": 0,
      "trend": "auf",
-     "group": "Welt-Indizes"
+     "group": "Welt-Indizes",
+     "forecast": "up"
     },
     {
      "symbol": "^N225",
      "name": "Nikkei 225",
-     "price": 67777.52,
-     "d1": -1.82,
-     "d5": -3.1,
-     "m1": 3.84,
-     "rsi": 53.2,
-     "vs_sma50": 2.54,
-     "vs_sma200": 11.34,
-     "from_high": -6.34,
+     "price": 64352.76,
+     "d1": -5.01,
+     "d5": -8.11,
+     "m1": -1.41,
+     "rsi": 39.3,
+     "vs_sma50": -2.9,
+     "vs_sma200": 5.43,
+     "from_high": -11.07,
      "spark": [
-      66131.98,
-      66405.56,
       66311.93,
       66215.34,
       64325.64,
@@ -522,32 +517,34 @@
       70035.71,
       69042.11,
       69030.92,
-      67777.52
+      67777.52,
+      67744.29,
+      64352.76
      ],
-     "vol_ratio": 1.04,
-     "rs5": -2.85,
-     "rs20": 3.69,
-     "rs_state": "fuehrend",
-     "signals": [],
-     "score": 0,
-     "trend": "auf",
+     "vol_ratio": 0.0,
+     "rs5": -6.98,
+     "rs20": 1.48,
+     "rs_state": "neutral",
+     "signals": [
+      "Starke Tagesbewegung -5.0 %"
+     ],
+     "score": 5.0,
+     "trend": "seitwärts",
      "group": "Welt-Indizes",
      "forecast": "up"
     },
     {
      "symbol": "^HSI",
      "name": "Hang Seng",
-     "price": 24345.22,
-     "d1": 0.3,
-     "d5": 0.27,
-     "m1": -1.86,
-     "rsi": 45.1,
-     "vs_sma50": -2.93,
-     "vs_sma200": -4.51,
-     "from_high": -12.95,
+     "price": 23987.83,
+     "d1": -1.34,
+     "d5": 0.85,
+     "m1": -2.75,
+     "rsi": 39.1,
+     "vs_sma50": -4.09,
+     "vs_sma200": -5.86,
+     "from_high": -14.23,
      "spark": [
-      25329.73,
-      25311.21,
       25213.31,
       25650.87,
       25413.12,
@@ -575,32 +572,31 @@
       23785.79,
       24211.35,
       24271.2,
-      24345.22
+      24345.22,
+      24314.17,
+      23987.83
      ],
-     "vol_ratio": 1.13,
-     "rs5": 0.98,
-     "rs20": -3.35,
+     "vol_ratio": 0.0,
+     "rs5": 1.51,
+     "rs20": -3.63,
      "rs_state": "schwach",
      "signals": [],
      "score": 0,
      "trend": "ab",
-     "group": "Welt-Indizes",
-     "forecast": "down"
+     "group": "Welt-Indizes"
     },
     {
      "symbol": "000001.SS",
      "name": "Shanghai Comp.",
-     "price": 3800.86,
-     "d1": 0.1,
-     "d5": -0.77,
-     "m1": -3.29,
-     "rsi": 36.0,
-     "vs_sma50": -2.49,
-     "vs_sma200": -5.15,
-     "from_high": -10.41,
+     "price": 3691.89,
+     "d1": -2.0,
+     "d5": -3.15,
+     "m1": -6.31,
+     "rsi": 25.4,
+     "vs_sma50": -5.2,
+     "vs_sma200": -7.84,
+     "from_high": -12.98,
      "spark": [
-      3889.45,
-      3912.52,
       3956.57,
       3952.18,
       3986.3,
@@ -628,13 +624,17 @@
       3811.9,
       3813.79,
       3797.24,
-      3800.86
+      3800.86,
+      3767.23,
+      3691.89
      ],
-     "rs5": -1.53,
-     "rs20": -2.63,
-     "rs_state": "neutral",
-     "signals": [],
-     "score": 0,
+     "rs5": -2.51,
+     "rs20": -5.75,
+     "rs_state": "schwach",
+     "signals": [
+      "RSI 25: überverkauft - mögliche Gegenbewegung"
+     ],
+     "score": 44.6,
      "trend": "ab",
      "group": "Welt-Indizes",
      "forecast": "down"
@@ -642,17 +642,15 @@
     {
      "symbol": "^NSEI",
      "name": "Nifty 50",
-     "price": 22721.95,
-     "d1": 1.6,
-     "d5": -0.24,
-     "m1": -3.22,
-     "rsi": 43.4,
-     "vs_sma50": -3.94,
-     "vs_sma200": -6.26,
-     "from_high": -13.7,
+     "price": 22952.5,
+     "d1": 1.46,
+     "d5": 3.24,
+     "m1": -0.72,
+     "rsi": 49.1,
+     "vs_sma50": -2.65,
+     "vs_sma200": -5.18,
+     "from_high": -12.82,
      "spark": [
-      24080.4,
-      24055.8,
       23914.45,
       23873.45,
       23897.7,
@@ -680,22 +678,25 @@
       22231.8,
       22520.45,
       22363.35,
-      22721.95
+      22721.95,
+      22622.7,
+      22952.5
      ],
-     "vol_ratio": 0.95,
-     "rs5": 0.48,
-     "rs20": -3.16,
-     "rs_state": "schwach",
-     "signals": [],
-     "score": 0,
+     "vol_ratio": 0.0,
+     "rs5": 3.92,
+     "rs20": -1.85,
+     "rs_state": "frueh_rein",
+     "signals": [
+      "Frühsignal: relative Stärke dreht nach oben (+3.9 % in 5 Tagen), Kurs noch nicht bestätigt"
+     ],
+     "score": 10,
      "trend": "ab",
-     "group": "Welt-Indizes",
-     "forecast": "down"
+     "group": "Welt-Indizes"
     },
     {
      "symbol": "^BVSP",
      "name": "Bovespa",
-     "price": 206505.98,
+     "price": 206506.0,
      "d1": -0.18,
      "d5": 0.33,
      "m1": 11.32,
@@ -733,9 +734,9 @@
       206220.0,
       209067.0,
       206888.0,
-      206505.98
+      206506.0
      ],
-     "vol_ratio": 0.0,
+     "vol_ratio": 1.04,
      "rs5": 2.28,
      "rs20": 10.34,
      "rs_state": "fuehrend",
@@ -744,21 +745,21 @@
      ],
      "score": 14.0,
      "trend": "auf",
-     "group": "Welt-Indizes"
+     "group": "Welt-Indizes",
+     "forecast": "up"
     },
     {
      "symbol": "^AXJO",
      "name": "ASX 200",
-     "price": 8727.9,
-     "d1": -0.64,
-     "d5": 0.0,
-     "m1": 0.64,
-     "rsi": 46.4,
-     "vs_sma50": -2.03,
-     "vs_sma200": -1.12,
-     "from_high": -5.86,
+     "price": 8719.7,
+     "d1": -0.09,
+     "d5": 0.68,
+     "m1": 0.27,
+     "rsi": 45.7,
+     "vs_sma50": -2.0,
+     "vs_sma200": -1.22,
+     "from_high": -5.95,
      "spark": [
-      9020.1,
       9005.9,
       9010.9,
       8920.8,
@@ -787,14 +788,15 @@
       8716.6,
       8783.2,
       8783.9,
-      8727.9
+      8727.9,
+      8719.7
      ],
      "vol_ratio": 0.0,
-     "rs5": 1.24,
-     "rs20": -0.36,
+     "rs5": 1.34,
+     "rs20": 0.37,
      "rs_state": "frueh_rein",
      "signals": [
-      "Frühsignal: relative Stärke dreht nach oben (+1.2 % in 5 Tagen), Kurs noch nicht bestätigt"
+      "Frühsignal: relative Stärke dreht nach oben (+1.3 % in 5 Tagen), Kurs noch nicht bestätigt"
      ],
      "score": 10,
      "trend": "ab",
@@ -803,17 +805,15 @@
     {
      "symbol": "^KS11",
      "name": "Kospi",
-     "price": 6035.35,
-     "d1": -5.46,
-     "d5": -13.83,
-     "m1": -13.22,
-     "rsi": 29.9,
-     "vs_sma50": -9.71,
-     "vs_sma200": -5.48,
-     "from_high": -33.78,
+     "price": 5480.48,
+     "d1": -8.79,
+     "d5": -19.45,
+     "m1": -22.08,
+     "rsi": 22.5,
+     "vs_sma50": -18.07,
+     "vs_sma200": -14.4,
+     "from_high": -39.87,
      "spark": [
-      6912.37,
-      6788.88,
       6820.02,
       6835.8,
       6562.72,
@@ -841,17 +841,19 @@
       6803.9,
       6625.93,
       6384.24,
-      6035.35
+      6035.35,
+      6008.81,
+      5480.48
      ],
-     "vol_ratio": 1.52,
-     "rs5": -14.15,
-     "rs20": -14.7,
+     "vol_ratio": 1.11,
+     "rs5": -18.46,
+     "rs20": -19.94,
      "rs_state": "schwach",
      "signals": [
-      "RSI 30: überverkauft - mögliche Gegenbewegung",
-      "Starke Tagesbewegung -5.5 %"
+      "RSI 22: überverkauft - mögliche Gegenbewegung",
+      "Starke Tagesbewegung -8.8 %"
      ],
-     "score": 45.6,
+     "score": 56.3,
      "trend": "ab",
      "group": "Welt-Indizes",
      "forecast": "down"
@@ -860,7 +862,7 @@
   },
   {
    "name": "Finanzen",
-   "comment": "Finanzen: Tagesstimmung unentschlossen (Ø -0.3 %, 3 von 8 im Plus). Stärkster: JPMorgan (+1.2 %), schwächster: Goldman Sachs (-1.5 %). Auf Monatssicht Ø -6.5 %.",
+   "comment": "Finanzen: Tagesstimmung unentschlossen (Ø -0.3 %, 3 von 8 im Plus). Stärkster: JPMorgan (+1.2 %), schwächster: Deutsche Bank (-1.5 %). Auf Monatssicht Ø -6.7 %.",
    "items": [
     {
      "symbol": "XLF",
@@ -905,7 +907,7 @@
       54.82,
       54.52
      ],
-     "vol_ratio": 1.13,
+     "vol_ratio": 1.14,
      "rs5": 2.68,
      "rs20": -2.88,
      "rs_state": "frueh_rein",
@@ -1119,7 +1121,7 @@
       331.43,
       335.28
      ],
-     "vol_ratio": 1.19,
+     "vol_ratio": 1.21,
      "rs5": 2.99,
      "rs20": -4.12,
      "rs_state": "frueh_rein",
@@ -1128,8 +1130,7 @@
      ],
      "score": 10,
      "trend": "seitwärts",
-     "group": "Finanzen",
-     "forecast": "down"
+     "group": "Finanzen"
     },
     {
      "symbol": "GS",
@@ -1174,7 +1175,7 @@
       891.91,
       878.72
      ],
-     "vol_ratio": 1.41,
+     "vol_ratio": 1.42,
      "rs5": 0.27,
      "rs20": -6.99,
      "rs_state": "schwach",
@@ -1187,15 +1188,16 @@
     {
      "symbol": "ALV.DE",
      "name": "Allianz",
-     "price": 426.2,
-     "d1": 0.64,
-     "d5": 2.13,
-     "m1": -4.14,
-     "rsi": 49.7,
-     "vs_sma50": -2.21,
-     "vs_sma200": 8.97,
-     "from_high": -5.98,
+     "price": 423.5,
+     "d1": 0.71,
+     "d5": 0.67,
+     "m1": -4.72,
+     "rsi": 47.2,
+     "vs_sma50": -2.88,
+     "vs_sma200": 8.36,
+     "from_high": -6.57,
      "spark": [
+      449.2,
       453.3,
       450.6,
       447.4,
@@ -1224,17 +1226,14 @@
       413.4,
       417.0,
       420.5,
-      423.5,
-      426.2
+      423.5
      ],
      "vol_ratio": 0.92,
-     "rs5": 3.39,
-     "rs20": -5.8,
-     "rs_state": "frueh_rein",
-     "signals": [
-      "Frühsignal: relative Stärke dreht nach oben (+3.4 % in 5 Tagen), Kurs noch nicht bestätigt"
-     ],
-     "score": 10,
+     "rs5": 1.39,
+     "rs20": -6.22,
+     "rs_state": "schwach",
+     "signals": [],
+     "score": 0,
      "trend": "seitwärts",
      "group": "Finanzen",
      "forecast": "down"
@@ -1242,15 +1241,16 @@
     {
      "symbol": "DBK.DE",
      "name": "Deutsche Bank",
-     "price": 29.58,
-     "d1": -0.87,
-     "d5": -0.92,
-     "m1": -11.28,
-     "rsi": 32.6,
-     "vs_sma50": -10.04,
-     "vs_sma200": -0.67,
-     "from_high": -17.26,
+     "price": 29.84,
+     "d1": -1.49,
+     "d5": -4.98,
+     "m1": -12.62,
+     "rsi": 34.0,
+     "vs_sma50": -9.42,
+     "vs_sma200": 0.16,
+     "from_high": -16.53,
      "spark": [
+      34.88,
       35.55,
       35.57,
       35.53,
@@ -1279,16 +1279,15 @@
       29.66,
       29.92,
       30.29,
-      29.84,
-      29.58
+      29.84
      ],
      "vol_ratio": 0.8,
-     "rs5": 0.3,
-     "rs20": -12.67,
+     "rs5": -4.3,
+     "rs20": -11.88,
      "rs_state": "schwach",
      "signals": [],
      "score": 0,
-     "trend": "ab",
+     "trend": "seitwärts",
      "group": "Finanzen",
      "forecast": "down"
     }
@@ -1296,7 +1295,7 @@
   },
   {
    "name": "Industrie",
-   "comment": "Industrie: Tagesstimmung unentschlossen (Ø -0.2 %, 3 von 7 im Plus). Stärkster: Rheinmetall (+3.1 %), schwächster: Caterpillar (-3.1 %). Auf Monatssicht Ø -1.5 %.",
+   "comment": "Industrie: Tagesstimmung schwach (Ø -0.8 %, 1 von 7 im Plus). Stärkster: Luft/Rüstung (ETF) (+0.1 %), schwächster: Caterpillar (-3.1 %). Auf Monatssicht Ø -1.7 %.",
    "items": [
     {
      "symbol": "XLI",
@@ -1456,8 +1455,7 @@
      ],
      "score": 10,
      "trend": "ab",
-     "group": "Industrie",
-     "forecast": "down"
+     "group": "Industrie"
     },
     {
      "symbol": "CAT",
@@ -1502,7 +1500,7 @@
       772.78,
       748.98
      ],
-     "vol_ratio": 1.31,
+     "vol_ratio": 1.36,
      "rs5": -6.83,
      "rs20": -5.0,
      "rs_state": "schwach",
@@ -1564,21 +1562,21 @@
      "signals": [],
      "score": 0,
      "trend": "ab",
-     "group": "Industrie",
-     "forecast": "down"
+     "group": "Industrie"
     },
     {
      "symbol": "SIE.DE",
      "name": "Siemens",
-     "price": 275.05,
-     "d1": 0.2,
-     "d5": 1.42,
-     "m1": 6.28,
-     "rsi": 51.6,
-     "vs_sma50": 0.02,
-     "vs_sma200": 6.59,
-     "from_high": -5.11,
+     "price": 274.5,
+     "d1": -0.45,
+     "d5": -1.61,
+     "m1": 4.85,
+     "rsi": 51.1,
+     "vs_sma50": -0.26,
+     "vs_sma200": 6.46,
+     "from_high": -5.3,
      "spark": [
+      273.8,
       270.6,
       272.65,
       270.4,
@@ -1607,31 +1605,31 @@
       264.25,
       272.1,
       275.75,
-      274.5,
-      275.05
+      274.5
      ],
      "vol_ratio": 0.9,
-     "rs5": 2.67,
-     "rs20": 4.83,
+     "rs5": -0.91,
+     "rs20": 4.42,
      "rs_state": "fuehrend",
      "signals": [],
      "score": 0,
-     "trend": "auf",
+     "trend": "seitwärts",
      "group": "Industrie",
      "forecast": "down"
     },
     {
      "symbol": "RHM.DE",
      "name": "Rheinmetall",
-     "price": 983.3,
-     "d1": 3.14,
-     "d5": 6.16,
-     "m1": -4.4,
-     "rsi": 48.6,
-     "vs_sma50": -6.74,
-     "vs_sma200": -25.01,
-     "from_high": -48.27,
+     "price": 953.4,
+     "d1": -0.91,
+     "d5": 0.04,
+     "m1": -4.34,
+     "rsi": 41.4,
+     "vs_sma50": -9.95,
+     "vs_sma200": -27.46,
+     "from_high": -49.85,
      "spark": [
+      1090.4,
       1070.2,
       1034.0,
       1020.8,
@@ -1660,18 +1658,14 @@
       934.9,
       939.1,
       962.2,
-      953.4,
-      983.3
+      953.4
      ],
      "vol_ratio": 1.08,
-     "rs5": 7.48,
-     "rs20": -3.63,
-     "rs_state": "frueh_rein",
-     "signals": [
-      "Frühsignal: relative Stärke dreht nach oben (+7.5 % in 5 Tagen), Kurs noch nicht bestätigt",
-      "Starke Tagesbewegung +3.1 %"
-     ],
-     "score": 13.1,
+     "rs5": 0.76,
+     "rs20": -8.75,
+     "rs_state": "schwach",
+     "signals": [],
+     "score": 0,
      "trend": "ab",
      "group": "Industrie",
      "forecast": "down"
@@ -1680,21 +1674,20 @@
   },
   {
    "name": "Rohstoffe",
-   "comment": "Rohstoffe: Tagesstimmung schwach (Ø -0.8 %, 3 von 8 im Plus). Stärkster: WTI Öl (+1.0 %), schwächster: Silber (-5.8 %). Auf Monatssicht Ø -1.5 %.",
+   "comment": "Rohstoffe: Tagesstimmung unentschlossen (Ø +0.1 %, 4 von 8 im Plus). Stärkster: Erdgas (+1.6 %), schwächster: Brent Öl (-1.6 %). Auf Monatssicht Ø -1.5 %. Tagesplus gegen den Monatstrend - Erholung oder Fehlsignal.",
    "items": [
     {
      "symbol": "GC=F",
      "name": "Gold",
-     "price": 4120.9,
-     "d1": -1.35,
-     "d5": -0.48,
-     "m1": -4.89,
-     "rsi": 35.9,
-     "vs_sma50": -5.91,
-     "vs_sma200": -9.28,
-     "from_high": -22.52,
+     "price": 4158.9,
+     "d1": 1.24,
+     "d5": 0.05,
+     "m1": -5.21,
+     "rsi": 41.1,
+     "vs_sma50": -4.97,
+     "vs_sma200": -8.43,
+     "from_high": -21.8,
      "spark": [
-      4414.6,
       4539.9,
       4476.6,
       4439.0,
@@ -1723,9 +1716,10 @@
       4216.3,
       4190.6,
       4177.3,
-      4120.9
+      4107.9,
+      4158.9
      ],
-     "vol_ratio": 1.25,
+     "vol_ratio": 0.3,
      "signals": [],
      "score": 0,
      "trend": "ab",
@@ -1735,16 +1729,15 @@
     {
      "symbol": "SI=F",
      "name": "Silber",
-     "price": 55.7,
-     "d1": -5.85,
-     "d5": -7.01,
-     "m1": -11.92,
-     "rsi": 30.5,
-     "vs_sma50": -13.1,
-     "vs_sma200": -22.94,
-     "from_high": -51.6,
+     "price": 56.06,
+     "d1": 0.93,
+     "d5": -5.08,
+     "m1": -12.79,
+     "rsi": 32.5,
+     "vs_sma50": -12.37,
+     "vs_sma200": -22.36,
+     "from_high": -51.28,
      "spark": [
-      64.72,
       66.97,
       66.05,
       66.3,
@@ -1773,12 +1766,11 @@
       60.67,
       60.14,
       59.16,
-      55.7
+      55.55,
+      56.06
      ],
-     "signals": [
-      "Starke Tagesbewegung -5.8 %"
-     ],
-     "score": 5.8,
+     "signals": [],
+     "score": 0,
      "trend": "ab",
      "group": "Rohstoffe",
      "forecast": "down"
@@ -1786,16 +1778,15 @@
     {
      "symbol": "CL=F",
      "name": "WTI Öl",
-     "price": 95.09,
-     "d1": 1.01,
-     "d5": 7.71,
-     "m1": -10.15,
-     "rsi": 56.3,
-     "vs_sma50": 5.6,
-     "vs_sma200": 13.51,
-     "from_high": -15.81,
+     "price": 94.04,
+     "d1": -1.1,
+     "d5": 2.79,
+     "m1": -8.19,
+     "rsi": 53.8,
+     "vs_sma50": 4.0,
+     "vs_sma200": 12.01,
+     "from_high": -16.74,
      "spark": [
-      91.01,
       91.3,
       91.48,
       93.03,
@@ -1824,9 +1815,10 @@
       91.85,
       93.74,
       94.14,
-      95.09
+      95.09,
+      94.04
      ],
-     "vol_ratio": 0.68,
+     "vol_ratio": 0.08,
      "signals": [],
      "score": 0,
      "trend": "auf",
@@ -1836,16 +1828,15 @@
     {
      "symbol": "BZ=F",
      "name": "Brent Öl",
-     "price": 105.97,
-     "d1": 0.26,
-     "d5": 5.76,
-     "m1": -2.56,
-     "rsi": 59.4,
-     "vs_sma50": 8.87,
-     "vs_sma200": 18.47,
-     "from_high": -10.46,
+     "price": 104.38,
+     "d1": -1.58,
+     "d5": 0.1,
+     "m1": -1.37,
+     "rsi": 55.2,
+     "vs_sma50": 6.69,
+     "vs_sma200": 16.42,
+     "from_high": -11.8,
      "spark": [
-      95.63,
       95.52,
       96.28,
       97.92,
@@ -1874,9 +1865,10 @@
       104.72,
       106.65,
       105.69,
-      105.97
+      106.06,
+      104.38
      ],
-     "vol_ratio": 0.85,
+     "vol_ratio": 0.12,
      "signals": [],
      "score": 0,
      "trend": "auf",
@@ -1886,16 +1878,15 @@
     {
      "symbol": "NG=F",
      "name": "Erdgas",
-     "price": 3.27,
-     "d1": -0.27,
-     "d5": 2.22,
-     "m1": 12.16,
-     "rsi": 63.1,
-     "vs_sma50": 11.93,
-     "vs_sma200": 5.17,
-     "from_high": -56.11,
+     "price": 3.25,
+     "d1": 1.56,
+     "d5": 2.53,
+     "m1": 12.35,
+     "rsi": 60.3,
+     "vs_sma50": 10.68,
+     "vs_sma200": 4.58,
+     "from_high": -56.46,
      "spark": [
-      2.96,
       2.91,
       2.97,
       2.92,
@@ -1924,28 +1915,27 @@
       3.22,
       3.17,
       3.28,
-      3.27
+      3.2,
+      3.25
      ],
-     "vol_ratio": 1.39,
+     "vol_ratio": 0.04,
      "signals": [],
      "score": 0,
      "trend": "auf",
-     "group": "Rohstoffe",
-     "forecast": "up"
+     "group": "Rohstoffe"
     },
     {
      "symbol": "HG=F",
      "name": "Kupfer",
-     "price": 6.62,
-     "d1": -0.91,
-     "d5": 0.32,
-     "m1": 3.91,
-     "rsi": 51.7,
-     "vs_sma50": 0.47,
-     "vs_sma200": 7.36,
-     "from_high": -2.73,
+     "price": 6.56,
+     "d1": -0.79,
+     "d5": 0.62,
+     "m1": 1.99,
+     "rsi": 48.2,
+     "vs_sma50": -0.36,
+     "vs_sma200": 6.33,
+     "from_high": -3.59,
      "spark": [
-      6.5,
       6.58,
       6.6,
       6.74,
@@ -1974,11 +1964,13 @@
       6.64,
       6.7,
       6.68,
-      6.62
+      6.61,
+      6.56
      ],
+     "vol_ratio": 11.01,
      "signals": [],
      "score": 0,
-     "trend": "auf",
+     "trend": "seitwärts",
      "group": "Rohstoffe",
      "forecast": "up"
     },
@@ -2035,7 +2027,8 @@
      ],
      "score": 20.0,
      "trend": "auf",
-     "group": "Rohstoffe"
+     "group": "Rohstoffe",
+     "forecast": "up"
     },
     {
      "symbol": "XLB",
@@ -2140,7 +2133,7 @@
       228.52,
       221.3
      ],
-     "vol_ratio": 1.1,
+     "vol_ratio": 1.11,
      "rs5": -5.66,
      "rs20": 2.72,
      "rs_state": "neutral",
@@ -2149,7 +2142,8 @@
      ],
      "score": 3.2,
      "trend": "seitwärts",
-     "group": "AI"
+     "group": "AI",
+     "forecast": "down"
     },
     {
      "symbol": "MSFT",
@@ -2194,7 +2188,7 @@
       543.45,
       533.69
      ],
-     "vol_ratio": 0.94,
+     "vol_ratio": 0.99,
      "rs5": 1.99,
      "rs20": 8.07,
      "rs_state": "fuehrend",
@@ -2247,7 +2241,7 @@
       605.53,
       570.82
      ],
-     "vol_ratio": 1.01,
+     "vol_ratio": 1.02,
      "rs5": -10.53,
      "rs20": 10.58,
      "rs_state": "frueh_raus",
@@ -2302,7 +2296,7 @@
       445.12,
       430.0
      ],
-     "vol_ratio": 1.49,
+     "vol_ratio": 1.54,
      "rs5": -7.81,
      "rs20": 2.2,
      "rs_state": "neutral",
@@ -2311,7 +2305,8 @@
      ],
      "score": 3.4,
      "trend": "seitwärts",
-     "group": "AI"
+     "group": "AI",
+     "forecast": "down"
     },
     {
      "symbol": "PLTR",
@@ -2356,7 +2351,7 @@
       208.67,
       200.97
      ],
-     "vol_ratio": 1.03,
+     "vol_ratio": 1.04,
      "rs5": 4.81,
      "rs20": 14.45,
      "rs_state": "fuehrend",
@@ -2411,7 +2406,7 @@
       588.12,
       564.74
      ],
-     "vol_ratio": 1.83,
+     "vol_ratio": 1.86,
      "rs5": -8.53,
      "rs20": 2.77,
      "rs_state": "neutral",
@@ -2420,7 +2415,8 @@
      ],
      "score": 4.0,
      "trend": "seitwärts",
-     "group": "AI"
+     "group": "AI",
+     "forecast": "down"
     },
     {
      "symbol": "AIQ",
@@ -2465,7 +2461,7 @@
       65.85,
       63.94
      ],
-     "vol_ratio": 1.27,
+     "vol_ratio": 1.28,
      "rs5": -2.91,
      "rs20": 0.75,
      "rs_state": "neutral",
@@ -2474,7 +2470,8 @@
      ],
      "score": 2.9,
      "trend": "seitwärts",
-     "group": "AI"
+     "group": "AI",
+     "forecast": "down"
     },
     {
      "symbol": "BOTZ",

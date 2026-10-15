@@ -1,69 +1,69 @@
 {
- "generated": "2026-10-15T00:00+00:00",
+ "generated": "2026-10-15T06:08+00:00",
  "demo": false,
  "live": {
   "n": 0
  },
- "live_offen": 0,
+ "live_offen": 28,
  "backtest": {
-  "n": 5671,
-  "hits": 2814,
+  "n": 5690,
+  "hits": 2823,
   "rate": 49.6,
   "ci": 1.3,
-  "base_up": 52.2,
-  "edge": -2.6,
+  "base_up": 52.0,
+  "edge": -2.4,
   "by_group": {
    "Welt-Indizes": {
-    "n": 1476,
+    "n": 1484,
     "rate": 47.4
    },
    "Finanzen": {
-    "n": 1035,
-    "rate": 49.7
+    "n": 1039,
+    "rate": 49.8
    },
    "Industrie": {
-    "n": 1004,
-    "rate": 51.0
+    "n": 1009,
+    "rate": 51.1
    },
    "Rohstoffe": {
-    "n": 949,
-    "rate": 51.8
+    "n": 948,
+    "rate": 51.5
    },
    "AI": {
-    "n": 1207,
-    "rate": 49.5
+    "n": 1210,
+    "rate": 49.4
    }
   },
   "by_direction": {
    "steigt": {
-    "n": 3185,
-    "rate": 51.6
+    "n": 3186,
+    "rate": 51.4
    },
    "fällt": {
-    "n": 2486,
-    "rate": 47.1
+    "n": 2504,
+    "rate": 47.3
    }
   },
   "by_component": {
    "Trend (Kurs über/unter SMA50)": {
-    "n": 5671,
+    "n": 5690,
     "rate": 49.6
    },
    "Momentum (5 Tage)": {
-    "n": 5661,
-    "rate": 48.7
+    "n": 5680,
+    "rate": 48.8
    },
    "RSI-Extreme (Gegenbewegung)": {
-    "n": 546,
-    "rate": 53.1
+    "n": 550,
+    "rate": 53.3
    },
    "Relative Stärke (Frühindikator)": {
-    "n": 3510,
+    "n": 3524,
     "rate": 51.2
    }
   },
-  "tage_x_werte": 8130,
-  "abdeckung": 70.0
+  "tage_x_werte": 8162,
+  "abdeckung": 69.9
  },
  "recent": [],
  "method": "Prognose = Vorzeichen eines Punktesystems aus vier Indikatoren (Trend (Kurs über/unter SMA50); Momentum (5 Tage); RSI-Extreme (Gegenbewegung); Relative Stärke (Frühindikator)), nur ab Betrag 1.0. Sie nutzt ausschließlich Daten bis zum Vortagesschluss und wird morgens im Repo festgeschrieben. Bewertung: Schlusskurs des Tages gegen Vortagesschluss. Rückschau = dieselben Regeln auf die letzten 200 Handelstage, ohne spätere Daten; die Regeln wurden nicht an diesen Daten optimiert, sind aber vor der Rückschau festgelegt worden - Zufallstreffer sind möglich."
