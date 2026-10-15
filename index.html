@@ -25,6 +25,12 @@ nav button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);colo
 .comment{color:var(--mute);font-size:.92rem}
 .row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
 .row:first-of-type{border-top:0}
+.itm{border-top:1px solid var(--line)}.itm:first-child{border-top:0}.itm>.row{border-top:0;cursor:pointer}
+.itm>.row .nm::after{content:' ▾';color:var(--mute);font-size:.75rem}.itm.open>.row .nm::after{content:' ▴'}
+.detail{padding:4px 0 12px}.detail .kv{margin-top:6px}.detail p{margin:8px 0;font-size:.9rem}
+.detail h3{font-size:.8rem;color:var(--mute);margin:12px 0 4px;text-transform:uppercase;letter-spacing:.04em}
+.news a{display:block;color:var(--ink);text-decoration:none;padding:6px 0;border-top:1px solid var(--line);font-size:.9rem}
+.news a span{display:block;color:var(--mute);font-size:.75rem}
 .nm{font-weight:600}.sym{color:var(--mute);font-size:.78rem}
 .num{text-align:right;font-variant-numeric:tabular-nums}
 .up{color:var(--up)}.down{color:var(--down)}
@@ -62,9 +68,9 @@ function spark(a){if(!a||a.length<2)return'';const mn=Math.min(...a),mx=Math.max
  return `<svg class="sp" viewBox="0 0 70 26" aria-hidden="true"><polyline points="${p}" fill="none" stroke="${c}" stroke-width="1.6"/></svg>`}
 const ST={frueh_rein:'Frühsignal ↑',frueh_raus:'Frühwarnung ↓',fuehrend:'führend',schwach:'schwach',neutral:'neutral'};
 function rot(){if(!D.rotation||!D.rotation.length)return'';
- return `<h2>Branchen-Rotation (Frühindikator)</h2><div class="card">`+D.rotation.map(r=>`<div class="row"><div><div class="nm">${esc(r.name)}</div>
+ return `<h2>Branchen-Rotation (Frühindikator)</h2><div class="card">`+D.rotation.map(r=>wrap(r.symbol,`<div class="row"><div><div class="nm">${esc(r.name)}</div>
   <div class="sym">${esc(r.group)} · rel. Stärke 5T ${fmt(r.rs5)} · 20T ${fmt(r.rs20)}</div></div>
-  <span class="st ${r.state}">${ST[r.state]||''}</span></div>`).join('')+
+  <span class="st ${r.state}">${ST[r.state]||''}</span></div>`)).join('')+
  `<div class="note">Relative Stärke = Branche gegenüber dem Weltmarkt (ACWI). „Frühsignal“: Branche holt auf, Kurs noch nicht bestätigt. „Frühwarnung“: Branche verliert relativ, Kurs hält noch. Hinweis, keine Prognose.</div></div>`}
 const GS={'eskalierend':'frueh_raus','Anspannung steigt':'schwach','Entspannung':'frueh_rein','unverändert':'neutral'};
 const BS={'klar bullisch':'frueh_rein','eher bullisch':'fuehrend','neutral':'neutral','eher bärisch':'schwach','klar bärisch':'frueh_raus'};
@@ -111,15 +117,44 @@ function gasView(){const g=X,st=g.storage;
   ${st?`<div>Speicher EU gefüllt<b>${st.full} %</b></div><div>Gegenüber Vorjahr<b class="${st.vs_last_year>0?'up':'down'}">${st.vs_last_year>0?'+':''}${st.vs_last_year} Pkt.</b></div>`:'<div style="grid-column:1/-1">Speicherstand: nicht aktiv (benötigt kostenlosen GIE-API-Key als Secret <b>GIE_API_KEY</b>).</div>'}</div>
   <div class="note">Regelbasiertes Punktesystem (${g.points>0?'+':''}${g.points}), keine Prognose und keine Anlageberatung. Wetter (Heizbedarf) und LNG-Lieferungen sind nicht enthalten. Stand ${stamp(g.generated)}.</div></div>`}
 let D,S,G,B,X,cur='Überblick';
-function row(i){return `<div class="row"><div><div class="nm">${esc(i.name)} <span class="sym">${esc(i.symbol)}</span>${i.forecast?`<span class="sym"> · Prognose ${i.forecast==='up'?'↑':'↓'}</span>`:''}</div>
+const OPEN=new Set(),ITEMS={};
+const RSL={frueh_rein:'Frühsignal: relative Stärke dreht nach oben, Kurs noch nicht bestätigt.',frueh_raus:'Frühwarnung: relative Stärke lässt nach, Kurs hält noch.',fuehrend:'Führend gegenüber dem Weltmarkt.',schwach:'Schwächer als der Weltmarkt.',neutral:'Relative Stärke unauffällig.'};
+function explain(i){const p=[];
+ if(i.trend==='auf')p.push('Der Kurs liegt über SMA50 und SMA200: der übergeordnete Trend ist intakt.');
+ else if(i.trend==='ab')p.push('Der Kurs liegt unter SMA50 und SMA200: der übergeordnete Trend zeigt abwärts.');
+ else if(i.trend)p.push('Der Kurs liegt zwischen den Durchschnitten: kein klarer Trend.');
+ if(i.rsi>=70)p.push(`RSI ${i.rsi}: kurzfristig überkauft, Rücksetzer werden wahrscheinlicher, ein starker Trend kann aber überkauft bleiben.`);
+ else if(i.rsi<=30)p.push(`RSI ${i.rsi}: kurzfristig überverkauft, eine Gegenbewegung ist möglich.`);
+ if(i.from_high!=null){if(i.from_high>=-3)p.push('Nahe am 52-Wochen-Hoch.');else if(i.from_high<=-20)p.push(`Deutlich unter dem 52-Wochen-Hoch (${fmt(i.from_high,0)}).`)}
+ if(i.rs_state&&RSL[i.rs_state])p.push(RSL[i.rs_state]);
+ if(i.d1!=null&&i.m1!=null){if(i.d1>0&&i.m1<-5)p.push('Heute im Plus gegen einen schwachen Monatstrend: Erholung oder Fehlsignal.');if(i.d1<0&&i.m1>5)p.push('Heute im Minus im intakten Monatstrend: womöglich Gewinnmitnahmen.')}
+ if(i.vol_ratio>=2)p.push(`Handelsvolumen ${i.vol_ratio}× über dem Schnitt: ungewöhnlich hohes Interesse.`);
+ return p.join(' ')||'Keine Auffälligkeiten.'}
+function bigspark(a){if(!a||a.length<2)return'';const mn=Math.min(...a),mx=Math.max(...a),r=mx-mn||1;
+ const pts=a.map((v,k)=>`${(k/(a.length-1)*300).toFixed(1)},${(58-(v-mn)/r*52).toFixed(1)}`).join(' ');
+ const c=a[a.length-1]>=a[0]?'var(--up)':'var(--down)';
+ return `<svg viewBox="0 0 300 64" style="width:100%;height:64px" role="img" aria-label="Kursverlauf 30 Tage"><polyline points="${pts}" fill="none" stroke="${c}" stroke-width="2"/></svg>
+ <div class="sym" style="display:flex;justify-content:space-between"><span>30 Tage · Tief ${mn.toLocaleString('de-DE')}</span><span>Hoch ${mx.toLocaleString('de-DE')}</span></div>`}
+function detail(i){const f=i.forecast;
+ return `<div class="detail">${bigspark(i.spark)}<p>${esc(explain(i))}</p>
+ <div class="kv"><div>Kurs<b>${i.price?.toLocaleString('de-DE')}</b></div><div>Heute<b class="${cls(i.d1)}">${fmt(i.d1)}</b></div>
+ <div>5 Tage<b class="${cls(i.d5)}">${fmt(i.d5)}</b></div><div>1 Monat<b class="${cls(i.m1)}">${fmt(i.m1)}</b></div>
+ <div>vs. SMA50<b class="${cls(i.vs_sma50)}">${fmt(i.vs_sma50)}</b></div><div>vs. SMA200<b class="${cls(i.vs_sma200)}">${fmt(i.vs_sma200)}</b></div>
+ <div>RSI (14)<b>${i.rsi??'–'}</b></div><div>vom 52W-Hoch<b>${fmt(i.from_high)}</b></div>
+ ${i.rs20!=null?`<div>Rel. Stärke 5T / 20T<b>${fmt(i.rs5)} / ${fmt(i.rs20)}</b></div>`:''}${i.vol_ratio?`<div>Volumen vs. Schnitt<b>${i.vol_ratio}×</b></div>`:''}
+ <div>Prognose heute<b>${f?(f==='up'?'↑ steigt':'↓ fällt'):'keine Richtung'}</b></div></div>
+ ${i.signals&&i.signals.length?`<h3>Signale</h3><ul class="why">${i.signals.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:''}
+ ${i.news&&i.news.length?`<h3>Aktuelle Schlagzeilen</h3><div class="news">${i.news.map(n=>`<a href="${esc(n.u)}" target="_blank" rel="noopener noreferrer">${esc(n.t)}<span>${esc(n.p)}${n.d?' · '+esc(n.d):''}</span></a>`).join('')}</div>`:'<h3>Schlagzeilen</h3><div class="sym">Zurzeit keine geladen.</div>'}</div>`}
+function wrap(sym,inner){const it=ITEMS[sym];if(!it)return inner;const o=OPEN.has(sym);return `<div class="itm${o?' open':''}" data-s="${esc(sym)}">${inner}${o?detail(it):''}</div>`}
+function row(i){return wrap(i.symbol,`<div class="row"><div><div class="nm">${esc(i.name)} <span class="sym">${esc(i.symbol)}</span>${i.forecast?`<span class="sym"> · Prognose ${i.forecast==='up'?'↑':'↓'}</span>`:''}</div>
  ${i.signals&&i.signals.length?`<div class="tags">${i.signals.slice(0,2).map(s=>`<span class="tag">${esc(s)}</span>`).join('')}</div>`:''}</div>
- ${spark(i.spark)}<div class="num"><div class="${cls(i.d1)}">${fmt(i.d1)}</div><div class="sym">RSI ${i.rsi??'–'} · 1M ${fmt(i.m1,0)}</div></div></div>`}
+ ${spark(i.spark)}<div class="num"><div class="${cls(i.d1)}">${fmt(i.d1)}</div><div class="sym">RSI ${i.rsi??'–'} · 1M ${fmt(i.m1,0)}</div></div></div>`)}
 function render(){
  const m=document.getElementById('main');
  if(cur==='Überblick'){
   m.innerHTML=(D.demo?'<div class="warn">Testdaten – keine echten Kurse.</div>':'')+
-   `<h2>Top-Signale heute</h2><div class="card">${D.top_signals.length?D.top_signals.map(t=>`<div class="row"><div><div class="nm">${esc(t.name)} <span class="sym">${esc(t.group)}</span></div>
-   <div class="tags">${t.signals.slice(0,3).map(s=>`<span class="tag">${esc(s)}</span>`).join('')}</div></div><div class="num ${cls(t.d1)}">${fmt(t.d1)}</div></div>`).join(''):'<div class="comment">Keine auffälligen Signale.</div>'}</div>`+
+   `<h2>Top-Signale heute</h2><div class="card">${D.top_signals.length?D.top_signals.map(t=>wrap(t.symbol,`<div class="row"><div><div class="nm">${esc(t.name)} <span class="sym">${esc(t.group)}</span></div>
+   <div class="tags">${t.signals.slice(0,3).map(s=>`<span class="tag">${esc(s)}</span>`).join('')}</div></div><div class="num ${cls(t.d1)}">${fmt(t.d1)}</div></div>`)).join(''):'<div class="comment">Keine auffälligen Signale.</div>'}</div>`+
    rot()+geoMini()+`<h2>Lage je Bereich</h2>`+D.groups.map(g=>`<div class="card"><div class="comment">${esc(g.comment)}</div></div>`).join('');
  }else if(cur==='Geopolitik'){m.innerHTML=geoView()
  }else if(cur==='Erdgas EU'){m.innerHTML=gasView()
@@ -132,7 +167,8 @@ function render(){
  document.querySelectorAll('#tabs button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.t===cur));
 }
 const J=u=>fetch(u,{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null);
-Promise.all([J('data/briefing.json'),J('data/stats.json'),J('data/geo.json'),J('data/btc.json'),J('data/gas.json')]).then(([d,s,g,b,x])=>{if(!d)throw 0;D=d;S=s;G=g;B=b;X=x;
+document.getElementById('main').addEventListener('click',e=>{if(e.target.closest('a'))return;const it=e.target.closest('.itm[data-s]');if(!it)return;const k=it.dataset.s;OPEN.has(k)?OPEN.delete(k):OPEN.add(k);render()});
+Promise.all([J('data/briefing.json'),J('data/stats.json'),J('data/geo.json'),J('data/btc.json'),J('data/gas.json')]).then(([d,s,g,b,x])=>{if(!d)throw 0;D=d;S=s;G=g;B=b;X=x;d.groups.forEach(g=>g.items.forEach(i=>ITEMS[i.symbol]=i));
  const names=['Überblick',...d.groups.map(g=>g.name),...(G&&G.pairs?['Geopolitik']:[]),...(X?['Erdgas EU']:[]),...(B?['Bitcoin']:[]),...(S?['Trefferquote']:[])];
  document.getElementById('tabs').innerHTML=names.map(n=>`<button data-t="${esc(n)}">${esc(n)}</button>`).join('');
  document.getElementById('tabs').onclick=e=>{const b=e.target.closest('button');if(b){cur=b.dataset.t;render();scrollTo(0,0)}};

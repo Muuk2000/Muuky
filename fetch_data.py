@@ -330,6 +330,36 @@ def build_stats(log, data, bench, demo):
                    "nicht an diesen Daten optimiert, sind aber vor der Rückschau festgelegt worden - Zufallstreffer sind möglich."),
     }
 
+def parse_news(raw, limit=3):
+    """Yahoo liefert je nach Version zwei Formate; beide werden gelesen."""
+    out = []
+    for n in raw or []:
+        c = n.get("content") or n
+        title = c.get("title")
+        url = ((c.get("canonicalUrl") or {}).get("url") or (c.get("clickThroughUrl") or {}).get("url") or c.get("link"))
+        pub = (c.get("provider") or {}).get("displayName") or c.get("publisher") or ""
+        date = c.get("pubDate") or c.get("providerPublishTime") or ""
+        if title and url and str(url).startswith("http"):
+            out.append({"t": str(title)[:160], "u": url, "p": pub, "d": str(date)[:10] if isinstance(date, str) else ""})
+        if len(out) >= limit:
+            break
+    return out
+
+def add_news(all_items, budget=120):
+    import time, yfinance as yf
+    end = time.time() + budget
+    n = 0
+    for it in all_items:
+        if time.time() > end:
+            print("Schlagzeilen: Zeitbudget aufgebraucht")
+            break
+        try:
+            it["news"] = parse_news(yf.Ticker(it["symbol"]).news)
+            n += 1 if it["news"] else 0
+        except Exception as e:
+            print("Schlagzeilen-Fehler", it["symbol"], str(e)[:80])
+    print(f"Schlagzeilen für {n} Instrumente")
+
 def extras(all_items, data):
     """Geopolitik (GDELT) und Bitcoin; jeder Teil darf ausfallen, ohne das Briefing zu stoppen."""
     gen = dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes")
@@ -438,6 +468,7 @@ def main():
     STATS.write_text(json.dumps(build_stats(log, data, bench, demo), ensure_ascii=False, indent=1))
 
     if not demo:
+        add_news(all_items)
         extras(all_items, data)
     top = sorted([i for i in all_items if i["signals"]], key=lambda i: -i["score"])[:10]
     rotation = sorted(
