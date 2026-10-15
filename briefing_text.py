@@ -1,6 +1,6 @@
 """Tagesbriefing (höchstens 500 Wörter, Deutsch) aus den Daten des Morgenlaufs.
 
-Standard: regelbasierter Text. Ist die Umgebungsvariable ANTHROPIC_API_KEY gesetzt, formuliert ein KI-Modell den Text
+Standard: regelbasierter Text. KI-Text ist abgeschaltet; nur mit BRIEFING_KI=1 und ANTHROPIC_API_KEY (im Workflow nicht gesetzt) formuliert ein KI-Modell den Text
 nach der Vorlage (Platzhalter {{market-context}} = die kompakten Daten). Fällt die KI aus, gilt der regelbasierte Text.
 Keine Anlageberatung.
 """
@@ -210,6 +210,9 @@ def parse_md(md):
     return secs
 
 def ai_text(ctx, key=None, model="claude-sonnet-5-5"):
+    # Bewusst abgeschaltet: läuft nur, wenn BRIEFING_KI=1 UND ein Schlüssel gesetzt ist (im Workflow derzeit nicht der Fall).
+    if os.environ.get("BRIEFING_KI") != "1":
+        return None
     key = key or os.environ.get("ANTHROPIC_API_KEY")
     if not key:
         return None

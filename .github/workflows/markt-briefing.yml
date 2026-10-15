@@ -48,7 +48,6 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         env:
           GIE_API_KEY: ${{ secrets.GIE_API_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           if [ "${{ github.event.schedule }}" = "30 21 * * 1-5" ] || [ "${{ inputs.mode }}" = "evening" ]; then
             python fetch_data.py --evening
