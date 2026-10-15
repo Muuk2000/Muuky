@@ -1,11 +1,10 @@
 {
- "news_ok": 0,
+ "news_google": 42,
+ "news_yahoo": 0,
  "news_errors": [],
  "sample": {
   "symbol": "^GSPC",
-  "type": "list",
-  "len": 0,
-  "first_keys": null
- },
- "yfinance": "1.7.0"
+  "query": "S&P 500 Index Börse",
+  "n": 3
+ }
 }

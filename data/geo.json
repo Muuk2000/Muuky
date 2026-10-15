@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T06:34+00:00",
+ "generated": "2026-10-15T06:38+00:00",
  "pairs": [
   {
    "tone_now": -2.85,
@@ -45,13 +45,13 @@
   },
   {
    "name": "Gold",
-   "d1": 1.22,
-   "m1": -5.23
+   "d1": 1.24,
+   "m1": -5.21
   },
   {
    "name": "Öl (WTI)",
-   "d1": -1.01,
-   "m1": -8.1
+   "d1": -1.13,
+   "m1": -8.21
   }
  ],
  "note": "Automatische Auswertung der Medien-Stimmung (GDELT), kein Lagebericht. Viel Rauschen."

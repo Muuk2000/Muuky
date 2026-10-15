@@ -109,24 +109,24 @@
    "d1": -0.67
   }
  ],
- "generated": "2026-10-15T06:34+00:00",
+ "generated": "2026-10-15T06:37+00:00",
  "demo": false,
  "top_signals": [
   {
    "symbol": "^KS11",
    "name": "Kospi",
    "group": "Welt-Indizes",
-   "d1": -7.91,
+   "d1": -7.35,
    "signals": [
     "RSI 23: überverkauft - mögliche Gegenbewegung",
-    "Starke Tagesbewegung -7.9 %"
+    "Starke Tagesbewegung -7.3 %"
    ]
   },
   {
    "symbol": "000001.SS",
    "name": "Shanghai Comp.",
    "group": "Welt-Indizes",
-   "d1": -1.99,
+   "d1": -2.19,
    "signals": [
     "RSI 25: überverkauft - mögliche Gegenbewegung"
    ]
@@ -191,7 +191,7 @@
    "symbol": "^NSEI",
    "name": "Nifty 50",
    "group": "Welt-Indizes",
-   "d1": 1.48,
+   "d1": 1.41,
    "signals": [
     "Frühsignal: relative Stärke dreht nach oben (+3.9 % in 5 Tagen), Kurs noch nicht bestätigt"
    ]
@@ -209,7 +209,7 @@
  "groups": [
   {
    "name": "Welt-Indizes",
-   "comment": "Welt-Indizes: Tagesstimmung schwach (Ø -1.4 %, 4 von 12 im Plus). Stärkster: Nifty 50 (+1.5 %), schwächster: Kospi (-7.9 %). Auf Monatssicht Ø -1.3 %.",
+   "comment": "Welt-Indizes: Tagesstimmung schwach (Ø -1.4 %, 4 von 12 im Plus). Stärkster: Nifty 50 (+1.4 %), schwächster: Kospi (-7.3 %). Auf Monatssicht Ø -1.3 %.",
    "items": [
     {
      "symbol": "^GSPC",
@@ -262,7 +262,26 @@
      "score": 0,
      "trend": "auf",
      "group": "Welt-Indizes",
-     "news": []
+     "news": [
+      {
+       "t": "Fidelity S&P 500 Index Fund P Acc EUR Hedged Fonds | Kurs | Realtime | Chart",
+       "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQlY0cFZ3dW5IWlZNb0FWZnVCOVJ1T0ItcmZRdzVHNFM4S0lFUEFhN0psZ19va3BYbEc3TWNjaWlWb0tGYVotOVlxZUN3ZEt1T0VTeWQyamxrUVNpR0RtQUZjaWVlcEpZUHktdWVLVEk2bnZKNmFKR1E3aGRCOEttSmMtSWlDX01ZRk5mMkxjN1E?oc=5",
+       "p": "boerse.de",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "Dow Jones, S&P 500 & Nasdaq 100: US Börse erholt sich nach zwei Verlusttagen",
+       "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVGZPQ29vN084aEFzVGprZnoxV2VPUm11c1NjeUVEZWt4RFlhbjI4aEtJd1NBRllkTzkzN3FaYmNPUk9qX2RSVGdvM0Z6OFk0dFIySEFfd3FISmhpYUlDbmFjcU9KblQ0b1dQVXo0aUwzYXJ6eGwtY24zN2s4ZmVnMFpVd3p0WXlJZXk0c0d2WENjbUh1LWljN2U2alJDdjh1a2VwdzFMN19la3lZOWpMYzMybEtyZUN6RThLZ2lOWTQ?oc=5",
+       "p": "XTB.com",
+       "d": "2026-10-09"
+      },
+      {
+       "t": "Charttechnik | Indikatoren | GDs Fidelity S&P 500 Index Fund P Acc EUR Hedged",
+       "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNeGhqN2NXYld4T0MwQ0NiNGJzV3VxSDdQZkd1UkhwQ2Qta0xsS0FFQnZndXpKQlJMaS1nOTRBWXpIbEtjbUhILVdRUUg3RVo5cWRlRUh5aHRyYUVaeVJfNE9zbUZ0RmEtU0kwaEEyRU1PMGc2R240Q3RmbWVieE8ydS1YSHowWVlzY2RQOFBFeEpGU2ZfMnNV?oc=5",
+       "p": "boerse.de",
+       "d": "2026-10-13"
+      }
+     ]
     },
     {
      "symbol": "^NDX",
@@ -317,7 +336,26 @@
      "score": 10,
      "trend": "auf",
      "group": "Welt-Indizes",
-     "news": []
+     "news": [
+      {
+       "t": "Nasdaq 100 aktuell heute ᐅ Index Kurs & Chart | Nasdaq 100 Werte & News",
+       "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5UenRVbC0wTzU1Sk9SQVZVQWNWRzlSanZjUjhTOEgxRlVQUG5PaHd5ckowX01CMmEySHIwVmpiOFY1eUt1VDdGOGZrUnRZUXU3UC0zVE92Rkk1MU95Z0pwdzZka3JhNElIMjdFbTBLSXI?oc=5",
+       "p": "LYNX Online Broker",
+       "d": "2026-10-12"
+      },
+      {
+       "t": "Dow Jones, S&P 500 & Nasdaq 100: Heiße US-Inflation setzt US Börse unter Verkaufsdruck",
+       "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPU0xlcWR2dHFiT29VR0JHMUlJOVpIZV9iUEw1aXBTY1I5N1BxN1pLLWVLMHhzRU1tQ0t6NUIzamtrTWFzeXZ1ZnNlUnVMcFh4Y25oZ3VKVl9HbVMxaXMzUW14c1M2bjBtVGVyR2t1dWx0ZWxjMTFNNWRBQm90M3liSVNhS2luYTRzVnQ5alZGUnhjc3NRdGJIb3RZOEtrZTZFWWIwSy10b0hxMnMzd1BDekRGSnZRUzFQMVhGT2VuekdzQzBYVmJCMWQ5WUJHdUk?oc=5",
+       "p": "XTB.com",
+       "d": "2026-10-14"
+      },
+      {
+       "t": "Börse New York: NASDAQ Composite fällt",
+       "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPdnY1VDZfWXgxLWVZM2ZEajQyYUhieEJYZkhELWl4ZEVlZ1czNldzVVFiYVNEQlJUdHozS1VIS25aLVYxREpVODlKazJ5cllxY3l0Y2djRGRQeWlzejh6ME0zOGRDNXF5TERuS01qeHU1aVgtdHBHRWFxR0NoVndQRTZIYllxczJvVU1rbG9yUVJ2VnN2?oc=5",
+       "p": "Finanzen.net",
+       "d": "2026-10-14"
+      }
+     ]
     },
     {
      "symbol": "^GDAXI",
@@ -372,7 +410,26 @@
      "score": 10,
      "trend": "seitwärts",
      "group": "Welt-Indizes",
-     "news": []
+     "news": [
+      {
+       "t": "Börse: Hohe US-Inflation belastet Wall Street, Dax behauptet sich, Goldpreis fällt",
+       "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOU0xud2FPYjZEVW9aT0Qzei0zbTd0eEJ3em5EUUR5VWdjc3g2VGR2QXBfMUZ1VGFyZWp0OW5XQ3cxOGxVRWNNWm04ekJNaExkSmtDTXItZ3dCZVVtOGROQmdMUmlQbmRnekxrNlcyY2JMTV9ZaGlJYU9nWDdvQnJMRXktNkJjTmk5bDB0NHQ4T3pJS3ZHQXRKWGVQNlpVdnN0b2xIUjN2bjhtbnBuRmltREE2cU1Qa09HYzVjMzBWcw?oc=5",
+       "p": "Manager Magazin",
+       "d": "2026-10-14"
+      },
+      {
+       "t": "Aktien Frankfurt: US-Inflationsdaten bremsen steigenden Dax aus - boerse.de",
+       "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWE5VWDgyZmFqdFZ4WmRHQ0MxcU1VN0ZZV2FnLWdUR1lCY3dNOWRKU3BnNGZLY0R0elowbmVlSXBVZnlkejRmS0JUaUtVcFYtWjdpeG82Z1FZVzQzNlhoZnF1Z3JMLTdoa2xlaGkzX2hIR1h5Y0x5eHlaTFhXUHdGNEx5djJGdloxb1J1eTM0dnl4Qkw5RkVhcTdZQ3NRRW5FNUdqTDhuMlXSAa4BQVVfeXFMUFlycFozZUxSTWdrYTVQQkR6RHp6b2w4Q3lmcUx2MmRiSkRVRi1zN1Z5QjZvQ3hjakVJZThiRkcyRE5uV2hUYzBWa0liREpVTWJKVUhJRE1udlR0TzN0WkM5ZEZaZVM4TU9MOERzUDRVZGJXMEk0VEpaeVhuZ2ZPaVE5U19XSm9wV1dpRlh5Wi16eWcwV29OeFdpRWNMaFZ3RTZadVJlWndWSDdZMFln?oc=5",
+       "p": "boerse.de",
+       "d": "2026-10-14"
+      },
+      {
+       "t": "Marktbericht: Ölpreis sinkt - DAX steigt über 25.000 Punkte",
+       "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQ1k0NU0wcUdldFZVUGJrcjFMYUxEZ1dicllfUlBaNTJkZjVud25vM0RZYlBDcllMalV1M3JBVjhLR3NFaDJoNzd2aXU5anJrS3lpd25vb1ZKdVhxLXl1bWxPODVyWW9icFlfa3N3UlN6MmFYVzZZV29rS2xmSjloVFk5Z01JeDB5NEN6TEZ1MG9hTXd4MDV5bG1mT0I2MmJlakE?oc=5",
+       "p": "tagesschau.de",
+       "d": "2026-10-09"
+      }
+     ]
     },
     {
      "symbol": "^STOXX50E",
@@ -427,7 +484,26 @@
      "score": 10,
      "trend": "seitwärts",
      "group": "Welt-Indizes",
-     "news": []
+     "news": [
+      {
+       "t": "Invesco EURO STOXX 50 Equal Weight UCITS ETF Dist Fonds | Kurs | Realtime | Chart",
+       "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQR3pGaXpzcHNKdUZZaGZOeklfcjRoQWdicnVVTmd6aTAxRWl5MjZJVWV0cFQtQThjcmZwcER4QURCRUhUc2pMeFJOMzBPRXUzT1pOdkVScWtfbU5hOWRxQ1FfOXlTZENCTThHRWdDcDcwX3ZFVmpBS05PV1g5bnpTeGRwZzhoWkw3SnNrRjhUT3dQUXI2?oc=5",
+       "p": "boerse.de",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "Euro Top 50 aktuell heute ᐅ Index Kurs & Chart | Euro Top 50 Werte & News",
+       "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2eVE5X1JCZzZiTEh3UWwxc1hNN1VEdUZ6ZkVoM3lTVDBYT0dHMEIwd3kzdUFjMzlsdjhyUXhfRlFwMFIxcUFyWGthRGtRWjlHd2V0UlEtYWNYdld2TGpYdTQxWFh6YUZHVXFZUjBETkdJYk91?oc=5",
+       "p": "LYNX Online Broker",
+       "d": "2026-10-09"
+      },
+      {
+       "t": "Börse Europa: Euro STOXX 50 am Donnerstagmittag in der Verlustzone",
+       "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZE1xYjNHLUY4d0U1ckRNNThLMS01cGhtTzBnWG5WTHFDMUszZkFtTlhiN1lPYWVpU0NPV2VjQU9pNHJacTNkaV9aUkkwVWhtcVB6TXRIU3MycjUwY041UTRzSDROS1EzS1VqdDAzZi0xczNSeEI2ckpaWVV5dmlJX3o1eWh2WEJUWTV5QmMwMGRGRlNGeWFMNTB3RkE0c0ZJUzQySThTY3RzMENGaFRxek0tellnb1BN?oc=5",
+       "p": "Finanzen.net",
+       "d": "2026-10-08"
+      }
+     ]
     },
     {
      "symbol": "^FTSE",
@@ -481,19 +557,38 @@
      "trend": "auf",
      "group": "Welt-Indizes",
      "forecast": "up",
-     "news": []
+     "news": [
+      {
+       "t": "Börse London in Grün: So bewegt sich der FTSE 100 am Donnerstagnachmittag",
+       "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeVpjM0k2THdacGFFQUVYRndCaC1CMEtLQVhfcjNoYTh4QXhQMlc5ZXRQbWEzejV5czJrc2pIQnVJWjdpc2taRUVyVTlOYWdGTml3WUxoaUtkQ1VJWnBMRi14MnNkUGoyY1UwVDk4Z183ZjM1QzFUMFhkdEllbjlCNVJDc2R3V09GdGl5RFpCUGt4TXlfNWJBcTBDTkVDS0JZa0lYYkJ2M2R4dmkxOWNLU09NUjI5Y0hyd25XYlBydnNuSmM?oc=5",
+       "p": "Finanzen.net",
+       "d": "2026-10-08"
+      },
+      {
+       "t": "FTSE 100 über 200-Tage-Linie - boerse.de",
+       "u": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9YT1pmMnBGa0ltdTZzTm1IYXhBYjl2cWNhNTVyeENsUzkzWFh2NkhOdUFOUWdGTktyNUl5MlZTYXU2bjZ6Y1VOcWtKT2xfYU53LWJXWFVCVHRtOUJubjh4X0k5ZHRlY2FTZ3VYZ3RIYmJRUFFPMGVxUTg1T0fSAYIBQVVfeXFMTkphZDE5T25HaEJnanBXMThOMXRxQ20tcWpRR3g5TXp4OWphZC1pNWNLWnoyQ01GcFlpcFB4NHhHd2hEMjRKbkZzT181TGtNTjdqeTN6ajZKY1VOV0ppSTJhbndUYkpFWTZ6VHV6N0MxOEhkbEd6TGU5SGNYN1pFRmVnZw?oc=5",
+       "p": "boerse.de",
+       "d": "2026-10-10"
+      },
+      {
+       "t": "Börse London in Grün: FTSE 100 in Grün",
+       "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRU1vc291RlNVRVhSd0VfNERNOE9tZXlScVJHYWVXZzNyWHFDd1JYU1p2NmE1U2ctdlVRQU1XYTVucWw0VHFnZWhZV290MHRUb1FRcU9FblFPdEd6Qkl3OFRLd2lCZUdPRlRvMDBPS213dm5RYzBmWmR5RmNmVFktWFNvcEo0QWlCY3JUZlZqYm5oSElPZzJvaXRB?oc=5",
+       "p": "finanzen.ch",
+       "d": "2026-10-12"
+      }
+     ]
     },
     {
      "symbol": "^N225",
      "name": "Nikkei 225",
-     "price": 64599.09,
-     "d1": -4.64,
-     "d5": -7.76,
-     "m1": -1.03,
-     "rsi": 40.1,
-     "vs_sma50": -2.53,
-     "vs_sma200": 5.83,
-     "from_high": -10.73,
+     "price": 64575.15,
+     "d1": -4.68,
+     "d5": -7.8,
+     "m1": -1.07,
+     "rsi": 40.0,
+     "vs_sma50": -2.57,
+     "vs_sma200": 5.79,
+     "from_high": -10.77,
      "spark": [
       66311.93,
       66215.34,
@@ -524,32 +619,51 @@
       69030.92,
       67777.52,
       67744.29,
-      64599.09
+      64575.15
      ],
      "vol_ratio": 0.0,
-     "rs5": -6.62,
-     "rs20": 1.87,
+     "rs5": -6.66,
+     "rs20": 1.83,
      "rs_state": "neutral",
      "signals": [
-      "Starke Tagesbewegung -4.6 %"
+      "Starke Tagesbewegung -4.7 %"
      ],
-     "score": 4.6,
+     "score": 4.7,
      "trend": "seitwärts",
      "group": "Welt-Indizes",
      "forecast": "up",
-     "news": []
+     "news": [
+      {
+       "t": "Nikkei 225 (^N225) Charts, Daten und Nachrichten",
+       "u": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5XWEJLRmM5bDdHeWQ5Y1VyU0tkbVJJX0Vmb1BHMWFkcGlld0lHSUh0OENNdC1NVEZjQU1aeUs2NzFwYkNVQXpPbU0yUERjR3Jtbko1c3FB?oc=5",
+       "p": "Yahoo Finanzen Deutschland",
+       "d": "2026-10-14"
+      },
+      {
+       "t": "Japans Nikkei stürzt ab, da Technologiewerte wegen Sorgen über US-Zinserhöhungen unter Druck geraten",
+       "u": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNSnBrNzZ5dGhRS3A0NV9oMzBWUE9KME9fSTJGR2VNUjB1cEZLTXJGUVBQeDBrNTNydElqY0pfdDlaSXhVT0RPbzI4ZjdvOGZpSGdzZ2hMb0Y1QUNqZWtoaDI3LTY1QVZTR1R4eUN5cXlOZjJaY2lRa0JVbWwteVRRV2pvdVJmOUV6U1JkRDNieDVCRkZDN0J5UUZuQjNQRmhGSXZDYzh1UUZacm5CQzBJWGpWYXFWaUowU1lOYjNYVENrRXdQZm1fRjdVeHE0OWF4dktCajdZWUZQZU4yVENHblgtWnBoMWVkLXN6SWpiSHNjOGh6NGtuQmZsTGc?oc=5",
+       "p": "MarketScreener Deutschland",
+       "d": "2026-10-15"
+      },
+      {
+       "t": "dpa-AFX Börsentag auf einen Blick: Dax noch robust im KI-Ausverkauf - boerse.de",
+       "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSHRNQzNNd1V3SEJ6azhQYjBVbTBjSHIyNm03Z1QtalNJRHZGRl9lc2l5QzlCYnExTFVkbkJ5eG44dG9aSy1MYVZ1U045ZTZLVzBOWmEwYU9iMFJITmNURFlZY0xYNDFzUzFaTnNBc1FvOGREczFSLWFvUWNSeGhkN2RydkZCRWVXSEhpOVkxWUR4bVhwMUZTLXZZY04zZXk3ejZjVjJNaEpuS3A1MWd30gG0AUFVX3lxTE1ZRjl6UHFRbUF1VUstTXBXU3lLZTdEMnlhS1VFZ01xOGRTblNzWnV3dC0wcUZTaVpfcDNrMklybnZyOGs5a3QteEF1eXZPWFlvOHlEeG1GbHptRUJCM3FSbGR4OFB0VWtUc0dFNFhoa0tFOHc4UlQ0bWNUQkJ6RkVQNTl0ZWhJaHlNT0dnSno4WTFqNkRlazZoTW8zanZLZGw3WDRMZjJaN3lHRnlYRkVFaG5lUw?oc=5",
+       "p": "boerse.de",
+       "d": "2026-10-15"
+      }
+     ]
     },
     {
      "symbol": "^HSI",
      "name": "Hang Seng",
-     "price": 23981.4,
-     "d1": -1.37,
-     "d5": 0.82,
-     "m1": -2.78,
-     "rsi": 39.0,
-     "vs_sma50": -4.12,
-     "vs_sma200": -5.89,
-     "from_high": -14.25,
+     "price": 23977.55,
+     "d1": -1.38,
+     "d5": 0.81,
+     "m1": -2.8,
+     "rsi": 38.9,
+     "vs_sma50": -4.13,
+     "vs_sma200": -5.9,
+     "from_high": -14.27,
      "spark": [
       25213.31,
       25650.87,
@@ -580,29 +694,48 @@
       24271.2,
       24345.22,
       24314.17,
-      23981.4
+      23977.55
      ],
      "vol_ratio": 0.0,
-     "rs5": 1.48,
-     "rs20": -3.66,
+     "rs5": 1.47,
+     "rs20": -3.68,
      "rs_state": "schwach",
      "signals": [],
      "score": 0,
      "trend": "ab",
      "group": "Welt-Indizes",
-     "news": []
+     "news": [
+      {
+       "t": "HANG SENG INDEX (^HSI) Charts, Daten und Nachrichten",
+       "u": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFAtQUY4dDNBTmdKc0lndmpIeXZJaWRfYXlDUmRKck1NdTdjNUtJZHNmcFFBZnAtVlFKVlp4M0c0a01jbXRsSGJPWTFyZzJDeUJTUGJMQw?oc=5",
+       "p": "Yahoo Finanzen Deutschland",
+       "d": "2026-10-12"
+      },
+      {
+       "t": "Hang Seng schließt nach Bankenstärke 0,2 Prozent höher",
+       "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWTZOTVctT0lDTDk2R3dVRjFZVlp4M0VGUEExbHdOVmN5aVRVY0RSNzZ3NkFSYWhFNlB3NUtlalY2ZEtkT2YyQWJhcHBTeGp5M1lOdWkxX1h2LVhZalVEeUNiLVZ0bUJEUTRWUkZ0T25KZUx4VkgzVzVMM1dSdnBJeEoyY05VWThZMnMxdmMtY3FfM25udVJtckF4UThaaFd4WE5mUmFNT0NIM3c2U01SaEF5ZGl4enFnUHdJ?oc=5",
+       "p": "ad-hoc-news.de",
+       "d": "2026-10-12"
+      },
+      {
+       "t": "Xiaomi Aktie: YU7 führt Restwert-Ranking an",
+       "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaThsbjYxdG9ybHVjaHVmZjF2TzFsQU5JN2pzNF8ySjNsdzJEVGo2a2M2eXdvZnBoR0RHRDdlTUtsN1p2eS03TzhMdUk2cEpzbHJKOV8xa1lITXF1amJ2UXA2SG9mX1lsSW14R0hEUG13dGNMd1FZWVowb0lzTlI4TmhkZngwcDVOWmI2cC1KbWZfWlo4Z0RmX3ZEYw?oc=5",
+       "p": "Börse Express",
+       "d": "2026-10-09"
+      }
+     ]
     },
     {
      "symbol": "000001.SS",
      "name": "Shanghai Comp.",
-     "price": 3692.18,
-     "d1": -1.99,
-     "d5": -3.14,
-     "m1": -6.3,
-     "rsi": 25.4,
-     "vs_sma50": -5.19,
-     "vs_sma200": -7.83,
-     "from_high": -12.97,
+     "price": 3684.89,
+     "d1": -2.19,
+     "d5": -3.33,
+     "m1": -6.49,
+     "rsi": 24.9,
+     "vs_sma50": -5.38,
+     "vs_sma200": -8.01,
+     "from_high": -13.14,
      "spark": [
       3956.57,
       3952.18,
@@ -633,31 +766,50 @@
       3797.24,
       3800.86,
       3767.23,
-      3692.18
+      3684.89
      ],
-     "rs5": -2.51,
-     "rs20": -5.74,
+     "rs5": -2.7,
+     "rs20": -5.92,
      "rs_state": "schwach",
      "signals": [
       "RSI 25: überverkauft - mögliche Gegenbewegung"
      ],
-     "score": 44.6,
+     "score": 45.1,
      "trend": "ab",
      "group": "Welt-Indizes",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "Chinesischer Blue-Chip-Index fällt angesichts des Einbruchs bei Technologiewerten auf Jahrestief",
+       "u": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNTG1rTU9PZXVKZFphY1pVcnkxMmR5RDQ1b2g5c2QtdFZ6b1ZJWEE4MmJqZHdYN2NSRC1CaHFtbjVla0VNTFdKYXVUa3NuR01lM3dXbjhiWE9xODEtMUFpUDB3OFFMZS13b2JQZjR2bngya3d6SGRPVWp3MDhnZHB3UE9nOGJhbmN4NkhSaTdqMk16ZERPU2EyLXRVbHFmX0xkV01penZ2c0xSNDluQjFzUU9OS1RrTjdsSkVGOEotVF9YSzBaaXJmSFNwOF9OVmVUWjNRcWdyZkFkZmR6UDltTDdEa21CWWNZZl9rLTVnNDBoS29tUWc?oc=5",
+       "p": "MarketScreener Deutschland",
+       "d": "2026-10-08"
+      },
+      {
+       "t": "Sorge um KI und US-Inflationsdaten - Asiens Aktienkurse stürzen ab",
+       "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQcTZzVXY5cHoyOVlWVm5zcFZNSkNhOW5xeWhoTm5PZVY2ZGZGa3kzdnp0dlFpU2FmUm1HaTd6bVJqOU5SUnBKZ2VJM1FiWVZOaDV5QWtrdk5wUTQtRnFNVnpWUFQwNkJhS29qMnJOWjlXeXdDeEgyU0RHTTJvNzdvX1lLRmUwakhaZHlqcVdYWi0xVUM2aXFVMjg1LXhRemtabFZ4WUxhQk5NLU91aVFWaVAtZlVCVEVOT1BoVWd1VUk0dkc1S3ZYMTVzZ3B0cnNEX1FTWkR6SQ?oc=5",
+       "p": "Handelsblatt",
+       "d": "2026-10-15"
+      },
+      {
+       "t": "Shanghai Composite dreht nach Tech-Verkäufen 0,1 Prozent ins Plus",
+       "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTDhsVDktNUplOWlxTk1iX3BvNHl5OUVJbm03MU5rTkNrcE1PaEhIYkl2bW1jM3drcjNnZV95Z0hwOVhpRVJ1d2ZOUkc1b09PaEJvVWxIRlJ3RDJCVjJwaFdCanY3TEhaQ2laMlRyTVZPb3pFNUxVd2Fhd2VGdDE1U2xEUklrSnEyMU1pSGFLTWRnZHNJVGNDQkVBUm1oYW0xY05QbzVha2JRMVkwLTV1Um95LXRFQ0dNeWQtazdpMVc1dndnZDJV?oc=5",
+       "p": "ad-hoc-news.de",
+       "d": "2026-10-09"
+      }
+     ]
     },
     {
      "symbol": "^NSEI",
      "name": "Nifty 50",
-     "price": 22956.8,
-     "d1": 1.48,
-     "d5": 3.26,
-     "m1": -0.7,
-     "rsi": 49.2,
-     "vs_sma50": -2.63,
-     "vs_sma200": -5.16,
-     "from_high": -12.81,
+     "price": 22941.9,
+     "d1": 1.41,
+     "d5": 3.19,
+     "m1": -0.76,
+     "rsi": 48.9,
+     "vs_sma50": -2.7,
+     "vs_sma200": -5.22,
+     "from_high": -12.86,
      "spark": [
       23914.45,
       23873.45,
@@ -688,11 +840,11 @@
       22363.35,
       22721.95,
       22622.7,
-      22956.8
+      22941.9
      ],
      "vol_ratio": 0.0,
-     "rs5": 3.94,
-     "rs20": -1.83,
+     "rs5": 3.87,
+     "rs20": -1.9,
      "rs_state": "frueh_rein",
      "signals": [
       "Frühsignal: relative Stärke dreht nach oben (+3.9 % in 5 Tagen), Kurs noch nicht bestätigt"
@@ -700,7 +852,26 @@
      "score": 10,
      "trend": "ab",
      "group": "Welt-Indizes",
-     "news": []
+     "news": [
+      {
+       "t": "Gift Nifty 50 stockt unter Widerstand: Bären oder Bullen gewinnen?",
+       "u": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQmVIRDVNbmpLc3pTcVBRY01XN2FwOWdhWlNYQVdPSlMyNzVhRHA0VUZCMHlkWHdvc1NzVVlTdURfSkVVZTVoUUlOZW1SWU1zTU95Z3NlMk91WWlwZmRWZHZ4VE80U25jQmlhbjUwdzNya19UMjZQOEp6cWZ5SE53R0VEX3RYRkVnR1NuRjZudWJ4Zw?oc=5",
+       "p": "aktien.news",
+       "d": "2026-10-12"
+      },
+      {
+       "t": "Sun-Pharma-Aktie bei 1.760,00 INR und 14,0 Prozent unter Jahreshoch",
+       "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdm5Ud0gxdzBfT2lXTGRROC1naHplMG5YQndyLWx6azFFLTZaZi1OVEN6akJTeHIzazUydV9ERXl2OGN4NGJFNzI2bjVtczNTdC1Kc2xPajhaOHprNTRkQWNDdjQ0TGFfd0FkYXVDeVJNaU5zcmhodnZhUTNESG5HU2VlUDJUSW9Tc2hDMjFDcUp2RElMRnhlRlNYbnBCMHVpbDhpQ0hVLUEwTjY2aVpxZExET1BZU0lPd25zN1NGTldLdTNsVGxNXzhB?oc=5",
+       "p": "ad-hoc-news.de",
+       "d": "2026-10-09"
+      },
+      {
+       "t": "Taiwan Weighted Index schließt am Montag leicht im Minus",
+       "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVW9lMXprNU5lWkRVQmttLWJZSVJ4MGcxMGtQZ1gtdjhCZlo2TWx6QmpZMllVM2JiRnJ0Nk1LQlpTNnhRZWwyd2tBR0xaR2Q4OXhXSnZZVmhtcElBZ3VORzZGMkQxcGlIMjlJXzJzak1NVmNaM1NubHYxLUFjNGZBN0lFSVF5cEMt?oc=5",
+       "p": "aktien.news",
+       "d": "2026-10-12"
+      }
+     ]
     },
     {
      "symbol": "^BVSP",
@@ -756,7 +927,26 @@
      "trend": "auf",
      "group": "Welt-Indizes",
      "forecast": "up",
-     "news": []
+     "news": [
+      {
+       "t": "Brasiliens Börse explodiert, doch wie lange hält der Rausch?",
+       "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQUVNFbzA3MHBkLUVqTk5PcV9paVBnZW1rVU1UdXhqdnRqMFB1VWtrSEpzU0tkY21QbDZjOTR6RDJzOG1yR3FVZTZtOTBGRXJFSmJwWE92NDZvbENaNkZaaS11YU5KWDlPM2ZqcXpqakFFNTQ2MG9aZGNyMWhXZ2ZlejNNZ1VJSk5HNW81OEFXaVZ4clMxLVczSmtoaDBJZnBTakw0ZkpMRlpLVjBlMVZndmxubEhaNnlEVGc?oc=5",
+       "p": "Wallstreet Online",
+       "d": "2026-10-08"
+      },
+      {
+       "t": "Brasiliens Bovespa erreicht neues 5-Jahres-Hoch mit 1,38 Prozent Plus",
+       "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRmFHSWlTVkM2SVJSVU0tWjZmb1h6MEY0S1BWbEVKOGVpakIyUlNsRkdFQ2VjdkhQTXJqNHVtbzBSY2M4bmhGOE5DMi1KSEVQMzNZZ3pjSlk2eUFpdklJYkZEZl9wcXN3eXZJQm55QzI0WC1hTDA5bTJ3LThuZW9xVVphaFNyc2NtaVZ6am1BWEV0OUR3OEFz?oc=5",
+       "p": "aktien.news",
+       "d": "2026-10-10"
+      },
+      {
+       "t": "Bovespa geht mit Wahlrisiken und 1,0 Prozent Verlust in den Mittwoch",
+       "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOYnJ3TjI2YnZybE5sVWxpRzR6OVhOVVkyU18zQTF4am1aaXV1UnZZZlZQTFcteVFZZVdUbUt0aUZuZ1VJWkZZZG5XSzJyRjRUQTVvZC1PTGg3ZlY5XzVNODI2TWJ0ZGxoVEdLZnd6bi1SRlBWOWRJM2RUY1BPVVJDYjgzNUEtYVJEOU5ySU5oMnZoc2xXZ1pNSFlYR1RjXy1icnBmb1J2ekt3MVNTSng3OGtBRHRuOEJkbUpoMXZkNXd5YklSd25CNUZR?oc=5",
+       "p": "ad-hoc-news.de",
+       "d": "2026-10-14"
+      }
+     ]
     },
     {
      "symbol": "^AXJO",
@@ -811,19 +1001,38 @@
      "score": 10,
      "trend": "ab",
      "group": "Welt-Indizes",
-     "news": []
+     "news": [
+      {
+       "t": "ASX 200 über 20-Tage-Linie - boerse.de",
+       "u": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1HOHlBQnZ4eGx4U1JZS0dWUW9wejdKOWpPaEl6eHBHc2dnanBvTGxnTDAzN0FzN0h0UjMzNUkxdTJZWHBZT1FTamhXM3Fsb3RpLW5ldWdnV3VOTTdjajhULVY4OU9paHVuc2pTYUg1TzEzOWU1bVdDM29R0gF_QVVfeXFMTU1Qczd0WmN1NVZ2X3ltUC1ycXJhM2g3aDRVMHl6T2U4Nl85VG1FZmFNNlJmLWJSTFczZzdzOGJjckFWVHo1d0hXTlppVzlienIzZ3ZkdkZiY21ublJEZjJnVVNmTHZ6eEhsU2N0NjFmT3UzV09jOEhJajVMd09ZRQ?oc=5",
+       "p": "boerse.de",
+       "d": "2026-10-10"
+      },
+      {
+       "t": "S&P/ ASX 200 schließt: Banken und Minen treiben 0,8 Prozent",
+       "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcE5CQ1lRZXVBUkx3ZTFXbEJjLVEzdE5RYTlKSEU2WFFCZ1BaeXRmVUp3TUpiOHI3dHZUT1NDS0t2RHZIeGxOR3ZONWxkZFZpa0l5UnFVa1FaQ2p0V1RnYml0X2h0ZlMzazhMSGc0X3VtWDlVdmlOWHo2cEh3ZlBLdi1BYnZjclFYM2s2OTB3WXB4NGNiOTN2TU5TOFROb181MnRqRDFlUmNNWXZ1YWR2bXgtNHBkUDROT0hNdU9MQ0Y0Zw?oc=5",
+       "p": "ad-hoc-news.de",
+       "d": "2026-10-12"
+      },
+      {
+       "t": "Australische Aktien schließen höher: S&P/ASX 200 legt um 0,64 Prozent zu",
+       "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWk5MU0c2Z3VJOUNGdE1lV2s0bWpBMEIxX2Jjc05DLTluRktfZk9PeFRMaTlQQVRWbW1jTGtSUU1ELV8ydlpPUUhBbHR5VVFmWENoX3NPeWstSXlnaU1NWlRuLWItVUxsd0RZRExWWFh2RnRBTDhBUWZaa1V0YTgza2ZFd3dabWxDdzdJaFNEcElVSExOVUlXVA?oc=5",
+       "p": "aktien.news",
+       "d": "2026-10-09"
+      }
+     ]
     },
     {
      "symbol": "^KS11",
      "name": "Kospi",
-     "price": 5533.64,
-     "d1": -7.91,
-     "d5": -18.67,
-     "m1": -21.33,
-     "rsi": 23.0,
-     "vs_sma50": -17.29,
-     "vs_sma200": -13.57,
-     "from_high": -39.29,
+     "price": 5567.19,
+     "d1": -7.35,
+     "d5": -18.18,
+     "m1": -20.85,
+     "rsi": 23.4,
+     "vs_sma50": -16.8,
+     "vs_sma200": -13.05,
+     "from_high": -38.92,
      "spark": [
       6820.02,
       6835.8,
@@ -854,21 +1063,40 @@
       6384.24,
       6035.35,
       6008.81,
-      5533.64
+      5567.19
      ],
-     "vol_ratio": 1.23,
-     "rs5": -17.67,
-     "rs20": -19.16,
+     "vol_ratio": 1.24,
+     "rs5": -17.17,
+     "rs20": -18.67,
      "rs_state": "schwach",
      "signals": [
       "RSI 23: überverkauft - mögliche Gegenbewegung",
-      "Starke Tagesbewegung -7.9 %"
+      "Starke Tagesbewegung -7.3 %"
      ],
-     "score": 54.9,
+     "score": 54.0,
      "trend": "ab",
      "group": "Welt-Indizes",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "Korea-KI-Crash: Börse stoppt Handel! Kommt jetzt der große KI-Crash?",
+       "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOU0pTdXR6dkw4bTZSWE9ucVZMWnBwYXpRN2dWN04zLVBSSlJYeExwVGhJQ0VkVnFROEI2SFV4RXRNWXhwUmI3U2VFYWUydFVBUmpJM1I4cEhQVjd1UTI1cEhwSDdjVjlmX2VwQ1Y5OXd2eEFEbzB6UjY2amhQV05FbERsVDBRU1hpRUpvbHJDUFBuZnFuY1FiZXRGSk5RNXZvVGhxQ3FMbG9mZlVNVm4zRHBMMDYyV2M?oc=5",
+       "p": "Wallstreet Online",
+       "d": "2026-10-15"
+      },
+      {
+       "t": "17:37 Dax kann Gewinne nicht halten",
+       "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOS2NpNlg4ZnNpdlhsOHh0ZFMzOTcxc1cwbndZaFo4dDVFV3ZmQ1pKbXJlS3lfUDBOQTFUYXZ3TTJGSjNIS2ljRzdWeWx6OGJiRkFEUnJQTmRLRmlXeDVOalIxVnVxNElPOUVnWk9JRzNIRFp2SDJ0aFVRX0R4SDhsbExPNTZfaU9pNnFnSm0yV3BldGtDaHNvWlRvS0p1TWJLZmt0MTJB?oc=5",
+       "p": "n-tv.de",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "Darum stürzt der KOSPI-Index am 12. Oktober ab",
+       "u": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5xOF9KNDBlam9lUDBMMUdPNXRGUmRmSzQ5SFg5c25SZjJoVjRFRFdkTVRiX21taTF6M3pGSWtUaXplaElKbnVSTnY5ZDBMMHhrN0hSYzVIUVNYM3ppYXpjUzJoOHZod00?oc=5",
+       "p": "TradingView",
+       "d": "2026-10-12"
+      }
+     ]
     }
    ]
   },
@@ -929,7 +1157,26 @@
      "score": 10,
      "trend": "seitwärts",
      "group": "Finanzen",
-     "news": []
+     "news": [
+      {
+       "t": "InvescoM2 USD Trsy 0-1Y ETF R (T1EU.HA) Risiko",
+       "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5xcHBxaEtFTEJ0cE16alJYbnhuV1dXMlY4dEV2OVNlNnVCbUJFbkpnRGZ5THA5MmVZLTk1a3l1Wkl0ZEtLaVhZV0Vuck9RaHFYT1lBaHYzREE2SE5F?oc=5",
+       "p": "Yahoo Finanzen Deutschland",
+       "d": "2026-10-08"
+      },
+      {
+       "t": "Trade Republic bietet das Altersvorsorgedepot nun kostenlos an",
+       "u": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcVVsNVZ5ZWQ4WDNPNlMtOWFQc2xKd1ozZ0plSGRRMEozVzVEcXR2eWIydFJwM1h1eVhFVk9FVVRBTEt4Y0JRT1lTY0p3QV9mbVBIV3l0VVVHakl0U05feEdvNlpFMGxmMkQ5RUZrMGFSTThZeS1iMktUbUFIVHR6QXZ2bHI1QVNwUTRFMG1GR2N1eXc3ME5sWlZFZ1BTVjJ1TXBPOS1DdERfTjNfYUxRemZkbWR2OTR6TllB?oc=5",
+       "p": "FAZ",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "Finanz-ETFs: warum Anleger in Europa 1 Milliarde Euro abziehen",
+       "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPbFF1UTVaYmxYUVlwYW1VbnJtNFlOZ0dVMllmcmx1SEpyRW5DUTZfd3lPdkFsc2ktU2hlb2NfWEtwYURKdVhoeHhqUGdvN21QaklpT1pGZlFtUnI4bkxwLWdvSUc5RWkteUZoREltS1F6bXY4VVF3a3lfX09rMHBscnpTZ1BoTUlMXzZ4c3BKYXdza1ppZDRFMDh2TXYwSkNw?oc=5",
+       "p": "das investment",
+       "d": "2026-10-13"
+      }
+     ]
     },
     {
      "symbol": "KBE",
@@ -983,7 +1230,26 @@
      "trend": "ab",
      "group": "Finanzen",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "Xtrackers MSCI USA Banks UCITS ETF | IE00BDVPTJ63 | A2N6AF",
+       "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBFbG10Z09xcmh1SHBjTHlwS0dWX3lHb2wtZUZ6TGdMNW9HTU54bGlYbFBwdFQxNUMyYTM4RURMWW5hSGI5MmZVbmdUc1hSWi03aEJESUY2b1gyd25W?oc=5",
+       "p": "extraETF",
+       "d": "2026-10-09"
+      },
+      {
+       "t": "AVD: Wie sich Fondshäuser, ETF-Anbieter, Neobroker und Banken positionieren",
+       "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSjVGX3p1R3JTUk9nTkNVSF9VcmlJU1hXbTFsdTNJWXEwT1ctMUJXa2ptNGpHQTJpRHBGQ21sSmJFeUZIaVpXQVl2WXo1Smg3LVBjZW1PaHA4a1FJSVFvSVZJZWR2TmZlenlmT0VNTDVLbGtmeTczS3ZSdFNsQjVfWVFTMTVtUDFMdUg1bEhRRkNnU3FvQ3dBcQ?oc=5",
+       "p": "das investment",
+       "d": "2026-10-09"
+      },
+      {
+       "t": "Depot-Vergleich: Die besten Filial- & Online-Broker",
+       "u": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1nZ2pHUUZ2UEhuVGQ1Yy1hTEZBRWk1U2xuWnl1UVpleFl3SkU5cEQwR21UVEVDTlBlN0lFbkp0elByR1VYTVpQc3NKQklNc0NfZnktcGhzbmhQa1p5b2M0SUpaOUplUQ?oc=5",
+       "p": "Stiftung Warentest",
+       "d": "2026-10-15"
+      }
+     ]
     },
     {
      "symbol": "KIE",
@@ -1038,7 +1304,26 @@
      "score": 10,
      "trend": "seitwärts",
      "group": "Finanzen",
-     "news": []
+     "news": [
+      {
+       "t": "Nicht mehr nur Versicherungen: So holen Sie sich ab 2027 bis zu 1.140 Euro vom Staat für Ihr ETF-Depot",
+       "u": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMTBWZUw4TGhpZUNYYUYzeDlwcmJQQm1Kam52U2VUNFpmem0xV0VGYmdzQkkwaGd1cWlYSF9NN20tVE5BN2ZsMVFZYWxhWHNPRXlURnl2Sm13bjRQNVJsYmozTzh3cExCenhaWlNQQkJTcDkwOHZSWWU0WnlUTzZYUDlnMVRxWW5CZjR6N3d4R2ZnSUlKUFBzUTE0SGNkaTM0cUdmX1o5QnZMOTJRX0R6WmJZSWpuUG9meFFja0V5UEc3RmRENFVrZF9mdnNPZ3ZtZ09RNzVhSEJncjdabGR5SVZUNVA?oc=5",
+       "p": "Merkur",
+       "d": "2026-10-10"
+      },
+      {
+       "t": "Ranking 2026: Diese Lebensversicherer bieten die beste Leistungsfähigkeit",
+       "u": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOWHE1NFdwSmxyZjdxME04eUhkYlpsRk5xUDFfaUYzVUlNVkVMaDIzSkplUDdlai1oNEpncXU3QnZIM2ZRTzdsMk8zSHBtVEttT0lCLTZsOUVkdjc5bmliaDl6Mm1yUlZuWEt1bktYeGxNbVRrNUFIZW1TYUxudjdzNDF3T3ZIWThONFJNeTV2N2JPVzNJYnVDR2JkUHczWW5oN0lsU0tyV0dHakVLa1JHTThxOTVKMkcyZlhZRVJHN2JOd2k3?oc=5",
+       "p": "WirtschaftsWoche",
+       "d": "2026-10-09"
+      },
+      {
+       "t": "Wie Anleger mit ETF vom Renditeanstieg bei Staatsanleihen profitieren",
+       "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONVVabkpNN2otZjhmUXBoVWxkNzlUQ1RKN0lzcHlrX2lETlZBclJEbHJnaEg0YlZpdWVoNGtuaTUtcHVCd04xdlpraVM1R1Nrb0VaSEViTk9ESEMzSzg3SnFjcTM5aG9rV2kzUGVNcUs2TnVFeXRwUVRjeGtNSjRaTkFYQTF0bm5NY1QwcFBNTGZEXzNwcHJyYjVwN1JlcmFqR0dXS1Z3TVJvX0t5eTZ1YUdUMXdXVG05bDVXclpCeGM?oc=5",
+       "p": "Capital.de",
+       "d": "2026-10-08"
+      }
+     ]
     },
     {
      "symbol": "EUFN",
@@ -1092,7 +1377,26 @@
      "trend": "seitwärts",
      "group": "Finanzen",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "iShares STOXX Europe 600 ETF tendiert nordwärts",
+       "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOS3ItMXVHeWFyZDlXcGwxd000MzhUM2Iwa3BXbFVTbHl3cnNzTDE4SXQzbWU0R0xwdDMzU1BrSkM4WmN5azBVLWlaODdOUk10T2VwSVRZMi00elJ2dXROV08wR0UzelM0MThHQ0d6TUtnaDVxVWQzSUhWUEJMOGowa2l3TExaVXpGWlBWaDVxMHlfWGlnRnpCX2pQRC1lckJTWmc?oc=5",
+       "p": "Finanzen.net",
+       "d": "2026-10-12"
+      },
+      {
+       "t": "iShares STOXX Europe 600 ETF schiebt sich vor",
+       "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdWllR2o3MkFBd2VGMWM0bUxNakhZWE9ER2UzcFVaaG1rb0wySzhfOGxlakRoY3EzUWJBYnNjQ0NQX3p4MldBSjFvdzdrS1g3Y09Rb0k0cG8tMjBIVGZzZXdMSklnV1M0dnpTai1xb19nTW5WV2ZLdDJKS1FWUzVmQ1RrblV4b00zbEJ4U29fSV9kQzY2ZVprRWhhYXZxc2VsRWc?oc=5",
+       "p": "Finanzen.net",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "iShares STOXX Europe 600 Oil & Gas ETF gefragt",
+       "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVk5nVG1aUmNWZVZ2V3VrQ0dXMVRodmFHOWtFazd5clpXNkpFbW9IRUVJQ1VMQk1pSWJaTGlnYXFaREV0Nzk1N0FCRXBLTDlCeDF3YTkwMm9YZnJ0cHE4aVc3T3FnMnRvSGNOXzlqWEF0VzJtN0MyNW5GMHR5M19oOVplNmtXcndEeUhCNWtDS0t5Wk44UURYT3oyejBnSUhBeFlrcW5zT3Q3MUoz?oc=5",
+       "p": "Finanzen.net",
+       "d": "2026-10-13"
+      }
+     ]
     },
     {
      "symbol": "JPM",
@@ -1147,7 +1451,26 @@
      "score": 10,
      "trend": "seitwärts",
      "group": "Finanzen",
-     "news": []
+     "news": [
+      {
+       "t": "Schwellenländer bieten mehr, als auf den ersten Blick ersichtlich ist. Selektivität ist entscheidend.",
+       "u": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNYlI3cGJPb0x3S3M5Q2EwdFROS19BQ1FpVjFvOHZKN2p5OUFyTFlrRWxxYV96WFNNUGxPTDRZQlpEWUN2TUdoLU1NQ1U0c2sxTUdVbDVBNTVlSUEzaDl2aE9FdW9BVFVMMUtaSm9UZkdOQ19VbDVmeE1tbXNESmJPQXl5Z2I4Z3VFalBZYXhtN2VJa1JFbU53RGd2aXpHYzRwZkNDLWJ5VEdscEVkWHhLRVM1RzZ0Q1JFTG92SThMN2RGS1B0am1qSl9YdUFpbWtIVFpTTGxENWNRTTBhN0E?oc=5",
+       "p": "J.P. Morgan Private Bank",
+       "d": "2026-10-12"
+      },
+      {
+       "t": "JPMorgan, Citigroup, Goldman Sachs: US-Großbanken legen Zahlen vor",
+       "u": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQTS1vM3JIY241cGlLUndsMFVzb0k5WXBxWDlKWm5lYjJpZW1scWlUc0ctYmM0VXFQeVA2OXZpeHg4V3BWOF9CSk1FdzlZdDdKekh5eFMyZHVYeUswTUZySVBCVi1rU28yVG9mS3pMc1hoSzM2bmNGMzBBRXRjaWYzaXhUVjI0bzc2cl82RWR2emQ0MFVEV2lWZndHYy1KckQ1Q0dYeEVTRnFYSjBBNjExQkcyRlllY05TSUwwYzJsc2VISGktVTJOZUFEWV9qTklLeTlKZTdTYXpGeTlnejJjTm1Uc1l5MWpa?oc=5",
+       "p": "Manager Magazin",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "JPMorgan steigert Gewinn, verfehlt Erwartungen – Aktie gibt nach",
+       "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNU04tUzVyLWhnYzhDTUkwdzZqOTdJMVhRb3phQ3Rpb3ltRVNMNkhObUprcEs2S3NKQV8xRWhzNnZXS0xVd0kxd2J6b0VlT2hVZUF6dUFCQnF5c0RzZno3SE10NE9Qa29fbWduMmVzTXZtNUt6Ry1hdVN0SWdLNFB2bklzMkh1YlA3NVl1NzF6QlZ1LTNPZm9iRHBBQk13ZkhsOHdnWjJn?oc=5",
+       "p": "Wallstreet Online",
+       "d": "2026-10-15"
+      }
+     ]
     },
     {
      "symbol": "GS",
@@ -1201,7 +1524,26 @@
      "trend": "ab",
      "group": "Finanzen",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "Goldman Sachs mit Zahlen: Was ist denn hier los?",
+       "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObUotcVBiQVdyS1VDV3M4eGtTdElKNTF5djQ1U2hieTZ5aWtfcndKd1lKNk9YSkxVWUpuZEtMV0RIZ2dfWnhtQm1MWkdPWUt0dklpWTBPdG9CRy1sTG8tWU1tRHJQblJGakZLUTlpcm9iOVd2TEZVei0zcjFFT3ppREpXWW1RT3l0cWQ2elc2QU8tZHd6NUl6ZGFtYmtWM3otT2pCQzBTWS1Ibk95SUJRc2FIRmVmOHlKVS00blZKUGk0dw?oc=5",
+       "p": "Der Aktionär",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "JPMorgan, Citigroup, Goldman Sachs: US-Großbanken legen Zahlen vor",
+       "u": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQTS1vM3JIY241cGlLUndsMFVzb0k5WXBxWDlKWm5lYjJpZW1scWlUc0ctYmM0VXFQeVA2OXZpeHg4V3BWOF9CSk1FdzlZdDdKekh5eFMyZHVYeUswTUZySVBCVi1rU28yVG9mS3pMc1hoSzM2bmNGMzBBRXRjaWYzaXhUVjI0bzc2cl82RWR2emQ0MFVEV2lWZndHYy1KckQ1Q0dYeEVTRnFYSjBBNjExQkcyRlllY05TSUwwYzJsc2VISGktVTJOZUFEWV9qTklLeTlKZTdTYXpGeTlnejJjTm1Uc1l5MWpa?oc=5",
+       "p": "Manager Magazin",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "Unterschätztes Risiko für den Aktienmarkt? Goldman Sachs sieht Entwicklung wie seit 2000 nicht mehr",
+       "u": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPYVJJX2V5QlZBQ1pzczhnSnhKQ19MZGxYTWZHZlFFTjFxdUFmclpMNEZFTXBuOHhGd2I0RnR0VlRKWURIbmpUMktWX1hDQU1pQ2xRUlRYR3ZDMzk1TmNNdE9DTVBHWkdBNXFhelF5c2F0aXhSYkFXOWpsemFCaHJwc0FNT1JjLVp0NU1SUk55am9rN295XzJBUkJ4SFk4ZjdneEhTQk51aTl0ZldTQkhtMkl2a2VHdno1aVJLYjAyVEJPWDV1TDhMdzdtWDMtMXNHNkZHd2RVSkRzZUhoQjFib0wwSHhETEdWOFI4a2d1OFNWclRFcEE?oc=5",
+       "p": "Börse Online",
+       "d": "2026-10-12"
+      }
+     ]
     },
     {
      "symbol": "ALV.DE",
@@ -1255,7 +1597,26 @@
      "trend": "seitwärts",
      "group": "Finanzen",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "Allianz-Aktie: So viel Dividende lockt ab jetzt",
+       "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUG04UUZBbDE3bTRrdWF1Zmp2RGZlZllweHVNb0xPeHIzUTBKeHZ2QnM4WXRnaXBZd3pCZHpBX0Z3aTNoN2l2NzNkU2tIcVR5ZElLSkFQSThla3hEcU5pTldDb3ZsSjNqTURmTzY0Yk9qSl9PQmJqck15VXZ4T2pGNnJYUFYzY3hzQTJDb1dBT0VpUnZCVUZMekFhdEhPdDZGeHlNMVRR?oc=5",
+       "p": "Der Aktionär",
+       "d": "2026-10-14"
+      },
+      {
+       "t": "Allianz-Aktie: Zweiter Tag mit Gewinnen",
+       "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVndRclljODVEZXN0YVVjYUlnbFprV0dnNFlJMklJSGIyTlZqeXJ5azhsVXF0SzBwNGRvNEdUWnB3Vm5oYUdIQ3M0UlRVOE9ZSDJnODZ6bzloTk16RWZpRjdEMjdDakNPMTRUbnZFNW1GdllubldsTG5KenJnRDFnZUhtV2plRzU3dWJGbWZmR3QtZFZORHJ5QVdaVEVFSDJZYk1udnRkdlhyTXJOczZxcw?oc=5",
+       "p": "WELT",
+       "d": "2026-10-08"
+      },
+      {
+       "t": "Altersvorsorge-Reform ab 2027",
+       "u": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5fbHhxcHljLTFuVzUza1lwa25Db2V3X3N2b24yaFV5M3ptQ2t4TTZiR2xid2VRTTVtWG5Cd1JEekdzUEJpU05BR1d3N0RKNDJXUmRxZExDZmE3ODJJRE1zcUFmcU1JVjZRd2sxXzZtRm1TdlhUWXJWYVF0MDN4UQ?oc=5",
+       "p": "Allianz",
+       "d": "2026-10-11"
+      }
+     ]
     },
     {
      "symbol": "DBK.DE",
@@ -1309,7 +1670,26 @@
      "trend": "seitwärts",
      "group": "Finanzen",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "Deutsche Bank: Christian Sewing stellt Kündigungsschutz für Topverdiener infrage",
+       "u": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNTWNHZXNXMUpfcXJYRjktc3ZTdUVKdVplUG5pX0tzaEF5WEp6cUp4TEhqb0xGTmlUQTdzRnR3UVkxN2xhOTNJb1ItY2FuZEU3V3UtbnZjZzQybVBRdTM2VVFwMXg4c2s2Zmh5c1JWR1VoUDhWZGVDZDJEMy1SS3N2OTBEbmZ1Q3p0MDNmbGpMbzVublR5QXBidVhkV011dEhuYWtEZnJYV0J5dmFiSUdmSENWZEtzVWRHZ0M4NWZZUUN6UE82SXJNX3VobExrSER1N0NVdnFnYWIzSWVZbmpyTkNJWWxXZjk5ZnllWnB3cHR1bld4MUEzS2ViZENtWmht?oc=5",
+       "p": "Spiegel",
+       "d": "2026-10-11"
+      },
+      {
+       "t": "Christian Sewing: Deutsche-Bank-Chef stellt Kündigungsschutz für Topverdiener infrage",
+       "u": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQS2ZmV1BFTE0wcTJveVp0dlliYWZtYUpNLUJJTDdRejNuR2tkRk83NXhpdE95R2ZGTHhkSmdEODI2YW54Nmd5bF9tQzVzSzBaWndjOVJCbGZ6VVRaTGdWbzNaWXVnaVRldDBSdURVU294aWFIbGMxbTZhZkdCOTJrNy1MOWlycUMtTVIwOURoWWVPUkxyWWMzb3ctcGhjMVh4c1ZGY1NKN2tLRDR1aThKRl9oTVNpSWRUd09saHVGZThoUlNYVUJvOFJUU3VsTUx2ZnRTLUxYYTJNZG5xWi1ldkRfa1BXUjR2N0VMdnpWN3NoWWhGSzVQWHUwMnRNNS1iX29pVXB3?oc=5",
+       "p": "Manager Magazin",
+       "d": "2026-10-11"
+      },
+      {
+       "t": "Deutsche-Bank-Chef Sewing fordert höheres Reformtempo – und lobt die Regierung für das Altersvorsorgedepot",
+       "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPOURxSEZPZkZsRDM0UlRoeXROTVZzbmI1MC1xRGlzT0hrT3hQdnY5cFA4X3ZuT09GRUdGbHJ1Qm02MFJYY2hadkR2ZU4tVHRBYVBzZTJhRzFtMVpCM054UmN4WVZ0cmlmRXFzYm1fRVN5UDFzTmVDSUh6cHk1Y2V2ZjVLa2RYd0lVcEUxOXU3b3RpbVE3UzRpWFB2cU1JSUxXaktCR0hJQWxtWjR1UHlwVUp5Y3Z5R3pJbTZzVGFlSWRYd3NqcTN5Qmx4NjJxVU9CanFaakFJMA?oc=5",
+       "p": "Deutschlandfunk",
+       "d": "2026-10-11"
+      }
+     ]
     }
    ]
   },
@@ -1369,7 +1749,26 @@
      "trend": "ab",
      "group": "Industrie",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "State Street SPDR MSCI Europe Industrials UCITS ETF | IE00BKWQ0J47 | A1191T",
+       "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAwcHBLWTRXcXlGXy1TQWVTdjYxQ2dKejRodWxhVFc2MGllWWNTaXlXcWtIbDRXbFo5LWhtRkZzLXhjNTY4ZG56VmprUk8waUVka0U2WlozOEpmZDRF?oc=5",
+       "p": "extraETF",
+       "d": "2026-10-09"
+      },
+      {
+       "t": "Xtrackers MSCI World Industrials UCITS ETF 1D ETF | Kurs | Realtime | Chart",
+       "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOYmdKZGRyN0twUU5TdTlxV3NTVFBfQzl6bDVrVHI3LUh1SzBZYnpkWUl6OTNWbVNaeGxEOWliMTZyU1ZKZEdJZnZ5RlI1VUhNTmpuaEZMNHI0LWsybWZoYzlIY3g3U2c1c0Rtb3pzem1ldExCLTFKVjdHVWhsZWxkRUh1bkxpLXZ6c0k5dQ?oc=5",
+       "p": "boerse.de",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "Zugehörige Wertpapiere Airbus Group (EADS)",
+       "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTFAtOGMtWm51ZFhOT0lKdlNITnJ6czNrTDNXeVhZSlgxVzhRN2dmaFF4VUJWSXVEQ1ltSy0wVXJnQjJfZEpZM1p4Rkp1M2trbDZaMzAyVk5fZXZxVE1iN1B2M3gzTG1MYVctcWVWNG54aEVLOVFhUVpWX2tQZkVLTWE3UWRGcW1YZDlKdA?oc=5",
+       "p": "Onvista",
+       "d": "2026-10-09"
+      }
+     ]
     },
     {
      "symbol": "ITA",
@@ -1478,7 +1877,26 @@
      "score": 10,
      "trend": "ab",
      "group": "Industrie",
-     "news": []
+     "news": [
+      {
+       "t": "Sterling Infrastructure Inc Aktie | Kurs | Dividende | Nachrichten (882359, US8592411016)",
+       "u": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9nQ2YtODFlNG94eGhSOE5CV1cxV1ZtSHYySklnaExoVkVfc0JXVzRNNEM2QlVnN3VNbzROdTdhZmxZNGtwcTAzRGRqdTVmMS1jbW1MR0FaUHp0S1BVMHNz?oc=5",
+       "p": "extraETF",
+       "d": "2026-10-09"
+      },
+      {
+       "t": "Breakwave Tanker ETF verfünfzigfacht sich wegen Hormus-Krise",
+       "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZktaR3RKR3hGaG5sc183WG5DWExYcm5ieVN2bS1peVA0dGRReU0zTXhBcUNvVmViSHk2Qm1hVmJIemE2YndXSnY3NS1hTGFhRWNfWXBGblVWbnBNNFJXNmZ2WjZRdWYyUW5ldlQ1SlA3Y2tVMkFkclN3bnZGNy1DODNMUDFfcnF5a3pHcA?oc=5",
+       "p": "aktien.news",
+       "d": "2026-10-09"
+      },
+      {
+       "t": "Global X Copper Miners ETF: 4,2-Prozent-Sprung auf 85,68 USD",
+       "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPNXB0eXdEUTgwMzM3aS1pdUFBNzlFd0U2cW4tRzFBX19zQ2pVemdxSXNGTHdLZnJnUGUxdUJISlRrQWV5aFhkdUM0Mk9TZmNsU1RnZHQ4V3Y2TUJYWElQWU8wWGJ3YUlyX3JzYzNmX2xUbUk3M2ljVXVlNDlwWGlvUUVlVjdFZ09Bazh6NkxCYzktb01VVkFTV0xVUDJGOFVRMHJKWTY0WDlpbUp1NmxjVUpkUE14SC13YzZhRGg1dmpEMy1wUmJka0FFZw?oc=5",
+       "p": "ad-hoc-news.de",
+       "d": "2026-10-09"
+      }
+     ]
     },
     {
      "symbol": "CAT",
@@ -1534,7 +1952,26 @@
      "trend": "ab",
      "group": "Industrie",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "Caterpillar: Ich sehe den Rückgang als Einstiegschance",
+       "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPczU2U3lDczVLZFoyTEpPRF9vVXgzSG9Cc0xQNWJLbk1Mc3dlYWdOemZfRy1hUFdJZHpVSk1oMUl3eHV2Zmgxa3NPWWdxN3YxZFRZaDUxLWFZWDE3RWxpMnd3Q2NEV0xZQjNtaU9FOXpTODA3cXRyUklfT2V5cGZJZEptaVFSWEVlUnBpWTNPMUh2UXNUc3RaUGFnamU3eGY5QktYLXFJU3Bwa3V6dFFLYXM5bWg?oc=5",
+       "p": "Onvista",
+       "d": "2026-10-08"
+      },
+      {
+       "t": "Caterpillar-Aktie unter 50-Tage-Linie",
+       "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUUJLUTNkajIteWtCclJjZ2dYcE1fbGdOZVNpOS14VG45cHc0OGJEb29FOE4zM0p2ak11bVRHZmV6VGltRkFsSVlXdFdwa1JjRU81Qmd5dHZ3c09XV19xUXA5T0ZQNVloaGdSVjM2UW5TZGZULV9Qb3RYcmlYUkZTNGF6SEFVUDg?oc=5",
+       "p": "boerse.de",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "Caterpillar Aktie: Charttechnik am Scheideweg",
+       "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUEc3ekxtbVdpdDZ1aUJQYXhFQ09vVUZIOUJ2eU83aGp4TzM4ZGhBQklzVVBtWWdZRW9McWJQWnhGRmJtbHJqYWRRVFVxbG5VeE9NT1pDNERPVzFleEZIbDRvSlFPWlFnNm5lVWxRN2hxN2ZwM2d2TnZGb1BMaU9sNlZBN1NsRzBlOWhTNzJqNnZTMnp6bFBlVE1SWl8?oc=5",
+       "p": "Börse Express",
+       "d": "2026-10-08"
+      }
+     ]
     },
     {
      "symbol": "GE",
@@ -1587,7 +2024,26 @@
      "score": 0,
      "trend": "ab",
      "group": "Industrie",
-     "news": []
+     "news": [
+      {
+       "t": "GE Aerospace (ex General Electric) Aktie News: GE Aerospace (ex General Electric) am Dienstagabend ohne große Veränderung",
+       "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTFc2NjMzZGR6cUJLZlhLM3pWUVBQWFlCS1B5cWtyX1lJSW9ScDBaSGNVLXRXYUY1M1ZnSGp2ZkxleTBGQVkwV2lDVXM0bkJxRXBUOUNjYWlEcmZsZVB1bDF5S0N1aWs3akhHVnU4aWNFa3B5UDlvelhaVi0wYlh6THNQTEZzUHBmNDdNemVEc1FOa1cyR0kteg?oc=5",
+       "p": "Finanzen.net",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "GE Aerospace (ex General Electric)-Aktie unter 200-Tage-Linie",
+       "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdWloMFNSZ3g1TXdrYTBKQ2ZFVWFraF9xLVV3MWNUNm1kWGJfWjRaSUkwcHNKRFIyaVQ2RlF2eUU3Q0VLalNic3czb3RmalRNci1yaHB2dHlCcmZkcjNOM0VIWUVQbmRLYW01aVlJUWdNeHQ2cGt3N1F3Q2E0NW1YTUs4SVFmU2xTNTlMMkw5c2phdUNLRUZfak5MWEpmTDhrclRTVQ?oc=5",
+       "p": "boerse.de",
+       "d": "2026-10-14"
+      },
+      {
+       "t": "GE-Aerospace-Aktie legt nachbörslich 0,76 Prozent zu auf 274,83 Euro",
+       "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPaTJGUEliemphRHZkQUl0UkdiMWU0REpRYWFLeUtsR2tsTjlMTUFCQU5Gb1M4S0F4Nzdtc0RsbmE5Y3dkVV9fT3h5WVc0VjVtRFRIcnBGU2NUR2FndVVhWUtUVzVTcGhqZ3U5MTRacF9GX3ZWbkhKOWNNMW1yRHlKYVdZYTZHRzVTdUF2d2Z5WnlPdl8yVWhyWXFDOTB0RHdkSi1zS0w0ZTZPUUVDWFhuQ2pXNzNGaHZoVUx2aDBEZTAyUGFHYW9J?oc=5",
+       "p": "AD HOC NEWS",
+       "d": "2026-10-09"
+      }
+     ]
     },
     {
      "symbol": "SIE.DE",
@@ -1641,7 +2097,26 @@
      "trend": "seitwärts",
      "group": "Industrie",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "Siemens Healthineers gibt Ultraschall-Geschäft teilweise auf",
+       "u": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNQ3V3WGNyRXlMSFhrUURxNzFFODBXdUFYRDVscy1WWnktbG5HSk1HSGFBanZsNElhZU42Z0hqZlZwYW5oNHN4YnhGNy1kd29ZcERIZnZ3NGZWb1V1Y0FNMWFUd1kxUlgwOUlpVWpKN0ZERURzazJOS0lqR2d1MlFsTWk0RUtkS0xGck9oYmQtVlo1S2RkeV8yUUZFdk91NTFDQngtSDlEUmVYN2J2T1J1ODl6c0loYXNKY3hfYlJEaDhDcUY3c3d4OEdoMVQtTVlBNVhCZjhOdWZCaGFIbkRtODdBT0dzV21G?oc=5",
+       "p": "Manager Magazin",
+       "d": "2026-10-12"
+      },
+      {
+       "t": "Siemens auf der Supercomputing 2026",
+       "u": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8zTF9kaFAtOXh3d0t0LWJpNzJfZnBFTDNNdzBLSTluSGhva2c0UWhuSjNDQzQzRk13d3JlRzRCMWdHRld5aHNZd3RtbnpTTEFTQ3R6OGxJbVVaWFpadkQxRXRB?oc=5",
+       "p": "Siemens",
+       "d": "2026-10-08"
+      },
+      {
+       "t": "Siemens Energy Aktie heute im Minus - 14.10.2026",
+       "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOTFZaOGk0cElUcDlwY2tLZWVQcjgzN3d0aDJVVl9wMUs1bGw4ZHlCSFVSNVVtUmRiMzdEZk44NUt4REdKWnhKNzc1WHJyU1pGT19Uek5aOTVMMjdfaVBkWmhadUZVRUlZUlUxTGpJbFUwbmVXRXJWa1BZNFlyVkFlR1lMMF85b3ZISHNmRGNtczBZX0hSbVlDcXlLTE1hdk0?oc=5",
+       "p": "Wallstreet Online",
+       "d": "2026-10-14"
+      }
+     ]
     },
     {
      "symbol": "RHM.DE",
@@ -1695,25 +2170,44 @@
      "trend": "ab",
      "group": "Industrie",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "Rheinmetall-Aktie: Geht's jetzt zurück auf 1.000 €?",
+       "u": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOR0Zrem1EVVV0dU9fOE14RXk3WUI5V3I2Sl8wSVZraDVKeXhfd2FMTHhIOTZSVWVFTWh0aElvVUZVODR4SnhwUHdpZ2N6Y1JaeGVSRjJ2eHpqRWZfRzg1MjNXYW5aV0RXWURkZlZObTY2N2hnYWstUU1rb0x5SUlDRXd3?oc=5",
+       "p": "sharedeals.de",
+       "d": "2026-10-11"
+      },
+      {
+       "t": "Rheinmetall: Kein Kauf mehr?",
+       "u": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbzJ0VTkyc1BCUzhZM2FSNVVTVGt1UXl0SVBfSUFKdXhCbndnaWNUQUtuRi1mTVk5THV6ZktxMHdZbW1CanpkVUY4M25ndTFZZ2MxZTFTcnN5cFF4VzBqc0pWOG5kb2EzeVRRREVMUDZPVzJ3U2hINzIzc0Q3VmgyRkwzTF90NWphaWdV?oc=5",
+       "p": "Der Aktionär",
+       "d": "2026-10-09"
+      },
+      {
+       "t": "Analysten ziehen die Reißleine: Rheinmetall-Kursziel fällt um 580 Euro",
+       "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMkk4ejRlWVpUaGdtMHRjem1EOG9XRV9ZRVdsbkh2VmFjY25HblFnc1d1bVQ0WlFEQVBicmc4MU1ZWTVHck1NWFVlbXNiVzBsbnl4UEtzN1pHcUdQVzdjTUhkNXFXWjdUSVNiemFTZGpxazBYSVhmbDNkVUdyWnBhR3pIbHpNZGZLbmpCUW0wVVlybS1wQ2MzQWRvd2tiZmdIUE5uOU1HNHJNWmJxVTdOZDlBS2VHaEMtYW5ZSmxpaDlYNW1Hb0stV25B?oc=5",
+       "p": "Wallstreet Online",
+       "d": "2026-10-09"
+      }
+     ]
     }
    ]
   },
   {
    "name": "Rohstoffe",
-   "comment": "Rohstoffe: Tagesstimmung unentschlossen (Ø +0.2 %, 4 von 8 im Plus). Stärkster: Erdgas (+1.8 %), schwächster: Brent Öl (-1.5 %). Auf Monatssicht Ø -1.4 %. Tagesplus gegen den Monatstrend - Erholung oder Fehlsignal.",
+   "comment": "Rohstoffe: Tagesstimmung unentschlossen (Ø +0.2 %, 4 von 8 im Plus). Stärkster: Erdgas (+1.8 %), schwächster: Brent Öl (-1.6 %). Auf Monatssicht Ø -1.4 %. Tagesplus gegen den Monatstrend - Erholung oder Fehlsignal.",
    "items": [
     {
      "symbol": "GC=F",
      "name": "Gold",
-     "price": 4157.9,
-     "d1": 1.22,
-     "d5": 0.02,
-     "m1": -5.23,
-     "rsi": 41.0,
-     "vs_sma50": -5.0,
-     "vs_sma200": -8.45,
-     "from_high": -21.82,
+     "price": 4158.7,
+     "d1": 1.24,
+     "d5": 0.04,
+     "m1": -5.21,
+     "rsi": 41.1,
+     "vs_sma50": -4.98,
+     "vs_sma200": -8.43,
+     "from_high": -21.81,
      "spark": [
       4539.9,
       4476.6,
@@ -1744,27 +2238,46 @@
       4190.6,
       4177.3,
       4107.9,
-      4157.9
+      4158.7
      ],
-     "vol_ratio": 0.32,
+     "vol_ratio": 0.33,
      "signals": [],
      "score": 0,
      "trend": "ab",
      "group": "Rohstoffe",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "Goldpreis, Silberpreis, Öl (Brent/WTI) – Rohstoffe am 14.10.2026",
+       "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPM2VwUFVHM2E2aC02VkQ5VVlsMkZvQWZJMWdWaGlnLUdaSUI1RkFhYXY2Z2s1NEQxTlhQUXR3WGdDdWp4RlNoY1g5THRZcHpabGJRMzZMbUV2SG1xLWFRdlh0VTZvM2xGN0lKMUM4SUp4YUVVZHhGVnJRRndrUU14eW5nODI0WkQ3TUdmSlhMb2Y4Z3FTNWM5dVg3RXBhNVM5bEVrRDhXM2xBLUQ1d0dicnNPOHRRQnlBWGlicHhyOVFjaGZjcDFTT1RrY1pLRFU?oc=5",
+       "p": "Wallstreet Online",
+       "d": "2026-10-14"
+      },
+      {
+       "t": "Rohstoff-Marktbericht zu Erdgaspreis, Kupferpreis, Goldpreis & Co. am Vormittag",
+       "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQbVBFVm5HS1FqQUtVMkJzaFNKa2Z6NmljNHB5d1otNkRvMEdVcXpBN1VyZnJveDBfZFFsV3R4eFdrUWRsMXNMSk5mVW9IdDFqbURMdk1oZXNSUVE3Zk9oa2VxUTJ1ZlNjLVhzakhnZzJHRGhzRm1LVzNueGdUT3FsaUxneV9EZjhONmlaSmRlS0RPbTRLVGRpd3puQVJjU1hBOFVyWXoyQ2VPLXU0UWEtd29uQjY3TjVUQTBWbkVPaGRfM3JhMmRJ?oc=5",
+       "p": "Finanzen.net",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "Gold EUR | Kurs, Chart, Analysen | XC0009655157",
+       "u": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4zLVBmdXhyRnBtcEtHSW9zQnNWNHBDQW1sTERBS3NrOHpHN2NzNV9JU0hVcENzNG5fREVMNHRjLVZYN2hLNEZ4MmFtX3dJM0VUNmJJRUpVanhKWHFEUFExREtPRFVXWmFvZS1r?oc=5",
+       "p": "n-tv.de",
+       "d": "2026-10-12"
+      }
+     ]
     },
     {
      "symbol": "SI=F",
      "name": "Silber",
-     "price": 56.2,
-     "d1": 1.17,
-     "d5": -4.85,
-     "m1": -12.58,
-     "rsi": 33.0,
-     "vs_sma50": -12.16,
-     "vs_sma200": -22.17,
-     "from_high": -51.16,
+     "price": 56.26,
+     "d1": 1.29,
+     "d5": -4.74,
+     "m1": -12.48,
+     "rsi": 33.3,
+     "vs_sma50": -12.06,
+     "vs_sma200": -22.08,
+     "from_high": -51.11,
      "spark": [
       66.97,
       66.05,
@@ -1795,26 +2308,45 @@
       60.14,
       59.16,
       55.55,
-      56.2
+      56.26
      ],
      "signals": [],
      "score": 0,
      "trend": "ab",
      "group": "Rohstoffe",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "Goldpreis, Silberpreis, Öl (Brent/WTI) – Rohstoffe am 14.10.2026",
+       "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPM2VwUFVHM2E2aC02VkQ5VVlsMkZvQWZJMWdWaGlnLUdaSUI1RkFhYXY2Z2s1NEQxTlhQUXR3WGdDdWp4RlNoY1g5THRZcHpabGJRMzZMbUV2SG1xLWFRdlh0VTZvM2xGN0lKMUM4SUp4YUVVZHhGVnJRRndrUU14eW5nODI0WkQ3TUdmSlhMb2Y4Z3FTNWM5dVg3RXBhNVM5bEVrRDhXM2xBLUQ1d0dicnNPOHRRQnlBWGlicHhyOVFjaGZjcDFTT1RrY1pLRFU?oc=5",
+       "p": "Wallstreet Online",
+       "d": "2026-10-14"
+      },
+      {
+       "t": "Silberpreis, Goldpreis & Co. aktuell: So steht es am Dienstagabend um die Kurse der Rohstoffe",
+       "u": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPdzFjeFdsSGl6bXhoVUlpR2dNdmFfcHZqNXlIb2FSaE8wWkkybHFpUi1JOVBoZWlmdUQzYlJsaFdDQWdOR3IzNGhEZi1QRVRUdXUzZGVERGZBcW85d1ZZRXZfMDlHR3czd1Zfa2Y1YnZfeUo1Rlo3STdWV3dSRXh4MWJHLWxFaGcwZlVDZDFYaEdmWHpxb0JJdHk4ck1MZmpnMXNsMHJSU0hUdlJuejhSeEtIT1RxMWJWY2tJbE1lWVVmWEtUSS1WRXhKSVFXRjNlVkZmU2VWMEdEdw?oc=5",
+       "p": "Finanzen.net",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "Silber-Prognose: Wird der Silberpreis 2026 explodieren?",
+       "u": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9vc1JidlNXVVBVNmZMQkhjLWVrNGRrNmYwYmpEN0pYdWdHdG9XSVlkVllSZ1RVN3k2bFYzdWJEcVctQ1FYVnBES3RVUmVya3NTU3JrOG85Q1NZaUpmX3MzcTA3eGh6dmFPenFUS2tXTQ?oc=5",
+       "p": "Finanzwissen",
+       "d": "2026-10-10"
+      }
+     ]
     },
     {
      "symbol": "CL=F",
      "name": "WTI Öl",
-     "price": 94.13,
-     "d1": -1.01,
-     "d5": 2.89,
-     "m1": -8.1,
-     "rsi": 54.0,
-     "vs_sma50": 4.1,
-     "vs_sma200": 12.12,
-     "from_high": -16.66,
+     "price": 94.02,
+     "d1": -1.13,
+     "d5": 2.77,
+     "m1": -8.21,
+     "rsi": 53.7,
+     "vs_sma50": 3.98,
+     "vs_sma200": 11.99,
+     "from_high": -16.76,
      "spark": [
       91.3,
       91.48,
@@ -1845,7 +2377,7 @@
       93.74,
       94.14,
       95.09,
-      94.13
+      94.02
      ],
      "vol_ratio": 0.08,
      "signals": [],
@@ -1853,19 +2385,38 @@
      "trend": "auf",
      "group": "Rohstoffe",
      "forecast": "up",
-     "news": []
+     "news": [
+      {
+       "t": "Goldpreis, Silberpreis, Öl (Brent/WTI) – Rohstoffe am 14.10.2026",
+       "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPM2VwUFVHM2E2aC02VkQ5VVlsMkZvQWZJMWdWaGlnLUdaSUI1RkFhYXY2Z2s1NEQxTlhQUXR3WGdDdWp4RlNoY1g5THRZcHpabGJRMzZMbUV2SG1xLWFRdlh0VTZvM2xGN0lKMUM4SUp4YUVVZHhGVnJRRndrUU14eW5nODI0WkQ3TUdmSlhMb2Y4Z3FTNWM5dVg3RXBhNVM5bEVrRDhXM2xBLUQ1d0dicnNPOHRRQnlBWGlicHhyOVFjaGZjcDFTT1RrY1pLRFU?oc=5",
+       "p": "Wallstreet Online",
+       "d": "2026-10-14"
+      },
+      {
+       "t": "So entwickeln sich Ölpreis, Goldpreis & Co. am Mittag am Rohstoffmarkt",
+       "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOdGF4TTBRaWR2YlgxZFNNQ1ZqOWVuM2I2TWsyNXdlRzY5Qi1lWFMyMG5HZ1BDbDJ5UHMzMU1jbU9VT3dUdERsdm5CNUtXcEd2akt0UGJfRTIxUHJnLW4zRjNOOEJLM0lJMmxSRk1ORUFfWXFYY2MyNXMzcWhtYk5vOEVpQ0xxMXFQNkFDZnhiak5OQ3gxdXE1eUFqczZwYTFDblVBbXQ3ckxpVWthV19rMFJ3ZENKQ280ZTNjNDdn?oc=5",
+       "p": "Finanzen.net",
+       "d": "2026-10-14"
+      },
+      {
+       "t": "Goldpreis, Silberpreis, Öl (Brent/WTI) – Rohstoffe am 13.10.2026",
+       "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOdnpveU9OTkxuY2l0b1RqbmNTTVZ1ZnhncG5ERnpXSVNPUFlnUE0zVGNwUjBpbG9IRkNLb1lSbmdKU3JzV2lueklBemdEMWdFSl9ENlViM2RrYkNFZGlBdEI5Nk5ubS1JUlhqQzhsUzZGaWdPcF9KRVU2YjlPanJtZnJvcTZUVWwzRXE1cndUZl9SZDJ6OHN2U0I3eEdFQ3VzOE1waklGOF8yOGJUUUZZVTQwSzctbmk5WUtwblNuUUNPcVJtVTFGRDJfcDYzVEU?oc=5",
+       "p": "Wallstreet Online",
+       "d": "2026-10-13"
+      }
+     ]
     },
     {
      "symbol": "BZ=F",
      "name": "Brent Öl",
-     "price": 104.49,
-     "d1": -1.48,
-     "d5": 0.2,
-     "m1": -1.27,
-     "rsi": 55.5,
-     "vs_sma50": 6.8,
-     "vs_sma200": 16.54,
-     "from_high": -11.71,
+     "price": 104.31,
+     "d1": -1.65,
+     "d5": 0.03,
+     "m1": -1.44,
+     "rsi": 55.1,
+     "vs_sma50": 6.62,
+     "vs_sma200": 16.34,
+     "from_high": -11.86,
      "spark": [
       95.52,
       96.28,
@@ -1896,7 +2447,7 @@
       106.65,
       105.69,
       106.06,
-      104.49
+      104.31
      ],
      "vol_ratio": 0.13,
      "signals": [],
@@ -1904,19 +2455,38 @@
      "trend": "auf",
      "group": "Rohstoffe",
      "forecast": "up",
-     "news": []
+     "news": [
+      {
+       "t": "Starker Verkaufsdruck: Brent-Öl stürzt auf 104,54 USD",
+       "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVlduX1BzLXBvVTJURDd3Q05rVXhTZENTTmE1R3ZReUZYY3Fhb0VHUE1mNnF2MWdZSTczZmJra0hRdmZjV1YweFRPM2JnTlV0bW5ReFMxRVFjcXdDLThOSUs3dEZCbGhlVGpGNTZma0YtUzM5eG8xTEMtNzB5anJFLWU3czh6ZzFuMWtCcEx5eTdzdjAyWlpkZGl6X3FpZFZaUk15eDdxQW5aYXY1aDhoaA?oc=5",
+       "p": "Wallstreet Online",
+       "d": "2026-10-15"
+      },
+      {
+       "t": "Ölpreise legen wieder zu - Das steckt hinter den Aufschlägen",
+       "u": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZXB4OUpYc3ZnQ3lPQkV1akpBTVJuZjRiWmhISTZGS0lBSk1SU3RSQW9pczFyd1BmQ3lNbzdfeVViTjlEUFhQbnluRzlSMG1RcElPeHJMTmpVRnJtajN2VWdOZVdNVWhqWkg1Ykt0dzVHNkpIZXJXUk5CS2tteFNBdExTU1pKc0VRYjdJb3FjQU42aDFOTnNjVXdQb3YzMFZ5VThCeDR6Z29ZU3BJQ2dXTGxicXhsbVdEQ0U5S216aWNtVHkyUXIzTQ?oc=5",
+       "p": "Finanzen.net",
+       "d": "2026-10-14"
+      },
+      {
+       "t": "Die Ölpreise geben zum Wochenstart leicht nach",
+       "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNMEd1bVEzRHdkQ2RxcDBQRVc2eTB2aU9aMVhxV1RwNXFYbVlsLU9odE15NGhkRmIwSk9WeWhNY21ySXNzSTQ5VnVhY1ZXdnlsWUtjVGVOSTlNYm9hYkVtVGFpTHV6cml0VUlsOGFGSmRvdzdTSDZlRTB0aGJYdXJQQTNwa2xJVThrTkYteFlPeHlQbkdGWXdOaVB6aGdFWFJLZlh1VEtJZw?oc=5",
+       "p": "WirtschaftsWoche",
+       "d": "2026-10-13"
+      }
+     ]
     },
     {
      "symbol": "NG=F",
      "name": "Erdgas",
      "price": 3.26,
-     "d1": 1.78,
-     "d5": 2.75,
-     "m1": 12.59,
+     "d1": 1.81,
+     "d5": 2.78,
+     "m1": 12.63,
      "rsi": 60.6,
-     "vs_sma50": 10.91,
-     "vs_sma200": 4.81,
-     "from_high": -56.37,
+     "vs_sma50": 10.95,
+     "vs_sma200": 4.84,
+     "from_high": -56.35,
      "spark": [
       2.91,
       2.97,
@@ -1954,19 +2524,38 @@
      "score": 0,
      "trend": "auf",
      "group": "Rohstoffe",
-     "news": []
+     "news": [
+      {
+       "t": "Rohstoff-Marktbericht zu Erdgaspreis, Kupferpreis, Goldpreis & Co. am Vormittag",
+       "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQbVBFVm5HS1FqQUtVMkJzaFNKa2Z6NmljNHB5d1otNkRvMEdVcXpBN1VyZnJveDBfZFFsV3R4eFdrUWRsMXNMSk5mVW9IdDFqbURMdk1oZXNSUVE3Zk9oa2VxUTJ1ZlNjLVhzakhnZzJHRGhzRm1LVzNueGdUT3FsaUxneV9EZjhONmlaSmRlS0RPbTRLVGRpd3puQVJjU1hBOFVyWXoyQ2VPLXU0UWEtd29uQjY3TjVUQTBWbkVPaGRfM3JhMmRJ?oc=5",
+       "p": "Finanzen.net",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "Rohstoffe Aktuell: Goldpreis unter Zinsdruck, Gas-Divergenz & Öl-Risikoprämie",
+       "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMVM5TUMyX2Nmb2ppX1NBREN3dnMxamZTRFlya2FOLXRuQV9XQ0ppWURoazJFLU8xMnZMLWQzX01mWTYyWHVSMFB6bWlZNkFOclVxLVFRZGJ6cVZzTXY0ZFR3SzhGdi1qSTRxbVFrTlhpY1pFSjlkSGI0X3EtYzNjbmxoNjgwZlBhQUNhc3ZJcS1TMGtDQVllWHVNQlNfZ3JhTHZfazBKZmd5WnBtdVBKMTlmNXliRV9YeFphVm1vVDF2V0k?oc=5",
+       "p": "XTB.com",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "Goldpreis, Silberpreis, Öl (Brent/WTI) – Rohstoffe am 13.10.2026",
+       "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOdnpveU9OTkxuY2l0b1RqbmNTTVZ1ZnhncG5ERnpXSVNPUFlnUE0zVGNwUjBpbG9IRkNLb1lSbmdKU3JzV2lueklBemdEMWdFSl9ENlViM2RrYkNFZGlBdEI5Nk5ubS1JUlhqQzhsUzZGaWdPcF9KRVU2YjlPanJtZnJvcTZUVWwzRXE1cndUZl9SZDJ6OHN2U0I3eEdFQ3VzOE1waklGOF8yOGJUUUZZVTQwSzctbmk5WUtwblNuUUNPcVJtVTFGRDJfcDYzVEU?oc=5",
+       "p": "Wallstreet Online",
+       "d": "2026-10-13"
+      }
+     ]
     },
     {
      "symbol": "HG=F",
      "name": "Kupfer",
-     "price": 6.55,
-     "d1": -0.88,
-     "d5": 0.53,
-     "m1": 1.9,
-     "rsi": 47.8,
-     "vs_sma50": -0.45,
-     "vs_sma200": 6.23,
-     "from_high": -3.67,
+     "price": 6.56,
+     "d1": -0.73,
+     "d5": 0.68,
+     "m1": 2.05,
+     "rsi": 48.4,
+     "vs_sma50": -0.3,
+     "vs_sma200": 6.39,
+     "from_high": -3.53,
      "spark": [
       6.58,
       6.6,
@@ -1997,15 +2586,34 @@
       6.7,
       6.68,
       6.61,
-      6.55
+      6.56
      ],
-     "vol_ratio": 13.09,
+     "vol_ratio": 18.32,
      "signals": [],
      "score": 0,
      "trend": "seitwärts",
      "group": "Rohstoffe",
      "forecast": "up",
-     "news": []
+     "news": [
+      {
+       "t": "Rohstoff-Marktbericht zu Erdgaspreis, Kupferpreis, Goldpreis & Co. am Vormittag",
+       "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQbVBFVm5HS1FqQUtVMkJzaFNKa2Z6NmljNHB5d1otNkRvMEdVcXpBN1VyZnJveDBfZFFsV3R4eFdrUWRsMXNMSk5mVW9IdDFqbURMdk1oZXNSUVE3Zk9oa2VxUTJ1ZlNjLVhzakhnZzJHRGhzRm1LVzNueGdUT3FsaUxneV9EZjhONmlaSmRlS0RPbTRLVGRpd3puQVJjU1hBOFVyWXoyQ2VPLXU0UWEtd29uQjY3TjVUQTBWbkVPaGRfM3JhMmRJ?oc=5",
+       "p": "Finanzen.net",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "Rohstoff-Superzyklus: Welches Metall BlackRock jetzt besonders empfiehlt",
+       "u": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONEMxN25QODNPcnRuUXM2MDFJN2FXdmp0aUh5TzFfLWtTcVplQjJLV3Y4b1R2WUgzNkNhTDJocmoyUkItelRDSEtDSDhRWFUzV0hPTXVTUXFWMjYtNC1KVlhTcW4zVnU3T3FQQkxKa2ZmZE8xalpQckJhVjkwLWxZZ2hYbmZ0VU1tOFlrVi1GeDhEdHhob2Z6M3RBbkwzYXhfdW5pc2ptTGdFdHZSdVNHeXUxMXRwNldQSmw3Z0tJSEZaZzd1M3FOLVltdXIyUmhUSWhv?oc=5",
+       "p": "Börse Online",
+       "d": "2026-10-10"
+      },
+      {
+       "t": "Kupfer wird knapp: Der Markt unterschätzt, was jetzt kommt!",
+       "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTzd5MnlYZmw2VjNHTUljSXdXa0p3UFphSXIySHB2ejlJVFhqcVhZZS1ZUWhHS2liZEhLT0ZSRWI5V0ZwR2k1OWQwOXpmU1h0U0dTSUpJajg4c3ItcHNtQUFWS3RwTzVWYndWR3VOWmpMdmx3dndMUmhWNHJic056YUNOU0dsOUhTanVkekE1SWtuaDZ1MFlXUHBoZk5UcmhrczdnZFRUbmR0T01oNVdmeE5oQQ?oc=5",
+       "p": "Wallstreet Online",
+       "d": "2026-10-09"
+      }
+     ]
     },
     {
      "symbol": "XLE",
@@ -2062,7 +2670,26 @@
      "trend": "auf",
      "group": "Rohstoffe",
      "forecast": "up",
-     "news": []
+     "news": [
+      {
+       "t": "L&G Clean Energy UCITS ETF | IE00BK5BCH80 | A2QFEN",
+       "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE42UEUtUEtldDB1dFRkSDFrLUVKdy1FV0FueHF6UC1sdWFNUjR1SWRHRE1UamNHVWp3X1N0amZuZzZRM1ZIdWRVUXNQWDR2eng0NlBFZThFMHFyMDUz?oc=5",
+       "p": "extraETF",
+       "d": "2026-10-09"
+      },
+      {
+       "t": "iShares Global Clean Energy ETF mit Verlusten",
+       "u": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSC1UUEVIR1ZGbFFRTlRkbXBhc3hGNkN0ZG1UVkZ3UG5HWkNMcXlZZnhNc25VLUtZektvdXBEZlBNdDRMWUxWNElwTi0wOWg4ZVRHcDBDcWRxcm44Q0FWNEFKcTlqMzFOcVZicWN2NkhLSVdPRkdUeFJzRWNleGdBZFJrbGJhRHQ4V3FUS3VJaFZkb1NRbUtIaXVBMW85NEhaOXpzSXZn?oc=5",
+       "p": "Finanzen.net",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "iShares S&P 500 Energy Sector UCITS ETF USD (Acc) | IE00B42NKQ00 | A142NX",
+       "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA4bFotOXU2NnVSQUtCNlZjZXpfT2p2YzJ2bWlXR1dnbXh1OV8yMmJoXzNjM2pHcFh6Y2lNdEh2NFBBbGhpSEFnclFndDZCRHROUXlacWFfa0cwbDFP?oc=5",
+       "p": "extraETF",
+       "d": "2026-10-09"
+      }
+     ]
     },
     {
      "symbol": "XLB",
@@ -2117,7 +2744,14 @@
      "score": 10,
      "trend": "ab",
      "group": "Rohstoffe",
-     "news": []
+     "news": [
+      {
+       "t": "MP Materials Corp Aktie | Kurs | Dividende | Nachrichten (A2QHVL, US5533681012)",
+       "u": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAyMEdzZ0pkMmV4N3NGbzlpTHd5Z19zR2ZzUFFQNk51d0V3c241d3Z0SGpQRFU2OW5kQ3BQMDhUX3Nrd2tKaGd4TjdNVXJTNjAzQlpqelhXZ3R1bm5kVkNF?oc=5",
+       "p": "extraETF",
+       "d": "2026-10-09"
+      }
+     ]
     }
    ]
   },
@@ -2179,7 +2813,26 @@
      "trend": "seitwärts",
      "group": "AI",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "Künstliche Intelligenz: Nvidia übernimmt Anteile von Ärzteplattform Doctolib",
+       "u": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUzJzSURXakVXQWhxTzZKN1ozMnlPcGk0MmZ0QTFiY3JISzA0V0lhdTRmU1duWW8zYmFMUWFjUFJmR0JlZGV3X2piYVR1anM1V2gzXzhMWlhjLUlUaDczOEpJNDd2ZFF0a2JhQXRKYjhSaFY4Q19qT2FPcUk1eFJtMjYzckNfRVR1ejlUTnRtT0wxbXVU?oc=5",
+       "p": "DIE ZEIT",
+       "d": "2026-10-13"
+      },
+      {
+       "t": "Nvidia-Aktie: Mega-Einkaufstour – jetzt 2 Milliarden für Europa",
+       "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNY1hsSnR4SnVKeGR4cTRPdjN5NUljZXNjNk5INEFVT0Q0bmlhWFd2X3FjUGVRbDg5Qm9iN21JTnBHSXR0RE5GVjdhQXJ5ZUdkRU5HTk9jcXJybU1jejd4N3lJNGtGNEFYcUtpbkN3anMtcHRQeFI3MnhaQjlXTmRCRF9BenpDbERnUzFqRkNhR0lHUnZSNWwwYURUeFU2cjI1R0kxM2stV3k4X2EyazN6RWpBb0FUNFRPWHVOV0JhZUh5RlRFUkdGLWpSb0tWZHN5?oc=5",
+       "p": "Der Aktionär",
+       "d": "2026-10-14"
+      },
+      {
+       "t": "RTX Spark N1X: Warum jetzt auch Apple Nvidia fürchten muss",
+       "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQjh1S0E1U2JzemdLZEduUzF4c0I1TmY5X3FEb0otcEhQcTc4S0kyYkxIT3lCcFRxVXlza3A0YTI2Y2VIb2RFLV8wMHloLW1PSm5Ua1dQbDl3TjZlRHF2WDFJd2QwQ2N4RWlURDZva2VkbTQzQVNUQWdJeUNaOHAtOHV3N0xIWE9MTGpTOHgtblhtMy1CaFZCckRweUFiVjFoVlgw?oc=5",
+       "p": "Golem",
+       "d": "2026-10-08"
+      }
+     ]
     },
     {
      "symbol": "MSFT",
@@ -2233,7 +2886,26 @@
      "trend": "auf",
      "group": "AI",
      "forecast": "up",
-     "news": []
+     "news": [
+      {
+       "t": "Microsoft dampft Speicherkontingent von Microsoft-365-Abos ein",
+       "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOMjJKcE40Zm5JR1RkaDhZekJDMjk5QnJGWS1nRmpWT1VodGZpeDdORjZVQ0hvZ2EzWFZzR3Rnb28wenFGbWl0S1dKZ1daZ2V1WlFQQVBJVlhtM1Ywc0NSQTZFNWVJREltbnQ0R1g0bkJGQTNBbTJzRzFKZFBOcjl3c1dKcnIyTzhJbjJWMHc1NUdFZGFwLUVma3A1Q3ZacktVVVhaMQ?oc=5",
+       "p": "heise online",
+       "d": "2026-10-09"
+      },
+      {
+       "t": "Cloudspeicher: Microsoft kürzt Onedrive-Kontingente",
+       "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORTlJdC03LUR3M1VaREI5RTZvN1ZNc2NfbV9QMUdGUTdlRG51cWFXZ3laQ2hNVk5HdFFOanpMYzl0OXhmMU9MZlJzQlpxbmJRTHpBdjk1TXZsTlZzZU9VNVlQdHlKMHotaWNnbkdWRDN2LURZRG5obGNqeUM3WVk0WHpXem4zaE9ERFZ2eVRGNm9Fei11Y0ItYVdR?oc=5",
+       "p": "Golem",
+       "d": "2026-10-09"
+      },
+      {
+       "t": "»Mehr Flexibilität« – damit meint Microsoft: draufzahlen oder sich mit weniger zufriedengeben",
+       "u": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQRGxpb1lHbXd3ZFlOb2pOdTRmZERMMlEtbHVNZW5hZ0wxQ2RuQkItb3pQaTltTTF3dDJNTXZxczhneTZ2dmdVY2kwSXJzbWhYUkNiZE14Ukh3LXBVc1pBMXMxOGNJVnZZNFA0NjdId21WWmxJTkhZcGZTTUxTYkRxUE5tbUE0ZTZBWWttT0tNT3c5ajJ4YmtjTkJQdlFZZzIzODZBOVhUVVhEQkl4WERFVFFCX2haQ1FFY2Q1VWZ5VTVQXzF1MDRyQUhEa1o5LTJrNHNHZDN3Z3BvTmRFeVQyelE5V2VkdnZEMi1nT2I4TWMwREdMUFIzWVp0SDBhTWJ0eG5Cc0Z6VQ?oc=5",
+       "p": "Spiegel",
+       "d": "2026-10-09"
+      }
+     ]
     },
     {
      "symbol": "AMD",
@@ -2289,7 +2961,26 @@
      "score": 15.7,
      "trend": "auf",
      "group": "AI",
-     "news": []
+     "news": [
+      {
+       "t": "Radeon-Grafikkarten: AMD erhöht Preise für mehrere Modelle",
+       "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcnJUQlM4T25UU0Fvb0pKVVFyd3kyZGFDOUxheWhfeGo4SlN5b0psakZFVDh0U2lXVVVyU1piRmhLNmR5TkdSbDgyaWR6R1VHNVpUd2xvV3VoWk9oLXZMU3FTTHRraEFyLUp3YnVsV251TG5CSnZVNVZZdjRxd2ZBRnFJYTctTEI5OU1FZFZ6VTAyNTdTX0pmX2hVQUVsWHJVYkFaYl9QSENxWEFnc1FwbVg4VG8zZEZTRV9sSV81Q0tZUU0?oc=5",
+       "p": "PCGH",
+       "d": "2026-10-09"
+      },
+      {
+       "t": "Radeon RX 7000: AMD äußert sich zur potenziellen Sicherheitslücke",
+       "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaDNEYjYtam55dXYxMGJMUTlJTmYxQUtLRGhKMGpBdVRYTjVYLVg2bXk1RDJBMTIwcnUtZXBwamRRX1FOelppR25oMGs1bUtUWFFhcERlY3VoSTFHTm1qQ29ZUG8ybzFBWHpHWUZJX1hqbzI5LUczSUpYcXVYdTJZbTVyY0hHRXdleWxGeE54OWlnSE1iLWhkLThLdFNyblB3TzA5YzVmUHI3b3UweWVNbmNwWERzSlNKQ3hIUQ?oc=5",
+       "p": "ComputerBase",
+       "d": "2026-10-12"
+      },
+      {
+       "t": "AMD Ryzen 7 6800HS Prozessor - Benchmarks und Specs",
+       "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTDI1b3UtamU4ZG5fTDhjQ25IR0E4dVZsV1l2T0YySmR1cURxcTZnWFI0ZWVoekc5VTJPcll2YVl6Ukc2WDdEZEpPM3dwUnVITERGamllYU5kUmlEbUQybXJ0QWxtOGNCRm9tNWM2ZGRMWHV2bVZmZDNON0ZhYXJreFhWZGVMT3JMdW5jLVlBUTFQUE05WXFPQg?oc=5",
+       "p": "notebookcheck.com",
+       "d": "2026-10-10"
+      }
+     ]
     },
     {
      "symbol": "TSM",
@@ -2345,7 +3036,26 @@
      "trend": "seitwärts",
      "group": "AI",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "TSMC: KI-Boom treibt Q3-Gewinn über Erwartungen auf neues Rekordhoch",
+       "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOcjdDS0RrSVZ5S05QRVdaWVl5ektjWWMtSGswRUNaTlBMZmMzUjN5ZVpWblF1OGRMSW4ycy1rRjR0QW1pX0dmOWE2dHhMMWJsQXVwbDdjMG9lRmRZT1NTRmE4M2ZTTzVfcHZwOGpvcldqSWoweWtFMGNtZmM0WE94Q2lkckhZV0lkbW9CaGRfVTdYQnpRcHdQMExxckpDVHN2a3lZLWJ5ZS0wUzhVUlNNb1FLdDR5eEkwRjVJRkZWS3B1UTVqdjRB?oc=5",
+       "p": "Investing.com Deutsch",
+       "d": "2026-10-15"
+      },
+      {
+       "t": "TSMC Aktie: Rekordumsatz, doch reicht es?",
+       "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8zNk5PQmI4Tmx5b1plSnFYN3E1ekhvX2VUdVZfbkpxMUp2c1pfXzk1TVVGS2ppR2RGck9OaHVkaUZmSFpOU19PZmF5c0lFQWhpMkQ1czFSOTFPMldwd2RRVFM5alBIX25vSWVjUUpVUWFfcG8tQzVEWnVPWC1hMWM?oc=5",
+       "p": "Börse Global",
+       "d": "2026-10-15"
+      },
+      {
+       "t": "TSMC: Umsatz springt im September um 54,6 % – doch ein Detail sticht heraus",
+       "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSmlubjZqNmFvX0MxaVZleWNlS29rMjhoMmltT0QyajhLSlQ4NXpXRzR0aWpWY3pudUV4UUJ0THpaOG1SNHA3V0FIZkFNMWh5TkY1cW9vQTd0eUxESkFCaXd0VGtUeEIwWno3YTJOdTQ5M3FSZ0sxLTlOMTJGYlgwQUE5QjFZTkdPczVQMV9JRXlheDN6S3RjaWp5UUM0TmpGN1ZGS1FKeElYQ3ZJYkl2T2FKV0huaHF0dEcxRERlbk9NVmc?oc=5",
+       "p": "Wallstreet Online",
+       "d": "2026-10-08"
+      }
+     ]
     },
     {
      "symbol": "PLTR",
@@ -2401,7 +3111,26 @@
      "trend": "auf",
      "group": "AI",
      "forecast": "up",
-     "news": []
+     "news": [
+      {
+       "t": "Palantir: Kursziel 265 Dollar – und zwei AKTIONÄR-Tipps",
+       "u": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOHNMY3c3VjFueHI4RjU4VVpTMEZ1d3gxYVZMQnlaUFZxemJScDlCUG9tdlZtVURVel9ZTXJCNGNBUDF0TzVhM1c2MVVTT2hDd3V6NkNHN2hXX090QUxIRG9YNXB6RnhJWXUwdU90QktlbXJwMi1XODVjME1vVWJqazhwUnZUSDhXUUgzWUFPamFQSExPWE1DM1liMlBtRjloQS1BcnJDNElNNlpsaGNsQVEtQmc3bndySkVhM21Zd3R3Q0ZjdFE?oc=5",
+       "p": "Der Aktionär",
+       "d": "2026-10-10"
+      },
+      {
+       "t": "Palantir Technologies Inc. (PTX.F) Aktienkurs, Nachrichten, Kurs und Verlauf",
+       "u": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5OQl9RLWhFaExhakZlZ3VDMUdvVGtSMDRoZlJ5TTAtMjk4UnctUnptMkxGdEtZQ1doZWtUSVhTejNWeW44aFhuWWxsUFlzYjNoTEk4?oc=5",
+       "p": "Yahoo Finanzen Deutschland",
+       "d": "2026-10-09"
+      },
+      {
+       "t": "Palantir zeigt positive Monatsbilanz – wie weiter im Oktober 2026?",
+       "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQUNVVm0tMFB3eEd1T2pETzN3cE9ySlVtQ3RiOC1weFBUaC1rT29UUkFwRm12d2lkV1Znd0xWUzVQTE0yVXQtWmJpVV9PQkpwa0oyYnp2TjNfZmJFYjdtSzdFeE5sR2hLdExmMXAwd2FDeGhBVVpHWkszbUppR01TQ2Z1eG11MnhOaHUwdXFHWHpMMmdsR1gyVEFWTy1UYm1DenZWaHZmVXBTdWktYjdRS2JZVnliZw?oc=5",
+       "p": "Wallstreet Online",
+       "d": "2026-10-10"
+      }
+     ]
     },
     {
      "symbol": "SMH",
@@ -2457,7 +3186,26 @@
      "trend": "seitwärts",
      "group": "AI",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "Deutsche Börse-News: \"Halbleiter weiter im Blick - und Brasiliens Aktien\" (ETFs) Von dpa-AFX",
+       "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQOGx4djVhT2MzdjdmUmxTZ204Q29CUV9qdUQ3ZnV1ZWozbkp4YzdtY3lORGNsa3g0aGR6b0J0eWRydF9wWl9WM2xVVzhMQ21RVmtPZEkxalVHTTRTc0dnMDV5cHlkTmM1M3NEazNZNjY3d0Zrb3Rxeml6V0dvZk4tcGlWUVVHOE5UOXN5a2F4eVZTX3BYUFpPSlVIVDR0dmZ3aWdqUzRkZjNWVWQzN19NRUthc2JHQ21nb3ZzUTdTWVRrUQ?oc=5",
+       "p": "Investing.com Deutsch",
+       "d": "2026-10-14"
+      },
+      {
+       "t": "iShares Global Semiconductors ETF: Micron und Sandisk crashen über 10%",
+       "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZ3hZR3k2eUJlb3owTEdvdjZSQ3VOYzdGaWFfNERTNl9hWVhHaWp1LWdjY2FGWVM4ZGtDUEFJaERZeDlkcjRRRHdpd29iNko0ZEZfS3B3YV96NmhKaUNHZUNIazZ6NVBOQXR6U05YVUFyUUdBU3AyOHM2dEs0ZHZHdVMzOGFlSjFyMnBJa0NGVWVnMWZtR0Y0TFdkZmMtTkhw?oc=5",
+       "p": "Finanztrends",
+       "d": "2026-10-08"
+      },
+      {
+       "t": "iShares MSCI Global Semiconductors ETF: Micron verliert 3,9%",
+       "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPY0w0RWFRV094X24xM0FhQlBkYVJjWU1vMks5UmtRSU13REFCcVdZcnJCUHU0WU03b2pBVWg3bGJBWXpvTHFvZUdMTUdoLU10ZExkS0dNY1d5ZVRaZ3FKQ240MjJWUVoyS1hWOUhOeV9kTWI4QTB4R3BBYnE5U2o2UzExWVpadURYM3FCdjR0NmJqNG5wb1ZnQw?oc=5",
+       "p": "Börse Global",
+       "d": "2026-10-13"
+      }
+     ]
     },
     {
      "symbol": "AIQ",
@@ -2513,7 +3261,20 @@
      "trend": "seitwärts",
      "group": "AI",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "Xtrackers Artificial Intelligence and Big Data UCITS ETF | IE00BGV5VN51 | A2N6LC",
+       "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE53V010VEpCVWFHRW5PdDliUFNXN2tGZFdrZk9ISWxiWWVhMmpzWS1UbzZUajlCR1U3R3MyeWZNR21jdEQ1TVFvWHNkVm5XUGljcXFIV0dJdDdtZXVM?oc=5",
+       "p": "extraETF",
+       "d": "2026-10-09"
+      },
+      {
+       "t": "GAIMIN (GMRX) Kurs Live, Charts, Marktkapitalisierung",
+       "u": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4taFR5M1dSTVhiMVdFcERnOXVpZGJSalVSWk1tNmV4aGFDR0VXdDZQMFlJUURVUm91alN1dWV4YnR5cTZzQ1I5Vi1kdmZkR1VzOTF0OGVWMERTVkE?oc=5",
+       "p": "CoinMarketCap",
+       "d": "2026-10-12"
+      }
+     ]
     },
     {
      "symbol": "BOTZ",
@@ -2567,7 +3328,14 @@
      "trend": "ab",
      "group": "AI",
      "forecast": "down",
-     "news": []
+     "news": [
+      {
+       "t": "Anthropic IPO: Wichtige Informationen, die Sie über den Schöpfer von Claude wissen müssen",
+       "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMXU2Qk43bkhxc0xxWmFaZkd6Y3hvd3RDdEJmVmFKY01WdUktMDIyTlZvUDVKWXBNVXUtWVIwQ2lhY0lrQ2lBRkZXVy15MW8tRk1YWWl4WUtxb0k4bTA0Um9mMVpYXzdWVE9xcnF5M19qaS1lMDd3c01zT3JlSmx3Ql9jeVh6dHlmUGU1bVRsZS11NHF0QUtPQ0F3cFZmZzJTRVE?oc=5",
+       "p": "TradingKey",
+       "d": "2026-10-13"
+      }
+     ]
     }
    ]
   }
