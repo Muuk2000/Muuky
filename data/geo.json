@@ -1,55 +1,30 @@
 {
- "generated": "2026-10-15T06:29+00:00",
+ "generated": "2026-10-15T06:34+00:00",
  "pairs": [
   {
-   "tone_now": -1.51,
-   "tone_base": -0.6,
-   "tone_z": -1.53,
-   "tension_ratio": 0.54,
-   "state": "Anspannung steigt",
-   "spark": [
-    -1.08,
-    -0.97,
-    -0.87,
-    -0.44,
-    -0.04,
-    0.45,
-    0.47,
-    -0.27,
-    -0.91,
-    -1.12,
-    -1.2,
-    -1.23,
-    -2.25,
-    0.0,
-    -2.29
-   ],
-   "pair": "USA – China"
-  },
-  {
-   "tone_now": -2.31,
-   "tone_base": -1.65,
-   "tone_z": -1.66,
+   "tone_now": -2.85,
+   "tone_base": -2.16,
+   "tone_z": -1.35,
    "tension_ratio": null,
    "state": "Anspannung steigt",
    "spark": [
-    -1.45,
+    -1.93,
     -1.6,
-    -1.67,
-    -1.83,
-    -1.36,
-    -1.37,
-    -0.77,
-    -1.5,
-    -2.01,
-    -1.9,
-    -2.38,
-    -2.01,
-    -4.46,
+    -1.59,
+    -2.17,
+    -1.84,
+    -1.27,
+    -2.97,
+    -2.96,
+    -2.51,
+    -2.25,
+    -2.26,
+    -2.53,
+    -6.42,
     0.0,
-    -2.47
+    -2.13
    ],
-   "pair": "China – Russland"
+   "pair": "USA – Russland"
   }
  ],
  "markets": [
@@ -70,13 +45,13 @@
   },
   {
    "name": "Gold",
-   "d1": 1.14,
-   "m1": -5.31
+   "d1": 1.22,
+   "m1": -5.23
   },
   {
    "name": "Öl (WTI)",
-   "d1": -1.05,
-   "m1": -8.14
+   "d1": -1.01,
+   "m1": -8.1
   }
  ],
  "note": "Automatische Auswertung der Medien-Stimmung (GDELT), kein Lagebericht. Viel Rauschen."

@@ -109,24 +109,24 @@
    "d1": -0.67
   }
  ],
- "generated": "2026-10-15T06:28+00:00",
+ "generated": "2026-10-15T06:34+00:00",
  "demo": false,
  "top_signals": [
   {
    "symbol": "^KS11",
    "name": "Kospi",
    "group": "Welt-Indizes",
-   "d1": -8.73,
+   "d1": -7.91,
    "signals": [
-    "RSI 22: überverkauft - mögliche Gegenbewegung",
-    "Starke Tagesbewegung -8.7 %"
+    "RSI 23: überverkauft - mögliche Gegenbewegung",
+    "Starke Tagesbewegung -7.9 %"
    ]
   },
   {
    "symbol": "000001.SS",
    "name": "Shanghai Comp.",
    "group": "Welt-Indizes",
-   "d1": -2.19,
+   "d1": -1.99,
    "signals": [
     "RSI 25: überverkauft - mögliche Gegenbewegung"
    ]
@@ -191,9 +191,9 @@
    "symbol": "^NSEI",
    "name": "Nifty 50",
    "group": "Welt-Indizes",
-   "d1": 1.49,
+   "d1": 1.48,
    "signals": [
-    "Frühsignal: relative Stärke dreht nach oben (+4.0 % in 5 Tagen), Kurs noch nicht bestätigt"
+    "Frühsignal: relative Stärke dreht nach oben (+3.9 % in 5 Tagen), Kurs noch nicht bestätigt"
    ]
   },
   {
@@ -209,7 +209,7 @@
  "groups": [
   {
    "name": "Welt-Indizes",
-   "comment": "Welt-Indizes: Tagesstimmung schwach (Ø -1.5 %, 4 von 12 im Plus). Stärkster: Nifty 50 (+1.5 %), schwächster: Kospi (-8.7 %). Auf Monatssicht Ø -1.4 %.",
+   "comment": "Welt-Indizes: Tagesstimmung schwach (Ø -1.4 %, 4 von 12 im Plus). Stärkster: Nifty 50 (+1.5 %), schwächster: Kospi (-7.9 %). Auf Monatssicht Ø -1.3 %.",
    "items": [
     {
      "symbol": "^GSPC",
@@ -486,14 +486,14 @@
     {
      "symbol": "^N225",
      "name": "Nikkei 225",
-     "price": 64323.02,
-     "d1": -5.05,
-     "d5": -8.16,
-     "m1": -1.45,
-     "rsi": 39.2,
-     "vs_sma50": -2.94,
-     "vs_sma200": 5.38,
-     "from_high": -11.11,
+     "price": 64599.09,
+     "d1": -4.64,
+     "d5": -7.76,
+     "m1": -1.03,
+     "rsi": 40.1,
+     "vs_sma50": -2.53,
+     "vs_sma200": 5.83,
+     "from_high": -10.73,
      "spark": [
       66311.93,
       66215.34,
@@ -524,16 +524,16 @@
       69030.92,
       67777.52,
       67744.29,
-      64323.02
+      64599.09
      ],
      "vol_ratio": 0.0,
-     "rs5": -7.02,
-     "rs20": 1.44,
+     "rs5": -6.62,
+     "rs20": 1.87,
      "rs_state": "neutral",
      "signals": [
-      "Starke Tagesbewegung -5.0 %"
+      "Starke Tagesbewegung -4.6 %"
      ],
-     "score": 5.0,
+     "score": 4.6,
      "trend": "seitwärts",
      "group": "Welt-Indizes",
      "forecast": "up",
@@ -542,14 +542,14 @@
     {
      "symbol": "^HSI",
      "name": "Hang Seng",
-     "price": 23990.02,
-     "d1": -1.33,
-     "d5": 0.86,
-     "m1": -2.75,
-     "rsi": 39.1,
-     "vs_sma50": -4.08,
-     "vs_sma200": -5.85,
-     "from_high": -14.22,
+     "price": 23981.4,
+     "d1": -1.37,
+     "d5": 0.82,
+     "m1": -2.78,
+     "rsi": 39.0,
+     "vs_sma50": -4.12,
+     "vs_sma200": -5.89,
+     "from_high": -14.25,
      "spark": [
       25213.31,
       25650.87,
@@ -580,11 +580,11 @@
       24271.2,
       24345.22,
       24314.17,
-      23990.02
+      23981.4
      ],
      "vol_ratio": 0.0,
-     "rs5": 1.52,
-     "rs20": -3.63,
+     "rs5": 1.48,
+     "rs20": -3.66,
      "rs_state": "schwach",
      "signals": [],
      "score": 0,
@@ -595,14 +595,14 @@
     {
      "symbol": "000001.SS",
      "name": "Shanghai Comp.",
-     "price": 3684.89,
-     "d1": -2.19,
-     "d5": -3.33,
-     "m1": -6.49,
-     "rsi": 24.9,
-     "vs_sma50": -5.38,
-     "vs_sma200": -8.01,
-     "from_high": -13.14,
+     "price": 3692.18,
+     "d1": -1.99,
+     "d5": -3.14,
+     "m1": -6.3,
+     "rsi": 25.4,
+     "vs_sma50": -5.19,
+     "vs_sma200": -7.83,
+     "from_high": -12.97,
      "spark": [
       3956.57,
       3952.18,
@@ -633,15 +633,15 @@
       3797.24,
       3800.86,
       3767.23,
-      3684.89
+      3692.18
      ],
-     "rs5": -2.7,
-     "rs20": -5.92,
+     "rs5": -2.51,
+     "rs20": -5.74,
      "rs_state": "schwach",
      "signals": [
       "RSI 25: überverkauft - mögliche Gegenbewegung"
      ],
-     "score": 45.1,
+     "score": 44.6,
      "trend": "ab",
      "group": "Welt-Indizes",
      "forecast": "down",
@@ -650,14 +650,14 @@
     {
      "symbol": "^NSEI",
      "name": "Nifty 50",
-     "price": 22960.5,
-     "d1": 1.49,
-     "d5": 3.28,
-     "m1": -0.68,
+     "price": 22956.8,
+     "d1": 1.48,
+     "d5": 3.26,
+     "m1": -0.7,
      "rsi": 49.2,
-     "vs_sma50": -2.62,
-     "vs_sma200": -5.14,
-     "from_high": -12.79,
+     "vs_sma50": -2.63,
+     "vs_sma200": -5.16,
+     "from_high": -12.81,
      "spark": [
       23914.45,
       23873.45,
@@ -688,14 +688,14 @@
       22363.35,
       22721.95,
       22622.7,
-      22960.5
+      22956.8
      ],
      "vol_ratio": 0.0,
-     "rs5": 3.95,
-     "rs20": -1.82,
+     "rs5": 3.94,
+     "rs20": -1.83,
      "rs_state": "frueh_rein",
      "signals": [
-      "Frühsignal: relative Stärke dreht nach oben (+4.0 % in 5 Tagen), Kurs noch nicht bestätigt"
+      "Frühsignal: relative Stärke dreht nach oben (+3.9 % in 5 Tagen), Kurs noch nicht bestätigt"
      ],
      "score": 10,
      "trend": "ab",
@@ -816,14 +816,14 @@
     {
      "symbol": "^KS11",
      "name": "Kospi",
-     "price": 5484.38,
-     "d1": -8.73,
-     "d5": -19.39,
-     "m1": -22.03,
-     "rsi": 22.5,
-     "vs_sma50": -18.01,
-     "vs_sma200": -14.34,
-     "from_high": -39.83,
+     "price": 5533.64,
+     "d1": -7.91,
+     "d5": -18.67,
+     "m1": -21.33,
+     "rsi": 23.0,
+     "vs_sma50": -17.29,
+     "vs_sma200": -13.57,
+     "from_high": -39.29,
      "spark": [
       6820.02,
       6835.8,
@@ -854,17 +854,17 @@
       6384.24,
       6035.35,
       6008.81,
-      5484.38
+      5533.64
      ],
-     "vol_ratio": 1.15,
-     "rs5": -18.4,
-     "rs20": -19.88,
+     "vol_ratio": 1.23,
+     "rs5": -17.67,
+     "rs20": -19.16,
      "rs_state": "schwach",
      "signals": [
-      "RSI 22: überverkauft - mögliche Gegenbewegung",
-      "Starke Tagesbewegung -8.7 %"
+      "RSI 23: überverkauft - mögliche Gegenbewegung",
+      "Starke Tagesbewegung -7.9 %"
      ],
-     "score": 56.2,
+     "score": 54.9,
      "trend": "ab",
      "group": "Welt-Indizes",
      "forecast": "down",
@@ -1701,19 +1701,19 @@
   },
   {
    "name": "Rohstoffe",
-   "comment": "Rohstoffe: Tagesstimmung unentschlossen (Ø +0.1 %, 4 von 8 im Plus). Stärkster: Erdgas (+1.6 %), schwächster: Brent Öl (-1.6 %). Auf Monatssicht Ø -1.4 %. Tagesplus gegen den Monatstrend - Erholung oder Fehlsignal.",
+   "comment": "Rohstoffe: Tagesstimmung unentschlossen (Ø +0.2 %, 4 von 8 im Plus). Stärkster: Erdgas (+1.8 %), schwächster: Brent Öl (-1.5 %). Auf Monatssicht Ø -1.4 %. Tagesplus gegen den Monatstrend - Erholung oder Fehlsignal.",
    "items": [
     {
      "symbol": "GC=F",
      "name": "Gold",
-     "price": 4154.6,
-     "d1": 1.14,
-     "d5": -0.06,
-     "m1": -5.31,
-     "rsi": 40.6,
-     "vs_sma50": -5.07,
-     "vs_sma200": -8.52,
-     "from_high": -21.88,
+     "price": 4157.9,
+     "d1": 1.22,
+     "d5": 0.02,
+     "m1": -5.23,
+     "rsi": 41.0,
+     "vs_sma50": -5.0,
+     "vs_sma200": -8.45,
+     "from_high": -21.82,
      "spark": [
       4539.9,
       4476.6,
@@ -1744,7 +1744,7 @@
       4190.6,
       4177.3,
       4107.9,
-      4154.6
+      4157.9
      ],
      "vol_ratio": 0.32,
      "signals": [],
@@ -1757,14 +1757,14 @@
     {
      "symbol": "SI=F",
      "name": "Silber",
-     "price": 56.17,
-     "d1": 1.13,
-     "d5": -4.89,
-     "m1": -12.62,
-     "rsi": 32.9,
-     "vs_sma50": -12.2,
-     "vs_sma200": -22.21,
-     "from_high": -51.19,
+     "price": 56.2,
+     "d1": 1.17,
+     "d5": -4.85,
+     "m1": -12.58,
+     "rsi": 33.0,
+     "vs_sma50": -12.16,
+     "vs_sma200": -22.17,
+     "from_high": -51.16,
      "spark": [
       66.97,
       66.05,
@@ -1795,7 +1795,7 @@
       60.14,
       59.16,
       55.55,
-      56.17
+      56.2
      ],
      "signals": [],
      "score": 0,
@@ -1807,14 +1807,14 @@
     {
      "symbol": "CL=F",
      "name": "WTI Öl",
-     "price": 94.09,
-     "d1": -1.05,
-     "d5": 2.84,
-     "m1": -8.14,
-     "rsi": 53.9,
-     "vs_sma50": 4.06,
-     "vs_sma200": 12.07,
-     "from_high": -16.7,
+     "price": 94.13,
+     "d1": -1.01,
+     "d5": 2.89,
+     "m1": -8.1,
+     "rsi": 54.0,
+     "vs_sma50": 4.1,
+     "vs_sma200": 12.12,
+     "from_high": -16.66,
      "spark": [
       91.3,
       91.48,
@@ -1845,7 +1845,7 @@
       93.74,
       94.14,
       95.09,
-      94.09
+      94.13
      ],
      "vol_ratio": 0.08,
      "signals": [],
@@ -1858,14 +1858,14 @@
     {
      "symbol": "BZ=F",
      "name": "Brent Öl",
-     "price": 104.42,
-     "d1": -1.55,
-     "d5": 0.13,
-     "m1": -1.33,
-     "rsi": 55.3,
-     "vs_sma50": 6.73,
-     "vs_sma200": 16.46,
-     "from_high": -11.77,
+     "price": 104.49,
+     "d1": -1.48,
+     "d5": 0.2,
+     "m1": -1.27,
+     "rsi": 55.5,
+     "vs_sma50": 6.8,
+     "vs_sma200": 16.54,
+     "from_high": -11.71,
      "spark": [
       95.52,
       96.28,
@@ -1896,9 +1896,9 @@
       106.65,
       105.69,
       106.06,
-      104.42
+      104.49
      ],
-     "vol_ratio": 0.12,
+     "vol_ratio": 0.13,
      "signals": [],
      "score": 0,
      "trend": "auf",
@@ -1909,14 +1909,14 @@
     {
      "symbol": "NG=F",
      "name": "Erdgas",
-     "price": 3.25,
-     "d1": 1.63,
-     "d5": 2.59,
-     "m1": 12.42,
-     "rsi": 60.3,
-     "vs_sma50": 10.75,
-     "vs_sma200": 4.65,
-     "from_high": -56.43,
+     "price": 3.26,
+     "d1": 1.78,
+     "d5": 2.75,
+     "m1": 12.59,
+     "rsi": 60.6,
+     "vs_sma50": 10.91,
+     "vs_sma200": 4.81,
+     "from_high": -56.37,
      "spark": [
       2.91,
       2.97,
@@ -1947,7 +1947,7 @@
       3.17,
       3.28,
       3.2,
-      3.25
+      3.26
      ],
      "vol_ratio": 0.05,
      "signals": [],
@@ -1959,14 +1959,14 @@
     {
      "symbol": "HG=F",
      "name": "Kupfer",
-     "price": 6.56,
-     "d1": -0.8,
-     "d5": 0.61,
-     "m1": 1.97,
-     "rsi": 48.1,
-     "vs_sma50": -0.38,
-     "vs_sma200": 6.31,
-     "from_high": -3.6,
+     "price": 6.55,
+     "d1": -0.88,
+     "d5": 0.53,
+     "m1": 1.9,
+     "rsi": 47.8,
+     "vs_sma50": -0.45,
+     "vs_sma200": 6.23,
+     "from_high": -3.67,
      "spark": [
       6.58,
       6.6,
@@ -1997,9 +1997,9 @@
       6.7,
       6.68,
       6.61,
-      6.56
+      6.55
      ],
-     "vol_ratio": 16.33,
+     "vol_ratio": 13.09,
      "signals": [],
      "score": 0,
      "trend": "seitwärts",
