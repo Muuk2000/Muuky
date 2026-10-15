@@ -345,27 +345,69 @@ def parse_news(raw, limit=3):
             break
     return out
 
-def add_news(all_items, budget=120):
+def google_news(query, limit=3):
+    """Schlagzeilen über Google News (RSS), deutschsprachig, letzte 7 Tage."""
+    import urllib.request, urllib.parse, xml.etree.ElementTree as ET
+    from email.utils import parsedate_to_datetime
+    q = urllib.parse.quote(f"{query} when:7d")
+    url = f"https://news.google.com/rss/search?q={q}&hl=de&gl=DE&ceid=DE:de"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (markt-briefing)"})
+    root = ET.fromstring(urllib.request.urlopen(req, timeout=20).read())
+    out = []
+    for it in root.iter("item"):
+        title, link = (it.findtext("title") or "").strip(), (it.findtext("link") or "").strip()
+        src = (it.findtext("source") or "").strip()
+        if src and title.endswith(" - " + src):
+            title = title[: -len(src) - 3]
+        try:
+            d = parsedate_to_datetime(it.findtext("pubDate")).date().isoformat()
+        except Exception:
+            d = ""
+        if title and link.startswith("http"):
+            out.append({"t": title[:160], "u": link, "p": src, "d": d})
+        if len(out) >= limit:
+            break
+    return out
+
+def news_query(name, sym=""):
+    import re
+    base = re.sub(r"\s*\(.*?\)", "", name).strip()
+    if sym.endswith("=F"):
+        return base + " Preis Rohstoff"
+    if sym.startswith("^") or sym.endswith(".SS"):
+        return base + " Index Börse"
+    return base + (" ETF" if "ETF" in name else "")
+
+def add_news(all_items, budget=150):
     import time, yfinance as yf
     end = time.time() + budget
-    n, errs, sample = 0, [], None
+    g_ok = y_ok = 0
+    errs, sample = [], None
     for it in all_items:
         if time.time() > end:
             errs.append("Zeitbudget aufgebraucht")
             break
+        news = []
         try:
-            raw = yf.Ticker(it["symbol"]).news
-            if sample is None:
-                sample = {"symbol": it["symbol"], "type": type(raw).__name__, "len": len(raw or []),
-                          "first_keys": sorted((raw[0].get("content") or raw[0]).keys())[:12] if raw else None}
-            it["news"] = parse_news(raw)
-            n += 1 if it["news"] else 0
+            news = google_news(news_query(it["name"], it["symbol"]))
+            g_ok += 1 if news else 0
         except Exception as e:
             if len(errs) < 4:
-                errs.append(f"{it['symbol']}: {str(e)[:120]}")
-    print(f"Schlagzeilen für {n} Instrumente")
-    (OUT.parent / "diag.json").write_text(json.dumps({"news_ok": n, "news_errors": errs, "sample": sample,
-                                                      "yfinance": getattr(yf, "__version__", "?")}, ensure_ascii=False, indent=1))
+                errs.append(f"Google {it['symbol']}: {str(e)[:100]}")
+        if not news:
+            try:
+                news = parse_news(yf.Ticker(it["symbol"]).news)
+                y_ok += 1 if news else 0
+            except Exception as e:
+                if len(errs) < 4:
+                    errs.append(f"Yahoo {it['symbol']}: {str(e)[:100]}")
+        if sample is None:
+            sample = {"symbol": it["symbol"], "query": news_query(it["name"], it["symbol"]), "n": len(news)}
+        it["news"] = news
+        time.sleep(0.3)
+    print(f"Schlagzeilen: Google {g_ok}, Yahoo {y_ok}")
+    (OUT.parent / "diag.json").write_text(json.dumps({"news_google": g_ok, "news_yahoo": y_ok,
+                                                      "news_errors": errs, "sample": sample}, ensure_ascii=False, indent=1))
 
 def extras(all_items, data):
     """Geopolitik (GDELT) und Bitcoin; jeder Teil darf ausfallen, ohne das Briefing zu stoppen."""
