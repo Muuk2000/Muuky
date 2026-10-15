@@ -1,43 +1,10 @@
 """Tagesbriefing (höchstens 500 Wörter, Deutsch) aus den Daten des Morgenlaufs.
 
-Standard: regelbasierter Text. KI-Text ist abgeschaltet; nur mit BRIEFING_KI=1 und ANTHROPIC_API_KEY (im Workflow nicht gesetzt) formuliert ein KI-Modell den Text
-nach der Vorlage (Platzhalter {{market-context}} = die kompakten Daten). Fällt die KI aus, gilt der regelbasierte Text.
-Keine Anlageberatung.
+Rein regelbasiert: keine KI, keine API, keine Kosten. Keine Anlageberatung.
 """
-import json, os, re, datetime as dt, urllib.request
+import json, re, datetime as dt
 
 MAXW = 500
-VORLAGE = """## Role
-You are an expert financial advisor analyzing daily stock market performance for clients who need actionable intelligence on market movements and trends.
-
-## Task
-Compile a detailed yet concise daily stock market update (maximum 500 words) that provides both a snapshot of today's events and forward-looking perspective on implications for future trading sessions.
-
-## Context
-{{market-context}}
-
-Include: the date of analysis, any major economic or geopolitical events influencing today's session, upcoming earnings reports or corporate announcements on the horizon, and your read on current market sentiment (bullish/bearish/cautious, technical indicators, volatility signals).
-
-## Output
-Structure the briefing with bullet points or short paragraphs covering:
-**Market Overview** - Summarize overall performance of major indices. Note significant percentage changes or historical milestones reached.
-**Sector Performance** - Highlight sectors or industries that outperformed or underperformed, with insights into possible drivers.
-**Notable Stock Movements** - Identify individual stocks with significant moves and give context.
-**Economic & Geopolitical Factors** - Discuss broader events that influenced market behavior.
-**Market Sentiment Analysis** - Analyze current sentiment using technical indicators and volatility indices (VIX). Address whether fear or optimism is driving decisions.
-**Forward Outlook** - Forecast implications for upcoming sessions. Reference scheduled events.
-**Investment Perspective** (optional) - A caution or area of opportunity based on the day's analysis.
-
-Keep the tone informative and analytically rigorous while remaining accessible. Prioritize clarity and actionable insight.
-"""
-ZUSATZ = """
-
-Zusatzregeln (verbindlich):
-- Schreibe auf Deutsch. Maximal 500 Wörter. Gib genau diese Abschnittsüberschriften auf Deutsch in Fettschrift aus: **Marktüberblick**, **Branchen**, **Auffällige Einzelwerte**, **Wirtschaft und Geopolitik**, **Stimmung**, **Ausblick**, **Anlegerperspektive**.
-- Nutze AUSSCHLIESSLICH die Zahlen und Texte aus dem Kontext. Erfinde keine Gewinnberichte, Konjunkturdaten, Analystenurteile oder Ereignisse. Fehlt zu einem Punkt die Datengrundlage, schreibe offen "keine Daten".
-- Die Schlagzeilen im Kontext sind automatisch gesammelt und können unpassend sein; nutze sie nur, wenn sie erkennbar zum Wert passen.
-- Das ist keine persönliche Anlageberatung; formuliere Hinweise als Beobachtungen und Risiken, nicht als Kauf- oder Verkaufsempfehlung.
-"""
 
 def de(x, d=1, sign=True):
     if x is None:
@@ -193,48 +160,10 @@ def rule_text(briefing, geo=None, btc=None, gas=None, vix=None, termine=None, da
         big["lines"].pop(-2 if big["title"] in ("Ausblick", "Anlegerperspektive") else -1)
     return S
 
-def parse_md(md):
-    secs, cur = [], None
-    for ln in md.splitlines():
-        ln = ln.strip()
-        if not ln:
-            continue
-        m = re.match(r"^\*\*(.+?)\*\*:?\s*(.*)$", ln) or re.match(r"^#+\s*(.+)$", ln)
-        if m and (len(m.groups()) == 1 or not m.group(2) or ln.startswith("**")):
-            cur = {"title": m.group(1).strip(": "), "lines": []}
-            secs.append(cur)
-            if len(m.groups()) > 1 and m.group(2):
-                cur["lines"].append(m.group(2))
-        elif cur is not None:
-            cur["lines"].append(re.sub(r"^[-*•]\s*", "", ln))
-    return secs
-
-def ai_text(ctx, key=None, model="claude-sonnet-5-5"):
-    # Bewusst abgeschaltet: läuft nur, wenn BRIEFING_KI=1 UND ein Schlüssel gesetzt ist (im Workflow derzeit nicht der Fall).
-    if os.environ.get("BRIEFING_KI") != "1":
-        return None
-    key = key or os.environ.get("ANTHROPIC_API_KEY")
-    if not key:
-        return None
-    prompt = VORLAGE.replace("{{market-context}}", json.dumps(ctx, ensure_ascii=False)) + ZUSATZ
-    req = urllib.request.Request("https://api.anthropic.com/v1/messages", method="POST",
-        data=json.dumps({"model": model, "max_tokens": 1500, "messages": [{"role": "user", "content": prompt}]}).encode(),
-        headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
-    d = json.loads(urllib.request.urlopen(req, timeout=90).read().decode())
-    secs = parse_md("".join(b.get("text", "") for b in d.get("content", [])))
-    return secs if len(secs) >= 5 and words(secs) <= MAXW + 80 else None
-
 def build(briefing, geo=None, btc=None, gas=None, vix=None, termine=None, date=None):
     ctx = context(briefing, geo, btc, gas, vix, termine, date)
-    mode, secs = "regelbasiert", None
-    try:
-        secs = ai_text(ctx)
-        if secs:
-            mode = "KI (Anthropic)"
-    except Exception as e:
-        print("KI-Text fehlgeschlagen, nehme regelbasierten Text:", str(e)[:120])
-    if not secs:
-        secs = rule_text(briefing, geo, btc, gas, vix, termine, date)
+    mode = "regelbasiert"
+    secs = rule_text(briefing, geo, btc, gas, vix, termine, date)
     return {"generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"), "mode": mode,
             "date": ctx["datum"], "words": words(secs), "sections": secs,
             "hinweis": "Automatisch erstellt aus Kursdaten und Schlagzeilen. Keine Anlageberatung."}

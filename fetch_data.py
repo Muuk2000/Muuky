@@ -412,21 +412,22 @@ def add_news(all_items, budget=150):
     (OUT.parent / "diag.json").write_text(json.dumps({"news_google": g_ok, "news_yahoo": y_ok,
                                                       "news_errors": errs, "sample": sample}, ensure_ascii=False, indent=1))
 
-def extras(all_items, data):
+def extras(all_items, data, skip_geo=False):
     """Geopolitik (GDELT) und Bitcoin; jeder Teil darf ausfallen, ohne das Briefing zu stoppen."""
     gen = dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes")
-    try:
-        import geo
-        pairs = geo.build()
-        if pairs:
-            want = {"GC=F": "Gold", "CL=F": "Öl (WTI)", "ITA": "Luft/Rüstung (ETF)", "RHM.DE": "Rheinmetall", "^GSPC": "S&P 500"}
-            mk = [{"name": want[i["symbol"]], "d1": i["d1"], "m1": i["m1"]} for i in all_items if i["symbol"] in want]
-            (OUT.parent / "geo.json").write_text(json.dumps({"generated": gen, "pairs": pairs, "markets": mk,
-                "note": "Automatische Auswertung der Medien-Stimmung (GDELT), kein Lagebericht. Viel Rauschen."},
-                ensure_ascii=False, indent=1))
-            print("Geopolitik:", ", ".join(f"{p['pair']}={p['state']}" for p in pairs))
-    except Exception as e:
-        print("Geopolitik fehlgeschlagen:", e, file=sys.stderr)
+    if not skip_geo:
+        try:
+            import geo
+            pairs = geo.build()
+            if pairs:
+                want = {"GC=F": "Gold", "CL=F": "Öl (WTI)", "ITA": "Luft/Rüstung (ETF)", "RHM.DE": "Rheinmetall", "^GSPC": "S&P 500"}
+                mk = [{"name": want[i["symbol"]], "d1": i["d1"], "m1": i["m1"]} for i in all_items if i["symbol"] in want]
+                (OUT.parent / "geo.json").write_text(json.dumps({"generated": gen, "pairs": pairs, "markets": mk,
+                    "note": "Automatische Auswertung der Medien-Stimmung (GDELT), kein Lagebericht. Viel Rauschen."},
+                    ensure_ascii=False, indent=1))
+                print("Geopolitik:", ", ".join(f"{p['pair']}={p['state']}" for p in pairs))
+        except Exception as e:
+            print("Geopolitik fehlgeschlagen:", e, file=sys.stderr)
     extras_gas(gen)
     try:
         import yfinance as yf, btc
@@ -488,6 +489,7 @@ def make_daily(out, all_items):
 def main():
     demo = "--demo" in sys.argv
     evening = "--evening" in sys.argv
+    quick = "--quick" in sys.argv     # Schnelllauf: ohne Geopolitik und Schlagzeilen (werden übernommen)
     now = dt.datetime.now(dt.timezone.utc)
     today = pd.Timestamp(now.date())
     data = load_demo() if demo else load_real()
@@ -550,8 +552,16 @@ def main():
     STATS.write_text(json.dumps(build_stats(log, data, bench, demo), ensure_ascii=False, indent=1))
 
     if not demo:
-        add_news(all_items)
-        extras(all_items, data)
+        if quick:
+            try:
+                prev = {i["symbol"]: i.get("news", []) for g in json.loads(OUT.read_text())["groups"] for i in g["items"]}
+            except Exception:
+                prev = {}
+            for it in all_items:
+                it["news"] = prev.get(it["symbol"], [])
+        else:
+            add_news(all_items)
+        extras(all_items, data, skip_geo=quick)
     top = sorted([i for i in all_items if i["signals"]], key=lambda i: -i["score"])[:10]
     rotation = sorted(
         [{"symbol": i["symbol"], "name": i["name"], "group": i["group"], "rs5": i["rs5"], "rs20": i["rs20"],

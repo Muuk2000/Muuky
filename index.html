@@ -54,7 +54,9 @@ footer{color:var(--mute);font-size:.78rem;margin-top:20px}
 </style>
 </head>
 <body>
-<header><h1>Markt-Briefing</h1><div class="sub" id="stamp">lade …</div></header>
+<header><div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><h1>Markt-Briefing</h1><button id="refresh" aria-label="Aktualisieren" style="border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 12px;font:inherit;font-size:.85rem">⟳ Aktualisieren</button></div>
+<div class="sub" id="stamp">lade …</div><div id="upd" class="warn" hidden style="margin-top:8px"></div>
+<div id="setup" class="card" hidden></div></header>
 <nav id="tabs" aria-label="Bereiche"></nav>
 <main id="main"></main>
 <footer id="foot"></footer>
@@ -174,15 +176,72 @@ function render(){
 }
 const J=u=>fetch(u,{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null);
 document.getElementById('main').addEventListener('click',e=>{if(e.target.closest('a'))return;const it=e.target.closest('.itm[data-s]');if(!it)return;const k=it.dataset.s;OPEN.has(k)?OPEN.delete(k):OPEN.add(k);render()});
-Promise.all([J('data/briefing.json'),J('data/stats.json'),J('data/geo.json'),J('data/btc.json'),J('data/gas.json'),J('data/tagesbriefing.json')]).then(([d,s,g,b,x,tb])=>{T=tb;if(!d)throw 0;D=d;S=s;G=g;B=b;X=x;d.groups.forEach(g=>g.items.forEach(i=>ITEMS[i.symbol]=i));
+function loadAll(){return Promise.all([J('data/briefing.json'),J('data/stats.json'),J('data/geo.json'),J('data/btc.json'),J('data/gas.json'),J('data/tagesbriefing.json')]).then(([d,s,g,b,x,tb])=>{T=tb;if(!d)throw 0;D=d;S=s;G=g;B=b;X=x;d.groups.forEach(g=>g.items.forEach(i=>ITEMS[i.symbol]=i));
  const names=['Überblick',...(T?['Tagesbriefing']:[]),...d.groups.map(g=>g.name),...(G&&G.pairs?['Geopolitik']:[]),...(X?['Erdgas EU']:[]),...(B?['Bitcoin']:[]),...(S?['Trefferquote']:[])];
  document.getElementById('tabs').innerHTML=names.map(n=>`<button data-t="${esc(n)}">${esc(n)}</button>`).join('');
  document.getElementById('tabs').onclick=e=>{const b=e.target.closest('button');if(b){cur=b.dataset.t;render();scrollTo(0,0)}};
  const t=new Date(d.generated);
- document.getElementById('stamp').textContent='Stand '+t.toLocaleString('de-DE',{dateStyle:'medium',timeStyle:'short'});
+ document.getElementById('stamp').textContent='Stand '+t.toLocaleString('de-DE',{dateStyle:'medium',timeStyle:'short'})+' (vor '+ageTxt(Date.now()-t.getTime())+')';
  document.getElementById('foot').textContent=d.disclaimer;
  render();
-}).catch(()=>{document.getElementById('main').innerHTML='<div class="card">Daten konnten nicht geladen werden.</div>'});
+}).catch(()=>{document.getElementById('main').innerHTML='<div class="card">Daten konnten nicht geladen werden.</div>'})}
+loadAll().then(autoCheck);
+/* ---------- Aktualisierung beim Aufruf / auf Knopfdruck ---------- */
+const UPDATE_ENABLED=false;   // Bewusst AUS: Aktualisierung per Aufruf nur nach Freigabe durch den Besitzer
+const REPO='Muuk2000/Muuky',POLL=window.__POLL||15000,MAXAGE=window.__MAXAGE||2*3600*1000;
+const tok=()=>{try{return localStorage.getItem('ghtok')}catch(e){return null}};
+const lsGet=k=>{try{return localStorage.getItem(k)}catch(e){return null}},lsSet=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
+const gh=(path,opt={})=>fetch('https://api.github.com/repos/'+REPO+path,{...opt,headers:{Authorization:'Bearer '+tok(),Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'}});
+const upd=(t,bad)=>{const u=document.getElementById('upd');u.hidden=!t;u.textContent=t||'';u.style.borderColor=bad?'var(--down)':''};
+const ageTxt=ms=>ms<90*60e3?Math.round(ms/60e3)+' Min.':Math.round(ms/3600e3)+' Std.';
+let busy=false;
+async function startUpdate(manual){
+ if(!UPDATE_ENABLED||busy)return;
+ if(!tok()){showSetup();return}
+ busy=true;const before=D&&D.generated;
+ try{
+  upd('Aktualisierung wird gestartet …');
+  const r=await gh('/actions/workflows/markt-briefing.yml/runs?per_page=5');
+  if(r.status===401||r.status===403||r.status===404){throw new Error('Token abgelehnt oder ohne Berechtigung (Status '+r.status+').')}
+  const runs=(await r.json()).workflow_runs||[];
+  if(!runs.some(x=>x.status==='in_progress'||x.status==='queued')){
+   const d=await gh('/actions/workflows/markt-briefing.yml/dispatches',{method:'POST',body:JSON.stringify({ref:'main',inputs:{mode:'quick'}})});
+   if(d.status!==204)throw new Error('Start nicht möglich (Status '+d.status+').');
+  }
+  lsSet('lastTrig',String(Date.now()));
+  const t0=Date.now();
+  upd('Aktualisierung läuft, das dauert etwa 1–2 Minuten. Die Zahlen unten sind noch vom '+(D?new Date(D.generated).toLocaleString('de-DE',{dateStyle:'short',timeStyle:'short'}):'')+'.');
+  while(Date.now()-t0<10*60e3){
+   await new Promise(r=>setTimeout(r,POLL));
+   const n=await fetch('data/briefing.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).catch(()=>null);
+   if(n&&n.generated!==before){await loadAll();upd('Aktualisiert.');setTimeout(()=>upd(''),4000);busy=false;return}
+  }
+  upd('Die Aktualisierung dauert ungewöhnlich lange. Bitte später erneut versuchen.',true);
+ }catch(e){upd('Aktualisierung fehlgeschlagen: '+e.message,true)}
+ busy=false;
+}
+function showSetup(){const s=document.getElementById('setup');s.hidden=false;
+ s.innerHTML=`<div class="nm">Aktualisierung freischalten (einmalig)</div>
+ <ol class="why" style="margin:8px 0">
+ <li>Öffne <b>github.com/settings/personal-access-tokens/new</b></li>
+ <li>Name z. B. „Briefing“, Ablauf: längste Dauer.</li>
+ <li><b>Repository access</b>: nur <b>Muuk2000/Muuky</b> wählen.</li>
+ <li><b>Permissions → Actions</b>: <b>Read and write</b>.</li>
+ <li>Token erzeugen, kopieren, hier einfügen.</li></ol>
+ <input id="tk" type="password" placeholder="github_pat_…" autocomplete="off" style="width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit">
+ <div style="display:flex;gap:8px;margin-top:8px"><button id="tksave" class="st neutral" style="padding:8px 14px;font:inherit">Speichern</button><button id="tkclose" class="st neutral" style="padding:8px 14px;font:inherit">Abbrechen</button>${tok()?'<button id="tkdel" class="st frueh_raus" style="padding:8px 14px;font:inherit">Token entfernen</button>':''}</div>
+ <div class="note">Der Token bleibt nur in diesem Browser auf diesem Gerät. Er darf nur Aktualisierungsläufe dieses einen Repos starten. Wer ihn hat, kann nichts lesen oder ändern.</div>`;
+ document.getElementById('tkclose').onclick=()=>{s.hidden=true};
+ document.getElementById('tksave').onclick=()=>{const v=document.getElementById('tk').value.trim();if(v.length<20)return;lsSet('ghtok',v);s.hidden=true;startUpdate(true)};
+ const del=document.getElementById('tkdel');if(del)del.onclick=()=>{try{localStorage.removeItem('ghtok')}catch(e){}s.hidden=true;upd('Token entfernt.')};
+}
+document.getElementById('refresh').hidden=!UPDATE_ENABLED;
+document.getElementById('refresh').onclick=()=>startUpdate(true);
+function autoCheck(){
+ if(!UPDATE_ENABLED||!D||!tok())return;
+ const age=Date.now()-new Date(D.generated).getTime(),last=Number(lsGet('lastTrig')||0);
+ if(age>MAXAGE&&Date.now()-last>10*60e3)startUpdate(false);
+}
 if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
 </script>
 </body>
