@@ -19,4 +19,19 @@ Schutzmaßnahmen:
 - Es sind **keine Schlüssel oder Secrets** hinterlegt, auch keine KI-Schnittstelle.
 - Die Aktualisierung per Aufruf der Seite (`UPDATE_ENABLED` in `index.html`) ist **ausgeschaltet**.
 
+## Wirtschaft und Lehrplan (Ordner `wirtschaft/`)
+
+Zweite Seite im selben Repo: Wirtschaftsnachrichten (VWL/BWL), eingeordnet nach dem LehrplanPLUS Bayern,
+Gymnasium, Fach Wirtschaft und Recht, vertieft und nicht vertieft. Adresse: `/wirtschaft/`.
+
+| Datei | Inhalt |
+|---|---|
+| `wirtschaft/index.html` | Seite mit den Reitern Heute, Rückblick, Lehrplan, Zurückgestellt |
+| `wirtschaft/data/lehrplan.json` | Lernbereiche mit Stichwörtern für die Zuordnung |
+| `wirtschaft/data/rueckblick.json` | Rückblick der letzten drei Monate, von Hand mit Quellen und Lehrplanbezug |
+| `wirtschaft_update.py` | Tagesmeldungen holen (Google News RSS) und per Stichwort dem Lehrplan zuordnen |
+| `.github/workflows/wirtschaft.yml` | werktags um 6:45 Uhr, nur im öffentlichen Repo |
+
+Kosten: keine (Standardbibliothek, kein Schlüssel, keine KI). Die Stichwort-Zuordnung ist eine grobe Vorsortierung.
+
 Alles, was Kosten verursachen könnte (KI-Text, bezahlte Datenquellen, Aktualisierung per Aufruf), wird nur nach ausdrücklicher Freigabe des Besitzers eingebaut.

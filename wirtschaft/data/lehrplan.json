@@ -1,0 +1,103 @@
+{
+  "stand": "2026-10-15",
+  "quelle": "LehrplanPLUS Bayern, Gymnasium, Fach Wirtschaft und Recht (lehrplanplus.bayern.de), Zusammenfassung in eigenen Worten",
+  "hinweis": "Zuordnung vertieft / nicht vertieft: vertieft = Wirtschaftswissenschaftliches Gymnasium (Jgst. 11, inkl. Profilbereich) bzw. erhöhtes Anforderungsniveau (Jgst. 12/13); nicht vertieft = übrige Gymnasien (Jgst. 11) bzw. grundlegendes Anforderungsniveau (Jgst. 12/13). Jgst. 13 grundlegend wurde noch nicht erfasst.",
+  "bereiche": [
+    {
+      "id": "11-1", "jgst": 11, "fach": "VWL", "niveau": ["vertieft", "nicht_vertieft"], "std": 24,
+      "titel": "Die Wirtschaftsordnung als Handlungsrahmen",
+      "inhalte": "Preisfunktionen, Marktwirtschaft und Zentralverwaltungswirtschaft, Marktversagen, Soziale Marktwirtschaft, Umverteilung durch Steuern und soziale Sicherung, öffentliche Haushalte, Kreislaufmodell mit Staat, Sparen und Investieren, Bruttoinlandsprodukt, Strukturwandel",
+      "keywords": ["preis", "marktwirtschaft", "soziale marktwirtschaft", "steuer", "abgaben", "haushalt", "bundeshaushalt", "bip", "bruttoinlandsprodukt", "wachstum", "strukturwandel", "subvention", "rabatt", "entlastung", "sozialstaat", "staatsausgaben", "marktversagen", "ölpreis", "energiepreis", "spritpreis", "benzin", "diesel", "gaspreis", "heizöl", "strompreis", "co2-preis"]
+    },
+    {
+      "id": "11-2", "jgst": 11, "fach": "Recht", "niveau": ["vertieft", "nicht_vertieft"], "std": 12,
+      "titel": "Recht als Handlungsrahmen",
+      "inhalte": "Gerechtigkeit, Rechtsstaatsprinzipien, öffentliches Recht und Privatrecht, Rechtsfortentwicklung, Eigentumsordnung",
+      "keywords": ["rechtsstaat", "grundrecht", "eigentum", "bundesverfassungsgericht", "gesetz", "urteil", "gericht", "enteignung", "datenschutz"]
+    },
+    {
+      "id": "11-3", "jgst": 11, "fach": "VWL", "niveau": ["vertieft", "nicht_vertieft"], "std": 12,
+      "titel": "Internationale wirtschaftliche Verflechtung",
+      "inhalte": "Freihandel und Protektionismus, Zölle, Kontingente, Exportsubventionen, Kreislaufmodell der offenen Volkswirtschaft, Wechselkurse, Europäische Wirtschafts- und Währungsunion",
+      "keywords": ["zoll", "zölle", "freihandel", "protektionismus", "handelsabkommen", "handelskrieg", "handelsstreit", "wechselkurs", "euro", "dollar", "binnenmarkt", "export", "import", "handelsbilanz", "außenhandel", "eurozone", "wto"]
+    },
+    {
+      "id": "11-4", "jgst": 11, "fach": "Kapitalmarkt", "niveau": ["vertieft"], "std": 10,
+      "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+      "inhalte": "Akteure des Geld- und Kapitalmarkts, Sparmotive, Anlagekriterien (Rentabilität, Liquidität, Sicherheit), Formen der Geldanlage",
+      "keywords": ["börse", "dax", "aktie", "anleihe", "geldanlage", "kapitalmarkt", "rendite", "etf", "anleger", "sparer", "zinsen", "kryptowährung", "bitcoin"]
+    },
+    {
+      "id": "11-5", "jgst": 11, "fach": "VWL", "niveau": ["vertieft"], "std": 17,
+      "titel": "Institutionenökonomie und Spieltheorie (nur WWG)",
+      "inhalte": "Institutionen, beschränkte Rationalität, Transaktionskosten, Informationsasymmetrien, Prinzipal-Agent-Theorie, Gefangenendilemma, Nash-Gleichgewicht, Pareto-Optimum",
+      "keywords": ["spieltheorie", "gefangenendilemma", "verhandlung", "verhandlungen", "kartell", "absprache", "informationsasymmetrie", "transaktionskosten", "zollstreit", "drohung"]
+    },
+    {
+      "id": "11-6", "jgst": 11, "fach": "VWL", "niveau": ["vertieft", "nicht_vertieft"], "std": 6,
+      "titel": "Globale Zukunftstrends",
+      "inhalte": "Aktuelle Entwicklungen und Zukunftstrends, z. B. Arbeitswelt, Finanzmärkte, Wirtschaftsordnung, Weltwirtschaft, Ressourcen, Digitalisierung",
+      "keywords": ["künstliche intelligenz", "ki","digitalisierung", "klimawandel", "klimaschutz", "ressourcen", "arbeitswelt", "demografie", "fachkräfte", "energiewende", "transformation", "klima", "emissionen", "erneuerbar", "heizölquote", "wärmewende"]
+    },
+    {
+      "id": "11-7", "jgst": 11, "fach": "VWL", "niveau": ["vertieft"], "std": null,
+      "titel": "Profilbereich am WWG (Vertiefungen zu 1 bis 6, Projekt)",
+      "inhalte": "u. a. alternative Wirtschaftsordnungen, Handels- und Entwicklungstheorien, Portfoliotheorie und Ratingagenturen, Interessengruppen, globale Herausforderungen",
+      "keywords": ["gemeinwohlökonomie", "ratingagentur", "diversifikation", "entwicklungsländer", "lobby"]
+    },
+    {
+      "id": "12-B1", "jgst": 12, "fach": "BWL", "niveau": ["vertieft", "nicht_vertieft"], "std": "54 / 16",
+      "titel": "Unternehmen: Ziele, Markt, Produktion, Finanzierung",
+      "inhalte": "Unternehmensziele (Wirtschaft, Ökologie, Soziales, Ethik), Interessengruppen, Beschaffung und Absatz, Break-even-Analyse, Investition, Eigen- und Fremdfinanzierung, Kennzahlen. Zusätzlich vertieft: Aufbau- und Ablauforganisation, Lieferketten, ABC-Analyse, Jahresabschluss und Bilanzanalyse, dynamische Investitionsverfahren, Leverage-Effekt, SWOT, Strategien nach Porter",
+      "keywords": ["unternehmen", "insolvenz", "pleite", "stellenabbau", "lieferkette", "quartalszahlen", "gewinn", "umsatz", "bilanz", "investition", "finanzierung", "übernahme", "fusion", "produktion", "konzern", "restrukturierung", "kennzahl", "eigenkapital"]
+    },
+    {
+      "id": "12-V1", "jgst": 12, "fach": "VWL", "niveau": ["vertieft", "nicht_vertieft"], "std": "6",
+      "titel": "Gesamtwirtschaftliche Lage und volkswirtschaftliche Ziele",
+      "inhalte": "Magisches Viereck (Wachstum, Beschäftigung, Preisstabilität, außenwirtschaftliches Gleichgewicht), Konjunkturzyklus, Konjunkturindikatoren, Zielbeziehungen",
+      "keywords": ["konjunktur", "prognose", "inflation", "preisstabilität", "rezession", "aufschwung", "ifo", "geschäftsklima", "wirtschaftsleistung", "teuerung", "verbraucherpreise", "wirtschaftswachstum", "preisanstieg", "energiepreisschock"]
+    },
+    {
+      "id": "12-V2", "jgst": 12, "fach": "VWL", "niveau": ["vertieft", "nicht_vertieft"], "std": "20 / 12",
+      "titel": "Wachstum und Beschäftigung",
+      "inhalte": "Wachstums- und Beschäftigungspolitik, Arbeitsmarktkennzahlen, Arten der Arbeitslosigkeit, BIP-Verwendung, Nachfrage- und Angebotstheorie, Staatsverschuldung, Umwelt- und Klimaschutz",
+      "keywords": ["arbeitslos", "arbeitsmarkt", "beschäftigung", "kurzarbeit", "staatsverschuldung", "schuldenbremse", "neuverschuldung", "sondervermögen", "angebotsschock", "konjunkturpaket", "klimaschutz", "co2", "erwerbstätige"]
+    },
+    {
+      "id": "12-V3", "jgst": 12, "fach": "VWL", "niveau": ["vertieft", "nicht_vertieft"], "std": "14 / 8",
+      "titel": "Einkommen und soziale Sicherung",
+      "inhalte": "Tarifpartner und Tarifabschlüsse, Lohn- und Gewinnquote, Kranken- und Rentenversicherung, Umlage- und Kapitaldeckungsverfahren, Finanzierung, soziale Gerechtigkeit",
+      "keywords": ["rente", "rentenversicherung", "krankenversicherung", "sozialversicherung", "beitrag", "beitragsbemessungsgrenze", "tarif", "tarifabschluss", "lohn", "mindestlohn", "gehalt", "pflegeversicherung", "bürgergeld", "streik"]
+    },
+    {
+      "id": "12-R", "jgst": 12, "fach": "Recht", "niveau": ["vertieft", "nicht_vertieft"], "std": "18 / 14",
+      "titel": "Rechtstechnische Grundlagen und gesetzliche Schuldverhältnisse",
+      "inhalte": "Systematik des BGB, Kaufhandlung, Trennungsprinzip, Herausgabeanspruch, gutgläubiger Erwerb, Schadensersatz nach § 823 BGB, Gefährdungshaftung",
+      "keywords": ["bgb", "schadensersatz", "haftung", "gutgläubig", "herausgabe"]
+    },
+    {
+      "id": "13-R", "jgst": 13, "fach": "Recht", "niveau": ["vertieft"], "std": 48,
+      "titel": "Vertrags-, Kauf- und Strafrecht (Jgst. 13, erhöht)",
+      "inhalte": "Werk- und Dienstvertrag, Leistungsstörungen, Mängel und Gewährleistung, Verbraucherschutz (Widerruf, AGB), Strafrecht (Straftat und Ordnungswidrigkeit, Strafzwecke)",
+      "keywords": ["verbraucherschutz", "gewährleistung", "widerruf", "agb", "kaufvertrag", "strafrecht", "betrug", "verbraucher", "rückruf"]
+    },
+    {
+      "id": "13-V1", "jgst": 13, "fach": "VWL", "niveau": ["vertieft"], "std": 14,
+      "titel": "Geld und Preisniveau (Jgst. 13, erhöht)",
+      "inhalte": "Preisniveaustabilität, Wirkungsweise und Grenzen der Geldpolitik, Mandat und Unabhängigkeit der EZB",
+      "keywords": ["ezb", "leitzins", "zinsentscheidung", "geldpolitik", "einlagesatz", "notenbank", "fed", "zinserhöhung", "zinssenkung", "geldmenge"]
+    },
+    {
+      "id": "13-V2", "jgst": 13, "fach": "VWL", "niveau": ["vertieft"], "std": 16,
+      "titel": "Außenhandel und Währung (Jgst. 13, erhöht)",
+      "inhalte": "Leistungs- und Kapitalbilanz, außenwirtschaftliches Gleichgewicht, Wechselkursbildung, außenhandels- und währungspolitische Maßnahmen, spieltheoretische Modelle",
+      "keywords": ["leistungsbilanz", "handelsüberschuss", "wechselkurs", "währung", "zölle", "sanktionen", "kapitalbilanz", "abwertung", "aufwertung"]
+    },
+    {
+      "id": "13-V3", "jgst": 13, "fach": "VWL", "niveau": ["vertieft"], "std": 6,
+      "titel": "Aktuelle gesamtwirtschaftliche Probleme vernetzt betrachten (Jgst. 13, erhöht)",
+      "inhalte": "Lösungsansätze für komplexe Probleme, Zusammenspiel von Geld- und Fiskalpolitik, Effizienz versus Gerechtigkeit",
+      "keywords": ["fiskalpolitik", "stagflation", "energiepreisschock", "zinsen und inflation", "wirtschaftspolitik"]
+    }
+  ]
+}

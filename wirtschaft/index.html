@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Wirtschaft &amp; Lehrplan</title>
+<meta name="theme-color" content="#0f1720">
+<link rel="icon" href="../icons/icon.svg">
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#0f1720;--mute:#5d6b7a;--line:#e3e7ec;--ok:#0a7d4f;--mid:#9a6a00;--no:#8a96a3;--acc:#0b6e8a}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1720;--card:#17212c;--ink:#eaf0f6;--mute:#93a1b0;--line:#26323f;--ok:#3ddc97;--mid:#e6b400;--no:#7d8a98;--acc:#5cc3e0}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:0 16px calc(32px + env(safe-area-inset-bottom))}
+header{padding:calc(16px + env(safe-area-inset-top)) 0 4px}
+h1{font-size:1.35rem;margin:0}
+.sub{color:var(--mute);font-size:.85rem}
+.bar{display:flex;gap:8px;overflow-x:auto;padding:8px 0;scrollbar-width:none}
+.bar.sticky{position:sticky;top:0;background:var(--bg);z-index:2}
+.bar button{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 14px;border-radius:999px;font:inherit;font-size:.9rem;cursor:pointer}
+.bar button[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:#fff}
+@media(prefers-color-scheme:dark){.bar button[aria-pressed=true]{color:#06222b}}
+.lbl{color:var(--mute);font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;margin:8px 0 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:10px 0}
+.card h3{font-size:1rem;margin:0 0 4px}
+.meta{color:var(--mute);font-size:.78rem}
+p{margin:8px 0}
+.card p{font-size:.92rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.tag{font-size:.74rem;padding:2px 8px;border-radius:6px;border:1px solid var(--line);color:var(--ink)}
+.b{font-size:.74rem;padding:2px 8px;border-radius:6px;white-space:nowrap;border:1px solid}
+.b.gut{color:var(--ok);border-color:var(--ok)}
+.b.bedingt{color:var(--mid);border-color:var(--mid)}
+.b.kaum,.b.offen{color:var(--no);border-color:var(--no)}
+.row{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+h4{font-size:.78rem;color:var(--mute);margin:12px 0 2px;text-transform:uppercase;letter-spacing:.04em}
+ul{margin:4px 0;padding-left:18px;font-size:.9rem}
+li{margin:3px 0}
+a{color:var(--acc)}
+details>summary{cursor:pointer;list-style:none}
+details>summary::-webkit-details-marker{display:none}
+details>summary::after{content:' ▾';color:var(--mute)}
+details[open]>summary::after{content:' ▴'}
+.note{color:var(--mute);font-size:.82rem}
+.warn{background:color-mix(in srgb,#e6a700 16%,transparent);border:1px solid #e6a700;border-radius:10px;padding:8px 12px;font-size:.84rem;margin:8px 0}
+select{font:inherit;font-size:.9rem;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+footer{color:var(--mute);font-size:.78rem;margin-top:24px}
+.item a{color:var(--ink);text-decoration:none;font-weight:600}
+.item+.item{border-top:1px solid var(--line);margin-top:10px;padding-top:10px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Wirtschaft &amp; Lehrplan</h1>
+  <div class="sub" id="stamp">lade …</div>
+</header>
+
+<nav class="bar sticky" id="tabs" aria-label="Bereiche"></nav>
+<div class="lbl">Anforderungsniveau</div>
+<div class="bar" id="fNiveau" aria-label="Niveau"></div>
+<div class="lbl">Fach</div>
+<div class="bar" id="fFach" aria-label="Fach"></div>
+
+<main id="main"></main>
+
+<footer>
+  Lehrplanbezug: LehrplanPLUS Bayern, Gymnasium, Fach Wirtschaft und Recht.
+  „Vertieft“ = Wirtschaftswissenschaftliches Gymnasium (Jgst. 11) bzw. erhöhtes Anforderungsniveau (Jgst. 12/13);
+  „nicht vertieft“ = übrige Gymnasien (Jgst. 11) bzw. grundlegendes Niveau (Jgst. 12/13).
+  Die Einschätzungen sind eine Arbeitshilfe und ersetzen keine fachliche Prüfung. Keine Anlageberatung.
+</footer>
+
+<script>
+const $=s=>document.querySelector(s);
+function el(tag,attrs,...kids){const e=document.createElement(tag);
+  for(const k in(attrs||{})){if(k==='class')e.className=attrs[k];else if(k==='text')e.textContent=attrs[k];else e.setAttribute(k,attrs[k])}
+  for(const c of kids.flat()){if(c==null||c===false)continue;e.append(c.nodeType?c:document.createTextNode(c))}return e}
+const NIV={alle:'Alle',vertieft:'Vertieft',nicht_vertieft:'Nicht vertieft'};
+const FACH=['Alle','VWL','BWL','Recht','Kapitalmarkt'];
+const TABS=[['heute','Heute'],['rueckblick','Rückblick 3 Monate'],['lehrplan','Lehrplan'],['pausiert','Zurückgestellt']];
+const S={tab:'heute',niveau:'alle',fach:'Alle',day:null};
+const D={};
+const BADGE={gut:'passt gut',bedingt:'bedingt',kaum:'kaum',offen:'ohne Zuordnung'};
+const J=(id)=>{const b=(D.lp||[]).find(x=>x.id===id);return b};
+const bezugTag=b=>el('span',{class:'tag',text:`Jgst. ${b.jgst} · ${b.titel}`});
+const niveauOk=(niv)=>S.niveau==='alle'||(niv||[]).includes(S.niveau);
+const fachOk=f=>S.fach==='Alle'||f===S.fach;
+const fmtTs=ts=>{try{return new Date(ts).toLocaleString('de-DE',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})}catch(e){return ''}};
+
+async function get(p){try{const r=await fetch(p,{cache:'no-cache'});if(!r.ok)throw 0;return await r.json()}catch(e){return null}}
+
+function chips(host,opts,cur,on){host.replaceChildren(...opts.map(([k,t])=>{
+  const b=el('button',{type:'button','aria-pressed':String(k===cur),text:t});b.onclick=()=>on(k);return b}))}
+function ui(){
+  chips($('#tabs'),TABS,S.tab,k=>{S.tab=k;ui();render()});
+  chips($('#fNiveau'),Object.entries(NIV),S.niveau,k=>{S.niveau=k;ui();render()});
+  chips($('#fFach'),FACH.map(f=>[f,f]),S.fach,k=>{S.fach=k;ui();render()});
+  const hide=S.tab==='pausiert';
+  $('#fNiveau').previousElementSibling.hidden=hide;$('#fNiveau').hidden=hide;
+  $('#fFach').previousElementSibling.hidden=hide;$('#fFach').hidden=hide;
+}
+
+function viewHeute(){
+  const m=el('div');const d=D.heute;
+  if(!d){m.append(el('div',{class:'warn',text:'Die Tagesmeldungen sind noch nicht geladen. Das tägliche Update läuft werktags um 6:45 Uhr.'}));return m}
+  const days=D.tage||[];
+  if(days.length>1){
+    const sel=el('select',{'aria-label':'Tag wählen'});
+    days.forEach(x=>sel.append(el('option',{value:x,text:new Date(x+'T12:00').toLocaleDateString('de-DE',{weekday:'short',day:'2-digit',month:'2-digit',year:'numeric'})})));
+    sel.value=S.day||days[0];sel.onchange=async()=>{S.day=sel.value;D.heute=await get('data/tage/'+S.day+'.json');render()};
+    m.append(el('div',{style:'margin:8px 0'},sel));
+  }
+  m.append(el('div',{class:'meta',text:`Stand ${fmtTs(d.generated)} · ${d.items.length} Meldungen · automatische Vorsortierung nach Stichwörtern`}));
+  const vis=d.items.filter(i=>i.passt!=='offen'&&i.bezug.some(b=>niveauOk(b.niveau))&&fachOk(i.fach));
+  const rest=d.items.filter(i=>i.passt==='offen'&&S.niveau==='alle'&&fachOk(i.fach));
+  const card=el('div',{class:'card'});
+  if(!vis.length)card.append(el('p',{class:'note',text:'Keine Meldungen mit Lehrplanbezug für diese Auswahl.'}));
+  vis.forEach(i=>card.append(item(i)));m.append(card);
+  if(rest.length){const dt=el('details',{class:'card'},el('summary',{text:`Ohne erkannten Lehrplanbezug (${rest.length})`}));rest.forEach(i=>dt.append(item(i)));m.append(dt)}
+  return m}
+function item(i){
+  return el('div',{class:'item'},
+    el('div',{class:'row'},el('a',{href:i.u,target:'_blank',rel:'noopener noreferrer',text:i.t}),el('span',{class:'b '+i.passt,text:BADGE[i.passt]})),
+    el('div',{class:'meta',text:`${i.p||'Quelle'} · ${fmtTs(i.ts)} · ${i.fach}`}),
+    i.bezug.length?el('div',{class:'tags'},i.bezug.filter(b=>niveauOk(b.niveau)).map(bezugTag)):null)}
+
+function viewRueck(){
+  const m=el('div');const d=D.rueck;
+  if(!d){m.append(el('div',{class:'warn',text:'Rückblick nicht geladen.'}));return m}
+  m.append(el('div',{class:'meta',text:d.zeitraum}),el('div',{class:'warn',text:d.hinweis}));
+  const list=d.items.filter(i=>fachOk(i.fach))
+    .filter(i=>S.niveau==='alle'||(i.einschaetzung[S.niveau]&&i.einschaetzung[S.niveau]!=='kaum'))
+    .sort((a,b)=>b.datum.localeCompare(a.datum));
+  if(!list.length)m.append(el('p',{class:'note',text:'Keine Einträge für diese Auswahl.'}));
+  list.forEach(i=>{
+    const e=i.einschaetzung;
+    const det=el('details',{class:'card'},
+      el('summary',{},el('div',{class:'row'},el('h3',{text:i.titel}),el('span',{class:'meta',text:i.datumText}))),
+      el('div',{class:'tags'},el('span',{class:'tag',text:i.thema}),el('span',{class:'tag',text:i.fach}),
+        el('span',{class:'b '+e.vertieft,text:'vertieft: '+BADGE[e.vertieft]}),el('span',{class:'b '+e.nicht_vertieft,text:'nicht vertieft: '+BADGE[e.nicht_vertieft]})),
+      el('p',{text:i.kurz}),
+      el('h4',{text:'Bezug zum Lehrplan'}),
+      el('ul',{},i.bezug.map(b=>{const x=J(b.id);return el('li',{},el('b',{text:x?`Jgst. ${x.jgst}, ${x.titel}: `:b.id+': '}),b.warum)})),
+      el('h4',{text:'Einsatz im Unterricht'}),el('p',{text:i.einsatz}),
+      el('h4',{text:'Leitfrage'}),el('p',{text:i.leitfrage}),
+      i.hinweis?el('div',{class:'warn',text:'Hinweis: '+i.hinweis}):null,
+      el('h4',{text:'Quellen'}),
+      el('ul',{},i.quellen.map(q=>el('li',{},el('a',{href:q.url,target:'_blank',rel:'noopener noreferrer',text:q.titel})))));
+    m.append(det)});
+  return m}
+
+function viewLehrplan(){
+  const m=el('div');
+  m.append(el('div',{class:'warn',text:D.lpMeta.hinweis}));
+  const used={};(D.rueck?D.rueck.items:[]).forEach(i=>i.bezug.forEach(b=>used[b.id]=(used[b.id]||0)+1));
+  const list=D.lp.filter(b=>niveauOk(b.niveau)&&(S.fach==='Alle'||b.fach===S.fach));
+  if(!list.length)m.append(el('p',{class:'note',text:'Keine Lernbereiche für diese Auswahl.'}));
+  [11,12,13].forEach(j=>{
+    const g=list.filter(b=>b.jgst===j);if(!g.length)return;
+    m.append(el('h2',{text:`Jahrgangsstufe ${j}`,style:'font-size:1rem;margin:18px 0 0'}));
+    g.forEach(b=>m.append(el('div',{class:'card'},
+      el('div',{class:'row'},el('h3',{text:b.titel}),el('span',{class:'meta',text:b.std?`ca. ${b.std} Std.`:''})),
+      el('div',{class:'tags'},el('span',{class:'tag',text:b.fach}),
+        b.niveau.map(n=>el('span',{class:'tag',text:NIV[n]})),
+        used[b.id]?el('span',{class:'tag',text:`${used[b.id]} Beispiel(e) im Rückblick`}):null),
+      el('p',{text:b.inhalte}))))});
+  return m}
+
+function viewPause(){
+  return el('div',{},
+    el('div',{class:'card'},el('h3',{text:'Markt-Briefing (läuft weiter)'}),
+      el('p',{class:'note',text:'Tägliches Finanz-Briefing mit Marktsignalen. Ist unverändert und aktualisiert sich weiter, steht aber nicht mehr im Mittelpunkt.'}),
+      el('p',{},el('a',{href:'../',text:'Zum Markt-Briefing'}))),
+    el('p',{class:'note',text:'Weitere zurückgestellte Projekte werden hier nicht öffentlich aufgeführt.'}))}
+
+function render(){
+  const v=S.tab==='heute'?viewHeute():S.tab==='rueckblick'?viewRueck():S.tab==='lehrplan'?viewLehrplan():viewPause();
+  $('#main').replaceChildren(v)}
+
+(async()=>{
+  const [lp,rb,hd,tg]=await Promise.all([get('data/lehrplan.json'),get('data/rueckblick.json'),get('data/heute.json'),get('data/tage.json')]);
+  D.lp=lp?lp.bereiche:[];D.lpMeta=lp||{hinweis:''};D.rueck=rb;D.heute=hd;D.tage=tg;
+  $('#stamp').textContent=hd?`Tagesmeldungen vom ${new Date(hd.datum+'T12:00').toLocaleDateString('de-DE',{day:'2-digit',month:'long',year:'numeric'})}`:'Rückblick und Lehrplan';
+  ui();render();
+})();
+</script>
+</body>
+</html>

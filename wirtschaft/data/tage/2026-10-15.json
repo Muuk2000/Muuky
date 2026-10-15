@@ -1,0 +1,119 @@
+{
+ "generated": "2026-10-15T18:10+02:00",
+ "datum": "2026-10-15",
+ "feeds_ok": 0,
+ "feeds_fehler": 0,
+ "hinweis": "Erste Ausgabe von Hand aus geprüften Quellen zusammengestellt. Ab dem nächsten Werktag aktualisiert das Skript die Seite automatisch um 6:45 Uhr.",
+ "items": [
+  {
+   "t": "Ölpreise geben leicht nach, Heizöl bleibt nahe dem Jahreshoch",
+   "u": "https://lomazoma.com/die-oelpreise-fallen-leicht-erste-details-zur-geplanten-gruenen-heizoelquote-15-oktober-2026",
+   "p": "Lomazoma",
+   "ts": "2026-10-15T18:10+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "11-1",
+     "jgst": 11,
+     "titel": "Die Wirtschaftsordnung als Handlungsrahmen",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 2
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "Inflation im September bei 3,3 Prozent bestätigt, Energie treibt die Preise",
+   "u": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html",
+   "p": "Destatis",
+   "ts": "2026-10-13T08:00+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "11-1",
+     "jgst": 11,
+     "titel": "Die Wirtschaftsordnung als Handlungsrahmen",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "12-V1",
+     "jgst": 12,
+     "titel": "Gesamtwirtschaftliche Lage und volkswirtschaftliche Ziele",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Termine am Freitag: Eurozone Verbraucherpreise, US-Industrieproduktion, EU-Gipfel zweiter Tag",
+   "u": "https://www.ariva.de/news/tagesvorschau-termine-am-16-oktober-2026-12170735",
+   "p": "ARIVA (dpa-AFX)",
+   "ts": "2026-10-15T18:10+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "11-3",
+     "jgst": 11,
+     "titel": "Internationale wirtschaftliche Verflechtung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "12-V1",
+     "jgst": 12,
+     "titel": "Gesamtwirtschaftliche Lage und volkswirtschaftliche Ziele",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Grüne Heizölquote: Eckpunktepapier des Wirtschaftsministeriums liegt vor",
+   "u": "https://lomazoma.com/die-oelpreise-fallen-leicht-erste-details-zur-geplanten-gruenen-heizoelquote-15-oktober-2026",
+   "p": "Lomazoma",
+   "ts": "2026-10-15T18:10+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "11-1",
+     "jgst": 11,
+     "titel": "Die Wirtschaftsordnung als Handlungsrahmen",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "11-6",
+     "jgst": 11,
+     "titel": "Globale Zukunftstrends",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  }
+ ]
+}

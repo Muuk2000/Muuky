@@ -1,0 +1,51 @@
+name: Wirtschaft und Lehrplan aktualisieren
+on:
+  schedule:
+    # Morgens 06:45 deutscher Zeit (Sommerzeit = 04:45 UTC, Winterzeit = 05:45 UTC).
+    # Beide Zeiten sind eingetragen, der Schritt "Zeitfenster prüfen" lässt je nur den passenden Lauf durch.
+    - cron: "45 4 * * 1-5"
+    - cron: "45 5 * * 1-5"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: wirtschaft
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10        # Kosten-Wächter
+    steps:
+      - uses: actions/checkout@v4
+      - name: Zeitfenster prüfen
+        id: gate
+        run: |
+          echo "run=true" >> "$GITHUB_OUTPUT"
+          # Kosten-Wächter: Nur in öffentlichen Repos sind Actions-Minuten kostenlos.
+          if [ "${{ github.repository_visibility }}" != "public" ]; then
+            echo "Repo nicht öffentlich - Lauf übersprungen"; echo "run=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          [ "${{ github.event_name }}" = "schedule" ] || exit 0
+          H=$(TZ=Europe/Berlin date +%H%M)
+          if [ "$H" -lt 0630 ] || [ "$H" -gt 0930 ]; then
+            echo "Außerhalb des Fensters ($H) - übersprungen"; echo "run=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          TODAY=$(TZ=Europe/Berlin date +%F)
+          GEN=$(python3 -c "import json;d=json.load(open('wirtschaft/data/heute.json'));print(d['datum'] if d.get('feeds_ok',0)>0 else '')" 2>/dev/null || true)
+          if [ "$GEN" = "$TODAY" ]; then echo "Heute schon aktualisiert - übersprungen"; echo "run=false" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.run == 'true'
+        with: { python-version: "3.12" }
+      - name: Nachrichten holen und dem Lehrplan zuordnen
+        if: steps.gate.outputs.run == 'true'
+        run: python wirtschaft_update.py
+      - name: Commit
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          git config user.name "wirtschaft-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add wirtschaft/data/
+          if git diff --cached --quiet; then echo "Keine Änderungen"; exit 0; fi
+          git commit -m "Wirtschaftsmeldungen aktualisiert"
+          git pull --rebase origin main
+          git push
