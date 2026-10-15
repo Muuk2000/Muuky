@@ -349,7 +349,7 @@ def google_news(query, limit=3):
     """Schlagzeilen über Google News (RSS), deutschsprachig, letzte 7 Tage."""
     import urllib.request, urllib.parse, xml.etree.ElementTree as ET
     from email.utils import parsedate_to_datetime
-    q = urllib.parse.quote(f"{query} when:7d")
+    q = urllib.parse.quote(f"{query} when:7d")  # mehr Treffer holen, dann filtern
     url = f"https://news.google.com/rss/search?q={q}&hl=de&gl=DE&ceid=DE:de"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (markt-briefing)"})
     root = ET.fromstring(urllib.request.urlopen(req, timeout=20).read())
@@ -363,6 +363,9 @@ def google_news(query, limit=3):
             d = parsedate_to_datetime(it.findtext("pubDate")).date().isoformat()
         except Exception:
             d = ""
+        import re
+        if re.search(r"Realtime|\|\s*Kurs|Fonds\s*\||Chart\s*$|Historische Kurse", title):
+            continue                      # Kursseiten statt Nachrichten aussortieren
         if title and link.startswith("http"):
             out.append({"t": title[:160], "u": link, "p": src, "d": d})
         if len(out) >= limit:
@@ -375,7 +378,7 @@ def news_query(name, sym=""):
     if sym.endswith("=F"):
         return base + " Preis Rohstoff"
     if sym.startswith("^") or sym.endswith(".SS"):
-        return base + " Index Börse"
+        return base + " Börse aktuell"
     return base + (" ETF" if "ETF" in name else "")
 
 def add_news(all_items, budget=150):
