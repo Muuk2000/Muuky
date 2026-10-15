@@ -1,70 +1,246 @@
 {
- "generated": "2026-10-15T08:13+00:00",
+ "generated": "2026-10-15T23:44+00:00",
  "demo": false,
  "live": {
-  "n": 0
- },
- "live_offen": 28,
- "backtest": {
-  "n": 5782,
-  "hits": 2875,
-  "rate": 49.7,
-  "ci": 1.3,
-  "base_up": 52.0,
-  "edge": -2.3,
+  "n": 20,
+  "hits": 7,
+  "rate": 35.0,
+  "ci": 20.9,
+  "base_up": 50.0,
+  "edge": -15.0,
   "by_group": {
    "Welt-Indizes": {
-    "n": 1575,
-    "rate": 47.9
+    "n": 1,
+    "rate": 0.0
    },
    "Finanzen": {
-    "n": 1040,
-    "rate": 49.8
+    "n": 3,
+    "rate": 0.0
    },
    "Industrie": {
-    "n": 1009,
-    "rate": 51.2
+    "n": 3,
+    "rate": 33.3
+   },
+   "Rohstoffe": {
+    "n": 6,
+    "rate": 16.7
+   },
+   "AI": {
+    "n": 7,
+    "rate": 71.4
+   }
+  },
+  "by_direction": {
+   "steigt": {
+    "n": 7,
+    "rate": 28.6
+   },
+   "fällt": {
+    "n": 13,
+    "rate": 38.5
+   }
+  },
+  "by_component": {
+   "Trend (Kurs über/unter SMA50)": {
+    "n": 20,
+    "rate": 35.0
+   },
+   "Momentum (5 Tage)": {
+    "n": 20,
+    "rate": 45.0
+   },
+   "RSI-Extreme (Gegenbewegung)": {
+    "n": 2,
+    "rate": 100.0
+   },
+   "Relative Stärke (Frühindikator)": {
+    "n": 9,
+    "rate": 22.2
+   }
+  }
+ },
+ "live_offen": 8,
+ "backtest": {
+  "n": 5776,
+  "hits": 2870,
+  "rate": 49.7,
+  "ci": 1.3,
+  "base_up": 52.2,
+  "edge": -2.5,
+  "by_group": {
+   "Welt-Indizes": {
+    "n": 1570,
+    "rate": 47.8
+   },
+   "Finanzen": {
+    "n": 1042,
+    "rate": 49.7
+   },
+   "Industrie": {
+    "n": 1007,
+    "rate": 50.9
    },
    "Rohstoffe": {
     "n": 948,
     "rate": 51.5
    },
    "AI": {
-    "n": 1210,
-    "rate": 49.4
+    "n": 1209,
+    "rate": 49.6
    }
   },
   "by_direction": {
    "steigt": {
-    "n": 3242,
+    "n": 3231,
     "rate": 51.5
    },
    "fällt": {
-    "n": 2540,
-    "rate": 47.4
+    "n": 2545,
+    "rate": 47.3
    }
   },
   "by_component": {
    "Trend (Kurs über/unter SMA50)": {
-    "n": 5782,
+    "n": 5776,
     "rate": 49.7
    },
    "Momentum (5 Tage)": {
-    "n": 5772,
-    "rate": 48.8
+    "n": 5766,
+    "rate": 48.9
    },
    "RSI-Extreme (Gegenbewegung)": {
-    "n": 551,
-    "rate": 53.0
+    "n": 550,
+    "rate": 53.3
    },
    "Relative Stärke (Frühindikator)": {
-    "n": 3543,
-    "rate": 51.3
+    "n": 3542,
+    "rate": 51.2
    }
   },
-  "tage_x_werte": 8352,
+  "tage_x_werte": 8343,
   "abdeckung": 69.4
  },
- "recent": [],
+ "recent": [
+  {
+   "date": "2026-10-15",
+   "name": "Silber",
+   "symbol": "SI=F",
+   "pred": -1,
+   "chg": 3.21,
+   "hit": false
+  },
+  {
+   "date": "2026-10-15",
+   "name": "Nvidia",
+   "symbol": "NVDA",
+   "pred": -1,
+   "chg": -1.84,
+   "hit": true
+  },
+  {
+   "date": "2026-10-15",
+   "name": "Gold",
+   "symbol": "GC=F",
+   "pred": -1,
+   "chg": 1.81,
+   "hit": false
+  },
+  {
+   "date": "2026-10-15",
+   "name": "TSMC",
+   "symbol": "TSM",
+   "pred": -1,
+   "chg": -1.8,
+   "hit": true
+  },
+  {
+   "date": "2026-10-15",
+   "name": "Caterpillar",
+   "symbol": "CAT",
+   "pred": -1,
+   "chg": -1.78,
+   "hit": true
+  },
+  {
+   "date": "2026-10-15",
+   "name": "Banken (US, ETF)",
+   "symbol": "KBE",
+   "pred": -1,
+   "chg": 1.68,
+   "hit": false
+  },
+  {
+   "date": "2026-10-15",
+   "name": "Energie (US, ETF)",
+   "symbol": "XLE",
+   "pred": 1,
+   "chg": -1.58,
+   "hit": false
+  },
+  {
+   "date": "2026-10-15",
+   "name": "Goldman Sachs",
+   "symbol": "GS",
+   "pred": -1,
+   "chg": 1.43,
+   "hit": false
+  },
+  {
+   "date": "2026-10-15",
+   "name": "Luft/Rüstung (ETF)",
+   "symbol": "ITA",
+   "pred": -1,
+   "chg": 1.31,
+   "hit": false
+  },
+  {
+   "date": "2026-10-15",
+   "name": "Microsoft",
+   "symbol": "MSFT",
+   "pred": 1,
+   "chg": 1.08,
+   "hit": true
+  },
+  {
+   "date": "2026-10-15",
+   "name": "Robotik & AI (ETF)",
+   "symbol": "BOTZ",
+   "pred": -1,
+   "chg": -1.08,
+   "hit": true
+  },
+  {
+   "date": "2026-10-15",
+   "name": "WTI Öl",
+   "symbol": "CL=F",
+   "pred": 1,
+   "chg": 1.07,
+   "hit": true
+  },
+  {
+   "date": "2026-10-15",
+   "name": "Bovespa",
+   "symbol": "^BVSP",
+   "pred": 1,
+   "chg": -1.06,
+   "hit": false
+  },
+  {
+   "date": "2026-10-15",
+   "name": "Halbleiter (ETF)",
+   "symbol": "SMH",
+   "pred": -1,
+   "chg": -1.04,
+   "hit": true
+  },
+  {
+   "date": "2026-10-15",
+   "name": "Finanzen Europa (ETF)",
+   "symbol": "EUFN",
+   "pred": -1,
+   "chg": 0.91,
+   "hit": false
+  }
+ ],
  "method": "Prognose = Vorzeichen eines Punktesystems aus vier Indikatoren (Trend (Kurs über/unter SMA50); Momentum (5 Tage); RSI-Extreme (Gegenbewegung); Relative Stärke (Frühindikator)), nur ab Betrag 1.0. Sie nutzt ausschließlich Daten bis zum Vortagesschluss und wird morgens im Repo festgeschrieben. Bewertung: Schlusskurs des Tages gegen Vortagesschluss. Rückschau = dieselben Regeln auf die letzten 200 Handelstage, ohne spätere Daten; die Regeln wurden nicht an diesen Daten optimiert, sind aber vor der Rückschau festgelegt worden - Zufallstreffer sind möglich."
 }
