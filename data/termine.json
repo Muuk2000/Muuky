@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "date": "2026-10-15",
+   "what": "Quartalszahlen TSMC",
+   "kind": "earnings"
+  },
+  {
+   "date": "2026-10-20",
+   "what": "Quartalszahlen GE Aerospace",
+   "kind": "earnings"
+  },
+  {
+   "date": "2026-10-28",
+   "what": "US-Notenbank Fed: Zinsentscheid",
+   "kind": "notenbank"
+  },
+  {
+   "date": "2026-10-28",
+   "what": "Quartalszahlen Deutsche Bank",
+   "kind": "earnings"
+  },
+  {
+   "date": "2026-10-28",
+   "what": "Quartalszahlen Microsoft",
+   "kind": "earnings"
+  },
+  {
+   "date": "2026-10-29",
+   "what": "EZB: Zinsentscheid",
+   "kind": "notenbank"
+  },
+  {
+   "date": "2026-10-29",
+   "what": "Quartalszahlen Caterpillar",
+   "kind": "earnings"
+  },
+  {
+   "date": "2026-11-02",
+   "what": "Quartalszahlen Palantir",
+   "kind": "earnings"
+  },
+  {
+   "date": "2026-11-03",
+   "what": "Quartalszahlen AMD",
+   "kind": "earnings"
+  },
+  {
+   "date": "2026-11-05",
+   "what": "Quartalszahlen Rheinmetall",
+   "kind": "earnings"
+  }
+ ],
+ "errors": [],
+ "hinweis": "Konjunkturdaten (z. B. Inflation, Arbeitsmarkt) sind nicht hinterlegt."
+}

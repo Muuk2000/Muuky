@@ -1,0 +1,70 @@
+{
+ "generated": "2026-10-15T07:27+00:00",
+ "mode": "regelbasiert",
+ "date": "2026-10-15",
+ "words": 327,
+ "sections": [
+  {
+   "title": "Marktüberblick",
+   "lines": [
+    "Stand 15.10.2026: 2 von 13 Weltindizes im Plus (Ø -1,4 %).",
+    "USA: Dow Jones -0,1 %, S&P 500 -1,1 %, Nasdaq 100 -2,0 %.",
+    "Europa: DAX -0,3 %, Euro Stoxx 50 -0,8 %, FTSE 100 +0,2 %.",
+    "Asien/Pazifik: Nikkei 225 -4,9 %, Hang Seng -1,2 %, Shanghai Comp. -1,6 %, Kospi -7,6 %, ASX 200 -0,1 %."
+   ]
+  },
+  {
+   "title": "Branchen",
+   "lines": [
+    "Stärkste Branchen heute: Energie (US, ETF) +0,6 %, Versicherer (US, ETF) +0,2 %. Schwächste: Halbleiter (ETF) -4,0 %, AI & Big Data (ETF) -2,9 %.",
+    "Frühsignal (relative Stärke dreht nach oben, Kurs noch nicht bestätigt): Transport (ETF), Materialien (US, ETF), Financials (US, ETF), Versicherer (US, ETF).",
+    "Rohstoffe als mögliche Treiber: Gold +1,4 %, Öl (WTI) -1,2 %, Kupfer -1,0 %, US-Erdgas +1,5 %."
+   ]
+  },
+  {
+   "title": "Auffällige Einzelwerte",
+   "lines": [
+    "AMD -5,7 % (Frühwarnung: relative Stärke lässt nach (-10,5 % in 5 Tagen), Kurs hält noch). Schlagzeile: „Radeon-Grafikkarten: AMD erhöht Preise für mehrere Modelle“ (PCGH).",
+    "Palantir -3,7 % (Starke Tagesbewegung -3,7 %). Schlagzeile: „Palantir: Kursziel 265 Dollar – und zwei AKTIONÄR-Tipps“ (Der Aktionär).",
+    "TSMC -3,4 % (Starke Tagesbewegung -3,4 %). Schlagzeile: „TSMC: KI-Boom treibt Q3-Gewinn über Erwartungen auf neues Rekordhoch“ (Investing.com Deutsch)."
+   ]
+  },
+  {
+   "title": "Wirtschaft und Geopolitik",
+   "lines": [
+    "USA – Russland: Medienstimmung „Anspannung steigt“ (Ton -2,9 gegenüber -2,2 im 30-Tage-Schnitt).",
+    "China – Russland: Medienstimmung „Anspannung steigt“ (Ton -2,3 gegenüber -1,6 im 30-Tage-Schnitt).",
+    "Erdgas Europa (TTF): 87,1 €/MWh, -0,1 % heute, Lage „Preisdruck steigt“.",
+    "Bitcoin: 81.052 $, -0,6 % heute, Lage „eher bullisch“.",
+    "Konjunkturdaten sind nicht hinterlegt; keine Aussage dazu."
+   ]
+  },
+  {
+   "title": "Stimmung",
+   "lines": [
+    "VIX 16,9 (+10,5 %): ruhig; im Jahresvergleich Perzentil 44.",
+    "25 % der beobachteten Werte liegen über SMA50 und SMA200 (intakter Trend); 2 überkauft (RSI ≥ 70), 2 überverkauft (RSI ≤ 30).",
+    "Gesamtbild: eher vorsichtig."
+   ]
+  },
+  {
+   "title": "Ausblick",
+   "lines": [
+    "15.10.: Quartalszahlen TSMC",
+    "20.10.: Quartalszahlen GE Aerospace",
+    "28.10.: US-Notenbank Fed: Zinsentscheid",
+    "28.10.: Quartalszahlen Deutsche Bank",
+    "28.10.: Quartalszahlen Microsoft",
+    "Beobachten: Hält die relative Stärke der führenden Branchen? Bleiben überkaufte Werte oben, oder kommt ein Rücksetzer?"
+   ]
+  },
+  {
+   "title": "Anlegerperspektive",
+   "lines": [
+    "Geopolitische Anspannung kann Rohstoffe, Rüstung und Schwankung treiben.",
+    "Beobachtungen aus Kursdaten, keine Anlageberatung und keine Prognose."
+   ]
+  }
+ ],
+ "hinweis": "Automatisch erstellt aus Kursdaten und Schlagzeilen. Keine Anlageberatung."
+}

@@ -109,26 +109,26 @@
    "d1": -0.67
   }
  ],
- "generated": "2026-10-15T06:40+00:00",
+ "generated": "2026-10-15T07:24+00:00",
  "demo": false,
  "top_signals": [
   {
    "symbol": "^KS11",
    "name": "Kospi",
    "group": "Welt-Indizes",
-   "d1": -7.53,
+   "d1": -7.57,
    "signals": [
     "RSI 23: überverkauft - mögliche Gegenbewegung",
-    "Starke Tagesbewegung -7.5 %"
+    "Starke Tagesbewegung -7.6 %"
    ]
   },
   {
    "symbol": "000001.SS",
    "name": "Shanghai Comp.",
    "group": "Welt-Indizes",
-   "d1": -2.38,
+   "d1": -1.59,
    "signals": [
-    "RSI 24: überverkauft - mögliche Gegenbewegung"
+    "RSI 27: überverkauft - mögliche Gegenbewegung"
    ]
   },
   {
@@ -161,6 +161,25 @@
    ]
   },
   {
+   "symbol": "RHM.DE",
+   "name": "Rheinmetall",
+   "group": "Industrie",
+   "d1": 3.37,
+   "signals": [
+    "Frühsignal: relative Stärke dreht nach oben (+7.7 % in 5 Tagen), Kurs noch nicht bestätigt",
+    "Starke Tagesbewegung +3.4 %"
+   ]
+  },
+  {
+   "symbol": "^DJI",
+   "name": "Dow Jones",
+   "group": "Welt-Indizes",
+   "d1": -0.09,
+   "signals": [
+    "Frühsignal: relative Stärke dreht nach oben (+2.1 % in 5 Tagen), Kurs noch nicht bestätigt"
+   ]
+  },
+  {
    "symbol": "^NDX",
    "name": "Nasdaq 100",
    "group": "Welt-Indizes",
@@ -173,44 +192,100 @@
    "symbol": "^GDAXI",
    "name": "DAX",
    "group": "Welt-Indizes",
-   "d1": 0.15,
+   "d1": -0.33,
    "signals": [
-    "Frühsignal: relative Stärke dreht nach oben (+2.0 % in 5 Tagen), Kurs noch nicht bestätigt"
-   ]
-  },
-  {
-   "symbol": "^STOXX50E",
-   "name": "Euro Stoxx 50",
-   "group": "Welt-Indizes",
-   "d1": 0.38,
-   "signals": [
-    "Frühsignal: relative Stärke dreht nach oben (+1.4 % in 5 Tagen), Kurs noch nicht bestätigt"
+    "Frühsignal: relative Stärke dreht nach oben (+2.3 % in 5 Tagen), Kurs noch nicht bestätigt"
    ]
   },
   {
    "symbol": "^NSEI",
    "name": "Nifty 50",
    "group": "Welt-Indizes",
-   "d1": 1.49,
+   "d1": 1.72,
    "signals": [
-    "Frühsignal: relative Stärke dreht nach oben (+4.0 % in 5 Tagen), Kurs noch nicht bestätigt"
-   ]
-  },
-  {
-   "symbol": "^AXJO",
-   "name": "ASX 200",
-   "group": "Welt-Indizes",
-   "d1": -0.09,
-   "signals": [
-    "Frühsignal: relative Stärke dreht nach oben (+1.3 % in 5 Tagen), Kurs noch nicht bestätigt"
+    "Frühsignal: relative Stärke dreht nach oben (+4.2 % in 5 Tagen), Kurs noch nicht bestätigt"
    ]
   }
  ],
  "groups": [
   {
    "name": "Welt-Indizes",
-   "comment": "Welt-Indizes: Tagesstimmung schwach (Ø -1.4 %, 4 von 12 im Plus). Stärkster: Nifty 50 (+1.5 %), schwächster: Kospi (-7.5 %). Auf Monatssicht Ø -1.3 %.",
+   "comment": "Welt-Indizes: Tagesstimmung schwach (Ø -1.4 %, 2 von 13 im Plus). Stärkster: Nifty 50 (+1.7 %), schwächster: Kospi (-7.6 %). Auf Monatssicht Ø -1.4 %.",
    "items": [
+    {
+     "symbol": "^DJI",
+     "name": "Dow Jones",
+     "price": 51621.48,
+     "d1": -0.09,
+     "d5": 0.86,
+     "m1": -0.91,
+     "rsi": 47.5,
+     "vs_sma50": -1.75,
+     "vs_sma200": 2.42,
+     "from_high": -5.02,
+     "spark": [
+      53061.95,
+      53686.11,
+      53414.25,
+      52786.07,
+      52380.66,
+      52064.1,
+      52573.29,
+      52421.2,
+      52093.11,
+      51461.9,
+      51778.04,
+      51682.64,
+      52048.83,
+      51863.69,
+      51511.59,
+      51349.98,
+      51828.62,
+      51481.51,
+      51349.92,
+      50906.05,
+      50926.56,
+      51176.96,
+      51267.9,
+      51521.28,
+      51179.87,
+      51231.64,
+      51654.95,
+      51850.55,
+      51670.1,
+      51621.48
+     ],
+     "vol_ratio": 1.0,
+     "rs5": 2.11,
+     "rs20": -0.41,
+     "rs_state": "frueh_rein",
+     "signals": [
+      "Frühsignal: relative Stärke dreht nach oben (+2.1 % in 5 Tagen), Kurs noch nicht bestätigt"
+     ],
+     "score": 10,
+     "trend": "seitwärts",
+     "group": "Welt-Indizes",
+     "news": [
+      {
+       "t": "Börse, Aktienkurse, Fonds und Zertifikate",
+       "u": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1fYUlYU3E0a21TQ01oOXNwMVQ2bjlueG5oTm1ZdzBleUZ0MUlUWmVVVUF1djM4RGo1eEwxR1hPSGhzQWxFV2RzeQ?oc=5",
+       "p": "n-tv.de",
+       "d": "2026-10-12"
+      },
+      {
+       "t": "Marktbericht: Ölpreis sinkt - DAX steigt über 25.000 Punkte",
+       "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQ1k0NU0wcUdldFZVUGJrcjFMYUxEZ1dicllfUlBaNTJkZjVud25vM0RZYlBDcllMalV1M3JBVjhLR3NFaDJoNzd2aXU5anJrS3lpd25vb1ZKdVhxLXl1bWxPODVyWW9icFlfa3N3UlN6MmFYVzZZV29rS2xmSjloVFk5Z01JeDB5NEN6TEZ1MG9hTXd4MDV5bG1mT0I2MmJlakE?oc=5",
+       "p": "tagesschau.de",
+       "d": "2026-10-09"
+      },
+      {
+       "t": "Dow Jones, S&P 500 & Nasdaq 100: Banken stützen US Börse bei Tech-Korrektur",
+       "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMVJndzdIX3QxaFhPYk9ZTlk1el82d3NPYTFEZ2N0RVdwZ3Zkamp1NDlKdFpvQmZYQm4wbHdtMkhKRE8zcmkzamUzX0xnaWw4VkkzaU5nWlRTVGIzRllETWV2MG1hWDlzYWJET04yX0k0VlJBWEFkMWV3SlgtdGhpLUdBZ3h4amdCQ3VUbWRZcUZodGhyM2dIeE9mcjZMTDV0c1BvbTRNeld4YTBhZWVIVUFUUUc2akdUVXMzUUQ1a24?oc=5",
+       "p": "XTB.com",
+       "d": "2026-10-13"
+      }
+     ]
+    },
     {
      "symbol": "^GSPC",
      "name": "S&P 500",
@@ -264,15 +339,15 @@
      "group": "Welt-Indizes",
      "news": [
       {
+       "t": "S&P 500 unter 20-Tage-Linie - boerse.de",
+       "u": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1FRFNXNTVoX3dqRTFWNFJZN0ptMXNvNDIteTFQYnBOQnpXSWhSdFc3VEJmei1mVWoxSjlqWi1TNWpxN2RGVVBVdXYzSXVpaHpSUFE3NHdYVExOZ3B1MHhsTGtacXFFNUpzZzR6V0s1eGFLNl9CTUVLaW1zOGjSAYIBQVVfeXFMTjJsbnctdlBzSnRVOGMxbUlhRUM2RnJZaUtaSldQQkEzTUVFNm9QcDVrS0xIZnVCVmM1QXBFLWFsblVnSl9QQXMwbEp4dEFzaHJodS1md2F0dnNZY3F0NGZaUFRYaXM4TEd2ZEF6dG1neVpCdEtuQlVjaHdMLW9Yb2J6QQ?oc=5",
+       "p": "boerse.de",
+       "d": "2026-10-15"
+      },
+      {
        "t": "Dow Jones, S&P 500 & Nasdaq 100: US Börse erholt sich nach zwei Verlusttagen",
        "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOVGZPQ29vN084aEFzVGprZnoxV2VPUm11c1NjeUVEZWt4RFlhbjI4aEtJd1NBRllkTzkzN3FaYmNPUk9qX2RSVGdvM0Z6OFk0dFIySEFfd3FISmhpYUlDbmFjcU9KblQ0b1dQVXo0aUwzYXJ6eGwtY24zN2s4ZmVnMFpVd3p0WXlJZXk0c0d2WENjbUh1LWljN2U2alJDdjh1a2VwdzFMN19la3lZOWpMYzMybEtyZUN6RThLZ2lOWTQ?oc=5",
        "p": "XTB.com",
-       "d": "2026-10-09"
-      },
-      {
-       "t": "Dax und Börse aktuell: Sieben Punkte, die für Anleger heute wichtig sind",
-       "u": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQUTRxSDhnYWYzTUlXT1BpY0JxcDZzd19nM1lOTFFDRWc0d3FNbk5CdjJ6LTF1QlA0QWdONndUUHJKUGJrb09iaDBGNm03RGJqRkRPQzRyci00S1B1Wml4czN5QThfdTMzdlRDUVdnLUFsanRYQXZQdFNHak1CQ0pwZmt1dV91b1JkVXVmZEtPTW05OWZGd2VPZ1BvS0VQWHJnYTN0ZFptWWtoVU9ZcmtNNy00R0ttdjB2elNXYXpjcnNhcFViNm1UWVkxdS11ZmlSQTNSN2xDVEJqdVdsQktIVQ?oc=5",
-       "p": "Handelsblatt",
        "d": "2026-10-09"
       },
       {
@@ -344,32 +419,31 @@
        "d": "2026-10-12"
       },
       {
-       "t": "Dax und Börse aktuell: Sieben Punkte, die für Anleger heute wichtig sind",
-       "u": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQUTRxSDhnYWYzTUlXT1BpY0JxcDZzd19nM1lOTFFDRWc0d3FNbk5CdjJ6LTF1QlA0QWdONndUUHJKUGJrb09iaDBGNm03RGJqRkRPQzRyci00S1B1Wml4czN5QThfdTMzdlRDUVdnLUFsanRYQXZQdFNHak1CQ0pwZmt1dV91b1JkVXVmZEtPTW05OWZGd2VPZ1BvS0VQWHJnYTN0ZFptWWtoVU9ZcmtNNy00R0ttdjB2elNXYXpjcnNhcFViNm1UWVkxdS11ZmlSQTNSN2xDVEJqdVdsQktIVQ?oc=5",
-       "p": "Handelsblatt",
-       "d": "2026-10-09"
-      },
-      {
        "t": "Börse heute: Heiße US-Inflation und Nahost-Eskalation setzen Aktienmärkte unter Druck",
        "u": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSFhYQ05LQ2Nid29QdnRITkNsdUZHMHNfNTVwM1ZpRWtndWlFQ0xlWmE3SmdOZnJOaGU3REVIQTBFNHlKVHpNTVZJdzZoc2x6RFRLNklWZjFuaEM2ZEJ4RzBEeWUtWDhGMnlNeU54dmRpZ2IwWmx1bXhGR3gzSndKUGJhQWN1MmVFVlptMDNJNGZJRDl6dG9JQjlvQ0dXbTZKTmZXX050MWJyeXdxb3Qxdm9DRW5HTTdkc1MxWklrWUpPd0c3X2U0bzNBelIwZ2ZNT2ZJ?oc=5",
        "p": "XTB.com",
        "d": "2026-10-14"
+      },
+      {
+       "t": "Börse New York in Grün: Anleger lassen NASDAQ 100 zum Handelsende steigen",
+       "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQTmlNbzk1RUQyY3NodmFNZWRlai1VMl9wRHhFbURwS29rR0hKZmhNaFBHV09OTTY5WUZtSEE3NklEQTVBZkZhaGc5bmxVUGc1LXE0NDVDZDVFTkx0eXNfdnR3VDI2MTM3QnFoRUNNY1BpM2dSTXlzQVBKM3FLenN2MklYaDdtbHItbFhUeXNaaW9kUXRaU1BfQS1sel9RMnhFSVZ2UkNYcUtSb3BlcHZUdjhGdVVndWtDWlRwa1VGTWFWTDg?oc=5",
+       "p": "Finanzen.net",
+       "d": "2026-10-09"
       }
      ]
     },
     {
      "symbol": "^GDAXI",
      "name": "DAX",
-     "price": 25298.61,
-     "d1": 0.15,
-     "d5": 0.77,
-     "m1": -0.41,
-     "rsi": 48.1,
-     "vs_sma50": -1.75,
-     "vs_sma200": 1.72,
-     "from_high": -4.79,
+     "price": 25214.61,
+     "d1": -0.33,
+     "d5": 1.64,
+     "m1": -1.27,
+     "rsi": 46.3,
+     "vs_sma50": -2.01,
+     "vs_sma200": 1.38,
+     "from_high": -5.1,
      "spark": [
-      26003.32,
       26046.4,
       26006.53,
       26007.63,
@@ -398,14 +472,15 @@
       25087.27,
       25277.68,
       25259.9,
-      25298.61
+      25298.61,
+      25214.61
      ],
-     "vol_ratio": 1.0,
-     "rs5": 2.02,
-     "rs20": -1.65,
+     "vol_ratio": 0.0,
+     "rs5": 2.31,
+     "rs20": -1.45,
      "rs_state": "frueh_rein",
      "signals": [
-      "Frühsignal: relative Stärke dreht nach oben (+2.0 % in 5 Tagen), Kurs noch nicht bestätigt"
+      "Frühsignal: relative Stärke dreht nach oben (+2.3 % in 5 Tagen), Kurs noch nicht bestätigt"
      ],
      "score": 10,
      "trend": "seitwärts",
@@ -434,16 +509,15 @@
     {
      "symbol": "^STOXX50E",
      "name": "Euro Stoxx 50",
-     "price": 6190.37,
-     "d1": 0.38,
-     "d5": 0.16,
-     "m1": -0.74,
-     "rsi": 43.5,
-     "vs_sma50": -2.57,
-     "vs_sma200": 1.55,
-     "from_high": -5.51,
+     "price": 6138.04,
+     "d1": -0.85,
+     "d5": 0.18,
+     "m1": -2.05,
+     "rsi": 39.6,
+     "vs_sma50": -3.29,
+     "vs_sma200": 0.66,
+     "from_high": -6.31,
      "spark": [
-      6382.59,
       6392.93,
       6403.99,
       6413.17,
@@ -472,16 +546,15 @@
       6173.37,
       6201.21,
       6167.01,
-      6190.37
+      6190.37,
+      6138.04
      ],
-     "vol_ratio": 0.88,
-     "rs5": 1.4,
-     "rs20": -1.92,
-     "rs_state": "frueh_rein",
-     "signals": [
-      "Frühsignal: relative Stärke dreht nach oben (+1.4 % in 5 Tagen), Kurs noch nicht bestätigt"
-     ],
-     "score": 10,
+     "vol_ratio": 0.0,
+     "rs5": 0.84,
+     "rs20": -2.42,
+     "rs_state": "neutral",
+     "signals": [],
+     "score": 0,
      "trend": "seitwärts",
      "group": "Welt-Indizes",
      "news": [
@@ -508,16 +581,15 @@
     {
      "symbol": "^FTSE",
      "name": "FTSE 100",
-     "price": 10724.9,
-     "d1": 0.7,
-     "d5": 2.55,
-     "m1": 0.63,
-     "rsi": 56.4,
-     "vs_sma50": 0.07,
-     "vs_sma200": 2.3,
-     "from_high": -1.7,
+     "price": 10751.1,
+     "d1": 0.24,
+     "d5": 2.96,
+     "m1": 0.59,
+     "rsi": 57.9,
+     "vs_sma50": 0.34,
+     "vs_sma200": 2.51,
+     "from_high": -1.46,
      "spark": [
-      10831.5,
       10831.1,
       10822.1,
       10811.7,
@@ -546,11 +618,12 @@
       10552.1,
       10656.3,
       10650.3,
-      10724.9
+      10724.9,
+      10751.1
      ],
-     "vol_ratio": 0.75,
-     "rs5": 3.81,
-     "rs20": -0.38,
+     "vol_ratio": 0.0,
+     "rs5": 3.64,
+     "rs20": -0.09,
      "rs_state": "neutral",
      "signals": [],
      "score": 0,
@@ -581,14 +654,14 @@
     {
      "symbol": "^N225",
      "name": "Nikkei 225",
-     "price": 64485.02,
-     "d1": -4.81,
-     "d5": -7.93,
-     "m1": -1.2,
-     "rsi": 39.7,
-     "vs_sma50": -2.7,
-     "vs_sma200": 5.65,
-     "from_high": -10.89,
+     "price": 64425.95,
+     "d1": -4.9,
+     "d5": -8.01,
+     "m1": -1.29,
+     "rsi": 39.5,
+     "vs_sma50": -2.79,
+     "vs_sma200": 5.55,
+     "from_high": -10.97,
      "spark": [
       66311.93,
       66215.34,
@@ -619,16 +692,16 @@
       69030.92,
       67777.52,
       67744.29,
-      64485.02
+      64425.95
      ],
      "vol_ratio": 0.0,
-     "rs5": -6.79,
-     "rs20": 1.69,
+     "rs5": -6.87,
+     "rs20": 1.6,
      "rs_state": "neutral",
      "signals": [
-      "Starke Tagesbewegung -4.8 %"
+      "Starke Tagesbewegung -4.9 %"
      ],
-     "score": 4.8,
+     "score": 4.9,
      "trend": "seitwärts",
      "group": "Welt-Indizes",
      "forecast": "up",
@@ -646,24 +719,24 @@
        "d": "2026-10-15"
       },
       {
-       "t": "10 Fakten zum Donnerstagshandel: So steht es um die Börse - Nikkei sackt ab - NEL-Zahlen enttäuschen",
-       "u": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQb2ZnT1BWd3hROTdIM01sSzBmOUdSU3VLMm5LeU91TWRBaEE4RE1PY3hQNUYydWp6RUszb2p6eVBBbUxHS1V6NGNEbGpKOGNlNkY1VFBhdEw1YmE0Sm9EalFVUk82WFRYNTZvdWxQVEFLbUZKb2hXUnJuUTlucGdrVGF5cFM0Vi1lMjdaMHNkTXE0UDF3X1N5WDlJT09TaG9naFB3amstcjdkM3hkZFFFMFdBY1g3Mmd3THRGajZXNTkyM1AwdmFoN0hLOXdYNE1saEdWTmcwRU8yQWlKLXZ5djBEcmY3cllXQXIzLWdB?oc=5",
-       "p": "Finanzen.net",
-       "d": "2026-10-15"
+       "t": "Nikkei 225 verliert 1,68 Prozent – Japanische Börse schwächer",
+       "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPemdTa21sNTI2QVhrcVRiOXV1dnQzS0puWlNOWnhpNnpaNEVsWkFaMDdRaWFJa0NJRFo0M1JfUnBNcnNUMEgtdmpqNktleVpER0Rvc1JlamF0YnpCUFUwenJCLWpYY2tUQ0Z3T3cybkdMQXo1dXZxdk5sbjhmaFBENF83QkNUYW4zWWc?oc=5",
+       "p": "aktien.news",
+       "d": "2026-10-13"
       }
      ]
     },
     {
      "symbol": "^HSI",
      "name": "Hang Seng",
-     "price": 23962.28,
-     "d1": -1.45,
-     "d5": 0.74,
-     "m1": -2.86,
-     "rsi": 38.7,
-     "vs_sma50": -4.19,
-     "vs_sma200": -5.96,
-     "from_high": -14.32,
+     "price": 24011.53,
+     "d1": -1.24,
+     "d5": 0.95,
+     "m1": -2.66,
+     "rsi": 39.4,
+     "vs_sma50": -4.0,
+     "vs_sma200": -5.77,
+     "from_high": -14.15,
      "spark": [
       25213.31,
       25650.87,
@@ -694,11 +767,11 @@
       24271.2,
       24345.22,
       24314.17,
-      23962.28
+      24011.53
      ],
      "vol_ratio": 0.0,
-     "rs5": 1.4,
-     "rs20": -3.74,
+     "rs5": 1.61,
+     "rs20": -3.54,
      "rs_state": "schwach",
      "signals": [],
      "score": 0,
@@ -728,14 +801,14 @@
     {
      "symbol": "000001.SS",
      "name": "Shanghai Comp.",
-     "price": 3677.43,
-     "d1": -2.38,
-     "d5": -3.53,
-     "m1": -6.68,
-     "rsi": 24.4,
-     "vs_sma50": -5.56,
-     "vs_sma200": -8.2,
-     "from_high": -13.32,
+     "price": 3707.48,
+     "d1": -1.59,
+     "d5": -2.74,
+     "m1": -5.91,
+     "rsi": 26.5,
+     "vs_sma50": -4.81,
+     "vs_sma200": -7.45,
+     "from_high": -12.61,
      "spark": [
       3956.57,
       3952.18,
@@ -766,15 +839,15 @@
       3797.24,
       3800.86,
       3767.23,
-      3677.43
+      3707.48
      ],
-     "rs5": -2.9,
-     "rs20": -6.12,
+     "rs5": -2.1,
+     "rs20": -5.35,
      "rs_state": "schwach",
      "signals": [
-      "RSI 24: überverkauft - mögliche Gegenbewegung"
+      "RSI 27: überverkauft - mögliche Gegenbewegung"
      ],
-     "score": 45.6,
+     "score": 43.5,
      "trend": "ab",
      "group": "Welt-Indizes",
      "forecast": "down",
@@ -802,14 +875,14 @@
     {
      "symbol": "^NSEI",
      "name": "Nifty 50",
-     "price": 22959.7,
-     "d1": 1.49,
-     "d5": 3.27,
-     "m1": -0.69,
-     "rsi": 49.2,
-     "vs_sma50": -2.62,
-     "vs_sma200": -5.15,
-     "from_high": -12.8,
+     "price": 23011.25,
+     "d1": 1.72,
+     "d5": 3.51,
+     "m1": -0.46,
+     "rsi": 50.2,
+     "vs_sma50": -2.41,
+     "vs_sma200": -4.94,
+     "from_high": -12.6,
      "spark": [
       23914.45,
       23873.45,
@@ -840,14 +913,14 @@
       22363.35,
       22721.95,
       22622.7,
-      22959.7
+      23011.25
      ],
      "vol_ratio": 0.0,
-     "rs5": 3.95,
-     "rs20": -1.82,
+     "rs5": 4.18,
+     "rs20": -1.6,
      "rs_state": "frueh_rein",
      "signals": [
-      "Frühsignal: relative Stärke dreht nach oben (+4.0 % in 5 Tagen), Kurs noch nicht bestätigt"
+      "Frühsignal: relative Stärke dreht nach oben (+4.2 % in 5 Tagen), Kurs noch nicht bestätigt"
      ],
      "score": 10,
      "trend": "ab",
@@ -866,10 +939,10 @@
        "d": "2026-10-13"
       },
       {
-       "t": "Kotak-Bank-Aktie liegt 15,27 Prozent im Plus seit drei Monaten",
-       "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZ0luUEphT0RrbjBBUEFZeWUtZkpoNE9ENUppRC1ZTjd2Wi1aWmNObmVwemx4cjgyRGI5NXA4VVRoeGREd3ZZc2oyYTRZRHlnQW81Q2lKdWpXelZ5Q1F3ZnE4NlBTNjJXbUptZV9XTkZ2MEg2dHpFWWRPSEVuZ0UzY3N3anRHWHZsLWRocHZiUnFGRHpma3pfN2RGZi1qclQ4a1FTXy1Db0xGMnJ4QjBUUi1SR3V0ZC1pMHBpRC1RZTdLTzQ?oc=5",
-       "p": "AD HOC NEWS",
-       "d": "2026-10-08"
+       "t": "Hindustan-Unilever-Aktie kostet 1.820,70 INR und hat KGV 28,6",
+       "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOV1NFWVA5b1hMcFRjVnlzZ28weEZOWTNld2dHdjBBVjZzOVdMZWMwcmExeExkeWRqNnhOV0V1Tk1iRE9YVHJCZ2tYS29wbHQ2Mzd3SUlZd3dJYlhxQ3FjZ1BCSzVEdjE4YjJfMmxxbUpOUlluTlZZRGdLZG56OTI1U18xZE9zVUVlVE5UM1h5ZVo2MWI3OEdocmNpdVZidWZYTWIzYmpydUNBSm5TTnBPcWdBS0hWU2lYVXBzdFY1alc5UQ?oc=5",
+       "p": "ad-hoc-news.de",
+       "d": "2026-10-12"
       }
      ]
     },
@@ -1025,14 +1098,14 @@
     {
      "symbol": "^KS11",
      "name": "Kospi",
-     "price": 5556.31,
-     "d1": -7.53,
-     "d5": -18.34,
-     "m1": -21.01,
+     "price": 5554.22,
+     "d1": -7.57,
+     "d5": -18.37,
+     "m1": -21.04,
      "rsi": 23.2,
-     "vs_sma50": -16.96,
-     "vs_sma200": -13.22,
-     "from_high": -39.04,
+     "vs_sma50": -16.99,
+     "vs_sma200": -13.25,
+     "from_high": -39.06,
      "spark": [
       6820.02,
       6835.8,
@@ -1063,15 +1136,15 @@
       6384.24,
       6035.35,
       6008.81,
-      5556.31
+      5554.22
      ],
-     "vol_ratio": 1.25,
-     "rs5": -17.33,
-     "rs20": -18.83,
+     "vol_ratio": 1.29,
+     "rs5": -17.36,
+     "rs20": -18.86,
      "rs_state": "schwach",
      "signals": [
       "RSI 23: überverkauft - mögliche Gegenbewegung",
-      "Starke Tagesbewegung -7.5 %"
+      "Starke Tagesbewegung -7.6 %"
      ],
      "score": 54.3,
      "trend": "ab",
@@ -1085,16 +1158,16 @@
        "d": "2026-10-15"
       },
       {
+       "t": "Börse: Kospi stürzt über 8 Prozent ab, Coreweave verliert 15 Prozent, Dax hält sich",
+       "u": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxONDY5ek4xYS1nRXlENHpJeUZkNTlzQ2dJN2VIVHRTVlcyYUstTGRtcDRkTWdfT2FTNXZRSmkteHE5bEhJWnlLMkkyNlZrMjBBQlcwZVZXbHV6TE4wWVlIMW9Yd1cxNEFWc3pHNVpxeHVKWjJLZWVfa2N3Wk9DbThrSFpmVDBJY0ZjdHVucTlpTklKWGdKQURtTTRkTDN4TEhWUXFBYkZwS1NZVk16TEc1SHdqQXFDM05RTU54S0pEQzd5bjFVVnNoWkt1elpwYTVUMDd4OHpyM284VjA4bkFpUThIUlFSdlMzTDh2ZlhPVzkzSVdsenhJWlRvd3pVV0U?oc=5",
+       "p": "Manager Magazin",
+       "d": "2026-10-15"
+      },
+      {
        "t": "Kospi crasht: Korea-KI-Crash: Börse stoppt Handel! Kommt jetzt der große KI-Crash?",
        "u": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQaUF3TUtGN3Uzd09MMExBRGJRNVEteUJHTzBwU2lMRDdUTU54RlU0aWp5b25qN0NvekZZcmlGY1Fac3JIZUJJZ1N6TXVjMlFOOUx6Nk84T2RsZkJTdTJhVEFLMG13WXRnMXk1LUx5amZqSVFCbWlnMVVQYU1UcmlNZU5ib1R5SUxkaGlfdUp5OGxPODVmR2Etd2tvWTRUNlVXd3pjbk54eUthbzZEX1FLZkp4U1FTd2czT1RZYWlYWDUxRjQyVkFKdzdKNTFPa1BJOEwyYWIwYkhaRFlTWkh2a3FBQVQ?oc=5",
        "p": "FinanzNachrichten.de",
        "d": "2026-10-15"
-      },
-      {
-       "t": "Der Börsen-Tag: Kospi bricht ein",
-       "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZWo1aE85NVpLSGZXTjNvNVc3M3NpVHVLeGp6TWxkeVh3VjljSldFY0xEZEppZjFQZjVlSlkxS0ZRdno3ZjZmSlhTdmZqcFFCa1F3eVNfTzhnNzluVnluOF9nMVk4NHdxWjFnOFVwUGIwSm05OFUtcEFEWTMwSVhLRDNiemo3UQ?oc=5",
-       "p": "n-tv.de",
-       "d": "2026-10-13"
       }
      ]
     }
@@ -1102,7 +1175,7 @@
   },
   {
    "name": "Finanzen",
-   "comment": "Finanzen: Tagesstimmung unentschlossen (Ø -0.3 %, 3 von 8 im Plus). Stärkster: JPMorgan (+1.2 %), schwächster: Deutsche Bank (-1.5 %). Auf Monatssicht Ø -6.7 %.",
+   "comment": "Finanzen: Tagesstimmung unentschlossen (Ø -0.2 %, 3 von 8 im Plus). Stärkster: Allianz (+2.1 %), schwächster: Deutsche Bank (-1.6 %). Auf Monatssicht Ø -6.4 %.",
    "items": [
     {
      "symbol": "XLF",
@@ -1312,16 +1385,16 @@
        "d": "2026-10-10"
       },
       {
+       "t": "So bauen Sie ein stabiles Vermögen auf",
+       "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdHNVaWVXc2E5ZWJlSU5WVUN3UXYzTjA5RDRCQXVnQ0JHNk5ERmlJcFZXV1BSU3pQOUQ3NElITDN5M2VtMHBnZGxfVmFFSkwxV3dhRmh3WWx1ZzNxbzl5YlF1djhPRW5mMUI5c1pwWDJqejltRzNlZk5WVlluTmhPQTRKMnVFNXNXaFNEeXRScGhQX3ZyNEE?oc=5",
+       "p": "AerzteZeitung.de",
+       "d": "2026-10-14"
+      },
+      {
        "t": "Ranking 2026: Diese Lebensversicherer bieten die beste Leistungsfähigkeit",
        "u": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOWHE1NFdwSmxyZjdxME04eUhkYlpsRk5xUDFfaUYzVUlNVkVMaDIzSkplUDdlai1oNEpncXU3QnZIM2ZRTzdsMk8zSHBtVEttT0lCLTZsOUVkdjc5bmliaDl6Mm1yUlZuWEt1bktYeGxNbVRrNUFIZW1TYUxudjdzNDF3T3ZIWThONFJNeTV2N2JPVzNJYnVDR2JkUHczWW5oN0lsU0tyV0dHakVLa1JHTThxOTVKMkcyZlhZRVJHN2JOd2k3?oc=5",
        "p": "WirtschaftsWoche",
        "d": "2026-10-09"
-      },
-      {
-       "t": "Wie Anleger mit ETF vom Renditeanstieg bei Staatsanleihen profitieren",
-       "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONVVabkpNN2otZjhmUXBoVWxkNzlUQ1RKN0lzcHlrX2lETlZBclJEbHJnaEg0YlZpdWVoNGtuaTUtcHVCd04xdlpraVM1R1Nrb0VaSEViTk9ESEMzSzg3SnFjcTM5aG9rV2kzUGVNcUs2TnVFeXRwUVRjeGtNSjRaTkFYQTF0bm5NY1QwcFBNTGZEXzNwcHJyYjVwN1JlcmFqR0dXS1Z3TVJvX0t5eTZ1YUdUMXdXVG05bDVXclpCeGM?oc=5",
-       "p": "Capital.de",
-       "d": "2026-10-08"
       }
      ]
     },
@@ -1548,16 +1621,15 @@
     {
      "symbol": "ALV.DE",
      "name": "Allianz",
-     "price": 423.5,
-     "d1": 0.71,
-     "d5": 0.67,
-     "m1": -4.72,
-     "rsi": 47.2,
-     "vs_sma50": -2.88,
-     "vs_sma200": 8.36,
-     "from_high": -6.57,
+     "price": 432.3,
+     "d1": 2.08,
+     "d5": 3.59,
+     "m1": -2.77,
+     "rsi": 54.6,
+     "vs_sma50": -0.84,
+     "vs_sma200": 10.52,
+     "from_high": -4.63,
      "spark": [
-      449.2,
       453.3,
       450.6,
       447.4,
@@ -1586,14 +1658,17 @@
       413.4,
       417.0,
       420.5,
-      423.5
+      423.5,
+      432.3
      ],
-     "vol_ratio": 0.92,
-     "rs5": 1.39,
-     "rs20": -6.22,
-     "rs_state": "schwach",
-     "signals": [],
-     "score": 0,
+     "vol_ratio": 0.07,
+     "rs5": 4.87,
+     "rs20": -4.45,
+     "rs_state": "frueh_rein",
+     "signals": [
+      "Frühsignal: relative Stärke dreht nach oben (+4.9 % in 5 Tagen), Kurs noch nicht bestätigt"
+     ],
+     "score": 10,
      "trend": "seitwärts",
      "group": "Finanzen",
      "forecast": "down",
@@ -1605,32 +1680,31 @@
        "d": "2026-10-14"
       },
       {
+       "t": "DNA Europe: Netzbetreiber gründen Allianz",
+       "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVUw3a0x6OERMMTlCMzU0RkgyemEySUJYT2tndmdoSkxUN0M3U3BZejRSNHMyU3Y0ekthS0pRVFhhQ2k3OU9QNDhpWC1mcl9sT2dEd0dnY0NWUW1XeXM3aXM1bHUtOU0waFhTTFpQM3NTd3kwNmI3blp5SzBhZ1IzU0V0Z29pSXBT?oc=5",
+       "p": "heise online",
+       "d": "2026-10-13"
+      },
+      {
        "t": "Allianz-Aktie: Zweiter Tag mit Gewinnen",
        "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVndRclljODVEZXN0YVVjYUlnbFprV0dnNFlJMklJSGIyTlZqeXJ5azhsVXF0SzBwNGRvNEdUWnB3Vm5oYUdIQ3M0UlRVOE9ZSDJnODZ6bzloTk16RWZpRjdEMjdDakNPMTRUbnZFNW1GdllubldsTG5KenJnRDFnZUhtV2plRzU3dWJGbWZmR3QtZFZORHJ5QVdaVEVFSDJZYk1udnRkdlhyTXJOczZxcw?oc=5",
        "p": "WELT",
        "d": "2026-10-08"
-      },
-      {
-       "t": "Altersvorsorge-Reform ab 2027",
-       "u": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5fbHhxcHljLTFuVzUza1lwa25Db2V3X3N2b24yaFV5M3ptQ2t4TTZiR2xid2VRTTVtWG5Cd1JEekdzUEJpU05BR1d3N0RKNDJXUmRxZExDZmE3ODJJRE1zcUFmcU1JVjZRd2sxXzZtRm1TdlhUWXJWYVF0MDN4UQ?oc=5",
-       "p": "Allianz",
-       "d": "2026-10-11"
       }
      ]
     },
     {
      "symbol": "DBK.DE",
      "name": "Deutsche Bank",
-     "price": 29.84,
-     "d1": -1.49,
-     "d5": -4.98,
-     "m1": -12.62,
-     "rsi": 34.0,
-     "vs_sma50": -9.42,
-     "vs_sma200": 0.16,
-     "from_high": -16.53,
+     "price": 29.35,
+     "d1": -1.63,
+     "d5": -1.67,
+     "m1": -11.95,
+     "rsi": 31.4,
+     "vs_sma50": -10.71,
+     "vs_sma200": -1.42,
+     "from_high": -17.89,
      "spark": [
-      34.88,
       35.55,
       35.57,
       35.53,
@@ -1659,15 +1733,16 @@
       29.66,
       29.92,
       30.29,
-      29.84
+      29.84,
+      29.35
      ],
-     "vol_ratio": 0.8,
-     "rs5": -4.3,
-     "rs20": -11.88,
+     "vol_ratio": 0.07,
+     "rs5": -0.46,
+     "rs20": -13.34,
      "rs_state": "schwach",
      "signals": [],
      "score": 0,
-     "trend": "seitwärts",
+     "trend": "ab",
      "group": "Finanzen",
      "forecast": "down",
      "news": [
@@ -1695,7 +1770,7 @@
   },
   {
    "name": "Industrie",
-   "comment": "Industrie: Tagesstimmung schwach (Ø -0.8 %, 1 von 7 im Plus). Stärkster: Luft/Rüstung (ETF) (+0.1 %), schwächster: Caterpillar (-3.1 %). Auf Monatssicht Ø -1.7 %.",
+   "comment": "Industrie: Tagesstimmung schwach (Ø -0.5 %, 2 von 7 im Plus). Stärkster: Rheinmetall (+3.4 %), schwächster: Caterpillar (-3.1 %). Auf Monatssicht Ø -1.9 %.",
    "items": [
     {
      "symbol": "XLI",
@@ -1954,16 +2029,16 @@
        "d": "2026-10-08"
       },
       {
-       "t": "Zinsdruck und FTC-Untersuchung belasten Caterpillar stärker als den Gesamtsektor",
-       "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNeUNrcXVielhWMk5jUE55cjVsYmFWQXZjblpaZmZvOEFRWkdZSlJuNFBmaWxlZGhPSExIS2FHcFB2cHNES3BRWEwxT00tZmh3S21UVWJ2SDlUVk9JYXM1RzRtT0FTUzFxZkpXZENZa254UEJjSmo3TnR4UEk1S0hOTHM5MnhHd3IwU21DcGJqWmJaTUc2NTVUOUwtNXJ1VGZ1clNtS0lJU1lWM3dMYmVUV2ZTa3A1RTVxQU12dThn?oc=5",
-       "p": "Wallstreet Online",
-       "d": "2026-10-14"
+       "t": "Caterpillar-Aktie: Champions-Check im Monat Oktober - boerse.de",
+       "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSUtMd3BIVzhlcU1FdDE1NGVSNEdsbVlBU3VWTkFzOXh6UklqMmlXUVFKc0hRR3VYWm9oNER6QUJkYUFvTVBDckdJUnhqclVXWDhCRG5WSEtQNVJJVkJnZEVTbTZTR2h2MEFuU1Jod09ESkk5SWF0NF9mVHd6YjV2MmF5ZnJQb3dFLWxjZ0JNVDZBYS1NSkV5ZNIBngFBVV95cUxQeDdSMzRKRG5xX0J4ejB6RmEzVnFDLWczWG5IaWM0RUNpLUFPdl95U3dsbjllRFhZYk00TU9kSldVRG01Zjg1cE5feGF5bXBSTUJwZHhybVo0V3ZiSkRhU29BQ0NBUklkazd1Qi1GTDRnc1BHRV9LY3M4M0lYSjN1ZzNhOTZfZ0g5ZW81VWpnQU1HbnNuNUtaT3N5SmdtUQ?oc=5",
+       "p": "boerse.de",
+       "d": "2026-10-15"
       },
       {
-       "t": "Die Caterpillar-Aktie (CAT) erscheint angesichts des künftigen Cashflows unterbewertet",
-       "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSmxpZ2tKdTNMcFJ1MWo1cko3WF9OLV9jbWRyQ1ZWWmdFbGIzNm00S3JtdkdveWV0WGRpdWNlTVNCWHh0UkpURmEtUFIzcTgtTi00Q2FUaVhEV0ZKQnpjT1hBdmhWMFRFNFFkVTlwWktiX0VBZ2pKQ3BFUklfbjVOdjJDNTd3eGV0cVA0bWl6WThfYXE0OWMyeGN0ZGgzNkpydnBjS1ZOeVoxWHk3VWc1LV9YS25BXzlGREkwNGlKeHBGTldtTF9fWGozQXB6TlNh0gHWAUFVX3lxTE1lVHBjX2tFQ1FkUmZfQXo3cGxSVUdMTkxITW1WdEdwNGp3NmxzYjM5a28tRmh6Ny1aOTVjN0hiZzItaFlyQlgzOTVzRHcxd3ZnTURTTk5oSEtoeVI5d1FXTUx6RlBFZlllandHdjBMTUk1QUltOWNmc0dZRVF5WVY1TEhuVzBpOVQzdlJVVGtGSGNtV0tsVTBMRmlOVHgzTlZkV0xacmZlaGJRbmJtNmVKZEgxZWlQTFozYnpNYmp1eFpqRkl1eFIta29wRElkQTVxRVpsTnc?oc=5",
-       "p": "Simply Wall Street",
-       "d": "2026-10-09"
+       "t": "Caterpillar Aktie: Charttechnik am Scheideweg",
+       "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUEc3ekxtbVdpdDZ1aUJQYXhFQ09vVUZIOUJ2eU83aGp4TzM4ZGhBQklzVVBtWWdZRW9McWJQWnhGRmJtbHJqYWRRVFVxbG5VeE9NT1pDNERPVzFleEZIbDRvSlFPWlFnNm5lVWxRN2hxN2ZwM2d2TnZGb1BMaU9sNlZBN1NsRzBlOWhTNzJqNnZTMnp6bFBlVE1SWl8?oc=5",
+       "p": "Börse Express",
+       "d": "2026-10-08"
       }
      ]
     },
@@ -2042,16 +2117,15 @@
     {
      "symbol": "SIE.DE",
      "name": "Siemens",
-     "price": 274.5,
-     "d1": -0.45,
-     "d5": -1.61,
-     "m1": 4.85,
-     "rsi": 51.1,
-     "vs_sma50": -0.26,
-     "vs_sma200": 6.46,
-     "from_high": -5.3,
+     "price": 268.15,
+     "d1": -2.31,
+     "d5": -1.12,
+     "m1": 3.61,
+     "rsi": 45.5,
+     "vs_sma50": -2.44,
+     "vs_sma200": 3.93,
+     "from_high": -7.49,
      "spark": [
-      273.8,
       270.6,
       272.65,
       270.4,
@@ -2080,12 +2154,13 @@
       264.25,
       272.1,
       275.75,
-      274.5
+      274.5,
+      268.15
      ],
-     "vol_ratio": 0.9,
-     "rs5": -0.91,
-     "rs20": 4.42,
-     "rs_state": "fuehrend",
+     "vol_ratio": 0.08,
+     "rs5": 0.1,
+     "rs20": 2.2,
+     "rs_state": "neutral",
      "signals": [],
      "score": 0,
      "trend": "seitwärts",
@@ -2115,16 +2190,15 @@
     {
      "symbol": "RHM.DE",
      "name": "Rheinmetall",
-     "price": 953.4,
-     "d1": -0.91,
-     "d5": 0.04,
-     "m1": -4.34,
-     "rsi": 41.4,
-     "vs_sma50": -9.95,
-     "vs_sma200": -27.46,
-     "from_high": -49.85,
+     "price": 985.5,
+     "d1": 3.37,
+     "d5": 6.4,
+     "m1": -4.19,
+     "rsi": 49.1,
+     "vs_sma50": -6.54,
+     "vs_sma200": -24.84,
+     "from_high": -48.16,
      "spark": [
-      1090.4,
       1070.2,
       1034.0,
       1020.8,
@@ -2153,14 +2227,18 @@
       934.9,
       939.1,
       962.2,
-      953.4
+      953.4,
+      985.5
      ],
-     "vol_ratio": 1.08,
-     "rs5": 0.76,
-     "rs20": -8.75,
-     "rs_state": "schwach",
-     "signals": [],
-     "score": 0,
+     "vol_ratio": 0.1,
+     "rs5": 7.72,
+     "rs20": -3.41,
+     "rs_state": "frueh_rein",
+     "signals": [
+      "Frühsignal: relative Stärke dreht nach oben (+7.7 % in 5 Tagen), Kurs noch nicht bestätigt",
+      "Starke Tagesbewegung +3.4 %"
+     ],
+     "score": 13.4,
      "trend": "ab",
      "group": "Industrie",
      "forecast": "down",
@@ -2189,19 +2267,19 @@
   },
   {
    "name": "Rohstoffe",
-   "comment": "Rohstoffe: Tagesstimmung unentschlossen (Ø +0.2 %, 4 von 8 im Plus). Stärkster: Erdgas (+1.8 %), schwächster: Brent Öl (-1.6 %). Auf Monatssicht Ø -1.4 %. Tagesplus gegen den Monatstrend - Erholung oder Fehlsignal.",
+   "comment": "Rohstoffe: Tagesstimmung unentschlossen (Ø +0.1 %, 4 von 8 im Plus). Stärkster: Silber (+1.6 %), schwächster: Brent Öl (-1.7 %). Auf Monatssicht Ø -1.4 %. Tagesplus gegen den Monatstrend - Erholung oder Fehlsignal.",
    "items": [
     {
      "symbol": "GC=F",
      "name": "Gold",
-     "price": 4161.1,
-     "d1": 1.3,
-     "d5": 0.1,
-     "m1": -5.16,
-     "rsi": 41.3,
-     "vs_sma50": -4.92,
-     "vs_sma200": -8.38,
-     "from_high": -21.76,
+     "price": 4164.2,
+     "d1": 1.37,
+     "d5": 0.17,
+     "m1": -5.09,
+     "rsi": 41.7,
+     "vs_sma50": -4.85,
+     "vs_sma200": -8.31,
+     "from_high": -21.7,
      "spark": [
       4539.9,
       4476.6,
@@ -2232,9 +2310,9 @@
       4190.6,
       4177.3,
       4107.9,
-      4161.1
+      4164.2
      ],
-     "vol_ratio": 0.33,
+     "vol_ratio": 0.35,
      "signals": [],
      "score": 0,
      "trend": "ab",
@@ -2264,14 +2342,14 @@
     {
      "symbol": "SI=F",
      "name": "Silber",
-     "price": 56.28,
-     "d1": 1.32,
-     "d5": -4.71,
-     "m1": -12.45,
-     "rsi": 33.4,
-     "vs_sma50": -12.03,
-     "vs_sma200": -22.05,
-     "from_high": -51.09,
+     "price": 56.46,
+     "d1": 1.63,
+     "d5": -4.42,
+     "m1": -12.18,
+     "rsi": 34.1,
+     "vs_sma50": -11.77,
+     "vs_sma200": -21.82,
+     "from_high": -50.94,
      "spark": [
       66.97,
       66.05,
@@ -2302,7 +2380,7 @@
       60.14,
       59.16,
       55.55,
-      56.28
+      56.46
      ],
      "signals": [],
      "score": 0,
@@ -2333,14 +2411,14 @@
     {
      "symbol": "CL=F",
      "name": "WTI Öl",
-     "price": 94.08,
-     "d1": -1.06,
-     "d5": 2.83,
-     "m1": -8.15,
-     "rsi": 53.9,
-     "vs_sma50": 4.05,
-     "vs_sma200": 12.06,
-     "from_high": -16.71,
+     "price": 93.99,
+     "d1": -1.16,
+     "d5": 2.73,
+     "m1": -8.24,
+     "rsi": 53.7,
+     "vs_sma50": 3.95,
+     "vs_sma200": 11.95,
+     "from_high": -16.79,
      "spark": [
       91.3,
       91.48,
@@ -2371,9 +2449,9 @@
       93.74,
       94.14,
       95.09,
-      94.08
+      93.99
      ],
-     "vol_ratio": 0.08,
+     "vol_ratio": 0.09,
      "signals": [],
      "score": 0,
      "trend": "auf",
@@ -2403,14 +2481,14 @@
     {
      "symbol": "BZ=F",
      "name": "Brent Öl",
-     "price": 104.41,
-     "d1": -1.56,
-     "d5": 0.12,
-     "m1": -1.34,
-     "rsi": 55.3,
-     "vs_sma50": 6.72,
-     "vs_sma200": 16.45,
-     "from_high": -11.78,
+     "price": 104.24,
+     "d1": -1.72,
+     "d5": -0.04,
+     "m1": -1.5,
+     "rsi": 54.9,
+     "vs_sma50": 6.55,
+     "vs_sma200": 16.26,
+     "from_high": -11.92,
      "spark": [
       95.52,
       96.28,
@@ -2441,9 +2519,9 @@
       106.65,
       105.69,
       106.06,
-      104.41
+      104.24
      ],
-     "vol_ratio": 0.13,
+     "vol_ratio": 0.15,
      "signals": [],
      "score": 0,
      "trend": "auf",
@@ -2473,14 +2551,14 @@
     {
      "symbol": "NG=F",
      "name": "Erdgas",
-     "price": 3.26,
-     "d1": 1.81,
-     "d5": 2.78,
-     "m1": 12.63,
-     "rsi": 60.6,
-     "vs_sma50": 10.95,
-     "vs_sma200": 4.84,
-     "from_high": -56.35,
+     "price": 3.24,
+     "d1": 1.47,
+     "d5": 2.43,
+     "m1": 12.24,
+     "rsi": 60.1,
+     "vs_sma50": 10.58,
+     "vs_sma200": 4.49,
+     "from_high": -56.5,
      "spark": [
       2.91,
       2.97,
@@ -2511,7 +2589,7 @@
       3.17,
       3.28,
       3.2,
-      3.26
+      3.24
      ],
      "vol_ratio": 0.05,
      "signals": [],
@@ -2532,24 +2610,24 @@
        "d": "2026-10-13"
       },
       {
-       "t": "Goldpreis, Silberpreis, Öl (Brent/WTI) – Rohstoffe am 13.10.2026",
-       "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOdnpveU9OTkxuY2l0b1RqbmNTTVZ1ZnhncG5ERnpXSVNPUFlnUE0zVGNwUjBpbG9IRkNLb1lSbmdKU3JzV2lueklBemdEMWdFSl9ENlViM2RrYkNFZGlBdEI5Nk5ubS1JUlhqQzhsUzZGaWdPcF9KRVU2YjlPanJtZnJvcTZUVWwzRXE1cndUZl9SZDJ6OHN2U0I3eEdFQ3VzOE1waklGOF8yOGJUUUZZVTQwSzctbmk5WUtwblNuUUNPcVJtVTFGRDJfcDYzVEU?oc=5",
+       "t": "Gaspreise könnten sich in den nächsten Monaten fast halbieren",
+       "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaVJVTlRUaE1ZZlpOMEtxbEE4MWN4SmhUazRvRTlHQ0tLWUw0WFp6cEtfSEhHdGFwbnlqaGdwNEh6SEh3bmlOejVPZ2JFelNGQkxCN2R4V2ZWNC0yX05VbWw3MzlsWTZOU0xNS0xBRXVPejlmWU5WZnp1Tm5JUE9fUkRtRmFFcFpmUVU1dVVNbVZhdVdsekZJbzVIampPRTNjUE5tRWZYMA?oc=5",
        "p": "Wallstreet Online",
-       "d": "2026-10-13"
+       "d": "2026-10-14"
       }
      ]
     },
     {
      "symbol": "HG=F",
      "name": "Kupfer",
-     "price": 6.56,
-     "d1": -0.79,
-     "d5": 0.62,
-     "m1": 1.99,
-     "rsi": 48.2,
-     "vs_sma50": -0.36,
-     "vs_sma200": 6.33,
-     "from_high": -3.59,
+     "price": 6.55,
+     "d1": -0.99,
+     "d5": 0.41,
+     "m1": 1.78,
+     "rsi": 47.4,
+     "vs_sma50": -0.56,
+     "vs_sma200": 6.11,
+     "from_high": -3.78,
      "spark": [
       6.58,
       6.6,
@@ -2580,9 +2658,9 @@
       6.7,
       6.68,
       6.61,
-      6.56
+      6.55
      ],
-     "vol_ratio": 18.39,
+     "vol_ratio": 14.43,
      "signals": [],
      "score": 0,
      "trend": "seitwärts",
@@ -2875,22 +2953,22 @@
      "forecast": "up",
      "news": [
       {
-       "t": "Microsoft dampft Speicherkontingent von Microsoft-365-Abos ein",
-       "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOMjJKcE40Zm5JR1RkaDhZekJDMjk5QnJGWS1nRmpWT1VodGZpeDdORjZVQ0hvZ2EzWFZzR3Rnb28wenFGbWl0S1dKZ1daZ2V1WlFQQVBJVlhtM1Ywc0NSQTZFNWVJREltbnQ0R1g0bkJGQTNBbTJzRzFKZFBOcjl3c1dKcnIyTzhJbjJWMHc1NUdFZGFwLUVma3A1Q3ZacktVVVhaMQ?oc=5",
+       "t": "Microsoft vor nächstem Zertifikatswechsel – Windows Update betroffen",
+       "u": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZl9NOFN2SDI2aTM0V05CX0ZoMl9OOWdJMU9QNUtEOGlVbE11c2h3bVdqVGFiNHdXNjJRcHYwVWtnTnF2NGhOZVVkTVhxSU9ha2ctSHFRem5mam1uM1ExaUdEOWl5cnhoWDc0R183cGNBWERMdzlJekRhWDZ4bE5RN0M4SlB5ZDBPZDI1ZE1sN2piSmRJSGhMU1JRd2oycTlxeVZLWklIU2dWSGc?oc=5",
        "p": "heise online",
-       "d": "2026-10-09"
-      },
-      {
-       "t": "Cloudspeicher: Microsoft kürzt Onedrive-Kontingente",
-       "u": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORTlJdC03LUR3M1VaREI5RTZvN1ZNc2NfbV9QMUdGUTdlRG51cWFXZ3laQ2hNVk5HdFFOanpMYzl0OXhmMU9MZlJzQlpxbmJRTHpBdjk1TXZsTlZzZU9VNVlQdHlKMHotaWNnbkdWRDN2LURZRG5obGNqeUM3WVk0WHpXem4zaE9ERFZ2eVRGNm9Fei11Y0ItYVdR?oc=5",
-       "p": "Golem",
-       "d": "2026-10-09"
+       "d": "2026-10-12"
       },
       {
        "t": "»Mehr Flexibilität« – damit meint Microsoft: draufzahlen oder sich mit weniger zufriedengeben",
        "u": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQRGxpb1lHbXd3ZFlOb2pOdTRmZERMMlEtbHVNZW5hZ0wxQ2RuQkItb3pQaTltTTF3dDJNTXZxczhneTZ2dmdVY2kwSXJzbWhYUkNiZE14Ukh3LXBVc1pBMXMxOGNJVnZZNFA0NjdId21WWmxJTkhZcGZTTUxTYkRxUE5tbUE0ZTZBWWttT0tNT3c5ajJ4YmtjTkJQdlFZZzIzODZBOVhUVVhEQkl4WERFVFFCX2haQ1FFY2Q1VWZ5VTVQXzF1MDRyQUhEa1o5LTJrNHNHZDN3Z3BvTmRFeVQyelE5V2VkdnZEMi1nT2I4TWMwREdMUFIzWVp0SDBhTWJ0eG5Cc0Z6VQ?oc=5",
        "p": "Spiegel",
        "d": "2026-10-09"
+      },
+      {
+       "t": "USA: Trump-Regierung schließt Microsoft von Visaprogramm für Fachkräfte aus",
+       "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVmVzNjJiTEYtdFBKc3dRRmpWZ3N4ZGZYdEpVVEl6c1dYVTk4ZUw0M2R3N1FKUkFnY0xkZTQ0akpwM1Eyb1M5MDcyQ3B1MmxmQ0ZBSUVqVmlpZjlxZ3BlYjVyM3Z5SDlMX2t0YURGNHhzQWtfeG5NdWJDa2tCMGVZNHV1dE9nREplUWZMLVgyZWxlbllZMWRwTlRLMjU0MEtkLU5VQnRaNndvTXUwM2c?oc=5",
+       "p": "DIE ZEIT",
+       "d": "2026-10-08"
       }
      ]
     },
@@ -3037,10 +3115,10 @@
        "d": "2026-10-15"
       },
       {
-       "t": "TSMC: Umsatz springt im September um 54,6 % – doch ein Detail sticht heraus",
-       "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSmlubjZqNmFvX0MxaVZleWNlS29rMjhoMmltT0QyajhLSlQ4NXpXRzR0aWpWY3pudUV4UUJ0THpaOG1SNHA3V0FIZkFNMWh5TkY1cW9vQTd0eUxESkFCaXd0VGtUeEIwWno3YTJOdTQ5M3FSZ0sxLTlOMTJGYlgwQUE5QjFZTkdPczVQMV9JRXlheDN6S3RjaWp5UUM0TmpGN1ZGS1FKeElYQ3ZJYkl2T2FKV0huaHF0dEcxRERlbk9NVmc?oc=5",
-       "p": "Wallstreet Online",
-       "d": "2026-10-08"
+       "t": "Taiwans Chiphersteller TSMC steigert Gewinn im dritten Quartal auf Rekord",
+       "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVW5EMHhpV3lUTlhvVWlTd3M3T0laMWJqQUxhakxyNU84Y09naXFZVUYwZDdKSUxhb1ZieGl4Mjc0MlRPdS1TNXJTVjhEZnA5YVhVTV9nem9YNkVLcEZBSEpqRnRlOHVTMHZPZHE5a2NyRThsZTNxMjhwbTRHaG9rSEVSVGlGZG5nNm5zU3ZvRTVpTGkxaTJWVlV6WGtnM0dCNFJGVDlLRVJLUXFq?oc=5",
+       "p": "Euronews.com",
+       "d": "2026-10-15"
       }
      ]
     },
@@ -3112,10 +3190,10 @@
        "d": "2026-10-09"
       },
       {
-       "t": "Palantir zeigt positive Monatsbilanz – wie weiter im Oktober 2026?",
-       "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQUNVVm0tMFB3eEd1T2pETzN3cE9ySlVtQ3RiOC1weFBUaC1rT29UUkFwRm12d2lkV1Znd0xWUzVQTE0yVXQtWmJpVV9PQkpwa0oyYnp2TjNfZmJFYjdtSzdFeE5sR2hLdExmMXAwd2FDeGhBVVpHWkszbUppR01TQ2Z1eG11MnhOaHUwdXFHWHpMMmdsR1gyVEFWTy1UYm1DenZWaHZmVXBTdWktYjdRS2JZVnliZw?oc=5",
-       "p": "Wallstreet Online",
-       "d": "2026-10-10"
+       "t": "München: Celonis verspricht digitale Unabhängigkeit von US-Tech-Firmen wie Palantir",
+       "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQblhKMnVUMGNjWTR0cDdSVnFpYlFBX2NxMF81MU1nUFZ4NVhibDJ6SUNTZFAydlF1QVFaendFa1JrdWRLdHpaYklSWHRyQm5fbVpDbTN0cEF1NDdSeUVZdWFxTVlLdVR6dUFkeG9QX25BVHpsZ0d4amNYSWY4dWZsOV9FV0s4OTQ0OEVaR1JLS25NUFR6QmE5SU1CR1FnVXc2Q3c4c3BOeVpiT0lO?oc=5",
+       "p": "SZ.de",
+       "d": "2026-10-13"
       }
      ]
     },
@@ -3254,6 +3332,18 @@
        "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE53V010VEpCVWFHRW5PdDliUFNXN2tGZFdrZk9ISWxiWWVhMmpzWS1UbzZUajlCR1U3R3MyeWZNR21jdEQ1TVFvWHNkVm5XUGljcXFIV0dJdDdtZXVM?oc=5",
        "p": "extraETF",
        "d": "2026-10-09"
+      },
+      {
+       "t": "GAIMIN (GMRX) Kurs Live, Charts, Marktkapitalisierung",
+       "u": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4taFR5M1dSTVhiMVdFcERnOXVpZGJSalVSWk1tNmV4aGFDR0VXdDZQMFlJUURVUm91alN1dWV4YnR5cTZzQ1I5Vi1kdmZkR1VzOTF0OGVWMERTVkE?oc=5",
+       "p": "CoinMarketCap",
+       "d": "2026-10-12"
+      },
+      {
+       "t": "SentismAI (SENTIS) Kurs Live, Charts, Marktkapitalisierung",
+       "u": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBTWThRNGtZUEo3cDBZZnNURkJKZld3ZjdiRlJHT0NUZ2hNQzhVeHVMd2ZoSUZFMW9DWWoyMzRESmlwWnNXMkRBOU0xenFWVGNGVUNyR21rV2F3LV8tNE9V?oc=5",
+       "p": "CoinMarketCap",
+       "d": "2026-10-11"
       }
      ]
     },
