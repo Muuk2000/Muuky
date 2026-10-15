@@ -1,10 +1,10 @@
 {
- "news_google": 42,
+ "news_google": 41,
  "news_yahoo": 0,
  "news_errors": [],
  "sample": {
   "symbol": "^GSPC",
-  "query": "S&P 500 Index Börse",
+  "query": "S&P 500 Börse aktuell",
   "n": 3
  }
 }
