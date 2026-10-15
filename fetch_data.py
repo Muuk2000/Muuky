@@ -16,7 +16,7 @@ SECTORS = {"XLF", "KBE", "KIE", "EUFN", "XLI", "ITA", "IYT", "XLE", "XLB", "SMH"
 
 UNIVERSE = {
     "Welt-Indizes": {
-        "^GSPC": "S&P 500", "^NDX": "Nasdaq 100", "^GDAXI": "DAX",
+        "^DJI": "Dow Jones", "^GSPC": "S&P 500", "^NDX": "Nasdaq 100", "^GDAXI": "DAX",
         "^STOXX50E": "Euro Stoxx 50", "^FTSE": "FTSE 100", "^N225": "Nikkei 225",
         "^HSI": "Hang Seng", "000001.SS": "Shanghai Comp.", "^NSEI": "Nifty 50",
         "^BVSP": "Bovespa", "^AXJO": "ASX 200", "^KS11": "Kospi",
@@ -455,6 +455,36 @@ def extras_gas(gen):
     except Exception as e:
         print("Erdgas fehlgeschlagen:", e, file=sys.stderr)
 
+def get_vix():
+    try:
+        import yfinance as yf
+        raw = yf.download("^VIX", period="1y", interval="1d", auto_adjust=True, progress=False)
+        raw = norm_df(raw.droplevel(1, axis=1) if raw.columns.nlevels > 1 else raw)
+        c = raw["Close"].dropna()
+        lv = float(c.iloc[-1])
+        label = ("sehr ruhig" if lv < 13 else "ruhig" if lv < 17 else "normale Schwankung" if lv < 22 else
+                 "erhöhte Nervosität" if lv < 30 else "Angst im Markt")
+        return {"level": round(lv, 1), "d1": round((lv / float(c.iloc[-2]) - 1) * 100, 1),
+                "pctile": round(float((c < lv).mean() * 100), 0), "label": label}
+    except Exception as e:
+        print("VIX fehlgeschlagen:", e, file=sys.stderr)
+        return None
+
+def make_daily(out, all_items):
+    """Termine, VIX und Tagesbriefing erzeugen und in data/ schreiben."""
+    try:
+        import termine, briefing_text
+        rd = lambda n: (json.loads((OUT.parent / f"{n}.json").read_text()) if (OUT.parent / f"{n}.json").exists() else None)
+        singles = {i["symbol"]: i["name"] for i in all_items if briefing_text.is_single(i)}
+        term = termine.build(singles)
+        (OUT.parent / "termine.json").write_text(json.dumps(term, ensure_ascii=False, indent=1))
+        vix = get_vix()
+        tb = briefing_text.build(out, rd("geo"), rd("btc"), rd("gas"), vix, term)
+        (OUT.parent / "tagesbriefing.json").write_text(json.dumps(tb, ensure_ascii=False, indent=1))
+        print(f"Tagesbriefing: {tb['mode']}, {tb['words']} Wörter, {len(term['events'])} Termine")
+    except Exception as e:
+        print("Tagesbriefing fehlgeschlagen:", e, file=sys.stderr)
+
 def main():
     demo = "--demo" in sys.argv
     evening = "--evening" in sys.argv
@@ -539,6 +569,8 @@ def main():
     }
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1))
+    if not demo:
+        make_daily(out, all_items)
     print(f"{len(all_items)} Instrumente, {len(top)} Top-Signale -> {OUT}")
 
 if __name__ == "__main__":
