@@ -1,6 +1,6 @@
 {
-  "stand": "2026-10-15",
-  "zeitraum": "Juli bis Oktober 2026 (plus zwei Meldungen vom Juni und der Haushalts-Eckwerte-Beschluss vom April, weil sie weiter wirken)",
+  "stand": "2026-10-16",
+  "zeitraum": "Juli bis Oktober 2026 (plus Meldungen vom Juni (Wirtschaft und Verbraucherrecht) und der Haushalts-Eckwerte-Beschluss vom April, weil sie weiter wirken)",
   "hinweis": "Zahlen stammen aus den verlinkten Quellen und wurden mit eigenen Worten zusammengefasst. Die Lehrplan-Einschätzungen sind eine Arbeitshilfe von Claude und sollten fachlich geprüft werden.",
   "items": [
     {
@@ -12,17 +12,41 @@
       "titel": "Iran-Krieg: Energiepreise bleiben hoch",
       "kurz": "Die Blockade der Straße von Hormus trieb den Ölpreis im März über 120 Dollar je Barrel. Im Juni gab er nach ersten Fortschritten bei Gesprächen zwischen den USA und dem Iran nach. Ende August und Anfang September ließen neue Angriffe den Preis wieder steigen. Am 15. Oktober lag Brent bei gut 104 Dollar, der Heizölpreis nahe seinem Jahreshoch. Ein Euro kostete etwa 1,12 Dollar.",
       "quellen": [
-        {"titel": "ZDFheute: Diesel billiger als vor dem Iran-Krieg (Juni)", "url": "https://www.zdfheute.de/wirtschaft/diesel-preis-billiger-iran-krieg-100.html"},
-        {"titel": "Börsen-Zeitung: Dax fällt unter 26.000 Punkte (1.9.)", "url": "https://www.boersen-zeitung.de/kapitalmaerkte/dax-faellt-unter-26-000-punkte"},
-        {"titel": "Lomazoma: Ölpreise und Heizölquote (15.10.)", "url": "https://lomazoma.com/die-oelpreise-fallen-leicht-erste-details-zur-geplanten-gruenen-heizoelquote-15-oktober-2026"}
+        {
+          "titel": "ZDFheute: Diesel billiger als vor dem Iran-Krieg (Juni)",
+          "url": "https://www.zdfheute.de/wirtschaft/diesel-preis-billiger-iran-krieg-100.html"
+        },
+        {
+          "titel": "Börsen-Zeitung: Dax fällt unter 26.000 Punkte (1.9.)",
+          "url": "https://www.boersen-zeitung.de/kapitalmaerkte/dax-faellt-unter-26-000-punkte"
+        },
+        {
+          "titel": "Lomazoma: Ölpreise und Heizölquote (15.10.)",
+          "url": "https://lomazoma.com/die-oelpreise-fallen-leicht-erste-details-zur-geplanten-gruenen-heizoelquote-15-oktober-2026"
+        }
       ],
       "bezug": [
-        {"id": "11-1", "warum": "Preisfunktionen: Der Preis signalisiert Knappheit und lenkt Nachfrage und Angebot."},
-        {"id": "11-3", "warum": "Außenwirtschaft: Rohstoffe werden in Dollar bezahlt, der Wechselkurs beeinflusst die Importkosten."},
-        {"id": "12-V1", "warum": "Angebotsschock als Ursache für steigende Preise und Konjunkturschwäche, Zielkonflikt im magischen Viereck."},
-        {"id": "13-V3", "warum": "Vernetzte Betrachtung: Energiepreisschock, Geldpolitik und Fiskalpolitik."}
+        {
+          "id": "11-1",
+          "warum": "Preisfunktionen: Der Preis signalisiert Knappheit und lenkt Nachfrage und Angebot."
+        },
+        {
+          "id": "11-3",
+          "warum": "Außenwirtschaft: Rohstoffe werden in Dollar bezahlt, der Wechselkurs beeinflusst die Importkosten."
+        },
+        {
+          "id": "12-V1",
+          "warum": "Angebotsschock als Ursache für steigende Preise und Konjunkturschwäche, Zielkonflikt im magischen Viereck."
+        },
+        {
+          "id": "13-V3",
+          "warum": "Vernetzte Betrachtung: Energiepreisschock, Geldpolitik und Fiskalpolitik."
+        }
       ],
-      "einschaetzung": {"vertieft": "gut", "nicht_vertieft": "gut"},
+      "einschaetzung": {
+        "vertieft": "gut",
+        "nicht_vertieft": "gut"
+      },
       "einsatz": "Einstieg in das Kapitel Preisfunktionen oder in die Konjunkturlehre; Auswertung einer Preiskurve (Ölpreis März bis Oktober).",
       "leitfrage": "Welche Aufgabe erfüllt der hohe Ölpreis für Märkte, und wann ist ein staatlicher Eingriff trotzdem sinnvoll?"
     },
@@ -35,13 +59,25 @@
       "titel": "Inflation steigt im September auf 3,3 Prozent",
       "kurz": "Das Statistische Bundesamt meldet für September +3,3 % gegenüber dem Vorjahr, nach 2,9 % im August und 2,8 % im Juli. Das ist der höchste Wert seit Dezember 2023. Energie kostete 14,9 % mehr, Kraftstoffe 37,1 % und Heizöl 74,9 %. Die Kerninflation ohne Energie und Nahrungsmittel lag bei 2,4 %, Dienstleistungen bei 2,7 %.",
       "quellen": [
-        {"titel": "Destatis: Pressemitteilung Nr. 364 vom 13.10.2026", "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html"}
+        {
+          "titel": "Destatis: Pressemitteilung Nr. 364 vom 13.10.2026",
+          "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_364_611.html"
+        }
       ],
       "bezug": [
-        {"id": "12-V1", "warum": "Preisstabilität als Ziel des magischen Vierecks; Inflationsmessung und Kerninflation."},
-        {"id": "13-V1", "warum": "Preisniveaustabilität und Reaktion der Geldpolitik."}
+        {
+          "id": "12-V1",
+          "warum": "Preisstabilität als Ziel des magischen Vierecks; Inflationsmessung und Kerninflation."
+        },
+        {
+          "id": "13-V1",
+          "warum": "Preisniveaustabilität und Reaktion der Geldpolitik."
+        }
       ],
-      "einschaetzung": {"vertieft": "gut", "nicht_vertieft": "gut"},
+      "einschaetzung": {
+        "vertieft": "gut",
+        "nicht_vertieft": "gut"
+      },
       "einsatz": "Statistik auswerten: Wo kommt die Inflation her, was unterscheidet Gesamt- und Kerninflation?",
       "leitfrage": "Warum sagt die Kerninflation etwas anderes als die Gesamtrate, und wer ist von den Energiepreisen besonders betroffen?"
     },
@@ -54,14 +90,29 @@
       "titel": "EZB erhöht den Einlagesatz auf 2,50 Prozent",
       "kurz": "Die Europäische Zentralbank hob am 10. September die Leitzinsen um 0,25 Prozentpunkte an, der Einlagesatz stieg von 2,25 % auf 2,50 %. Die Projektionen für Inflation 2027 und 2028 wurden leicht nach oben, die für das Wachstum nach oben korrigiert. Die Landesbank LBBW rechnet nicht automatisch mit weiteren Erhöhungen, weil die Energiepreise stark schwanken.",
       "quellen": [
-        {"titel": "LBBW: EZB-Zinsentscheid September 2026", "url": "https://www.lbbw.de/artikel/news-und-einschaetzungen/ezb-zinsentscheid-september-2026_ane1zmv1ua_d.html"}
+        {
+          "titel": "LBBW: EZB-Zinsentscheid September 2026",
+          "url": "https://www.lbbw.de/artikel/news-und-einschaetzungen/ezb-zinsentscheid-september-2026_ane1zmv1ua_d.html"
+        }
       ],
       "bezug": [
-        {"id": "13-V1", "warum": "Wirkungsweise und Grenzen der Geldpolitik, Mandat der EZB (nur erhöht)."},
-        {"id": "12-V1", "warum": "Preisstabilität und Konjunktur als Zielkonflikt."},
-        {"id": "11-4", "warum": "Zinsen wirken auf Sparen, Kredite und Anlageentscheidungen (nur WWG)."}
+        {
+          "id": "13-V1",
+          "warum": "Wirkungsweise und Grenzen der Geldpolitik, Mandat der EZB (nur erhöht)."
+        },
+        {
+          "id": "12-V1",
+          "warum": "Preisstabilität und Konjunktur als Zielkonflikt."
+        },
+        {
+          "id": "11-4",
+          "warum": "Zinsen wirken auf Sparen, Kredite und Anlageentscheidungen (nur WWG)."
+        }
       ],
-      "einschaetzung": {"vertieft": "gut", "nicht_vertieft": "bedingt"},
+      "einschaetzung": {
+        "vertieft": "gut",
+        "nicht_vertieft": "bedingt"
+      },
       "einsatz": "Wirkungskette Leitzins, Kredite, Investition, Nachfrage, Preise zeichnen lassen.",
       "leitfrage": "Hilft eine Zinserhöhung gegen Inflation, die vor allem durch steigende Energiepreise entsteht?",
       "hinweis": "Zinsangaben stammen aus einer einzigen Quelle (LBBW); die Pressemitteilung der EZB sollte vor dem Einsatz im Unterricht gegengeprüft werden."
@@ -75,15 +126,33 @@
       "titel": "Herbstprognose: Aufschwung mit Strukturproblemen",
       "kurz": "Die Wirtschaftsforschungsinstitute erwarten für 2026 ein Wachstum von 1,3 %, für 2027 1,1 % und für 2028 nur 0,4 %. Die Inflation soll 2027 auf 3,2 % steigen und 2028 auf 2,0 % sinken. Die Arbeitslosenquote soll von 6,4 % (2026) auf 5,8 % (2028) fallen. Das Staatsdefizit steigt von 4,1 % auf 4,7 % der Wirtschaftsleistung. Die Institute sehen wachsenden Konsolidierungsbedarf und eine schwache Basis des Aufschwungs: Energiepreise, wenig private Investitionen, schrumpfende Erwerbsbevölkerung. Niedrigwasser bremste im dritten Quartal vor allem die Chemie.",
       "quellen": [
-        {"titel": "DIW Berlin: Gemeinschaftsdiagnose Herbst 2026", "url": "https://www.diw.de/de/diw_01.c.1020394.de/gemeinschaftsdiagnose_herbst_2026__aufschwung_mit_strukturproblemen_____finanzpolitik_auf_abwegen.html"},
-        {"titel": "Börsen-Zeitung: Institute verdoppeln Prognose für 2026", "url": "https://www.boersen-zeitung.de/konjunktur-politik/institute-verdoppeln-prognose-fuer-2026-nur-miniwachstum-2028"}
+        {
+          "titel": "DIW Berlin: Gemeinschaftsdiagnose Herbst 2026",
+          "url": "https://www.diw.de/de/diw_01.c.1020394.de/gemeinschaftsdiagnose_herbst_2026__aufschwung_mit_strukturproblemen_____finanzpolitik_auf_abwegen.html"
+        },
+        {
+          "titel": "Börsen-Zeitung: Institute verdoppeln Prognose für 2026",
+          "url": "https://www.boersen-zeitung.de/konjunktur-politik/institute-verdoppeln-prognose-fuer-2026-nur-miniwachstum-2028"
+        }
       ],
       "bezug": [
-        {"id": "12-V1", "warum": "Konjunkturzyklus, Konjunkturindikatoren und Zielbeziehungen."},
-        {"id": "12-V2", "warum": "Wachstums- und Beschäftigungspolitik, Staatsverschuldung."},
-        {"id": "11-6", "warum": "Zukunftstrends: Demografie und Strukturwandel."}
+        {
+          "id": "12-V1",
+          "warum": "Konjunkturzyklus, Konjunkturindikatoren und Zielbeziehungen."
+        },
+        {
+          "id": "12-V2",
+          "warum": "Wachstums- und Beschäftigungspolitik, Staatsverschuldung."
+        },
+        {
+          "id": "11-6",
+          "warum": "Zukunftstrends: Demografie und Strukturwandel."
+        }
       ],
-      "einschaetzung": {"vertieft": "gut", "nicht_vertieft": "gut"},
+      "einschaetzung": {
+        "vertieft": "gut",
+        "nicht_vertieft": "gut"
+      },
       "einsatz": "Prognosewerte in eine Tabelle übertragen und mit dem magischen Viereck vergleichen.",
       "leitfrage": "Welche Ziele des magischen Vierecks erreicht die Prognose, welche nicht?"
     },
@@ -96,12 +165,21 @@
       "titel": "Arbeitslosigkeit sinkt unter drei Millionen, Herbstbelebung schwach",
       "kurz": "Im September waren 2.994.000 Menschen arbeitslos, 67.000 weniger als im August, aber 40.000 mehr als vor einem Jahr. Die Quote lag bei 6,4 %. Saisonbereinigt stieg die Zahl um 12.000. Die Zahl der Erwerbstätigen lag im August um 236.000 unter dem Vorjahr. Bundesagentur-Chefin Andrea Nahles sagte, die wirtschaftliche Verbesserung komme auf dem Arbeitsmarkt noch nicht an.",
       "quellen": [
-        {"titel": "Bundesagentur für Arbeit: Arbeitsmarkt im September 2026", "url": "https://www.arbeitsagentur.de/presse/2026-37-arbeitsmarkt-im-september-2026"}
+        {
+          "titel": "Bundesagentur für Arbeit: Arbeitsmarkt im September 2026",
+          "url": "https://www.arbeitsagentur.de/presse/2026-37-arbeitsmarkt-im-september-2026"
+        }
       ],
       "bezug": [
-        {"id": "12-V2", "warum": "Arbeitsmarktkennzahlen, saisonale und konjunkturelle Arbeitslosigkeit."}
+        {
+          "id": "12-V2",
+          "warum": "Arbeitsmarktkennzahlen, saisonale und konjunkturelle Arbeitslosigkeit."
+        }
       ],
-      "einschaetzung": {"vertieft": "gut", "nicht_vertieft": "gut"},
+      "einschaetzung": {
+        "vertieft": "gut",
+        "nicht_vertieft": "gut"
+      },
       "einsatz": "Unterschied zwischen saisonbereinigten und nicht bereinigten Zahlen erarbeiten.",
       "leitfrage": "Warum sinkt die Arbeitslosenzahl im September, obwohl die saisonbereinigte Zahl steigt?"
     },
@@ -114,13 +192,25 @@
       "titel": "Rentenbeitrag soll 2027 auf 18,8 Prozent steigen",
       "kurz": "Der Beitragssatz zur gesetzlichen Rentenversicherung soll von 18,6 % auf 18,8 % des Bruttolohns steigen; nach geltendem Recht wären es 18,7 %. Grund sind steigende Ausgaben (von 394,4 Mrd. Euro in diesem Jahr auf 476,3 Mrd. Euro 2029), die Alterung der Bevölkerung und eine höhere vorgeschriebene Mindestreserve (von 20 % auf 30 % einer Monatsausgabe). Das Rentenniveau von 48 % bis 2031 und bessere Mütterrenten sollen aus dem Bundeshaushalt bezahlt werden.",
       "quellen": [
-        {"titel": "Tageskarte (dpa): Rentenbeitrag steigt 2027 auf 18,8 Prozent", "url": "https://www.tageskarte.io/politik/detail/rentenbeitrag-steigt-2027-auf-188-prozent.html"}
+        {
+          "titel": "Tageskarte (dpa): Rentenbeitrag steigt 2027 auf 18,8 Prozent",
+          "url": "https://www.tageskarte.io/politik/detail/rentenbeitrag-steigt-2027-auf-188-prozent.html"
+        }
       ],
       "bezug": [
-        {"id": "12-V3", "warum": "Finanzierung der Rentenversicherung, Umlageverfahren, demografische Herausforderung."},
-        {"id": "11-1", "warum": "Umverteilung durch Steuern und soziale Sicherung."}
+        {
+          "id": "12-V3",
+          "warum": "Finanzierung der Rentenversicherung, Umlageverfahren, demografische Herausforderung."
+        },
+        {
+          "id": "11-1",
+          "warum": "Umverteilung durch Steuern und soziale Sicherung."
+        }
       ],
-      "einschaetzung": {"vertieft": "gut", "nicht_vertieft": "gut"},
+      "einschaetzung": {
+        "vertieft": "gut",
+        "nicht_vertieft": "gut"
+      },
       "einsatz": "Umlageverfahren am Beispiel erklären: Wer zahlt, wer bekommt, was ändert sich bei sinkender Zahl der Beitragszahler?",
       "leitfrage": "Wer trägt die Mehrkosten, wenn das Rentenniveau gehalten wird: Beitragszahler oder Steuerzahler?",
       "hinweis": "Es handelt sich um einen Kabinettsentwurf; ob er so beschlossen wird, ist offen. Genaues Datum der Quelle nicht geprüft."
@@ -134,13 +224,25 @@
       "titel": "Beitragsbemessungsgrenzen 2027 sollen deutlich steigen",
       "kurz": "Das Kabinett hat am 7. Oktober neue Werte für 2027 beschlossen; der Bundesrat muss noch zustimmen. In der Rentenversicherung steigt die Grenze von 8.450 auf 8.850 Euro im Monat, in der Kranken- und Pflegeversicherung von 5.812,50 auf 6.375 Euro. Die Versicherungspflichtgrenze steigt von 77.400 auf 84.150 Euro im Jahr; wer darüber verdient, kann sich privat versichern.",
       "quellen": [
-        {"titel": "Deutsche Rentenversicherung: Beitragsbemessungsgrenzen 2027", "url": "https://www.deutsche-rentenversicherung.de/Rheinland/DE/Presse/Pressemitteilungen/2026/26-10-09-beitragsgrenzen"}
+        {
+          "titel": "Deutsche Rentenversicherung: Beitragsbemessungsgrenzen 2027",
+          "url": "https://www.deutsche-rentenversicherung.de/Rheinland/DE/Presse/Pressemitteilungen/2026/26-10-09-beitragsgrenzen"
+        }
       ],
       "bezug": [
-        {"id": "12-V3", "warum": "Sozialversicherung: Beitragsfinanzierung, Wirkung auf Lohnnebenkosten."},
-        {"id": "11-1", "warum": "Steuer- und Abgabenbelastung eines Haushalts."}
+        {
+          "id": "12-V3",
+          "warum": "Sozialversicherung: Beitragsfinanzierung, Wirkung auf Lohnnebenkosten."
+        },
+        {
+          "id": "11-1",
+          "warum": "Steuer- und Abgabenbelastung eines Haushalts."
+        }
       ],
-      "einschaetzung": {"vertieft": "gut", "nicht_vertieft": "gut"},
+      "einschaetzung": {
+        "vertieft": "gut",
+        "nicht_vertieft": "gut"
+      },
       "einsatz": "Rechenaufgabe: Beitrag für zwei Einkommen unterhalb und oberhalb der Grenze berechnen und vergleichen.",
       "leitfrage": "Warum zahlen Gutverdiener ab einer Grenze keine höheren Beiträge mehr, und ist das gerecht?"
     },
@@ -153,13 +255,25 @@
       "titel": "Bundeshaushalt 2027: Rekordschulden und steigende Zinslast",
       "kurz": "Die Eckwerte für 2027 sahen Ausgaben von 543,3 Mrd. Euro und eine Neuverschuldung von 196,5 Mrd. Euro vor, einen der höchsten Werte der Bundesrepublik. Die Zinsausgaben sollen von 42,7 Mrd. Euro (2027) auf 78,7 Mrd. Euro (2030) steigen. Für den Finanzplan bis 2030 blieb eine Lücke von etwa 140 Mrd. Euro. Der Arbeitsminister verwaltet erstmals einen Etat über 200 Mrd. Euro.",
       "quellen": [
-        {"titel": "ZDFheute: Kabinett beschließt Eckpunkte für Haushalt 2027", "url": "https://www.zdfheute.de/politik/deutschland/bundeshaushalt-2027-schulden-regierung-finanzen-100.html"}
+        {
+          "titel": "ZDFheute: Kabinett beschließt Eckpunkte für Haushalt 2027",
+          "url": "https://www.zdfheute.de/politik/deutschland/bundeshaushalt-2027-schulden-regierung-finanzen-100.html"
+        }
       ],
       "bezug": [
-        {"id": "11-1", "warum": "Struktur öffentlicher Haushalte, Umverteilung."},
-        {"id": "12-V2", "warum": "Staatsverschuldung und ihre Grenzen."}
+        {
+          "id": "11-1",
+          "warum": "Struktur öffentlicher Haushalte, Umverteilung."
+        },
+        {
+          "id": "12-V2",
+          "warum": "Staatsverschuldung und ihre Grenzen."
+        }
       ],
-      "einschaetzung": {"vertieft": "gut", "nicht_vertieft": "gut"},
+      "einschaetzung": {
+        "vertieft": "gut",
+        "nicht_vertieft": "gut"
+      },
       "einsatz": "Haushalt als Tortendiagramm lesen: Wofür gibt der Bund Geld aus, was bedeuten steigende Zinsen?",
       "leitfrage": "Wo liegen die Grenzen der Staatsverschuldung, und wer trägt die Zinslast künftig?",
       "hinweis": "Stand April (Eckwerte). Der endgültige Regierungsentwurf und die Beratungen im Bundestag können abweichen; Zahlen vor dem Einsatz aktualisieren."
@@ -173,13 +287,25 @@
       "titel": "Firmenpleiten im ersten Halbjahr auf höchstem Stand seit 2013",
       "kurz": "Nach Zahlen von Creditreform gab es im ersten Halbjahr 2026 rund 12.900 Unternehmensinsolvenzen, etwa 8 % mehr als im Vorjahr und der höchste Wert seit 2013. Rund 165.000 Arbeitsplätze gelten als gefährdet.",
       "quellen": [
-        {"titel": "Börse Express: Insolvenzrekord 2026", "url": "https://www.boerse-express.com/news/articles/insolvenzrekord-2026-12900-faelle-gefaehrden-165000-arbeitsplaetze-921117"}
+        {
+          "titel": "Börse Express: Insolvenzrekord 2026",
+          "url": "https://www.boerse-express.com/news/articles/insolvenzrekord-2026-12900-faelle-gefaehrden-165000-arbeitsplaetze-921117"
+        }
       ],
       "bezug": [
-        {"id": "12-B1", "warum": "Unternehmensziele und Interessengruppen (Beschäftigte, Gläubiger); Finanzierung und Kennzahlen als Krisenfaktor."},
-        {"id": "11-6", "warum": "Strukturwandel als Ursache und Folge."}
+        {
+          "id": "12-B1",
+          "warum": "Unternehmensziele und Interessengruppen (Beschäftigte, Gläubiger); Finanzierung und Kennzahlen als Krisenfaktor."
+        },
+        {
+          "id": "11-6",
+          "warum": "Strukturwandel als Ursache und Folge."
+        }
       ],
-      "einschaetzung": {"vertieft": "bedingt", "nicht_vertieft": "bedingt"},
+      "einschaetzung": {
+        "vertieft": "bedingt",
+        "nicht_vertieft": "bedingt"
+      },
       "einsatz": "Fallstudie: Warum gerät ein Unternehmen in Zahlungsschwierigkeiten (Eigen- und Fremdfinanzierung, Kosten, Absatz)?",
       "leitfrage": "Welche Gruppen verlieren bei einer Insolvenz was, und welche Interessen haben sie?",
       "hinweis": "Quelle ist eine Zweitmeldung zu Creditreform-Zahlen; Originaldaten gegenprüfen."
@@ -193,14 +319,29 @@
       "titel": "EU-Staaten billigen den Zolldeal mit den USA",
       "kurz": "Die EU-Mitgliedstaaten haben die Umsetzung des Handelsabkommens mit den USA endgültig gebilligt. Die EU schafft Zölle auf US-Industriegüter ab und öffnet den Markt stärker für US-Meeresfrüchte und Agrarprodukte. Die Zugeständnisse können ausgesetzt werden, falls die USA ihre Zölle erneut erhöhen. Das Abkommen läuft bis Ende 2029. Die US-Seite soll bis Ende 2026 Zölle auf Waschmaschinen und andere Stahlprodukte auf höchstens 15 % senken. Hintergrund ist der Deal vom Juli 2025 mit einem Basiszoll von 15 % auf die meisten EU-Waren.",
       "quellen": [
-        {"titel": "Volksstimme (dpa): EU-Staaten billigen Umsetzung des US-Zolldeals", "url": "https://www.volksstimme.de/deutschland-und-welt/wirtschaft/eu-staaten-billigen-umsetzung-des-us-zolldeals-4273887"}
+        {
+          "titel": "Volksstimme (dpa): EU-Staaten billigen Umsetzung des US-Zolldeals",
+          "url": "https://www.volksstimme.de/deutschland-und-welt/wirtschaft/eu-staaten-billigen-umsetzung-des-us-zolldeals-4273887"
+        }
       ],
       "bezug": [
-        {"id": "11-3", "warum": "Freihandel und Protektionismus, Zölle und ihre Folgen."},
-        {"id": "11-5", "warum": "Verhandlungen mit Fristen und Drohungen als spieltheoretisches Beispiel (nur WWG)."},
-        {"id": "13-V2", "warum": "Außenhandelspolitische Maßnahmen und spieltheoretische Modelle (nur erhöht)."}
+        {
+          "id": "11-3",
+          "warum": "Freihandel und Protektionismus, Zölle und ihre Folgen."
+        },
+        {
+          "id": "11-5",
+          "warum": "Verhandlungen mit Fristen und Drohungen als spieltheoretisches Beispiel (nur WWG)."
+        },
+        {
+          "id": "13-V2",
+          "warum": "Außenhandelspolitische Maßnahmen und spieltheoretische Modelle (nur erhöht)."
+        }
       ],
-      "einschaetzung": {"vertieft": "gut", "nicht_vertieft": "gut"},
+      "einschaetzung": {
+        "vertieft": "gut",
+        "nicht_vertieft": "gut"
+      },
       "einsatz": "Gewinner und Verlierer von Zöllen sammeln (Exporteure, Verbraucher, Staat); im WWG zusätzlich als Verhandlungsspiel in einer 2x2-Matrix.",
       "leitfrage": "Warum kann ein Zoll einzelnen Branchen nützen und trotzdem die Gesamtwirtschaft belasten?"
     },
@@ -213,13 +354,25 @@
       "titel": "DAX nach Rekord wieder unter 26.000 Punkten",
       "kurz": "Nach einem Rekordhoch Ende August fiel der DAX am 1. September im Handel unter 26.000 Punkte. Gründe waren erneute US-iranische Angriffe mit steigenden Ölpreisen, Inflationssorgen und hohe Anleiherenditen. Erwartet wurden Zinserhöhungen der EZB in der Folgewoche und Signale von US-Notenbankchef Kevin Warsh für eine Zinserhöhung. Die Bewertungen an den Börsen galten schon als hoch.",
       "quellen": [
-        {"titel": "Börsen-Zeitung: Dax fällt unter 26.000 Punkte", "url": "https://www.boersen-zeitung.de/kapitalmaerkte/dax-faellt-unter-26-000-punkte"}
+        {
+          "titel": "Börsen-Zeitung: Dax fällt unter 26.000 Punkte",
+          "url": "https://www.boersen-zeitung.de/kapitalmaerkte/dax-faellt-unter-26-000-punkte"
+        }
       ],
       "bezug": [
-        {"id": "11-4", "warum": "Börse, Anlagekriterien Rentabilität, Liquidität, Sicherheit (nur WWG)."},
-        {"id": "11-1", "warum": "Sparen und Investieren im Kreislaufmodell."}
+        {
+          "id": "11-4",
+          "warum": "Börse, Anlagekriterien Rentabilität, Liquidität, Sicherheit (nur WWG)."
+        },
+        {
+          "id": "11-1",
+          "warum": "Sparen und Investieren im Kreislaufmodell."
+        }
       ],
-      "einschaetzung": {"vertieft": "gut", "nicht_vertieft": "kaum"},
+      "einschaetzung": {
+        "vertieft": "gut",
+        "nicht_vertieft": "kaum"
+      },
       "einsatz": "Analyse: Welche Meldungen bewegen Aktienkurse, und wie hängen Zinsen und Aktienpreise zusammen?",
       "leitfrage": "Warum können Aktien fallen, obwohl die Wirtschaft wächst?"
     },
@@ -232,14 +385,29 @@
       "titel": "Grüne Heizölquote: Eckpunktepapier liegt vor",
       "kurz": "Das Wirtschaftsministerium hat ein Eckpunktepapier für eine Quote erneuerbarer und kohlenstoffarmer Brennstoffe vorgelegt. Sie soll ab 2028 mit 1 % starten und bis 2032 auf 10 %, bis 2040 auf 50 % und bis 2045 auf 100 % steigen. Ein Gesetzentwurf wird für Anfang Dezember erwartet. Heizöl dürfte durch die Quote teurer werden.",
       "quellen": [
-        {"titel": "Lomazoma: Ölpreise und grüne Heizölquote (15.10.)", "url": "https://lomazoma.com/die-oelpreise-fallen-leicht-erste-details-zur-geplanten-gruenen-heizoelquote-15-oktober-2026"}
+        {
+          "titel": "Lomazoma: Ölpreise und grüne Heizölquote (15.10.)",
+          "url": "https://lomazoma.com/die-oelpreise-fallen-leicht-erste-details-zur-geplanten-gruenen-heizoelquote-15-oktober-2026"
+        }
       ],
       "bezug": [
-        {"id": "11-1", "warum": "Staatliche Eingriffe bei externen Effekten, umweltpolitische Maßnahmen und ihre Bewertung nach Effizienz und Gerechtigkeit."},
-        {"id": "12-V2", "warum": "Umwelt- und Klimaschutz als Ziel neben Wachstum und Beschäftigung."},
-        {"id": "11-6", "warum": "Globale Herausforderungen: Klimawandel."}
+        {
+          "id": "11-1",
+          "warum": "Staatliche Eingriffe bei externen Effekten, umweltpolitische Maßnahmen und ihre Bewertung nach Effizienz und Gerechtigkeit."
+        },
+        {
+          "id": "12-V2",
+          "warum": "Umwelt- und Klimaschutz als Ziel neben Wachstum und Beschäftigung."
+        },
+        {
+          "id": "11-6",
+          "warum": "Globale Herausforderungen: Klimawandel."
+        }
       ],
-      "einschaetzung": {"vertieft": "gut", "nicht_vertieft": "gut"},
+      "einschaetzung": {
+        "vertieft": "gut",
+        "nicht_vertieft": "gut"
+      },
       "einsatz": "Instrumente vergleichen: Quote, Steuer, Verbot, Subvention.",
       "leitfrage": "Ist eine Quote effizienter oder gerechter als eine CO2-Steuer?",
       "hinweis": "Einzelquelle (Branchenportal); Eckpunktepapier des Ministeriums vor dem Einsatz prüfen."
@@ -253,17 +421,212 @@
       "titel": "Tankrabatt: Entlasten alle oder gezielt helfen?",
       "kurz": "Die Steuersenkung auf Kraftstoffe (Tankrabatt) verringerte den Preis um 16,7 Cent je Liter; im Juni sollte sie Ende des Monats auslaufen. In ihrer Herbstprognose kritisieren die Institute breite und teure Entlastungen und bevorzugen gezielte Direkthilfen für Haushalte mit niedrigem Einkommen.",
       "quellen": [
-        {"titel": "ZDFheute: Diesel billiger als vor dem Iran-Krieg", "url": "https://www.zdfheute.de/wirtschaft/diesel-preis-billiger-iran-krieg-100.html"},
-        {"titel": "Börsen-Zeitung: Institute verdoppeln Prognose für 2026", "url": "https://www.boersen-zeitung.de/konjunktur-politik/institute-verdoppeln-prognose-fuer-2026-nur-miniwachstum-2028"}
+        {
+          "titel": "ZDFheute: Diesel billiger als vor dem Iran-Krieg",
+          "url": "https://www.zdfheute.de/wirtschaft/diesel-preis-billiger-iran-krieg-100.html"
+        },
+        {
+          "titel": "Börsen-Zeitung: Institute verdoppeln Prognose für 2026",
+          "url": "https://www.boersen-zeitung.de/konjunktur-politik/institute-verdoppeln-prognose-fuer-2026-nur-miniwachstum-2028"
+        }
       ],
       "bezug": [
-        {"id": "11-1", "warum": "Staatliche Eingriffe, Preisfunktionen, Effizienz und Gerechtigkeit wirtschaftspolitischer Maßnahmen."},
-        {"id": "12-V2", "warum": "Staatsverschuldung und Wirkung wirtschaftspolitischer Maßnahmen."}
+        {
+          "id": "11-1",
+          "warum": "Staatliche Eingriffe, Preisfunktionen, Effizienz und Gerechtigkeit wirtschaftspolitischer Maßnahmen."
+        },
+        {
+          "id": "12-V2",
+          "warum": "Staatsverschuldung und Wirkung wirtschaftspolitischer Maßnahmen."
+        }
       ],
-      "einschaetzung": {"vertieft": "gut", "nicht_vertieft": "gut"},
+      "einschaetzung": {
+        "vertieft": "gut",
+        "nicht_vertieft": "gut"
+      },
       "einsatz": "Pro-und-Kontra-Diskussion oder Karikaturanalyse zu Entlastungsmaßnahmen.",
       "leitfrage": "Warum dämpft ein Preisnachlass das Knappheitssignal, und wer profitiert am meisten?",
       "hinweis": "Ob der Tankrabatt nach Juni verlängert wurde, ist hier nicht belegt; Stand vor dem Einsatz prüfen."
+    },
+    {
+      "id": "r-recht-bgh-prime",
+      "datum": "2026-10-01",
+      "datumText": "1. Oktober 2026 (BGH)",
+      "thema": "Verbraucherschutz und AGB",
+      "fach": "Recht",
+      "titel": "BGH kippt Preiserhöhungsklausel bei Amazon Prime",
+      "kurz": "Der Bundesgerichtshof hat die Klausel für unwirksam erklärt, auf die Amazon die Prime-Preiserhöhung von 2022 stützte (Az. III ZR 205/25). Sie verstößt gegen das Transparenzgebot: Kunden konnten nicht erkennen, ob sie eine Erhöhung nur durch Kündigung oder auch durch einfachen Widerspruch verhindern können. Die Sammelklage der Verbraucherzentrale NRW läuft weiter; Betroffene können sich kostenlos ins Klageregister beim Bundesamt für Justiz eintragen.",
+      "quellen": [
+        {
+          "titel": "Verbraucherzentrale Niedersachsen: Amazon Prime, BGH erklärt Preiserhöhungsklausel für unwirksam",
+          "url": "https://www.verbraucherzentrale-niedersachsen.de/wissen/vertraege-reklamation/kundenrechte/amazon-prime-bgh-erklaert-preiserhoehungsklausel-fuer-unwirksam-sammelklage-laeuft-weiter-120420"
+        }
+      ],
+      "bezug": [
+        {
+          "id": "13-R",
+          "warum": "Allgemeine Geschäftsbedingungen und Verbraucherschutz: Inhaltskontrolle, Transparenzgebot, Dauerschuldverhältnis."
+        },
+        {
+          "id": "12-R",
+          "warum": "Vertrag als Willenseinigung: Einseitige Preisänderung braucht eine wirksame Grundlage im Vertrag."
+        },
+        {
+          "id": "11-2",
+          "warum": "Rechtsfortentwicklung und Rechtsdurchsetzung: Gerichte und Sammelklage als Instrumente des Verbraucherschutzes."
+        }
+      ],
+      "einschaetzung": {
+        "vertieft": "gut",
+        "nicht_vertieft": "gut"
+      },
+      "einsatz": "Fallarbeit: Klausel lesen, Transparenzgebot prüfen, Rechtsfolge der Unwirksamkeit klären (Vertrag bleibt, Klausel entfällt).",
+      "leitfrage": "Warum darf ein Unternehmen den Preis eines laufenden Abos nicht einfach per Klausel erhöhen, und wie kann der Einzelne sich wehren?",
+      "hinweis": "Zusammenfassung der Verbraucherzentrale, Urteilstext nicht geprüft. Das Urteil erging im Unterlassungsverfahren, nicht in der Sammelklage."
+    },
+    {
+      "id": "r-recht-widerrufsbutton",
+      "datum": "2026-06-19",
+      "datumText": "ab 19. Juni 2026",
+      "thema": "Verbraucherschutz und Fernabsatz",
+      "fach": "Recht",
+      "titel": "Widerrufsbutton im Onlinehandel ist Pflicht",
+      "kurz": "Seit dem 19. Juni 2026 müssen Online-Händler Verbrauchern eine elektronische Widerrufsfunktion mit zwei Schaltflächen anbieten („Vertrag widerrufen“, „Widerruf bestätigen“) und den Eingang sofort bestätigen. Ein so erklärter Widerruf gilt als fristgerecht zugegangen. Fehlt die Funktion, drohen Bußgelder bis 50.000 Euro, bei hohem Umsatz bis zu 4 % des Jahresumsatzes. Laut IHK-Zusammenfassung kommen ab 27. September 2026 weitere Pflichtangaben auf Shopseiten hinzu (Gewährleistung, Updatedauer, Reparierbarkeit, Haltbarkeitsgarantie).",
+      "quellen": [
+        {
+          "titel": "IHK Mittlerer Niederrhein: Verbraucherschutz, neue Pflichten ab dem 19. Juni 2026",
+          "url": "https://mittlerer-niederrhein.ihk.de/news/detail/verbraucherschutz-neue-pflichten-ab-dem-19-juni-2026"
+        }
+      ],
+      "bezug": [
+        {
+          "id": "13-R",
+          "warum": "Verbraucherschutz: Widerruf bei Fernabsatzverträgen, Gewährleistung, Ordnungswidrigkeit bei Verstoß."
+        },
+        {
+          "id": "12-R",
+          "warum": "Kaufvertrag und Kaufhandlung, Rechte des Käufers."
+        }
+      ],
+      "einschaetzung": {
+        "vertieft": "gut",
+        "nicht_vertieft": "gut"
+      },
+      "einsatz": "Vergleich: Widerrufsrecht (zwei Wochen, ohne Grund) und Gewährleistung (Mangel) an einem Online-Kauf; Rolle des Bußgelds als Durchsetzung.",
+      "leitfrage": "Warum schützt der Gesetzgeber Online-Käufer stärker als Käufer im Laden, und wie macht der Button das Recht praktisch nutzbar?",
+      "hinweis": "Zusammenfassung einer IHK-Seite, keine Rechtsberatung. Maßgeblich ist der Gesetzestext (§ 356a BGB n. F.); die Fristen der weiteren Pflichtangaben bitte im Gesetz prüfen. Liegt knapp vor dem Rückblickzeitraum, wirkt aber weiter."
+    },
+    {
+      "id": "r-recht-greenwashing",
+      "datum": "2026-09-27",
+      "datumText": "ab 27. September 2026",
+      "thema": "Wettbewerbsrecht und Werbung",
+      "fach": "Recht",
+      "titel": "Greenwashing-Verbot: Neue UWG-Regeln für Umweltwerbung",
+      "kurz": "Seit dem 27. September 2026 gilt die Umsetzung der EU-Richtlinie 2024/825 im Gesetz gegen den unlauteren Wettbewerb. Allgemeine Werbeaussagen wie „umweltfreundlich“ sind nur mit anerkanntem Umweltzeichen erlaubt. Produktaussagen zur Klimaneutralität durch Kompensation sind unzulässig, eigene Siegel ohne Zertifizierungssystem verboten, Zukunftsversprechen brauchen einen überprüfbaren Plan. Sechs neue Tatbestände stehen auf der schwarzen Liste, Verstöße können mit Bußgeld und Abmahnung durch Mitbewerber verfolgt werden.",
+      "quellen": [
+        {
+          "titel": "Industrie-Fachwissen: Greenwashing-Verbot ab 27. September 2026",
+          "url": "https://industrie-fachwissen.de/data/greenwashing-verbot-uwg-27-september-2026-umweltaussagen-b2b"
+        }
+      ],
+      "bezug": [
+        {
+          "id": "13-R",
+          "warum": "Verbraucherschutz und Irreführung: Wie schützt das Recht Käufer vor falschen Versprechen?"
+        },
+        {
+          "id": "12-B1",
+          "warum": "Marketing und Absatz: Grenzen der Werbung als Teil der Markt- und Absatzpolitik."
+        },
+        {
+          "id": "11-6",
+          "warum": "Nachhaltigkeit als Zukunftstrend: Unternehmen werben mit Umweltaussagen, der Staat setzt Regeln."
+        }
+      ],
+      "einschaetzung": {
+        "vertieft": "gut",
+        "nicht_vertieft": "bedingt"
+      },
+      "einsatz": "Werbeaussagen aus der Realität sammeln (Verpackung, Online-Shop) und prüfen: erlaubt oder verboten? Danach Interesse von Unternehmen, Verbrauchern und Staat gegenüberstellen.",
+      "leitfrage": "Wer profitiert von einem Greenwashing-Verbot: ehrliche Unternehmen, Verbraucher oder die Umwelt?",
+      "hinweis": "Sekundärquelle (Fachportal), kein amtlicher Text. Einzelheiten zur Umsetzung im Gesetz prüfen."
+    },
+    {
+      "id": "r-recht-erbschaftsteuer",
+      "datum": "2026-10-13",
+      "datumText": "13. Oktober 2026 (mündliche Verhandlung)",
+      "thema": "Eigentum und Verfassung",
+      "fach": "Recht",
+      "titel": "Bundesverfassungsgericht verhandelt über Erbschaftsteuer-Vorteile für Betriebsvermögen",
+      "kurz": "Der Erste Senat des Bundesverfassungsgerichts hat am 13. Oktober 2026 mündlich über eine Verfassungsbeschwerde verhandelt (1 BvR 804/22). Eine Erbin privater Vermögenswerte (Wertpapierdepot, Immobilien) hält die Steuervorteile und Bewertungsregeln für Betriebsvermögen für unvereinbar mit dem Grundgesetz: Erben ohne Betriebsvermögen würden benachteiligt. Eine Entscheidung steht noch aus. Sollte das Gericht den Gleichheitssatz verletzt sehen, müsste der Gesetzgeber nachbessern.",
+      "quellen": [
+        {
+          "titel": "Bundesverfassungsgericht: Pressemitteilung zur mündlichen Verhandlung Erbschaftsteuer",
+          "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2026/bvg26-049.html"
+        },
+        {
+          "titel": "ZDFheute: Die wichtigsten Urteile des Bundesverfassungsgerichts 2026 (März)",
+          "url": "https://www.zdfheute.de/politik/deutschland/bundesverfassungsgericht-urteile-2026-bsw-erbschaftssteuer-100.html"
+        }
+      ],
+      "bezug": [
+        {
+          "id": "11-2",
+          "warum": "Eigentumsordnung, Rechtsstaat, Rolle des Bundesverfassungsgerichts, Gleichheitssatz."
+        },
+        {
+          "id": "11-1",
+          "warum": "Soziale Marktwirtschaft: Verteilung und Eigentum, Aufgabe des Staates bei Steuern."
+        },
+        {
+          "id": "12-V3",
+          "warum": "Einkommens- und Vermögensverteilung, Umverteilung durch Steuern."
+        }
+      ],
+      "einschaetzung": {
+        "vertieft": "gut",
+        "nicht_vertieft": "gut"
+      },
+      "einsatz": "Mit der Pressemitteilung arbeiten: Streitfrage formulieren, Interessen von Erben, Unternehmen und Staat, Gleichheitssatz gegen Erhalt von Arbeitsplätzen abwägen.",
+      "leitfrage": "Darf der Staat Betriebsvermögen bei der Erbschaftsteuer besserstellen als Privatvermögen?",
+      "hinweis": "Die Verhandlung hat stattgefunden, ein Urteil liegt noch nicht vor. Quelle ist die Pressemitteilung des Gerichts; die Verfassungsnormen nennt sie nicht ausdrücklich."
+    },
+    {
+      "id": "r-recht-umweltstrafrecht",
+      "datum": "2026-07-06",
+      "datumText": "Juni bis Juli 2026 (Bundestag)",
+      "thema": "Strafrecht",
+      "fach": "Recht",
+      "titel": "Umweltstrafrecht: Streit um höhere Strafen und Versuchsstrafbarkeit",
+      "kurz": "Die Bundesregierung will die EU-Richtlinie 2024/1203 zum strafrechtlichen Schutz der Umwelt umsetzen (Bundestag Drucksache 21/6133, erste Lesung 11. Juni 2026). Geplant sind eine Strafbarkeit schon des Versuchs bei den meisten Umweltdelikten, höhere Strafrahmen und Ökosysteme als geschütztes Gut. Bei der Anhörung im Rechtsausschuss am 6. Juli 2026 waren sich die sieben Sachverständigen einig, dass die Richtlinie umgesetzt werden muss. Streit gab es darüber, ob Deutschland über die EU-Vorgaben hinausgehen soll, etwa bei Fahrlässigkeit, unbestimmten Begriffen und Sanktionen gegen Unternehmen.",
+      "quellen": [
+        {
+          "titel": "Deutscher Bundestag: Geteiltes Echo auf Änderungen im Umweltstrafrecht",
+          "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw28-pa-recht-strafrecht-1187666"
+        }
+      ],
+      "bezug": [
+        {
+          "id": "13-R",
+          "warum": "Strafrecht: Straftat und Ordnungswidrigkeit, Strafzwecke, Versuch, Fahrlässigkeit."
+        },
+        {
+          "id": "11-2",
+          "warum": "Rechtsstaatsprinzipien und Rechtsfortentwicklung: Bestimmtheitsgrundsatz, Gesetzgebungsverfahren."
+        },
+        {
+          "id": "11-6",
+          "warum": "Nachhaltigkeit und Umweltschutz als Zukunftsfrage."
+        }
+      ],
+      "einschaetzung": {
+        "vertieft": "gut",
+        "nicht_vertieft": "bedingt"
+      },
+      "einsatz": "Strafzwecke (Abschreckung, Vergeltung, Prävention) am Beispiel der Umweltdelikte durchspielen; Gesetzgebungsverfahren (Entwurf, Anhörung, Bundesrat) nachvollziehen.",
+      "leitfrage": "Soll auch strafbar sein, wer Umwelt nur fahrlässig schädigt, und welche Strafzwecke stehen dahinter?",
+      "hinweis": "Stand Juli 2026. Ob und wie das Gesetz beschlossen wurde, ist hier nicht geprüft."
     }
   ]
 }

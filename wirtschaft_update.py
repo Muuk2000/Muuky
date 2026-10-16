@@ -43,6 +43,13 @@ QUERIES = [
     ("Kapitalmarkt", "DAX Börse Anleger"),
     ("Kapitalmarkt", "Anleihen Zinsen Geldanlage"),
     ("Recht", "Verbraucherschutz Urteil Wirtschaft"),
+    ("Recht", "BGH Urteil Verbraucher Klausel"),
+    ("Recht", "Bundesverfassungsgericht Urteil Beschluss"),
+    ("Recht", "Widerruf Gewährleistung Verbraucherrecht Gesetz"),
+    ("Recht", "Strafrecht Gesetzentwurf Bundestag Strafbarkeit"),
+    ("Recht", "Datenschutz Bußgeld DSGVO Urteil"),
+    ("Recht", "Wettbewerbsrecht Abmahnung Irreführung Werbung"),
+    ("Recht", "Schadensersatz Haftung Urteil Kaufvertrag"),
 ]
 SKIP = re.compile(r"Realtime|\|\s*Kurs|Fonds\s*\||Chart\s*$|Historische Kurse|Horoskop|Gewinnspiel", re.I)
 
