@@ -43,6 +43,10 @@ details[open]>summary::after{content:' ▴'}
 .note{color:var(--mute);font-size:.82rem}
 .warn{background:color-mix(in srgb,#e6a700 16%,transparent);border:1px solid #e6a700;border-radius:10px;padding:8px 12px;font-size:.84rem;margin:8px 0}
 select{font:inherit;font-size:.9rem;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.pill{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 12px;font:inherit;font-size:.85rem;cursor:pointer}
+.pill:disabled{opacity:.5;cursor:default}
+.setup input{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;margin-top:8px}
+.setup .btns{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
 footer{color:var(--mute);font-size:.78rem;margin-top:24px}
 .item a{color:var(--ink);text-decoration:none;font-weight:600}
 .item+.item{border-top:1px solid var(--line);margin-top:10px;padding-top:10px}
@@ -50,8 +54,13 @@ footer{color:var(--mute);font-size:.78rem;margin-top:24px}
 </head>
 <body>
 <header>
-  <h1>Wirtschaft &amp; Lehrplan</h1>
+  <div class="row" style="align-items:center">
+    <h1>Wirtschaft &amp; Lehrplan</h1>
+    <button id="refresh" class="pill" type="button" hidden>⟳ Aktualisieren</button>
+  </div>
   <div class="sub" id="stamp">lade …</div>
+  <div id="upd" class="warn" hidden></div>
+  <div id="setup" class="card" hidden></div>
 </header>
 
 <nav class="bar sticky" id="tabs" aria-label="Bereiche"></nav>
@@ -67,6 +76,7 @@ footer{color:var(--mute);font-size:.78rem;margin-top:24px}
   „Vertieft“ = Wirtschaftswissenschaftliches Gymnasium (Jgst. 11) bzw. erhöhtes Anforderungsniveau (Jgst. 12/13);
   „nicht vertieft“ = übrige Gymnasien (Jgst. 11) bzw. grundlegendes Niveau (Jgst. 12/13).
   Die Einschätzungen sind eine Arbeitshilfe und ersetzen keine fachliche Prüfung. Keine Anlageberatung.
+  <div style="margin-top:8px"><a href="#" id="setupLink">Aktualisieren-Knopf einrichten (nur für den Besitzer)</a></div>
 </footer>
 
 <script>
@@ -176,12 +186,74 @@ function render(){
   const v=S.tab==='heute'?viewHeute():S.tab==='rueckblick'?viewRueck():S.tab==='lehrplan'?viewLehrplan():viewPause();
   $('#main').replaceChildren(v)}
 
-(async()=>{
-  const [lp,rb,hd,tg]=await Promise.all([get('data/lehrplan.json'),get('data/rueckblick.json'),get('data/heute.json'),get('data/tage.json')]);
-  D.lp=lp?lp.bereiche:[];D.lpMeta=lp||{hinweis:''};D.rueck=rb;D.heute=hd;D.tage=tg;
-  $('#stamp').textContent=hd?`Tagesmeldungen vom ${new Date(hd.datum+'T12:00').toLocaleDateString('de-DE',{day:'2-digit',month:'long',year:'numeric'})}`:'Rückblick und Lehrplan';
+async function loadAll(){
+  const q='?t='+Date.now();
+  const [lp,rb,hd,tg]=await Promise.all([get('data/lehrplan.json'+q),get('data/rueckblick.json'+q),get('data/heute.json'+q),get('data/tage.json'+q)]);
+  D.lp=lp?lp.bereiche:[];D.lpMeta=lp||{hinweis:''};D.rueck=rb;D.heute=hd;D.tage=tg;S.day=null;
+  $('#stamp').textContent=hd?`Tagesmeldungen vom ${new Date(hd.datum+'T12:00').toLocaleDateString('de-DE',{day:'2-digit',month:'long',year:'numeric'})} · Stand ${fmtTs(hd.generated)}`:'Rückblick und Lehrplan';
   ui();render();
-})();
+}
+
+/* ---------- Aktualisieren auf Knopfdruck (nur mit gespeichertem Token) ---------- */
+const REPO='Muuk2000/Muuky',WF='wirtschaft.yml';
+const lsGet=k=>{try{return localStorage.getItem(k)}catch(e){return null}};
+const lsSet=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
+const lsDel=k=>{try{localStorage.removeItem(k)}catch(e){}};
+const tok=()=>lsGet('ghtok');
+const gh=(path,opt={})=>fetch('https://api.github.com/repos/'+REPO+path,{...opt,headers:{Authorization:'Bearer '+tok(),Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'}});
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+function upd(t,bad){const u=$('#upd');u.hidden=!t;u.textContent=t||'';u.style.borderColor=bad?'#c0392b':''}
+function showButton(){$('#refresh').hidden=!tok()}
+let busy=false;
+async function startUpdate(){
+  if(busy)return;
+  if(!tok()){showSetup();return}
+  busy=true;$('#refresh').disabled=true;
+  const before=D.heute&&D.heute.generated;
+  try{
+    upd('Aktualisierung wird gestartet …');
+    const r=await gh('/actions/workflows/'+WF+'/runs?per_page=5');
+    if(r.status===401||r.status===403||r.status===404)throw new Error('Token abgelehnt oder ohne Berechtigung (Status '+r.status+').');
+    const runs=(await r.json()).workflow_runs||[];
+    if(!runs.some(x=>x.status==='in_progress'||x.status==='queued')){
+      const d=await gh('/actions/workflows/'+WF+'/dispatches',{method:'POST',body:JSON.stringify({ref:'main'})});
+      if(d.status!==204)throw new Error('Start nicht möglich (Status '+d.status+').');
+    }
+    upd('Aktualisierung läuft. Das dauert etwa 1 bis 3 Minuten, danach lädt die Seite die neuen Meldungen selbst.');
+    const t0=Date.now();
+    while(Date.now()-t0<6*60e3){
+      await sleep(window.__POLL||8000);
+      const n=await get('data/heute.json?t='+Date.now());
+      if(n&&n.generated!==before){await loadAll();upd('Aktualisiert.');setTimeout(()=>upd(''),4000);return}
+    }
+    upd('Die Aktualisierung dauert ungewöhnlich lange oder hat keine neuen Meldungen gefunden. Bitte später noch einmal versuchen.',true);
+  }catch(e){upd('Aktualisierung fehlgeschlagen: '+e.message,true)}
+  finally{busy=false;$('#refresh').disabled=false}
+}
+function showSetup(){
+  const s=$('#setup');s.className='card setup';s.hidden=false;
+  const inp=el('input',{id:'tk',type:'password',placeholder:'github_pat_…',autocomplete:'off','aria-label':'GitHub-Token'});
+  const save=el('button',{type:'button',class:'pill',text:'Speichern'});
+  const close=el('button',{type:'button',class:'pill',text:'Abbrechen'});
+  const del=tok()?el('button',{type:'button',class:'pill',text:'Token entfernen'}):null;
+  close.onclick=()=>{s.hidden=true};
+  save.onclick=()=>{const v=inp.value.trim();if(v.length<20)return;lsSet('ghtok',v);s.hidden=true;showButton();startUpdate()};
+  if(del)del.onclick=()=>{lsDel('ghtok');s.hidden=true;showButton();upd('Token entfernt.');setTimeout(()=>upd(''),3000)};
+  s.replaceChildren(
+    el('h3',{text:'Aktualisieren freischalten (einmalig)'}),
+    el('ol',{},[
+      'Öffne github.com/settings/personal-access-tokens/new',
+      'Name z. B. „Wirtschaft“, Ablauf: längste Dauer.',
+      'Repository access: nur Muuk2000/Muuky wählen.',
+      'Permissions, Actions: Read and write.',
+      'Token erzeugen, kopieren, hier einfügen.'].map(t=>el('li',{text:t}))),
+    inp,el('div',{class:'btns'},save,close,del),
+    el('p',{class:'note',text:'Der Token bleibt nur in diesem Browser auf diesem Gerät. Er gilt nur für dieses eine Repo und kann Aktualisierungsläufe starten. Wer ihn hat, kann dort keine Dateien lesen oder ändern.'}));
+}
+$('#refresh').onclick=()=>startUpdate();
+$('#setupLink').onclick=e=>{e.preventDefault();showSetup()};
+showButton();
+loadAll();
 </script>
 </body>
 </html>
