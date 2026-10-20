@@ -1,0 +1,1430 @@
+{
+ "generated": "2026-10-20T11:39+02:00",
+ "datum": "2026-10-20",
+ "feeds_ok": 23,
+ "feeds_fehler": 0,
+ "hinweis": "Automatische Vorsortierung nach Stichwörtern. Keine fachliche Bewertung, bitte vor dem Einsatz prüfen.",
+ "items": [
+  {
+   "t": "Marktbericht für Rohstoffe: Gaspreis, Goldpreis, Ölpreis & Co. aktuell",
+   "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdkJKaDlocWRZcHNFOU56OEM3QjhiSjg3cThSVnZ3SUpQSURhVkFuQUxpc3ByYWY4RUpIRjB1VXBoaVluRFVCNlVZeXYyM3VCTWhGLTJGRks3bXpXWGd6SFZRbUpLeXRNRnVNLXY1bTdfSGNhaDIxeXVialBVZGZwekdaTFJjUDh3OElnMUxqYWd2TmVsQzRfSzhEUjJBQnFfTDhiQ0wyM3BvRm94WUFQVXk0dVctaVVXTElIVg?oc=5",
+   "p": "Finanzen.net",
+   "ts": "2026-10-18T20:43+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "11-1",
+     "jgst": 11,
+     "titel": "Die Wirtschaftsordnung als Handlungsrahmen",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 2
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "Angesichts des Rekordwachstums an ausländischen Direktinvestitionen: Wo stehen vietnamesische Unternehmen in der Lieferkette?",
+   "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQOENwOGhDTWlaODNtazluaVI5VERuNDhadVBnS2JxOGpmZVJIVFJiUWd0RTN4Qld3VVRCVnpZQXNPc0FLMFpxdFhaWElHT0ZXRHR2TGVVY2s5dGlIR3YwQmpuX1JXUXNqcmpFTFE3d0xyV05yTjZNLWh2NUZsYXpxREJfbnFsZzA0UnJnY09KWQ?oc=5",
+   "p": "Vietnam.vn",
+   "ts": "2026-10-19T02:23+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "12-B1",
+     "jgst": 12,
+     "titel": "Unternehmen: Ziele, Markt, Produktion, Finanzierung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 2
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "ALSO Q1-Q3: Konzerngewinn +75% - EBITDA: 240 Millionen Euro (+33%), Umsatz: 12.4 Milliarden Euro (+17%)",
+   "u": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOd0tmMGhOalpQb0g3VjlYdEV1b05KLXd3MGhiT1R4ZzhVcTdBdzRacTlBbG9qMXR4OW5xdC1Nc19zZ3Y4Uy11UkJHRFFmaW0wSzlBeWN6bk5DRklSVFNYdy1CT3N2T1BVajdjQUdodzZFeHVnbWhGT2E2YWpuSEJlY2ZLc19ZYUMzemNnOEpIRDlMdnFPSjZYcUl6Yjh2WVNEZ0Zfb1c5UmNpNVhIaVNCT3pGdDBxQmltbFJPb2RzWk44Qmd6V1JxbzVzWnlJUFVOSXIyR3VVbkVyVkRMd3pQbFpiM3kyZUgxUWM3Z05Da1Z4a01acFN2Vw?oc=5",
+   "p": "finanzen.ch",
+   "ts": "2026-10-19T06:59+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "12-B1",
+     "jgst": 12,
+     "titel": "Unternehmen: Ziele, Markt, Produktion, Finanzierung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 2
+    },
+    {
+     "id": "11-3",
+     "jgst": 11,
+     "titel": "Internationale wirtschaftliche Verflechtung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "PROGNOSEN/Konjunkturdaten Deutschland 19. bis 25. Oktober (43. KW)",
+   "u": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNckFMbHkyOFdKUmZVYXo0UTF3WHlJdldlV01DQWZLdzZiMWVBdzhCM1BnUWJ2M1dvWk1aWFR2VXZuRHhZWVVYT0JTSXVzdjFFVmlsQjBkMDgwMmVaaEQ4MjVsY190b3Z5VFJaazc3bjRNNHB3WGZGVWdRSXk4SHBKNE0zd1ZuNGQyUmpac0VFTXJ1M01iZlpsN005Zm9BdHZaX0JsQXFyMXl6Z0M5QVJjaUJnLU1IdUlqYTMtMnl0bzg0UGUxSGc?oc=5",
+   "p": "MarketScreener Schweiz",
+   "ts": "2026-10-19T07:00+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "12-V1",
+     "jgst": 12,
+     "titel": "Gesamtwirtschaftliche Lage und volkswirtschaftliche Ziele",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 2
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "Aktien Frankfurt Eröffnung: Dax verteidigt trotz Minus Ausbruch aus Abwärtstrend",
+   "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQeldsS1VhbXJLM0lXUmc2YU5wQWFacV9oNEtJRkNWMnZiekI4QUJDRHhlTkVOSXhGSk5lSTd0MmtXNzFMekdwaEF2TWZOeEZXaWhZWmtWb3lKQU9kYVhuS05LWS1fWklQVUQ1MTJ6dERhazNnbVpSb3g3ZGFMSDRGeG9LMUduV3Z4ZUhDTjZqZTBLaVBNUjJIMzR5dGVmTnNmdXgtcjVmdjI0YUlTdEgyRktFaWk1Z3lMV1RQbEFVQkJGTzNrdE16QUpB?oc=5",
+   "p": "Börse Online",
+   "ts": "2026-10-19T07:16+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 2
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "dpa-AFX Börsentag auf einen Blick: Gewinnmitnahmen nach Dax-Ausbruch",
+   "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMkZBNHp6eW1OWnNKVi1kb3E2R254STY4YWhzM0xudWpFYTZqYTZaWDFJT0lzTHdsaktfdV9DQkhKLWpQTDJ0OTFHeHBKZlY0TWprQnRmaVlEbWQ1MWVjd2tLYVpZT3JfeW1kMUJ1U0VNV3BmdEhXZWRDdURzUWVZZEMyMnZ2eTVIZEhCZUtfaUdBSEtndk9qOEktNGVLRVdIVnc?oc=5",
+   "p": "Yahoo Finanzen Deutschland",
+   "ts": "2026-10-19T07:31+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 2
+    },
+    {
+     "id": "12-B1",
+     "jgst": 12,
+     "titel": "Unternehmen: Ziele, Markt, Produktion, Finanzierung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "ROUNDUP/Aktien Frankfurt Eröffnung: Dax im Minus - Verteidigt aber Trendausbruch",
+   "u": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQSmNGTWh3WUItb3Judjk2T1EwbnR6Qy1BLVhxa2lJTFg4eUNnTVE0aE9FQjNobTNBeU9GR2Z2YTZ1d2VIS1hYSVBfYUR1R0tCNlhibWJmSVpoWW1FaE55MG5KWjFTMExVaVFHLVJINktZdHFmVEF3MjlfcHd0YmJMNE1JaW9VVVN1ai1HbHBFeldhZjFEdnkzeG1hQnBHYXMtaHRBMnFoM1ZtbnVXMUlZVjl0d0gyN3hjVTZtVHFVX0xqRWVG?oc=5",
+   "p": "Börse Online",
+   "ts": "2026-10-19T07:31+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 2
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "Erzeuger- und Verbraucherpreise im Höhenflug – Inflationssorgen nehmen wieder zu",
+   "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVFJTOFZmYzIwOXE3MW5EZUpjNWxoMDdmN2xXTnRDZzNrNFhXT04xOWIzVWI5dWN0Z2hjdjRBSTVlVnJ0anBIVjNNUExDNFIwSnFzaWtnNlEweFRqOWp2YWx2MzNXcmVVeUVrM0EySGxrSlFKM1pkZFlYYnVhWHZ4QjV6LVg4Q3FzQnpQdWltcG1jc2hlX04tZG5fYVRCVmNoYTVXS0ZRaUNMeWp6VGc?oc=5",
+   "p": "Tichys Einblick",
+   "ts": "2026-10-19T07:56+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "12-V1",
+     "jgst": 12,
+     "titel": "Gesamtwirtschaftliche Lage und volkswirtschaftliche Ziele",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 2
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "Aktien Frankfurt Ausblick: Dax konsolidiert nach Ausbruch aus Abwärtstrend - boerse.de",
+   "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWjBYTXNmM0pyMGs0Y1ZjSU5NT0JLM2xxbE5jbHY5SUdyWDQwaklUOTdIQUVJQ0hlZnZiQ29ISmszS0hrbUc2bzhzMjdLb0RmRm9rSDlGN044S1JLN2J5aDkzZ0dKZl9zQnd6X2R1MWwyeUdmX0hVUWsxTlBTeDBNMWNBVXJOUUZJTV9EUEZOZkdRLXRRV05MNzdaV1hVdDVsVVhhVEo5OWlRWG95LWVUVkRlbFhyV0pEZWZaTmZn0gG-AUFVX3lxTFBaMFhNc2YzSnIwazRjVmNJTk1PQkszbHFsTmNsdjlJR3JYNDBqSVQ5N0hBRUlDSGVmdmJDb0hKazNLSGttRzZvOHMyN0tvRGZGb2tIOUY3TjhLUks3YnloOTNnR0pmX3NCd3pfZHUxbDJ5R2ZfSFVRazFOUFN4ME0xY0FVck5RRklNX0RQRk5mR1EtdFFXTkw3N1pXWFV0NWxVWGFUSjk5aVFYb3ktZVRWRGVsWHJXSkRlZlpOZmc?oc=5",
+   "p": "boerse.de",
+   "ts": "2026-10-19T08:20+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 2
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "Aktien Frankfurt: Dax schwächer nach starker Vorwoche",
+   "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMDAtbEhsdEFZaUpibzdNTWc2NmtIQjRtRzhJMmdoaXF2LV9ELWZoSW5hR000VExoMWJtNTNUVnJoZjdLWlJRUm9zM0hRZE1LT3g2WVBXZ29mSnFQMFl0QmRfRW0xa0J3d2xOLTdOTG1tOTl4MFlqZ3VTbWpSY1VvSVJ4N0JXdDRXT2djOEZaXzJtcHJaUTlXOUlVNTRKMzlUakNlXw?oc=5",
+   "p": "Börse Online",
+   "ts": "2026-10-19T09:45+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 2
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "Zinkverhüttung in Europa: Energiekosten drosseln Produktion und Lieferketten",
+   "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOR2tjU1Vfd1VUNVZkTklVQUI0TldHLWY5elBWYmZ5b3g4aXFOa3I3aVVGczEwSHdiWVRCV1hXS3J0eVdybjhWMkxZTXRnZHUwMHdDZ2lkXzRBWTJvOWFYeEZ1OW5YSDlqOFAtc0JoWXd0a0lWdnhubnJYQy1BR0JuQ19uUXJjaDEtWEpIZG1vaHFGMmF0NUk2VjBkSk5CdUJU?oc=5",
+   "p": "aktien.news",
+   "ts": "2026-10-19T10:28+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "12-B1",
+     "jgst": 12,
+     "titel": "Unternehmen: Ziele, Markt, Produktion, Finanzierung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 2
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "Aktien Frankfurt: Verluste - Dax muss sich nach Erholung beweisen",
+   "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNa1ZjeGl1RjJaWVJIRERLVGdUdzdjanVSMHRTUGFrQVA1N1JGUjBvc2gtOENGdTFVR3hXeVRTdk84QlJra184WUhDTzlIN29QZzN0WU1EWlkyUTk1aEcxb1ZVTC1GaXl1RjVlR2RLY0FKV3NqSUN1SmxMVnh5VmxCS1k3NldTUERJSkpUN2FmdkVMRjdCU0tiN2lrdjc4TkM5M2JIMk1iSURzUVJRUThSYQ?oc=5",
+   "p": "Börse Online",
+   "ts": "2026-10-19T12:30+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 2
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "Pentair kündigt Quartalszahlen an: Pentair-Aktie vor 1,07 USD Gewinn je Aktie",
+   "u": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORmZ1MVd1em45UFFUQXItb2tqM3JtOU14dTk4SVV3d2czN2hqYTg5enkwQW51OW1kb1A3aWFzQjhlX3hoX01YeWtucDBpeldvM2xLSjRjN0JsQkgtVVU5Zkc0ejdvQ1VJRW41YXhYUXpGMlAxbzNyQTNVZENqZGdlUnpQV1RYR0drb3EzczU5R25QeklCbkpGckFUWVp2X0hjM0F2YTZaTXNJTWJXNUVob3Awa0RqZjRDTXV5Z0ZBWGl1X3czR1NyeE54NXI3WVpjdUE?oc=5",
+   "p": "ad-hoc-news.de",
+   "ts": "2026-10-19T13:03+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "12-B1",
+     "jgst": 12,
+     "titel": "Unternehmen: Ziele, Markt, Produktion, Finanzierung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 2
+    },
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "Dax: Die Stimmung am deutschen Aktienmarkt steigt – doch ein Problem bleibt",
+   "u": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNeERsaGdlTFBMUV9HU0wyMk9SaktZS1hfaGc1N1E4aEtNUHNiZUxiUXdzZkdkalBzT095UnpZeW9vSl94NlFfU3JuQ2R6VzNFZE5YWGRzVHpyeWxvYmhhdjUtczZMUnhTYzRBTVpVLXItUGVSb2FBNTNaQmVOT1p4bWxnNklJWVk3a0ZuWFREamlyVUk1TF9TMFA3aUhTcF91YzdvZUFWWHZRdmQ0R2thOVlKVTdseXNER0dCLTM3bWhzWE84OTBPbDduTjdDRXh1SnN2Q0RRS2FDcUJsWHhOeU1B?oc=5",
+   "p": "Handelsblatt",
+   "ts": "2026-10-19T15:15+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 2
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "Aktien Frankfurt Schluss: Jüngste Erholung nicht nachhaltig - Dax sinkt",
+   "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRTctcExOSWs3eGNvN0locHhKYlJzbGFFeDhvWXJIeC0ya3dZNXdSalpzOE5kQ1NYVFBnRzItUXl6aF90VnJvWjNFeHB1MWMxLUZodGNOWUhMcVJLcWNnM1Vsd3V2S0c5OWdjUXY5YVQtdGlXdXR0Rk5zeHVHam1rQ0l0Y2xPbGFrZGhiWnVUcmg5LWtmU2JWZktuT2p3TERDRzU1SWc1dm9OWFpYOXFDNjlyM2NMUTlmRmc?oc=5",
+   "p": "Börse Online",
+   "ts": "2026-10-19T15:48+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 2
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "ROUNDUP/Aktien Frankfurt Schluss: Jüngste Erholung nicht nachhaltig - Dax sinkt",
+   "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZ3dFUVg3bXVLWkktRV9TTVV3TUd5R1VMdzdfUTZURGhxaGh0ajc3bmlWZkEwS0pzaEo4SDBfRE5aS0xlcVoycnpVMW1ZeWlPMVdSQkFIM0xPdVNmUm9IZVMxREhVbFFvZDVxTHNFcUVIUWNWclVFNFhCTEtWUkxGR3hZQks4TGdmY3FRQXBNQUtlaFY3NGk0ZXVTTl80clBGN2U1dG9ubmZvbTZTNG5MY0g4eUVfc19Oajh0N1FMZzE5WW8?oc=5",
+   "p": "Börse Online",
+   "ts": "2026-10-19T15:59+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 2
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "Frankreich-Proteste drücken Euro, Anleihen und den DAX ins Minus",
+   "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQeXZBY3B2RXRaVjJuT3VKU3dDR19mOVpHV0JrcjV2WGVUeHJaeXhQVUNLZWJ2Mk81NlJwY0RoS3BxTTVVTlpsWllpVkNQRVF5MFZMQUFid185Q0VzTWpCRzZ3a3VGQ0ZWZEF4WnBtSGx0a3JGTE1yMnlWR3BCTGhCZF84Vlh1cDR2ZnBndUdNSV8?oc=5",
+   "p": "aktien.news",
+   "ts": "2026-10-19T17:44+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 2
+    },
+    {
+     "id": "11-3",
+     "jgst": 11,
+     "titel": "Internationale wirtschaftliche Verflechtung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "ESG Award: Agrana verankert Klimaschutz",
+   "u": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1rbXdvSF9ldy10a1hCcGROZTZTN0k3TVlkNXNzQ094V0hTQ3ZXN092SHVwVElQRGExc3NwT3d6U0diMGxQQWctTVI4TUtzRkZiQ0UtSVk0ai1lNGxqUU5TQnJOcG1SUkpQS092TDdFdmlVUTJfbzhGVEMtV1Fmdw?oc=5",
+   "p": "DiePresse.com",
+   "ts": "2026-10-19T20:50+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "11-6",
+     "jgst": 11,
+     "titel": "Globale Zukunftstrends",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 2
+    },
+    {
+     "id": "12-V2",
+     "jgst": 12,
+     "titel": "Wachstum und Beschäftigung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "Aktien Frankfurt Ausblick: Verluste drücken Dax wohl an sein Vortagstief",
+   "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPSWl2Yi13cWFpU0ttQ0xDa0JwVXFaaGs4RnJCTmY2OFBtLXREcHBiNWdsSmE1NThkZUVUNHVvSG5MN0VNSnJoaDIySmNDU013ZVJDRnEyb1FLb0dTT3o3cXMtSW1YUloxV282OHhyZlNuMUhFbUtYNFdjQ2Rzbk54TF9vTXBZOHpLdG44V1hQdFAzUUZHMno1SHhNdi1jSVlwMXUtR0ttZExoNXpkSG81TDJvc1RJZmRuUlJCVmtn?oc=5",
+   "p": "Börse Online",
+   "ts": "2026-10-20T06:16+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 2
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "DAX-Prognose: Tiefer – SpaceX, Netflix, Deutsche Börse, RWE, Rheinmetall, Amazon, Nvidia im Fokus",
+   "u": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPNnVkbEV4aDFDZXZNVTd2QzdRVWwzRzhMdV9CLS1fbWM3MW1sZDlwSXBZNjFTRHEzUEtuMi0xUE0tYTRBRHZKWXptdEJKUGVOMWphMnpnYkJPVmhuYmhJV2ZRSHpadUFnZmJPOUFQNElfNUhTLXRYY3dUdWF0b25QMGZad2I5bEp1UEFHTE1hOEw0bFp4YzE4dkxnZGg4d1BhOUVwbENPSFBubXcxc1FtM1VRZ0FIaFJxb3BvLTF2RlJhTmVqV2JIVWExSlRUVVBSc0JjLTZBQ2h5TS1vbDByQQ?oc=5",
+   "p": "Der Aktionär",
+   "ts": "2026-10-20T07:03+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 2
+    },
+    {
+     "id": "12-V1",
+     "jgst": 12,
+     "titel": "Gesamtwirtschaftliche Lage und volkswirtschaftliche Ziele",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "Aktien Frankfurt Eröffnung: Verluste drücken Dax an sein Vortagstief",
+   "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYlp3Qk1sQ1duUlpRbEhNbXdmeHhCZXNWQnhWbjlGeXIyY1pEbDBaNzI2cW5VWnpmNEtvcnBqalBxY2Z1Qm56aC1FMFdRZEdDOExsdmdpYUFtWi0zYkFJQzV6U215dGpNWmxkNXZvekVJSmRybjd2UXlOZEVsUThDUFcycDhwRFl4MkFXdTJISHRubGxOR1E1bFM4RlBkMXh5WU9KT0RzSzVnTTNfZHh0ZkNvRlNGTFZEMHc?oc=5",
+   "p": "Börse Online",
+   "ts": "2026-10-20T07:19+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 2
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "DAX, MSCI ACWI, ETF: Was Anleger in 100 Wochen verdienten",
+   "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVk9mMDZ2MFRnSEs5QWlNTlJ0cFFwM2hyVThWSjNnQ0VsQVB1RTFZaEFRQWJHRkl6aFJJVUI3NGZvLTVJX0hFeVdsVFlTNzJ3QjYwbS03a2VBTTJJM2xXRzdvNEdxLW5tbXpUYlJ2TkZsRUZhTWRoaHU2LXRJZ0xDYTdhTTktNExUTDhwanRWaHh6YV9hbnZaN1MyT0tfUGd0X04wa1pRM0FkSEJnazE3QXA0bFlCV1dY?oc=5",
+   "p": "FAZ",
+   "ts": "2026-10-20T07:41+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 3
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "ROUNDUP/Aktien Frankfurt Eröffnung: Verluste drücken Dax unter Vortagstief",
+   "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNR0phbGpOZFZvWE9EVXdsU0V2SDNLQTRHVjlNclB2cExSQnZocWFjTmltTVBuWlNwenZtOEx0eUhJbkNUdzFJcXpRLXd3bkRocWMxRUctMWRsbXhJUy1PeDZOV3BGVWNQOXRRVWpoY21TcVNzckdQVGtpeVNOY0t4WTFENWhVUHhHcU01UnBMcmFzRFZabGtrd3hlTEFsTnJ6WkxYVjhTMmlvNldSV2M4clQ2OWZMdW5qMlN0REdzazI?oc=5",
+   "p": "Börse Online",
+   "ts": "2026-10-20T07:59+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 2
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "Indien untersucht Pernod und Diageo wegen Scotch-Whisky-Zöllen im Handelsabkommen",
+   "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPT2tEVFUxSURZSkYtaTNXZkVGS0w2M3BHbUF6MVBPbnZUSGt2YW80OEVOeXo5U1plNHJWUzkyanNvM0pKVGdqVDFVZEpkdWN4MWFONGhFVGJSbHpQZUxZV25tOTZLX2NfR182ZFRuWmR4bDBKRU94allNZUdCcU9yRlFtSFFxYlVmekdWRTRfVHNGTG9QZUpnYXlYTnB3TXRnaTRUcC1yWU4?oc=5",
+   "p": "aktien.news",
+   "ts": "2026-10-20T10:16+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "11-3",
+     "jgst": 11,
+     "titel": "Internationale wirtschaftliche Verflechtung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 2
+    },
+    {
+     "id": "13-V2",
+     "jgst": 13,
+     "titel": "Außenhandel und Währung (Jgst. 13, erhöht)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "gut"
+  },
+  {
+   "t": "OpenWorld vereinbart Fusion mit KI-Agenten-Spezialist Blocksight",
+   "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNM0xuU0I0cmZzVFg3ZWdib3ZsZXpBMm9EY2JEYURsM29wdE0wTDdZWjJMZUU2OGFaUmlGcGlwM3hBWHZoOGxwZjkzVWhrY2F3cVRoekRpWTl2UWowN1JCR2l2REVlVmwxdGRnUmlVZ040Vy1tRnJpZnhHaHBtVTJ6TUVzaXZ4alVaZ1BuSUd6ektfcWxJVldvUklEYzhxUy1FNU1ST09rLW5vdHZqc1k5c295dkg5MUxfZmc?oc=5",
+   "p": "Investing.com Deutsch",
+   "ts": "2026-10-19T02:06+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "11-6",
+     "jgst": 11,
+     "titel": "Globale Zukunftstrends",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "12-B1",
+     "jgst": 12,
+     "titel": "Unternehmen: Ziele, Markt, Produktion, Finanzierung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "DAX erholt sich: Warum Tech-Zweifel und Zinssorgen nachlassen",
+   "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQVhhZWh3c0NNa2stbW5QVVdKR2pCUE5EVzg1cjBQWXM2M0lFeTNqaEgtLXFQNnI3cWpEUFNWdFB0RVNHWEhOd1pHeHdyZW9mNG1rejBVRXh4b2wwTTN2NHRWZ3dMRlRuZHpwdk9aNEY1VkpZX09SX0F2UlJDdmZqX0R3RjJUdFg3NXdiSg?oc=5",
+   "p": "aktien.news",
+   "ts": "2026-10-19T02:32+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "A5RKRS | European Investment Bank EIB-Anleihe: bis 09.02.2027",
+   "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVzV2MnZCRG45OUkwTVFnZEE2U00xdDdfelpoUkNoNUdWV0pVMkU2Q3g1TG5ULUdabzlnLUhNRndyWUNvWndjUF9YM3ozQUJGeDZPRDJjZEJaN0g4dGxuaFJkeEtKRWFvVFlIWnBsSFlfR0ZFZnpCelVZUThOWjJUa2N2Zw?oc=5",
+   "p": "Finanzen.net",
+   "ts": "2026-10-19T03:18+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Ökologisierung der Holzindustrie und Ausweitung der Exporte.",
+   "u": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBhZlRuck1LOVVZdHVGNWMwLTNtUmhEaXc4ZlBlLURrd3BmUlNBZEJSdzVVLUpoVHdIaVIwRUtwR0dMUnFhVHFFN1ZzSmwzaE0zSFN3SDB4bDdhbjdFUFpaNXA2SXJrdmdRdGVUMkNB?oc=5",
+   "p": "Vietnam.vn",
+   "ts": "2026-10-19T03:46+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "11-3",
+     "jgst": 11,
+     "titel": "Internationale wirtschaftliche Verflechtung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Konjunktur: Industrie gewinnt Zuversicht – China bleibt Sorgenpunkt",
+   "u": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOT3h0U0M4OUFvT1Q0VUVJeDFVUlFleVU4Y3dpSzFLc09RQ01NQ0paX1NJQlJMTlRJcEhDN2pvWEZKbkNjOE5qcnhRWkxOc2dzTHFDXzdsbjJ0bFNQU2MwdUUzcFhtalBVekVhVm53d1hzeW82aDVlSTExVERlaGV0Y1hHbk9GUWhkdUNfakdmUndPMXZzVFVPbndJd3hFSE12WTdhX3c5Uk1tWHRGcWpQRkExRVQ1NGNtcU91WXZzQkllLUJnRnQ4VE9rZ1BKRnVibDU3dWM3Y0FaSkU?oc=5",
+   "p": "STERN.de",
+   "ts": "2026-10-19T04:00+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "12-B1",
+     "jgst": 12,
+     "titel": "Unternehmen: Ziele, Markt, Produktion, Finanzierung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "12-V1",
+     "jgst": 12,
+     "titel": "Gesamtwirtschaftliche Lage und volkswirtschaftliche Ziele",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "European Lithium Aktie: Gerichtstermin für Fusion fixiert",
+   "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQX2kta0RtdHpMZGhKU1RldTN4cTdhQWNzZU9NcFJLNkl6cGJJcVFpQjVRV2xZYVFnMzlHYUFVd3hxVkFSX3FXQWJyRUQ1UUREWkpmNWdpRTZJYUh2ZGFtWDZDR3NzWjdJWjhmaS1JYWk1YlpPNmlVNmNMbGplZG9jYjJ4WFFNREw4MVBjUTJTWlBrVDdiYkdtZHVlTThpdmppbXpnMUxYTHZUTnZwYWc?oc=5",
+   "p": "Börse Express",
+   "ts": "2026-10-19T05:19+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "11-2",
+     "jgst": 11,
+     "titel": "Recht als Handlungsrahmen",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Ist Spaniens Rentensystem pleite? Was die Zahlen vor der Wahl sagen",
+   "u": "https://news.google.com/rss/articles/CBMic0FVX3lxTE53WU5YRFc3cDlNUTJtLUJpTmpoU2ZPN2F1Wk5nRy14SjhsT1lldGFmRWlpVGVRU0tBN20zWXdnekgta1V6SGJZSGlES2V2dUR0YkZ4WWZFNFZFMExYbFAtblE1TGlfaHNhUzBaYnB1LWx6bU0?oc=5",
+   "p": "Euronews.com",
+   "ts": "2026-10-19T05:53+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "12-B1",
+     "jgst": 12,
+     "titel": "Unternehmen: Ziele, Markt, Produktion, Finanzierung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "12-V3",
+     "jgst": 12,
+     "titel": "Einkommen und soziale Sicherung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Spanien vor Parlamentswahl: Rentensystem im Fokus, droht Kollaps?",
+   "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZ1ZWUGZOVjhxMWZiWVl5UGxGVERfMUZmbkJ1UnpPclZ1WGY2VWdzV092VGNaS0czSzVRaGdzaFVpOF81OGJXTkNGbGVoQmF0U0o4TTluNWlfaUNMcVpxVG0zZFNPT21YUVBpNGNhb3Fwb2NWRkRfd2NIclcxbmFtOFkyNjZrS1Z3cVhhY095V3VJVUFTMGdGeGpqa3BCQQ?oc=5",
+   "p": "Euronews.com",
+   "ts": "2026-10-19T05:53+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "12-V3",
+     "jgst": 12,
+     "titel": "Einkommen und soziale Sicherung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Bitcoin nach Inflationsschock bei knapp 80.000 USD – droht jetzt eine Zinserhöhung?",
+   "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTE54b3AzRXF6M3NpZ1BVeDd0T1JnbzA1bVlEdWl3UWxLS1c5akFzQjR6Q2tIdTN0WWk3UmFKczQ3U2dTTHBCZXdEU2N0Mm9LZHc3NGFZWHN0SHNSNHRlYy1saWRKbnlQTTlERzQ3VmxzTF9RdTRDc2poUnpyc2pNd2s?oc=5",
+   "p": "Bitcoin2Go",
+   "ts": "2026-10-19T06:36+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "12-V1",
+     "jgst": 12,
+     "titel": "Gesamtwirtschaftliche Lage und volkswirtschaftliche Ziele",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "DAX-FLASH: Leichte Gewinnmitnahmen nach starker Vorwoche - US-Schwäche",
+   "u": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQWkxGd2ZEelFOcEJwVUJQZ3N4TF9fcWQxYVRkYldDN1lvYlFRcWNOZ19NMHF5Nkdyb092Yk8zVk1uQ01ENDBaZnpCR01aS3JRSGNkZDdnc3lqaFgyTDUwTGVvcEpLX2tScEZRbENwWDRMTGhjVTFxajI3b3p5XzNuS1I1MlBpazZQX0oxclJtOUctWlBRWGlsNVl6Qnd5a1QyS3BneGZlQWI1UHppU2YxNlRUZzJsR2V3al9rQ2FZZ3hLSDUyYk9XdUlVZ1NMQQ?oc=5",
+   "p": "T-Online",
+   "ts": "2026-10-19T06:44+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "12-B1",
+     "jgst": 12,
+     "titel": "Unternehmen: Ziele, Markt, Produktion, Finanzierung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Spaniens Rentensystem: bankrott oder eine Frage der Kostenträger?",
+   "u": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSGwxWWpHYXdOMWpiYk1oa0YtZzFnOUNHNEgzNVpSRTNMLVZIcUhiZ2RVMFdkMy1oRG9BS1N1ajlFNHllS2tNVjliMTRHTjBPT3IwV2dFZjJVejJfcm5JQWlNclRzY21iQzhRT09xZGd6SWw2ZU9RYlRxejFBc0tLaHdtSlgyR3pKVDZXbjlXSkthZms?oc=5",
+   "p": "IndexBox",
+   "ts": "2026-10-19T06:50+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "12-V3",
+     "jgst": 12,
+     "titel": "Einkommen und soziale Sicherung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Spanien vor Wahl am 29. November: Renten im Fokus, steht das System vor dem Kollaps?",
+   "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWkNVMTM5QUZ3YUEwSkd0VnZ3YUllUkNaMVRuY1Qwc2d5TGI0OVV5QUx6NnJTYk05NnZDTkM2UXRPTk4yNzdtTmI2M0ZJYjU0d2Z0Sk1jblVoblV6WTFybnRJS0RwUlQ3MENvMkNMTDNNVGZzWFc5UUUzOGFZdVZ5WE1CTmVtb3BIRmhaRFliQXBIaWdCZlUxQWZKRzJhRVlUVXdpSUZlNDRycVZOQldQZXRPeUY5Zw?oc=5",
+   "p": "Euronews.com",
+   "ts": "2026-10-19T07:25+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "12-V3",
+     "jgst": 12,
+     "titel": "Einkommen und soziale Sicherung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Rheinmetall zieht an, Infineon schmiert ab: DAX-Ausblick",
+   "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVW40OUNPVlNqOVpsRlNUU01rekQxSkstNDFHWnhxSTJQTktDaEhzcUI5YkZMSEsxZ1duYi1QajBmMk1vQXltdC1DZlJQNC1CZ3hONl9BZmdfV1UyZVFVUXFDMFRiYllad1dQVW9vcG1jSjJMd2lUWXFDYzhNRVFNWERxSHFmdVFO?oc=5",
+   "p": "sharedeals.de",
+   "ts": "2026-10-19T07:30+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Ungarns Wirtschaft könnte einen Aufschwung erleben: Experten prognostizieren einen Rückgang des Euro auf 350 HUF",
+   "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNb1BrSmViZ2l3ajliRHZ0amUxWjFuN1hZZXJEOXgydDZtdnZ1RFRibzJhUU9xNFpURURVYlV4ekZoQTA0QWF3eEEybFVUdmhBQTFCLU9FRUdlbklYbUZ2VmNRLWVFckxUNTBxc1NGZTJlVloxWXoyLWUyeWlZcnhLTEdKXzZtNUJQYmRDVG5EYUo5QTJLMnJyRG9MclZGUWItam51Sk9mTWpxS1JDZzFUZmhsQkROSUhVS0hIaWxrLUNlUHJ0SU9ETTZkRFVnQ2ZOaVBFT0N5X0w5M3c2?oc=5",
+   "p": "Daily News Hungary",
+   "ts": "2026-10-19T07:34+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "11-3",
+     "jgst": 11,
+     "titel": "Internationale wirtschaftliche Verflechtung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "12-V1",
+     "jgst": 12,
+     "titel": "Gesamtwirtschaftliche Lage und volkswirtschaftliche Ziele",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "EZB gib grünes Licht: So geht es mit der Commerzbank-Übernahme weiter",
+   "u": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOaGRTRnlEMEphaXByd284Z0FXMnRPejhYRG5QNk1tc0JCNGdGem1YdncyOXBXdXhvZUxUdHUwUGtmLUFrc2tqQk5jYmMtXy12QnN2VDZLVk4tQ2czX3g1VHBCSG5MYjd5dDhQdE9HUUZnS2E2MVVDSjctQ05LR0l6UHU3YXp6UW5YQlI0OVBqWTgxOW5BOVplanhLamN5Z192WmoyWFMzZGRHZk9sLW9VTnRMbHhwNW90R1MzSkFkaHBjSUhJT09mU3pyS29LWGZIV183bHNrRmpFVi1hS0hvQ1pR?oc=5",
+   "p": "Der Aktionär",
+   "ts": "2026-10-19T08:01+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "12-B1",
+     "jgst": 12,
+     "titel": "Unternehmen: Ziele, Markt, Produktion, Finanzierung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "13-V1",
+     "jgst": 13,
+     "titel": "Geld und Preisniveau (Jgst. 13, erhöht)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "So startet der DAX in die Woche - DHL, BTC, Hannover Rück, KI, Musk, Tesla, Google, Microsoft, Fed",
+   "u": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQdFJOWkhNOFR2UFV6RHdPQVl0T2xEdlI0emlqTHhvYjE2M2ZvdVd4ZFR2aWdsbXFvZWtMdnlYMEFtRi0yc2ZwQnBZeWtqeDZLV3F3a3RtOUVLM0dwaE5OdHRVM0ZlQkVyQURtM1ZkcDFmcng4OGpjSTJLelg4YzlZQXV3T1NMMURhM2tsNlNCSDRYNkZUMHpxWG01NDZRZ0V2SXptcWZud2ZJM1dOcFp6R09OSndLUWZjT2VaVm1sZ09wTDliYmcyR0pXTzJxVm9rMlNqRkhZdGR5Z3NfSXNnZ1lFbEpSUQ?oc=5",
+   "p": "Börse Online",
+   "ts": "2026-10-19T08:30+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "11-6",
+     "jgst": 11,
+     "titel": "Globale Zukunftstrends",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Verbraucherpreisindex: Heizöl deutlich teurer",
+   "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQy1ZUVhlNFZWM2d2dVZNMVVlQmcwYVoyTnltTGJGRU5jbndSWVlobmZIVzMwLUZGUG5laF8ydTlwMHhaX2tBTl82ZldycEpxSGxFRW5zNHJmREUyNnowTFdsT1FqalRFdVpsMkN4c0dlV3dmUTdkV2l1ZlFfaUl3N1NEc2lyUm5CaE4ta0NIVWZFdlMwN0hiOVlHeUs4aWNRS2I5WnFqelI4WmRy?oc=5",
+   "p": "WEB.DE",
+   "ts": "2026-10-19T08:45+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "11-1",
+     "jgst": 11,
+     "titel": "Die Wirtschaftsordnung als Handlungsrahmen",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Dax aktuell: Deutscher Leitindex vormittags im Minus – Ölpreis im Fokus",
+   "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNdV9qS1lTbkVIRWRQbGZPOFJEN1ZYQm5kWUcxR2hySmV6NmtLN2VSWDRhU05jM2dYamJPaTIzQ1JKVUFJZmRkNTNYZ3o5UkpIVXIyY1BQV05kaWNFeGtYaDhmUlBLRjBJenJseG5yVHVSaG1GVG8weVhXYnJFTEpSSkE2ZXJtMVpLSTM5ZDhpbklhNmlzMkxhdVNQcHJfWjVMa3RMMjdyVjh6MWlhYS1TSzBnODRpUGtNRlk2b29TVm5CVXY2YURtZVVKYUwwdFhwdm9qV2FvUkN5cXNY?oc=5",
+   "p": "Handelsblatt",
+   "ts": "2026-10-19T09:17+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-1",
+     "jgst": 11,
+     "titel": "Die Wirtschaftsordnung als Handlungsrahmen",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Kanadas VPI dürfte im September einen Anstieg der Inflation zeigen",
+   "u": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA4UWdQbzQ1bUtSNEx6R0ZaM3pROGd3WjNJcTVwZjFiNFNEamFvQnlkNjV0Qm9GWlpCRlRWemVLSHY5SzZzZDVrMjJZZFJIU2U3SzJnX3NsM3c0NFo5aWhLaWFkQW45UUlqZ0E?oc=5",
+   "p": "TradingView",
+   "ts": "2026-10-19T09:30+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "12-V1",
+     "jgst": 12,
+     "titel": "Gesamtwirtschaftliche Lage und volkswirtschaftliche Ziele",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Dax startet 0,7 Prozent schwächer bei 25.445 Punkten",
+   "u": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPR0g1WVYya2NVSV9KQnlYVld5NTlUZWszR2t2NTRYQ3VraWNvSExPUFd2SlFnOTQ3eEZBenFQSVNRWWNORUpoZDRMTGJZMmNhNVMwM05UeHQwNFBqZ2NRN2V2UkM2NFNGeWlYc3ppWWFsTnd2Z0Uxd3Nfb0RIdndSZUFFS1p5UHVXYmp2RlVmNjJtSFBWMUU4?oc=5",
+   "p": "trading-house.net",
+   "ts": "2026-10-19T09:34+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Texas Instruments-Aktie kostet vor Quartalszahlen 251,50 Euro",
+   "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOLW9TUnJ4b2hoWWZpUDFCcnctRU5qTW1qa29vY3E0Mms2Z2U2b1MzWkdPUEZMRTlxdTI0TzVxNWFmalB1YWdyQVRfZmNTckI5UE1oMGdGNVY4RVRtUUVIcU9GbURPOWJyNjhKUkdnbFpCMjRBSEN5VHN2Sk1ienE0eEVySV9fQldrU3JRUE0yekNVc1BXX0txUENJaFRvemJQRGhQTWkzdk5vMjJ4Uzh0RTl2TzVxUXllTmJUT0FzSl9VUQ?oc=5",
+   "p": "ad-hoc-news.de",
+   "ts": "2026-10-19T09:38+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "11-3",
+     "jgst": 11,
+     "titel": "Internationale wirtschaftliche Verflechtung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Verbund-Aktie notiert 0,40 Prozent unter dem Xetra-Schluss",
+   "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQaDNuVG5NMWptWFpZTEZaQ1FuZXRxNmZwQ1hvMlNlU0tEMVNEX2RNTFVaSlMtU3hnRHZiYXNOY1J1azVETzh1RmZLX1FZbmV6Z0E4NVUyVXFoeGQ5bUxPdkI3ZTZMMngyZ2M0NWRqaUJqaDM3X3QtMENiVjFoeWQzcnhxMjM0M3ZQRTRBUENVZWQyMVZLREpWWW9BLUtoZlg5ODl3TjBsM1ZYUHEtdWRRMVVrOTZNZnBkMC1jaTBB?oc=5",
+   "p": "ad-hoc-news.de",
+   "ts": "2026-10-19T09:57+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Honeywell-Aktie liegt 14,06 Prozent unter dem Jahreshoch vor Quartalszahlen",
+   "u": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZ2hOelg2VWU5R1IwLWNxcnBqRUxOS3pPTDR3Y0o1OVAzR1ZxWEF6RzRZQWRfTlZPOEo0V0tOWmdfSW1zR204NnJuSElxVnoxZjJmX2ZkbHhvaHRBUVI3bWdZRi1FaFdNc3lqeDVwSzRrNlB1WFZiOXdxbFExdWhVTWRKdzhoZGdLZWxEQUUyMFlwcHB4R25OeHp3cExzUm1zTWRuMjdtcHZSZVAyNVR2ZHNyWG1tdGN3TlFQNEx4OUctdlNDelN3MFZpUDNMaktncmxZNw?oc=5",
+   "p": "ad-hoc-news.de",
+   "ts": "2026-10-19T09:59+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "12-B1",
+     "jgst": 12,
+     "titel": "Unternehmen: Ziele, Markt, Produktion, Finanzierung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Starboard sieht großes Aufwärtspotenzial bei Skyworks nach Qorvo-Übernahme",
+   "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQUkVVcGQtS0ZNS3N6Sk11dUpoYWg4cW1QdkRUejBBdmI0VW5JMmYwM1pWRmZxWVltMFQ5cmJ1eFA1UHpsU2JqS19URjgtRGdZVmdZcjkwOXJGbGZrazFOR2VZWmhTRk5LQm1HSU9Hcno5eDJpOU5sM2VVMFFlaWc2Z3dKdU1oT0J5SUtDUVhpcHBBUTM1Q1Y1VGdQN2Z5OTA1?oc=5",
+   "p": "aktien.news",
+   "ts": "2026-10-19T10:02+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "12-B1",
+     "jgst": 12,
+     "titel": "Unternehmen: Ziele, Markt, Produktion, Finanzierung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Eni kündigt Quartalszahlen an. Barclays sieht 22,46 Prozent Potenzial für die Eni-Aktie",
+   "u": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOOTN3VFhQQTB1M2ZRQmtsbFlhaVh6aHpYQTBKcFY5TmJoVkQ5TGQ0MVdOOGRFemdGUjdvd2lubVE1alRsRjB4bTZmai1NV1l4OHI4SS1ZZUhoYndkeXRTa3N1dlZZMGFNQzRuLV9XUk5LNTl3ZVhDN0NueVRLTWVBZTJGVDZobTVPOURTSjA3aFZiX2FlLTExTXY4ZHB6SGZ2di01OUJYYllrZTU3UjlsZ2EtbFFaNHgzNGM3S2RXNkFLTHlIeGlGVWMyaDM4YmstUFg0YTZNZUdJVEU3NUVJc2pBaHlPUQ?oc=5",
+   "p": "ad-hoc-news.de",
+   "ts": "2026-10-19T10:09+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "12-B1",
+     "jgst": 12,
+     "titel": "Unternehmen: Ziele, Markt, Produktion, Finanzierung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Phillips 66-Aktie kostet 258,85 Euro vor Quartalszahlen",
+   "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZUhkYmZkcHlXc1JFaDRYYWdWQnJDaXlVUEZrUXV0Z0Y5NGNxMDdBZUQ1bHFLT0owYjk5ZklZOHZKUS10ZERvVE1vNFI1RjR5MWg2dW5QNDNaMG5KZ3JHWWNuVmxuM3ZSdFowdkNYS0RDNWYwSUVnd2RqTTVDWVBWWTBLN2pfSnJOdVFQN0U0ZTBvc05GUTF4Wjk4c3BVOGc4Y1ZMaW4yTDZxZEtsMU5yR2tVWW81dURneFE?oc=5",
+   "p": "ad-hoc-news.de",
+   "ts": "2026-10-19T10:15+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "11-3",
+     "jgst": 11,
+     "titel": "Internationale wirtschaftliche Verflechtung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Kaufkraft in Deutschland steigt nach Jahren hoher Inflation",
+   "u": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4xZ2phX0xyWlFmZVVYSjltaWZFdHN3X3lXZ0VMXzd4bklpak9ucGlHUXpmd2x0RFZwM2ctWnREbXU3VnNVZWJIQ1Z5d2syajJXMzZiVE9UUkNfNmMxTGFRLU1GcWczWXhZVE4tUzVWdDFPVm1H?oc=5",
+   "p": "SuaraGarut.ID",
+   "ts": "2026-10-19T10:44+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "12-V1",
+     "jgst": 12,
+     "titel": "Gesamtwirtschaftliche Lage und volkswirtschaftliche Ziele",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Saudi Telecom bietet Gratisanrufe. Saudi Telecom-Aktie steht vor Quartalszahlen",
+   "u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPNFU2VFR0cWJ6WFg5cjR6OEt2c2FsVnh6TjFuRkdhS2k2VGZLM1Rxb1o5NElGTHV4bUpJVmJVVlU3VUVVbEtKUU1hWExOaE50MFJkY0xKQVRkWjNHWXc1RFQ5OGkya0RrVTFXdHQxbEs3Y2Z5VEhIbVJuVnRVaC1KVHJmRVp2TldsNGpEa0tYTFUtc3U5VVhNTzROR204MU1LYjZha2o5VGpWaXlGMkhQcWQzWkVmREJyVk9BSEZFQ1RXYzJlbGdteUJTNkxFUHFrX1pfcndSekw?oc=5",
+   "p": "ad-hoc-news.de",
+   "ts": "2026-10-19T10:49+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "12-B1",
+     "jgst": 12,
+     "titel": "Unternehmen: Ziele, Markt, Produktion, Finanzierung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "GAP erwartet Quartalszahlen. Was das für die Grupo Aeroportuario del Pacifico-Aktie bedeutet",
+   "u": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOdTBZN3Zjc0ZwNVFEZjdWTlZKWmcxQWtaOXI4NXlYNkJMN3pMbHlZT28zNkdGU3ZDN0Fubl93bzVpVnptZ3BrWXpPdDJMZ2dybFRxNGFLQlQyd1AyMmRURmRTbnVHQlVCX2RLVUQyOVhYX1dXYUltM2dwOHVVSzQ5RmxfOEpuTWNRSTZGd3BPMUd4U3dVWWlDLWU4WTlCV3VOQVEtbHZ3a2lUZkJPc1hLUkFEQ1l2MEZPU0tiNEU3c3JFa2VfdDZVRUY0dUlwVkF2Y2NVU3VXN2VRQ1NWc2tUb1FaVUVRMzJQS2dV?oc=5",
+   "p": "ad-hoc-news.de",
+   "ts": "2026-10-19T10:58+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "12-B1",
+     "jgst": 12,
+     "titel": "Unternehmen: Ziele, Markt, Produktion, Finanzierung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Kanadas Verbraucherpreisindex dürfte im September einen Anstieg der Inflation zeigen",
+   "u": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNc29idTJPYUhQLW5wMWwzR0cyS1V4dUtLTzBiS2JpajdhcmtZQ19iN3pWdHRWQlhDLTlrYlBhVXpDMGh3VGdreGxURHRlS1NsbFB4cXFrS3A3VTlfaE1DRGVMaU5GWlVwbXc0SWQwQ2NuYmxXUVJERnhHTXo1S0Q0SEU2bE5haUxOanNpeWNXaVpyaWtsZjVtdlpmUFJhRmFpWTVpZG1TZ3JzQ2xCQkttTTBNOUlVaTVxTDhRQ0wzVTBaZjBfWHhONw?oc=5",
+   "p": "www.tmgm.com",
+   "ts": "2026-10-19T11:07+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "12-V1",
+     "jgst": 12,
+     "titel": "Gesamtwirtschaftliche Lage und volkswirtschaftliche Ziele",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Konjunktur: Firmenchefs erstmals seit Jahren optimistischer",
+   "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSVBiSVJIaWFYNkkyelcyRjZwUkZiNThwX01HcFcwM3FGT0lPSDlnQnYzUzFjcXBmNHhQUlFtWlloZVlkLTFoRUR4dloza0FHWUx3YVlHZDgxUmlPeno4R0JFdk9CaTBTSHJOb214UzVMYTA1bWVzdjFPbWZxa0FRQjdpTjAteTB1N2JnWG9PdUNVbFc0Y1FFRnNObGEwSlBZNzFCdTdVcVdRMVlFOTBHWmVkZDNNc0U?oc=5",
+   "p": "www.agrarzeitung.de",
+   "ts": "2026-10-19T11:15+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "12-V1",
+     "jgst": 12,
+     "titel": "Gesamtwirtschaftliche Lage und volkswirtschaftliche Ziele",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "EZB-Zinsentscheid am 29. Oktober: Die Folgen für dein Krypto-Depot",
+   "u": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5tTGVjS0NqaThXZ2U0X1QwR2dydnhqQ3BsTHFKeXd6M0tWMHNlc0xrbjJlNlNUclVjRC0tY1JqZ1Q1UXFVaEE2NUNQcmxkZ2lNODBoeWZrTFA2TDNuRlltY01jdWxMc08xSnc?oc=5",
+   "p": "CryptoTicker",
+   "ts": "2026-10-19T11:24+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "13-V1",
+     "jgst": 13,
+     "titel": "Geld und Preisniveau (Jgst. 13, erhöht)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Bundesbank erwartet Inflation bis 2027 auf erhöhtem Niveau",
+   "u": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNFh4alRkSXFiNW44cmdhanN3QkdwbHNzMTYtdFFJbS1XUVNnQ3k2TExVQnlFZW1xX29wZ055T2NiZWEyWXdpUlE0emU0TE9YZ0VhY0w1aUl2Wlp3enlNUktTSW5oQzl3dTBKWm9oNDB2R0FTYjBDTmd3czU3N0N0bVRrblg2UERNTUhlakdiMjlGVWdva2ZBSjllMmhfQmFZSFNPUmxack5vQQ?oc=5",
+   "p": "ad-hoc-news.de",
+   "ts": "2026-10-19T12:00+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "12-V1",
+     "jgst": 12,
+     "titel": "Gesamtwirtschaftliche Lage und volkswirtschaftliche Ziele",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "European Lithium Aktie: Fusionsbedingungen weitgehend erfüllt",
+   "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPLUlGRXZLTThqRDQ0NkswR2Fyb1ZmRkFfaHBrUFMySWpnVGkzVzdFSlZKV2VnTXZwNHFZbGNiWEhyZFZjMEtPd3lOYk5YZlREUDNrUjRTQWtUTnkyTURPMUFCZ215alZHeVdfMGxWYXV5WlNhRTU3LTVGMzY2a0ljZnItZ2kyd3BDTnZtaXlvajc0N2dCMWJHcFhrRDlmZ0xUektFbWV2TGZKbkNlbkZ4d090aw?oc=5",
+   "p": "Börse Express",
+   "ts": "2026-10-19T12:26+02:00",
+   "fach": "BWL",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "12-B1",
+     "jgst": 12,
+     "titel": "Unternehmen: Ziele, Markt, Produktion, Finanzierung",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Warum ein höherer Leitzins das Inflations-Problem nicht löst – und was stattdessen helfen würde",
+   "u": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSFdMemdZVXdzSzF2NU92VV94RzE3YlZkRlRYd0xhRDNXLWdBVkxTRlRvZmFNc3J1UktWZFpXLVZvTC1oUFBNcVRueC1KVVNIVHhfbVF2eFpCY0RTdUdzd0V0MG84OTFueXRMOTQ3cFNqSEttQ1BrZExNRDlSZ0ktcy1wbDZ1XzZIeWpFcWpkY0I3NkdpMUdONmJnbkhQQUdBQ2tQS182M1RReVNLUlJEbC1heEQzblk4MzJIRjhrdEs?oc=5",
+   "p": "taz.de",
+   "ts": "2026-10-19T12:29+02:00",
+   "fach": "VWL",
+   "bezug": [
+    {
+     "id": "12-V1",
+     "jgst": 12,
+     "titel": "Gesamtwirtschaftliche Lage und volkswirtschaftliche Ziele",
+     "niveau": [
+      "vertieft",
+      "nicht_vertieft"
+     ],
+     "score": 1
+    },
+    {
+     "id": "13-V1",
+     "jgst": 13,
+     "titel": "Geld und Preisniveau (Jgst. 13, erhöht)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  },
+  {
+   "t": "Dax fällt 1,3 Prozent auf 25.300 Punkte",
+   "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNQmJaMU5BYWpsNTJyWDl6T2ZoUE9vbVh5RS1uSGJpZXNWYmthNlRYTllFZURqQlZnbGxVYy1SVUt6LU4tTGZQTnZmaHMzOVRQUzh5dmN0Mkx6SDNHRVFldTFqUEVmY1NPLWFKbkZ5MUpncUdzV3Y4SGhWaDVvZDQ0ODNXWjNEdw?oc=5",
+   "p": "trading-house.net",
+   "ts": "2026-10-19T12:30+02:00",
+   "fach": "Kapitalmarkt",
+   "bezug": [
+    {
+     "id": "11-4",
+     "jgst": 11,
+     "titel": "Kapitalmarkt und Geldanlage (nur WWG)",
+     "niveau": [
+      "vertieft"
+     ],
+     "score": 1
+    }
+   ],
+   "passt": "bedingt"
+  }
+ ]
+}
