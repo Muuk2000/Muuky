@@ -48,12 +48,26 @@ select{font:inherit;font-size:.9rem;padding:6px 10px;border-radius:8px;border:1p
 .pill:disabled{opacity:.5;cursor:default}
 .setup input{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;margin-top:8px}
 .setup .btns{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+body.locked>*:not(#gate){display:none!important}
+#gate{max-width:420px;margin:12vh auto 0}
+#gate input{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit;margin:10px 0 8px}
+#gate .err{color:#c0392b;font-size:.88rem;min-height:1.3em}
 footer{color:var(--mute);font-size:.78rem;margin-top:24px}
 .item a{color:var(--ink);text-decoration:none;font-weight:600}
 .item+.item{border-top:1px solid var(--line);margin-top:10px;padding-top:10px}
 </style>
 </head>
-<body>
+<body class="locked">
+<div id="gate" class="card">
+  <h1>Wirtschaft &amp; Lehrplan</h1>
+  <p class="note">Bitte Passwort eingeben.</p>
+  <form id="gateForm" autocomplete="off">
+    <input id="gatePw" type="password" autocomplete="off" autocapitalize="none" autocorrect="off" aria-label="Passwort" placeholder="Passwort">
+    <button class="pill" type="submit" id="gateBtn">Öffnen</button>
+    <div class="err" id="gateErr" role="alert"></div>
+  </form>
+</div>
+
 <header>
   <div class="row" style="align-items:center">
     <h1>Wirtschaft &amp; Lehrplan</h1>
@@ -77,7 +91,7 @@ footer{color:var(--mute);font-size:.78rem;margin-top:24px}
   „Vertieft“ = Wirtschaftswissenschaftliches Gymnasium (Jgst. 11) bzw. erhöhtes Anforderungsniveau (Jgst. 12/13);
   „nicht vertieft“ = übrige Gymnasien (Jgst. 11) bzw. grundlegendes Niveau (Jgst. 12/13).
   Die Einschätzungen sind eine Arbeitshilfe und ersetzen keine fachliche Prüfung. Keine Anlageberatung.
-  <div style="margin-top:8px"><a href="#" id="setupLink">Aktualisieren-Knopf einrichten (nur für den Besitzer)</a></div>
+  <div style="margin-top:8px"><a href="#" id="lockLink">Sperren</a> · <a href="#" id="setupLink">Aktualisieren-Knopf einrichten (nur für den Besitzer)</a></div>
 </footer>
 
 <script>
@@ -253,8 +267,33 @@ function showSetup(){
 }
 $('#refresh').onclick=()=>startUpdate();
 $('#setupLink').onclick=e=>{e.preventDefault();showSetup()};
-showButton();
-loadAll();
+
+/* ---------- Passwortabfrage (nur Sichtschutz im Browser, kein echter Schutz der Daten) ---------- */
+const GATE={salt:'8ffad9755134cc97ec8bc52afa6874b0',iter:250000,hash:'8fb0301d5b324540da488db00f013959c23df347e53221a114b7103dcd73a8f7'};
+const hex=b=>[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('');
+async function gateHash(pw){
+  const salt=Uint8Array.from(GATE.salt.match(/../g).map(h=>parseInt(h,16)));
+  const key=await crypto.subtle.importKey('raw',new TextEncoder().encode(pw.trim().toLowerCase()),'PBKDF2',false,['deriveBits']);
+  return hex(await crypto.subtle.deriveBits({name:'PBKDF2',salt,iterations:GATE.iter,hash:'SHA-256'},key,256));
+}
+let started=false;
+function unlock(){
+  document.body.classList.remove('locked');$('#gate').hidden=true;
+  if(started)return;started=true;showButton();loadAll();
+}
+$('#gateForm').onsubmit=async e=>{
+  e.preventDefault();const err=$('#gateErr');err.textContent='';
+  const pw=$('#gatePw').value;if(!pw)return;
+  $('#gateBtn').disabled=true;
+  try{
+    if(!(window.crypto&&crypto.subtle))throw new Error('Dieser Browser kann das Passwort nicht prüfen (nur über https).');
+    if(await gateHash(pw)===GATE.hash){lsSet('wgate',GATE.hash);unlock()}
+    else{err.textContent='Falsches Passwort.';$('#gatePw').select()}
+  }catch(x){err.textContent=x.message}
+  finally{$('#gateBtn').disabled=false}
+};
+$('#lockLink').onclick=e=>{e.preventDefault();lsDel('wgate');location.reload()};
+if(lsGet('wgate')===GATE.hash)unlock();
 </script>
 </body>
 </html>
