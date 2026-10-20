@@ -269,11 +269,11 @@ $('#refresh').onclick=()=>startUpdate();
 $('#setupLink').onclick=e=>{e.preventDefault();showSetup()};
 
 /* ---------- Passwortabfrage (nur Sichtschutz im Browser, kein echter Schutz der Daten) ---------- */
-const GATE={salt:'8ffad9755134cc97ec8bc52afa6874b0',iter:250000,hash:'8fb0301d5b324540da488db00f013959c23df347e53221a114b7103dcd73a8f7'};
+const GATE={salt:'a6bd7a3bed213057cf299b6b363e1691',iter:250000,hash:'78f8f6c4a6acd5b62f73973f17762e59ea1e151d83642f685c2791a2ddc8f205'};
 const hex=b=>[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('');
 async function gateHash(pw){
   const salt=Uint8Array.from(GATE.salt.match(/../g).map(h=>parseInt(h,16)));
-  const key=await crypto.subtle.importKey('raw',new TextEncoder().encode(pw.trim().toLowerCase()),'PBKDF2',false,['deriveBits']);
+  const key=await crypto.subtle.importKey('raw',new TextEncoder().encode(pw),'PBKDF2',false,['deriveBits']);
   return hex(await crypto.subtle.deriveBits({name:'PBKDF2',salt,iterations:GATE.iter,hash:'SHA-256'},key,256));
 }
 let started=false;
