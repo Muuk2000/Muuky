@@ -62,7 +62,7 @@ footer{color:var(--mute);font-size:.78rem;margin-top:24px}
   <h1>Wirtschaft &amp; Lehrplan</h1>
   <p class="note">Bitte Passwort eingeben.</p>
   <form id="gateForm" autocomplete="off">
-    <input id="gatePw" type="password" autocomplete="off" autocapitalize="none" autocorrect="off" aria-label="Passwort" placeholder="Passwort (Bindestriche und Leerzeichen egal)">
+    <input id="gatePw" type="password" autocomplete="off" autocapitalize="none" autocorrect="off" aria-label="Passwort" placeholder="Passwort">
     <button class="pill" type="submit" id="gateBtn">Öffnen</button>
     <div class="err" id="gateErr" role="alert"></div>
   </form>
@@ -269,11 +269,11 @@ $('#refresh').onclick=()=>startUpdate();
 $('#setupLink').onclick=e=>{e.preventDefault();showSetup()};
 
 /* ---------- Passwortabfrage (nur Sichtschutz im Browser, kein echter Schutz der Daten) ---------- */
-const GATE={salt:'8ffad9755134cc97ec8bc52afa6874b0',iter:250000,hash:'be9a3a7ca7f06b9f1ba960a3c5bf849ce202d64e427c9b5e77f95ab7f0729e52'};
+const GATE={salt:'8ffad9755134cc97ec8bc52afa6874b0',iter:250000,hash:'8fb0301d5b324540da488db00f013959c23df347e53221a114b7103dcd73a8f7'};
 const hex=b=>[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('');
 async function gateHash(pw){
   const salt=Uint8Array.from(GATE.salt.match(/../g).map(h=>parseInt(h,16)));
-  const key=await crypto.subtle.importKey('raw',new TextEncoder().encode(pw.toLowerCase().replace(/[^a-z0-9]/g,'')),'PBKDF2',false,['deriveBits']);
+  const key=await crypto.subtle.importKey('raw',new TextEncoder().encode(pw.trim().toLowerCase()),'PBKDF2',false,['deriveBits']);
   return hex(await crypto.subtle.deriveBits({name:'PBKDF2',salt,iterations:GATE.iter,hash:'SHA-256'},key,256));
 }
 let started=false;
