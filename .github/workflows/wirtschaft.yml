@@ -1,11 +1,11 @@
 name: Wirtschaft und Lehrplan aktualisieren
 on:
-  schedule:
-    # Täglich, auch am Wochenende. Ziel: 06:45 deutscher Zeit (Sommerzeit = 04:45 UTC, Winterzeit = 05:45 UTC).
-    # GitHub startet geplante Läufe oft Stunden zu spät. Deshalb gibt es kein Zeitfenster mehr,
-    # sondern nur die Regel "pro Tag höchstens eine Aktualisierung" (Doppeleintrag Sommer-/Winterzeit).
-    - cron: "45 4 * * *"
-    - cron: "45 5 * * *"
+  # Tägliches Update ausgeschaltet (20.10.2026, auf Wunsch des Besitzers).
+  # Aktualisiert wird nur noch per Knopf auf der Seite oder von Hand unter "Actions, Run workflow".
+  # Zum Wiedereinschalten diesen Block unter "on:" ergänzen:
+  #   schedule:
+  #     - cron: "45 4 * * *"
+  #     - cron: "45 5 * * *"
   workflow_dispatch:
 permissions:
   contents: write
