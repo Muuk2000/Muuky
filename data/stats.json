@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T00:29+00:00",
+ "generated": "2026-10-20T23:59+00:00",
  "demo": false,
  "live": {
   "n": 28,
@@ -61,64 +61,64 @@
  },
  "live_offen": 0,
  "backtest": {
-  "n": 5745,
-  "hits": 2852,
+  "n": 5762,
+  "hits": 2856,
   "rate": 49.6,
   "ci": 1.3,
   "base_up": 52.1,
-  "edge": -2.4,
+  "edge": -2.5,
   "by_group": {
    "Welt-Indizes": {
-    "n": 1561,
-    "rate": 47.8
+    "n": 1563,
+    "rate": 47.7
    },
    "Finanzen": {
-    "n": 1039,
-    "rate": 49.9
+    "n": 1042,
+    "rate": 50.0
    },
    "Industrie": {
     "n": 997,
     "rate": 50.7
    },
    "Rohstoffe": {
-    "n": 942,
-    "rate": 51.5
+    "n": 947,
+    "rate": 51.4
    },
    "AI": {
-    "n": 1206,
-    "rate": 49.6
+    "n": 1213,
+    "rate": 49.2
    }
   },
   "by_direction": {
    "steigt": {
-    "n": 3186,
+    "n": 3181,
     "rate": 51.4
    },
    "fällt": {
-    "n": 2559,
-    "rate": 47.4
+    "n": 2581,
+    "rate": 47.3
    }
   },
   "by_component": {
    "Trend (Kurs über/unter SMA50)": {
-    "n": 5745,
+    "n": 5762,
     "rate": 49.6
    },
    "Momentum (5 Tage)": {
-    "n": 5734,
+    "n": 5751,
     "rate": 48.8
    },
    "RSI-Extreme (Gegenbewegung)": {
-    "n": 538,
-    "rate": 53.7
+    "n": 539,
+    "rate": 53.8
    },
    "Relative Stärke (Frühindikator)": {
-    "n": 3521,
-    "rate": 51.0
+    "n": 3533,
+    "rate": 50.9
    }
   },
-  "tage_x_werte": 8307,
-  "abdeckung": 69.4
+  "tage_x_werte": 8342,
+  "abdeckung": 69.3
  },
  "recent": [
   {
