@@ -45,7 +45,7 @@ UNIVERSE = {
     },
     "Gesundheit & Pharma": {
         "XLV": "Gesundheit (US, ETF)", "IBB": "Biotech (US, ETF)", "LLY": "Eli Lilly",
-        "NVO": "Novo Nordisk", "ROG.SW": "Roche", "BAYN.DE": "Bayer",
+        "NVO": "Novo Nordisk", "RHHBY": "Roche (ADR)", "BAYN.DE": "Bayer",
     },
     "Edelmetalle": {
         "GC=F": "Gold", "SI=F": "Silber", "PL=F": "Platin", "PA=F": "Palladium",
