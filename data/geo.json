@@ -1,19 +1,13 @@
 {
- "generated": "2026-10-15T07:25+00:00",
+ "generated": "2026-10-25T08:53+00:00",
  "pairs": [
   {
-   "tone_now": -2.85,
-   "tone_base": -2.16,
-   "tone_z": -1.35,
-   "tension_ratio": 0.76,
-   "state": "Anspannung steigt",
+   "tone_now": -2.18,
+   "tone_base": -2.7,
+   "tone_z": 0.42,
+   "tension_ratio": null,
+   "state": "unverändert",
    "spark": [
-    -1.93,
-    -1.6,
-    -1.59,
-    -2.17,
-    -1.84,
-    -1.27,
     -2.97,
     -2.96,
     -2.51,
@@ -22,23 +16,28 @@
     -2.53,
     -6.42,
     0.0,
-    -2.13
+    -2.13,
+    -3.56,
+    -2.12,
+    -3.96,
+    -3.13,
+    -2.66,
+    -2.61,
+    -1.88,
+    -1.99,
+    -2.22,
+    -2.45,
+    -1.88
    ],
    "pair": "USA – Russland"
   },
   {
-   "tone_now": -2.31,
-   "tone_base": -1.65,
-   "tone_z": -1.66,
-   "tension_ratio": 0.5,
-   "state": "Anspannung steigt",
+   "tone_now": -1.09,
+   "tone_base": -1.91,
+   "tone_z": 0.91,
+   "tension_ratio": null,
+   "state": "unverändert",
    "spark": [
-    -1.45,
-    -1.6,
-    -1.67,
-    -1.83,
-    -1.36,
-    -1.37,
     -0.77,
     -1.5,
     -2.01,
@@ -47,7 +46,18 @@
     -2.01,
     -4.46,
     0.0,
-    -2.47
+    -2.47,
+    -1.65,
+    -2.23,
+    -2.56,
+    -1.52,
+    -2.28,
+    -1.67,
+    -1.35,
+    -1.62,
+    -0.98,
+    -1.32,
+    -0.97
    ],
    "pair": "China – Russland"
   }
@@ -55,28 +65,28 @@
  "markets": [
   {
    "name": "S&P 500",
-   "d1": -1.11,
-   "m1": 1.76
+   "d1": -0.52,
+   "m1": -1.04
   },
   {
    "name": "Luft/Rüstung (ETF)",
-   "d1": 0.12,
-   "m1": -4.56
+   "d1": -1.1,
+   "m1": -4.95
   },
   {
    "name": "Rheinmetall",
-   "d1": 3.37,
-   "m1": -4.19
-  },
-  {
-   "name": "Gold",
-   "d1": 1.37,
-   "m1": -5.09
+   "d1": 0.39,
+   "m1": 2.93
   },
   {
    "name": "Öl (WTI)",
-   "d1": -1.16,
-   "m1": -8.24
+   "d1": 3.82,
+   "m1": 9.15
+  },
+  {
+   "name": "Gold",
+   "d1": -1.29,
+   "m1": -6.75
   }
  ],
  "note": "Automatische Auswertung der Medien-Stimmung (GDELT), kein Lagebericht. Viel Rauschen."

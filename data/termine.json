@@ -1,16 +1,6 @@
 {
  "events": [
   {
-   "date": "2026-10-15",
-   "what": "Quartalszahlen TSMC",
-   "kind": "earnings"
-  },
-  {
-   "date": "2026-10-20",
-   "what": "Quartalszahlen GE Aerospace",
-   "kind": "earnings"
-  },
-  {
    "date": "2026-10-28",
    "what": "US-Notenbank Fed: Zinsentscheid",
    "kind": "notenbank"
@@ -26,6 +16,11 @@
    "kind": "earnings"
   },
   {
+   "date": "2026-10-28",
+   "what": "Quartalszahlen Alphabet",
+   "kind": "earnings"
+  },
+  {
    "date": "2026-10-29",
    "what": "EZB: Zinsentscheid",
    "kind": "notenbank"
@@ -36,8 +31,18 @@
    "kind": "earnings"
   },
   {
+   "date": "2026-10-29",
+   "what": "Quartalszahlen Eli Lilly",
+   "kind": "earnings"
+  },
+  {
    "date": "2026-11-02",
    "what": "Quartalszahlen Palantir",
+   "kind": "earnings"
+  },
+  {
+   "date": "2026-11-03",
+   "what": "Quartalszahlen Bayer",
    "kind": "earnings"
   },
   {
@@ -46,8 +51,43 @@
    "kind": "earnings"
   },
   {
+   "date": "2026-11-04",
+   "what": "Quartalszahlen Novo Nordisk",
+   "kind": "earnings"
+  },
+  {
    "date": "2026-11-05",
    "what": "Quartalszahlen Rheinmetall",
+   "kind": "earnings"
+  },
+  {
+   "date": "2026-11-05",
+   "what": "Quartalszahlen Hensoldt",
+   "kind": "earnings"
+  },
+  {
+   "date": "2026-11-10",
+   "what": "Quartalszahlen Infineon",
+   "kind": "earnings"
+  },
+  {
+   "date": "2026-11-11",
+   "what": "Quartalszahlen RWE",
+   "kind": "earnings"
+  },
+  {
+   "date": "2026-11-11",
+   "what": "Quartalszahlen E.ON",
+   "kind": "earnings"
+  },
+  {
+   "date": "2026-11-12",
+   "what": "Quartalszahlen Allianz",
+   "kind": "earnings"
+  },
+  {
+   "date": "2026-11-12",
+   "what": "Quartalszahlen Siemens",
    "kind": "earnings"
   }
  ],

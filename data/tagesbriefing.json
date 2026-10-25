@@ -1,67 +1,67 @@
 {
- "generated": "2026-10-15T08:13+00:00",
+ "generated": "2026-10-25T08:56+00:00",
  "mode": "regelbasiert",
- "date": "2026-10-15",
- "words": 336,
+ "date": "2026-10-25",
+ "words": 332,
  "sections": [
   {
    "title": "Marktüberblick",
    "lines": [
-    "Stand 15.10.2026: 2 von 13 Weltindizes im Plus (Ø -1,3 %).",
-    "USA: Dow Jones -0,1 %, S&P 500 -1,1 %, Nasdaq 100 -2,0 %.",
-    "Europa: DAX -0,2 %, Euro Stoxx 50 -0,6 %, FTSE 100 +0,3 %.",
-    "Asien/Pazifik: Nikkei 225 -4,9 %, Hang Seng -1,1 %, Shanghai Comp. -1,6 %, Kospi -7,6 %, ASX 200 -0,1 %."
+    "Stand 25.10.2026: 5 von 13 Weltindizes im Plus (Ø -0,1 %).",
+    "USA: Dow Jones -1,2 %, S&P 500 -0,5 %, Nasdaq 100 -0,0 %.",
+    "Europa: DAX -0,8 %, Euro Stoxx 50 -0,3 %, FTSE 100 -0,3 %.",
+    "Asien/Pazifik: Nikkei 225 -0,3 %, Hang Seng +0,7 %, Shanghai Comp. +0,9 %, Kospi +0,3 %, ASX 200 +0,0 %."
    ]
   },
   {
    "title": "Branchen",
    "lines": [
-    "Stärkste Branchen heute: Energie (US, ETF) +0,6 %, Versicherer (US, ETF) +0,2 %. Schwächste: Halbleiter (ETF) -4,0 %, AI & Big Data (ETF) -2,9 %.",
-    "Frühsignal (relative Stärke dreht nach oben, Kurs noch nicht bestätigt): Transport (ETF), Materialien (US, ETF), Financials (US, ETF), Versicherer (US, ETF).",
-    "Rohstoffe als mögliche Treiber: Gold +1,4 %, Öl (WTI) -0,9 %, Kupfer -1,1 %, US-Erdgas +1,9 %."
+    "Stärkste Branchen heute: Energie (US, ETF) +2,6 %, Robotik & AI (ETF) +1,0 %. Schwächste: Rüstung Europa (ETF) -4,1 %, Versicherer (US, ETF) -2,3 %.",
+    "Frühsignal (relative Stärke dreht nach oben, Kurs noch nicht bestätigt): Financials (US, ETF), Transport (ETF), Banken (US, ETF), Biotech (US, ETF).",
+    "Rohstoffe als mögliche Treiber: Gold -1,3 %, Öl (WTI) +3,8 %, Kupfer +2,3 %, US-Erdgas +9,1 %.",
+    "Zinsen und Währungen: US-Rendite 10 J. +0,7 %, Euro/Dollar -0,3 %, Dollar-Index +0,2 %."
    ]
   },
   {
    "title": "Auffällige Einzelwerte",
    "lines": [
-    "Rheinmetall +6,2 % (Frühsignal: relative Stärke dreht nach oben (+10,7 % in 5 Tagen), Kurs noch nicht bestätigt). Schlagzeile: „Rheinmetall-Aktie: Geht's jetzt zurück auf 1.000 €?“ (sharedeals.de).",
-    "AMD -5,7 % (Frühwarnung: relative Stärke lässt nach (-10,5 % in 5 Tagen), Kurs hält noch). Schlagzeile: „Radeon-Grafikkarten: AMD erhöht Preise für mehrere Modelle“ (PCGH).",
-    "Palantir -3,7 % (Starke Tagesbewegung -3,7 %). Schlagzeile: „Palantir: Kursziel 265 Dollar – und zwei AKTIONÄR-Tipps“ (Der Aktionär)."
+    "GE Aerospace -2,7 % (RSI 26: überverkauft - mögliche Gegenbewegung). Schlagzeile: „GE Aerospace (ex General Electric) Aktie News: GE Aerospace (ex General Electric) am Freitagabend im Minusbereich“ (Finanzen.net).",
+    "Eli Lilly -2,5 % (Starke Tagesbewegung -2,5 %). Schlagzeile: „Eli Lilly Aktie News: Investoren trennen sich am Abend vermehrt von Eli Lilly“ (Finanzen.net).",
+    "Micron +2,5 %. Schlagzeile: „Erholungsversuch bei Micron-Aktie: Werden die China-Sorgen zur Kaufgelegenheit?“ (Finanzen.net)."
    ]
   },
   {
    "title": "Wirtschaft und Geopolitik",
    "lines": [
-    "USA – Russland: Medienstimmung „Anspannung steigt“ (Ton -2,9 gegenüber -2,2 im 30-Tage-Schnitt).",
-    "China – Russland: Medienstimmung „Anspannung steigt“ (Ton -2,3 gegenüber -1,6 im 30-Tage-Schnitt).",
-    "Erdgas Europa (TTF): 87,1 €/MWh, -0,1 % heute, Lage „Preisdruck steigt“.",
-    "Bitcoin: 81.205 $, -0,4 % heute, Lage „eher bullisch“.",
+    "USA – Russland: Medienstimmung „unverändert“ (Ton -2,2 gegenüber -2,7 im 30-Tage-Schnitt).",
+    "China – Russland: Medienstimmung „unverändert“ (Ton -1,1 gegenüber -1,9 im 30-Tage-Schnitt).",
+    "Erdgas Europa (TTF): 93,8 €/MWh, +4,2 % heute, Lage „Preisdruck steigt“.",
+    "Bitcoin: 80.298 $, -0,6 % heute, Lage „eher bullisch“.",
     "Konjunkturdaten sind nicht hinterlegt; keine Aussage dazu."
    ]
   },
   {
    "title": "Stimmung",
    "lines": [
-    "VIX 17,5 (+3,4 %): normale Schwankung; im Jahresvergleich Perzentil 56.",
-    "25 % der beobachteten Werte liegen über SMA50 und SMA200 (intakter Trend); 2 überkauft (RSI ≥ 70), 2 überverkauft (RSI ≤ 30).",
-    "Gesamtbild: eher vorsichtig."
+    "VIX 19,5 (+2,2 %): normale Schwankung; im Jahresvergleich Perzentil 78.",
+    "24 % der beobachteten Werte liegen über SMA50 und SMA200 (intakter Trend); 1 überkauft (RSI ≥ 70), 6 überverkauft (RSI ≤ 30).",
+    "Gesamtbild: gemischt/neutral."
    ]
   },
   {
    "title": "Ausblick",
    "lines": [
-    "15.10.: Quartalszahlen TSMC",
-    "20.10.: Quartalszahlen GE Aerospace",
     "28.10.: US-Notenbank Fed: Zinsentscheid",
     "28.10.: Quartalszahlen Deutsche Bank",
     "28.10.: Quartalszahlen Microsoft",
+    "28.10.: Quartalszahlen Alphabet",
+    "29.10.: EZB: Zinsentscheid",
     "Beobachten: Hält die relative Stärke der führenden Branchen? Bleiben überkaufte Werte oben, oder kommt ein Rücksetzer?"
    ]
   },
   {
    "title": "Anlegerperspektive",
    "lines": [
-    "Geopolitische Anspannung kann Rohstoffe, Rüstung und Schwankung treiben.",
     "Beobachtungen aus Kursdaten, keine Anlageberatung und keine Prognose."
    ]
   }
