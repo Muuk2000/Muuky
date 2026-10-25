@@ -5,6 +5,11 @@ on:
     # Beide Zeiten sind eingetragen, der Schritt "Zeitfenster prüfen" lässt je nur den passenden Lauf durch.
     - cron: "45 4 * * 1-5"
     - cron: "45 5 * * 1-5"
+    # Sicherheitsnetz (25.10.2026): GitHub startet geplante Läufe oft Stunden zu spät.
+    # Zusätzliche Versuche; der erste, der im Fenster ankommt, aktualisiert, die übrigen werden übersprungen.
+    # Pünktlich um 06:45 startet den Lauf ein externer Wecker (cron-job.org) per workflow_dispatch.
+    - cron: "7 6 * * 1-5"
+    - cron: "7 7 * * 1-5"
     - cron: "30 21 * * 1-5"   # Abends nach US-Börsenschluss: Prognosen auswerten
   workflow_dispatch:
     inputs:
@@ -35,9 +40,9 @@ jobs:
           [ "${{ github.event_name }}" = "schedule" ] || exit 0
           [ "${{ github.event.schedule }}" = "30 21 * * 1-5" ] && exit 0
           H=$(TZ=Europe/Berlin date +%H%M)
-          # nur zwischen 06:30 und 09:30 deutscher Zeit (GitHub verzögert Läufe gelegentlich)
-          if [ "$H" -lt 0630 ] || [ "$H" -gt 0930 ]; then echo "Außerhalb des Fensters ($H) - übersprungen"; echo "run=false" >> "$GITHUB_OUTPUT"; exit 0; fi
-          # schon ein Morgenlauf heute? (verhindert Doppellauf bei Sommer-/Winterzeit-Eintrag)
+          # nur zwischen 06:30 und 13:30 deutscher Zeit (GitHub verzögert Läufe teils um 5 Stunden)
+          if [ "$H" -lt 0630 ] || [ "$H" -gt 1330 ]; then echo "Außerhalb des Fensters ($H) - übersprungen"; echo "run=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          # schon ein Morgenlauf heute? (verhindert Doppelläufe: Sommer-/Winterzeit, Sicherheitsnetz, externer Wecker)
           TODAY=$(TZ=Europe/Berlin date +%F)
           GEN=$(python3 -c "import json;print(json.load(open('data/briefing.json'))['generated'])" 2>/dev/null || true)
           if [ -n "$GEN" ]; then

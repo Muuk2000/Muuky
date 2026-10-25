@@ -28,7 +28,7 @@ def items_of(briefing):
     return [i for g in briefing["groups"] for i in g["items"]]
 
 def is_single(i):
-    return not (i["symbol"].startswith("^") or i["symbol"].endswith("=F") or i["symbol"].endswith(".SS") or "ETF" in i["name"])
+    return not (i["symbol"].startswith("^") or i["symbol"].endswith("=F") or i["symbol"].endswith("=X") or i["symbol"] in ("DX-Y.NYB",) or i["symbol"].endswith(".SS") or "ETF" in i["name"])
 
 def context(briefing, geo=None, btc=None, gas=None, vix=None, termine=None, date=None):
     its = items_of(briefing)
@@ -40,7 +40,7 @@ def context(briefing, geo=None, btc=None, gas=None, vix=None, termine=None, date
         "stand_daten": briefing["generated"],
         "indizes": [keep(i) for i in briefing["groups"][0]["items"]],
         "branchen_etf": [keep(by[r["symbol"]]) | {"rel_staerke_20t": r["rs20"], "status": r["state"]} for r in briefing.get("rotation", []) if r["symbol"] in by],
-        "rohstoffe": [keep(i) for g in briefing["groups"] if g["name"] == "Rohstoffe" for i in g["items"] if i["symbol"].endswith("=F")],
+        "rohstoffe": [keep(i) for g in briefing["groups"] for i in g["items"] if i["symbol"].endswith("=F")],
         "einzelwerte_groesste_bewegungen": [keep(i) | {"signale": i.get("signals", [])[:2], "schlagzeilen": [n["t"] for n in i.get("news", [])[:2]]} for i in mv],
         "geopolitik_medienstimmung": [{k: p.get(k) for k in ("pair", "state", "tone_now", "tone_base", "tension_ratio")} for p in (geo or {}).get("pairs", [])],
         "bitcoin": {k: btc.get(k) for k in ("price", "d1", "d7", "d30", "rsi", "state", "why")} if btc else None,
@@ -87,6 +87,9 @@ def rule_text(briefing, geo=None, btc=None, gas=None, vix=None, termine=None, da
     rs = join(nm(s, l) for s, l in (("GC=F", "Gold"), ("CL=F", "Öl (WTI)"), ("HG=F", "Kupfer"), ("NG=F", "US-Erdgas")))
     if rs:
         L.append("Rohstoffe als mögliche Treiber: " + rs + ".")
+    zw = join(nm(s, l) for s, l in (("^TNX", "US-Rendite 10 J."), ("EURUSD=X", "Euro/Dollar"), ("DX-Y.NYB", "Dollar-Index")))
+    if zw:
+        L.append("Zinsen und Währungen: " + zw + ".")
     S.append({"title": "Branchen", "lines": L or ["Keine Branchendaten."]})
 
     # Einzelwerte

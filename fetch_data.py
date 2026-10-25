@@ -12,7 +12,7 @@ import pandas as pd
 
 OUT = Path(__file__).parent / "data" / "briefing.json"
 BENCH = "ACWI"  # Welt-Aktien-ETF als Vergleichsmaßstab für die relative Stärke
-SECTORS = {"XLF", "KBE", "KIE", "EUFN", "XLI", "ITA", "IYT", "XLE", "XLB", "SMH", "AIQ", "BOTZ"}
+SECTORS = {"XLF", "KBE", "KIE", "EUFN", "XLI", "ITA", "EUAD", "IYT", "XLE", "XLU", "XLV", "IBB", "XLB", "COPX", "SMH", "SOXX", "AIQ", "BOTZ"}
 
 UNIVERSE = {
     "Welt-Indizes": {
@@ -21,24 +21,51 @@ UNIVERSE = {
         "^HSI": "Hang Seng", "000001.SS": "Shanghai Comp.", "^NSEI": "Nifty 50",
         "^BVSP": "Bovespa", "^AXJO": "ASX 200", "^KS11": "Kospi",
     },
+    "Zinsen & Währungen": {
+        "^TNX": "US-Rendite 10 J.", "^FVX": "US-Rendite 5 J.", "^IRX": "US-Rendite 3 M.",
+        "EXX6.DE": "Bundesanleihen (ETF)", "EURUSD=X": "Euro/US-Dollar", "DX-Y.NYB": "Dollar-Index",
+        "JPY=X": "US-Dollar/Yen", "EURCHF=X": "Euro/Franken",
+    },
     "Finanzen": {
         "XLF": "Financials (US, ETF)", "KBE": "Banken (US, ETF)", "KIE": "Versicherer (US, ETF)",
         "EUFN": "Finanzen Europa (ETF)", "JPM": "JPMorgan", "GS": "Goldman Sachs",
         "ALV.DE": "Allianz", "DBK.DE": "Deutsche Bank",
     },
     "Industrie": {
-        "XLI": "Industrials (US, ETF)", "ITA": "Luft/Rüstung (ETF)", "IYT": "Transport (ETF)",
-        "CAT": "Caterpillar", "GE": "GE Aerospace", "SIE.DE": "Siemens", "RHM.DE": "Rheinmetall",
+        "XLI": "Industrials (US, ETF)", "IYT": "Transport (ETF)",
+        "CAT": "Caterpillar", "GE": "GE Aerospace", "SIE.DE": "Siemens",
     },
-    "Rohstoffe": {
-        "GC=F": "Gold", "SI=F": "Silber", "CL=F": "WTI Öl", "BZ=F": "Brent Öl",
-        "NG=F": "Erdgas", "HG=F": "Kupfer", "XLE": "Energie (US, ETF)", "XLB": "Materialien (US, ETF)",
+    "Rüstung": {
+        "ITA": "Luft/Rüstung US (ETF)", "EUAD": "Rüstung Europa (ETF)", "RHM.DE": "Rheinmetall",
+        "HAG.DE": "Hensoldt", "BA.L": "BAE Systems", "LMT": "Lockheed Martin",
+    },
+    "Energie & Versorger": {
+        "CL=F": "WTI Öl", "BZ=F": "Brent Öl", "NG=F": "Erdgas (US)", "XLE": "Energie (US, ETF)",
+        "XLU": "Versorger (US, ETF)", "RWE.DE": "RWE", "EOAN.DE": "E.ON",
+    },
+    "Gesundheit & Pharma": {
+        "XLV": "Gesundheit (US, ETF)", "IBB": "Biotech (US, ETF)", "LLY": "Eli Lilly",
+        "NVO": "Novo Nordisk", "ROG.SW": "Roche", "BAYN.DE": "Bayer",
+    },
+    "Edelmetalle": {
+        "GC=F": "Gold", "SI=F": "Silber", "PL=F": "Platin", "PA=F": "Palladium",
+    },
+    "Industriemetalle": {
+        "HG=F": "Kupfer", "ALI=F": "Aluminium", "COPX": "Kupferminen (ETF)", "XLB": "Materialien (US, ETF)",
+    },
+    "Halbleiter": {
+        "SMH": "Halbleiter (ETF)", "SOXX": "Halbleiter US (ETF)", "TSM": "TSMC", "AMD": "AMD",
+        "ASML": "ASML", "AVGO": "Broadcom", "IFX.DE": "Infineon", "MU": "Micron",
     },
     "AI": {
-        "NVDA": "Nvidia", "MSFT": "Microsoft", "AMD": "AMD", "TSM": "TSMC",
-        "PLTR": "Palantir", "SMH": "Halbleiter (ETF)", "AIQ": "AI & Big Data (ETF)", "BOTZ": "Robotik & AI (ETF)",
+        "NVDA": "Nvidia", "MSFT": "Microsoft", "GOOGL": "Alphabet", "PLTR": "Palantir",
+        "AIQ": "AI & Big Data (ETF)", "BOTZ": "Robotik & AI (ETF)",
     },
 }
+# Zinsen, Währungen und Terminkontrakte: keine relative Stärke gegen den Aktien-Vergleichsmaßstab
+RATES = {"^TNX", "^FVX", "^IRX", "DX-Y.NYB"}
+def no_rs(sym):
+    return sym.endswith("=F") or sym.endswith("=X") or sym in RATES
 
 def rsi(close, n=14):
     d = close.diff()
@@ -103,7 +130,7 @@ def analyse(sym, name, df, bench=None):
             if 2 <= ratio <= 30 and abs(d1) >= 1.5:
                 sig.append((7 + ratio, f"Volumen {ratio:.1f}x über Schnitt bei {d1:+.1f} % - Bewegung mit Überzeugung"))
     # --- Frühindikator: relative Stärke gegenüber dem Weltmarkt ---
-    if bench is not None and not sym.endswith("=F") and sym != BENCH and len(close) > 40:
+    if bench is not None and not no_rs(sym) and sym != BENCH and len(close) > 40:
         b = bench.reindex(close.index, method="ffill")
         rs = (close / b).dropna()
         if len(rs) > 40:
@@ -259,7 +286,7 @@ def backtest(data, bench, days=200):
         close = df["Close"].dropna()
         if len(close) < 120:
             continue
-        f = features(close, bench, futures=sym.endswith("=F"))
+        f = features(close, bench, futures=no_rs(sym))
         nxt = (close.shift(-1) / close - 1) * 100
         valid = f.index[60:]
         valid = [t for t in valid if not math.isnan(nxt.loc[t])][-days:]
@@ -522,7 +549,7 @@ def main():
                         cl = cl[cl.index < today]
                         if len(cl) > 80:
                             f = features(cl, bench[bench.index < today] if bench is not None else None,
-                                         futures=sym.endswith("=F")).iloc[-1]
+                                         futures=no_rs(sym)).iloc[-1]
                             if abs(f["score"]) >= THRESH:
                                 it["forecast"] = "up" if f["score"] > 0 else "down"
                                 it["_fc"] = (float(f["score"]), {c: float(f[c]) for c in COMPS}, float(cl.iloc[-1]), name)

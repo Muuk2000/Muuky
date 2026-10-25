@@ -1,7 +1,13 @@
 # Markt-Briefing
 
 Tägliches Briefing und kurzfristige Marktsignale als mobile Webseite (PWA).
-Welt-Indizes, Finanzen, Industrie, Rohstoffe, AI, Geopolitik, Bitcoin, Erdgas EU, Trefferquote.
+Welt-Indizes, Zinsen & Währungen, Finanzen, Industrie, Rüstung, Energie & Versorger, Gesundheit & Pharma, Edelmetalle, Industriemetalle, Halbleiter, AI, Geopolitik, Bitcoin, Erdgas EU, Trefferquote.
+
+## Zeitplan
+
+GitHub startet geplante Läufe oft Stunden zu spät (Okt. 2026: ca. 5 Stunden). Deshalb:
+- Pünktlicher Start um 06:45 Uhr über einen externen Wecker (cron-job.org), der `workflow_dispatch` aufruft (Schlüssel nur mit Actions-Recht für dieses Repo).
+- Sicherheitsnetz: vier geplante Versuche, Zeitfenster 06:30 bis 13:30 Uhr; es aktualisiert nur der erste Lauf des Tages.
 
 Keine Anlageberatung.
 
