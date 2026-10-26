@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T08:52+00:00",
+ "generated": "2026-10-26T10:33+00:00",
  "demo": false,
  "live": {
   "n": 28,
@@ -55,54 +55,54 @@
    }
   }
  },
- "live_offen": 0,
+ "live_offen": 60,
  "backtest": {
-  "n": 9784,
-  "hits": 4838,
+  "n": 9918,
+  "hits": 4901,
   "rate": 49.4,
   "ci": 1.0,
   "base_up": 51.4,
   "edge": -2.0,
   "by_group": {
    "Welt-Indizes": {
-    "n": 1577,
-    "rate": 47.9
+    "n": 1578,
+    "rate": 47.7
    },
    "Zinsen & Währungen": {
-    "n": 879,
-    "rate": 50.5
+    "n": 876,
+    "rate": 50.6
    },
    "Finanzen": {
     "n": 1039,
     "rate": 50.0
    },
    "Industrie": {
-    "n": 687,
-    "rate": 50.2
+    "n": 686,
+    "rate": 50.1
    },
    "Rüstung": {
-    "n": 896,
-    "rate": 50.2
+    "n": 895,
+    "rate": 50.3
    },
    "Energie & Versorger": {
     "n": 917,
-    "rate": 52.2
+    "rate": 52.1
    },
    "Gesundheit & Pharma": {
-    "n": 712,
-    "rate": 48.5
+    "n": 848,
+    "rate": 48.8
    },
    "Edelmetalle": {
-    "n": 446,
+    "n": 448,
     "rate": 47.3
    },
    "Industriemetalle": {
-    "n": 509,
-    "rate": 47.0
+    "n": 510,
+    "rate": 46.9
    },
    "Halbleiter": {
-    "n": 1239,
-    "rate": 50.1
+    "n": 1238,
+    "rate": 50.2
    },
    "AI": {
     "n": 883,
@@ -111,34 +111,34 @@
   },
   "by_direction": {
    "steigt": {
-    "n": 5282,
+    "n": 5337,
     "rate": 50.7
    },
    "fällt": {
-    "n": 4502,
-    "rate": 48.0
+    "n": 4581,
+    "rate": 47.9
    }
   },
   "by_component": {
    "Trend (Kurs über/unter SMA50)": {
-    "n": 9784,
+    "n": 9918,
     "rate": 49.4
    },
    "Momentum (5 Tage)": {
-    "n": 9752,
-    "rate": 48.7
+    "n": 9885,
+    "rate": 48.6
    },
    "RSI-Extreme (Gegenbewegung)": {
-    "n": 861,
-    "rate": 52.7
+    "n": 864,
+    "rate": 53.0
    },
    "Relative Stärke (Frühindikator)": {
-    "n": 5809,
+    "n": 5909,
     "rate": 50.8
    }
   },
-  "tage_x_werte": 14090,
-  "abdeckung": 69.8
+  "tage_x_werte": 14266,
+  "abdeckung": 69.9
  },
  "recent": [
   {
