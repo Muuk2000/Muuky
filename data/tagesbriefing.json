@@ -1,50 +1,50 @@
 {
- "generated": "2026-10-26T10:36+00:00",
+ "generated": "2026-10-27T10:07+00:00",
  "mode": "regelbasiert",
- "date": "2026-10-26",
- "words": 327,
+ "date": "2026-10-27",
+ "words": 317,
  "sections": [
   {
    "title": "Marktüberblick",
    "lines": [
-    "Stand 26.10.2026: 8 von 13 Weltindizes im Plus (Ø -0,0 %).",
-    "USA: Dow Jones -1,2 %, S&P 500 -0,5 %, Nasdaq 100 -0,0 %.",
-    "Europa: DAX +0,9 %, Euro Stoxx 50 +0,5 %, FTSE 100 +0,4 %.",
-    "Asien/Pazifik: Nikkei 225 -0,8 %, Hang Seng +0,5 %, Shanghai Comp. +0,2 %, Kospi -1,5 %, ASX 200 +0,2 %."
+    "Stand 27.10.2026: 6 von 13 Weltindizes im Plus (Ø -0,7 %).",
+    "USA: Dow Jones +0,3 %, S&P 500 +0,7 %, Nasdaq 100 +1,1 %.",
+    "Europa: DAX -0,0 %, Euro Stoxx 50 -0,1 %, FTSE 100 -0,8 %.",
+    "Asien/Pazifik: Nikkei 225 +1,7 %, Hang Seng -0,7 %, Shanghai Comp. -1,3 %, Kospi +3,1 %, ASX 200 +0,5 %."
    ]
   },
   {
    "title": "Branchen",
    "lines": [
-    "Stärkste Branchen heute: Energie (US, ETF) +2,6 %, Robotik & AI (ETF) +1,0 %. Schwächste: Rüstung Europa (ETF) -4,1 %, Versicherer (US, ETF) -2,3 %.",
-    "Frühsignal (relative Stärke dreht nach oben, Kurs noch nicht bestätigt): Financials (US, ETF), Transport (ETF), Banken (US, ETF), Biotech (US, ETF).",
-    "Rohstoffe als mögliche Treiber: Gold +0,6 %, Öl (WTI) -1,9 %, Kupfer +0,9 %, US-Erdgas +13,7 %.",
-    "Zinsen und Währungen: US-Rendite 10 J. +0,7 %, Euro/Dollar -0,1 %, Dollar-Index +0,0 %."
+    "Stärkste Branchen heute: Halbleiter US (ETF) +2,9 %, Halbleiter (ETF) +2,7 %. Schwächste: Versorger (US, ETF) -0,0 %, Gesundheit (US, ETF) +0,0 %.",
+    "Frühsignal (relative Stärke dreht nach oben, Kurs noch nicht bestätigt): Transport (ETF), Biotech (US, ETF), Industrials (US, ETF).",
+    "Rohstoffe als mögliche Treiber: Gold -0,7 %, Öl (WTI) +0,1 %, Kupfer +1,5 %, US-Erdgas +16,6 %.",
+    "Zinsen und Währungen: US-Rendite 10 J. -0,0 %, Euro/Dollar -0,7 %, Dollar-Index +0,3 %."
    ]
   },
   {
    "title": "Auffällige Einzelwerte",
    "lines": [
-    "Bayer +3,2 % (Frühsignal: relative Stärke dreht nach oben (+5,5 % in 5 Tagen), Kurs noch nicht bestätigt). Schlagzeile: „Hofmann nutzt seine Chance - Bayer Leverkusen gewinnt gegen OFI Kreta“ (sportschau.de).",
-    "GE Aerospace -2,7 % (RSI 26: überverkauft - mögliche Gegenbewegung). Schlagzeile: „GE Aerospace Aktie (A3CSML) - Kurs NYSE“ (MarketScreener Deutschland).",
-    "Roche (ADR) +2,6 % (RSI 77: überkauft - Rücksetzer-Risiko). Schlagzeile: „„Europa sollte vor allem lernen, sich wieder anzustrengen““ (WELT)."
+    "Lockheed Martin +5,1 % (RSI 83: überkauft - Rücksetzer-Risiko). Schlagzeile: „Mindestens 850 F-35: Lockheed Martin erhält größten Auftrag der Firmengeschichte“ (aeroTELEGRAPH).",
+    "Micron +3,0 % (Starke Tagesbewegung +3,0 %). Schlagzeile: „Micron Technology Aktie | US5951121038 | ETR:MTE | News & Aktienkurs | FRA:MTE“ (LYNX Online Broker).",
+    "AMD +2,8 % (Starke Tagesbewegung +2,8 %). Schlagzeile: „Nach QSSR: AMD bringt FSR 4.1 auf die Xbox“ (heise online)."
    ]
   },
   {
    "title": "Wirtschaft und Geopolitik",
    "lines": [
-    "USA – China: Medienstimmung „unverändert“ (Ton -0,7 gegenüber -0,9 im 30-Tage-Schnitt).",
-    "Erdgas Europa (TTF): 96,1 €/MWh, +2,4 % heute, Lage „Preisdruck steigt“.",
-    "Bitcoin: 80.297 $, +0,3 % heute, Lage „eher bullisch“.",
+    "USA – China: Medienstimmung „unverändert“ (Ton -0,5 gegenüber -1,0 im 30-Tage-Schnitt).",
+    "Erdgas Europa (TTF): 95,8 €/MWh, -1,0 % heute, Lage „Preisdruck steigt“.",
+    "Bitcoin: 79.483 $, -0,7 % heute, Lage „eher bullisch“.",
     "Konjunkturdaten sind nicht hinterlegt; keine Aussage dazu."
    ]
   },
   {
    "title": "Stimmung",
    "lines": [
-    "VIX 19,5 (+0,2 %): normale Schwankung; im Jahresvergleich Perzentil 78.",
-    "27 % der beobachteten Werte liegen über SMA50 und SMA200 (intakter Trend); 2 überkauft (RSI ≥ 70), 5 überverkauft (RSI ≤ 30).",
-    "Gesamtbild: gemischt/neutral."
+    "VIX 18,2 (-0,8 %): normale Schwankung; im Jahresvergleich Perzentil 65.",
+    "29 % der beobachteten Werte liegen über SMA50 und SMA200 (intakter Trend); 2 überkauft (RSI ≥ 70), 9 überverkauft (RSI ≤ 30).",
+    "Gesamtbild: eher vorsichtig."
    ]
   },
   {

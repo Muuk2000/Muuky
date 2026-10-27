@@ -89,6 +89,11 @@
    "date": "2026-11-12",
    "what": "Quartalszahlen Siemens",
    "kind": "earnings"
+  },
+  {
+   "date": "2026-11-17",
+   "what": "Quartalszahlen Nvidia",
+   "kind": "earnings"
   }
  ],
  "errors": [],

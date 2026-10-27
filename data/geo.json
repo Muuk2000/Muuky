@@ -1,14 +1,13 @@
 {
- "generated": "2026-10-26T10:34+00:00",
+ "generated": "2026-10-27T10:05+00:00",
  "pairs": [
   {
-   "tone_now": -0.66,
-   "tone_base": -0.93,
-   "tone_z": 0.39,
-   "tension_ratio": 0.8,
+   "tone_now": -0.5,
+   "tone_base": -0.97,
+   "tone_z": 0.77,
+   "tension_ratio": 1.07,
    "state": "unverändert",
    "spark": [
-    0.47,
     -0.27,
     -0.91,
     -1.12,
@@ -28,7 +27,8 @@
     -0.69,
     -0.23,
     -0.92,
-    -0.83
+    -0.83,
+    0.27
    ],
    "pair": "USA – China"
   }
@@ -36,28 +36,28 @@
  "markets": [
   {
    "name": "S&P 500",
-   "d1": -0.52,
-   "m1": -1.04
+   "d1": 0.7,
+   "m1": -0.86
   },
   {
    "name": "Luft/Rüstung (ETF)",
-   "d1": -1.1,
-   "m1": -4.95
+   "d1": 2.44,
+   "m1": -3.11
   },
   {
    "name": "Rheinmetall",
-   "d1": 1.18,
-   "m1": 4.95
+   "d1": -1.47,
+   "m1": 5.45
   },
   {
    "name": "Öl (WTI)",
-   "d1": -1.95,
-   "m1": 9.58
+   "d1": 0.09,
+   "m1": 9.99
   },
   {
    "name": "Gold",
-   "d1": 0.55,
-   "m1": -6.74
+   "d1": -0.69,
+   "m1": -3.79
   }
  ],
  "note": "Automatische Auswertung der Medien-Stimmung (GDELT), kein Lagebericht. Viel Rauschen."
