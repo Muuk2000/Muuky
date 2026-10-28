@@ -1,17 +1,16 @@
 {
- "price": 79483.0,
- "d1": -0.65,
- "d7": -4.17,
- "d30": -5.89,
- "rsi": 39.6,
- "vs_sma50": -2.8,
- "vs_sma200": 8.9,
- "mayer": 1.09,
- "from_high": -29.6,
+ "price": 81427.0,
+ "d1": 0.77,
+ "d7": -3.08,
+ "d30": -2.49,
+ "rsi": 48.4,
+ "vs_sma50": -0.6,
+ "vs_sma200": 11.4,
+ "mayer": 1.11,
+ "from_high": -26.4,
  "vol30": 25.0,
  "vol_long": 44.0,
  "spark": [
-  78246.0,
   77668.0,
   78549.0,
   77404.0,
@@ -70,18 +69,19 @@
   80791.0,
   80024.0,
   80007.0,
-  79483.0
+  80805.0,
+  81427.0
  ],
  "corr_nasdaq": 0.63,
  "fear_greed": {
-  "value": 48,
+  "value": 51,
   "label": "Neutral",
-  "avg30": 62.3
+  "avg30": 61.5
  },
  "points": 1,
  "state": "eher bullisch",
  "why": [
   "Kurs über SMA200, aber unter SMA50 (Trend wackelt)"
  ],
- "generated": "2026-10-27T10:05+00:00"
+ "generated": "2026-10-28T10:52+00:00"
 }
