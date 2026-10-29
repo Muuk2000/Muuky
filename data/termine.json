@@ -1,26 +1,6 @@
 {
  "events": [
   {
-   "date": "2026-10-28",
-   "what": "US-Notenbank Fed: Zinsentscheid",
-   "kind": "notenbank"
-  },
-  {
-   "date": "2026-10-28",
-   "what": "Quartalszahlen Deutsche Bank",
-   "kind": "earnings"
-  },
-  {
-   "date": "2026-10-28",
-   "what": "Quartalszahlen Microsoft",
-   "kind": "earnings"
-  },
-  {
-   "date": "2026-10-28",
-   "what": "Quartalszahlen Alphabet",
-   "kind": "earnings"
-  },
-  {
    "date": "2026-10-29",
    "what": "EZB: Zinsentscheid",
    "kind": "notenbank"

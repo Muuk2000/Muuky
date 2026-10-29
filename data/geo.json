@@ -1,44 +1,13 @@
 {
- "generated": "2026-10-28T10:52+00:00",
+ "generated": "2026-10-29T11:09+00:00",
  "pairs": [
-  {
-   "tone_now": -0.5,
-   "tone_base": -1.01,
-   "tone_z": 0.84,
-   "tension_ratio": null,
-   "state": "unverändert",
-   "spark": [
-    -0.91,
-    -1.12,
-    -1.2,
-    -1.23,
-    -2.25,
-    0.0,
-    -2.29,
-    -0.9,
-    -0.43,
-    -1.84,
-    -0.57,
-    -1.17,
-    -1.09,
-    -0.71,
-    -0.63,
-    -0.69,
-    -0.23,
-    -0.92,
-    -0.83,
-    0.27
-   ],
-   "pair": "USA – China"
-  },
   {
    "tone_now": -1.65,
    "tone_base": -2.63,
-   "tone_z": 0.79,
-   "tension_ratio": null,
+   "tone_z": 0.77,
+   "tension_ratio": 0.75,
    "state": "unverändert",
    "spark": [
-    -2.51,
     -2.25,
     -2.26,
     -2.53,
@@ -65,28 +34,28 @@
  "markets": [
   {
    "name": "S&P 500",
-   "d1": 0.6,
-   "m1": 0.51
+   "d1": 0.28,
+   "m1": 0.95
   },
   {
    "name": "Luft/Rüstung (ETF)",
-   "d1": -0.45,
-   "m1": -1.45
+   "d1": 0.74,
+   "m1": -0.75
   },
   {
    "name": "Rheinmetall",
-   "d1": -0.49,
-   "m1": 6.23
+   "d1": 2.96,
+   "m1": 8.95
   },
   {
    "name": "Öl (WTI)",
-   "d1": 1.17,
-   "m1": 13.08
+   "d1": -1.5,
+   "m1": 11.97
   },
   {
    "name": "Gold",
-   "d1": -0.35,
-   "m1": -2.86
+   "d1": -0.26,
+   "m1": -3.48
   }
  ],
  "note": "Automatische Auswertung der Medien-Stimmung (GDELT), kein Lagebericht. Viel Rauschen."
