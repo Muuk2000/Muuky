@@ -1,17 +1,16 @@
 {
- "price": 97.1,
- "d1": -3.59,
- "d7": 14.15,
- "d30": 27.17,
- "vs_sma50": 23.7,
- "vs_sma200": 77.2,
- "rsi": 69.0,
- "range_pctile": 99.0,
+ "price": 102.79,
+ "d1": 4.26,
+ "d7": 17.57,
+ "d30": 29.27,
+ "vs_sma50": 29.7,
+ "vs_sma200": 86.4,
+ "rsi": 75.8,
+ "range_pctile": 100.0,
  "low_1y": 26.6,
- "high_1y": 100.7,
- "vol30": 51.0,
+ "high_1y": 102.8,
+ "vol30": 50.0,
  "spark": [
-  55.77,
   55.54,
   60.8,
   58.74,
@@ -70,16 +69,17 @@
   96.68,
   96.06,
   100.72,
-  97.1
+  98.59,
+  102.79
  ],
- "henry_hub_eur_mwh": 9.3,
- "premium_x": 10.4,
+ "henry_hub_eur_mwh": 8.8,
+ "premium_x": 11.6,
  "points": 2,
  "state": "Preisdruck steigt",
  "why": [
   "TTF über SMA50 und SMA200 (Aufwärtstrend)",
-  "Monatsmomentum +27 %",
-  "Preis im oberen Bereich der 1-Jahres-Spanne (Perzentil 99)"
+  "Monatsmomentum +29 %",
+  "Preis im oberen Bereich der 1-Jahres-Spanne (Perzentil 100)"
  ],
- "generated": "2026-10-29T11:09+00:00"
+ "generated": "2026-10-30T11:04+00:00"
 }

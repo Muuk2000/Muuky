@@ -1,21 +1,6 @@
 {
  "events": [
   {
-   "date": "2026-10-29",
-   "what": "EZB: Zinsentscheid",
-   "kind": "notenbank"
-  },
-  {
-   "date": "2026-10-29",
-   "what": "Quartalszahlen Caterpillar",
-   "kind": "earnings"
-  },
-  {
-   "date": "2026-10-29",
-   "what": "Quartalszahlen Eli Lilly",
-   "kind": "earnings"
-  },
-  {
    "date": "2026-11-02",
    "what": "Quartalszahlen Palantir",
    "kind": "earnings"

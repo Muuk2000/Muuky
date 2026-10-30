@@ -1,159 +1,159 @@
 {
- "generated": "2026-10-30T01:13+00:00",
+ "generated": "2026-10-30T11:03+00:00",
  "demo": false,
  "live": {
-  "n": 215,
-  "hits": 68,
-  "rate": 31.6,
-  "ci": 6.2,
-  "base_up": 65.6,
-  "edge": -34.0,
+  "n": 257,
+  "hits": 94,
+  "rate": 36.6,
+  "ci": 5.9,
+  "base_up": 65.4,
+  "edge": -28.8,
   "by_group": {
    "Welt-Indizes": {
-    "n": 40,
-    "rate": 37.5
+    "n": 49,
+    "rate": 40.8
    },
    "Zinsen & Währungen": {
-    "n": 14,
-    "rate": 28.6
+    "n": 15,
+    "rate": 33.3
    },
    "Finanzen": {
-    "n": 21,
-    "rate": 14.3
+    "n": 25,
+    "rate": 24.0
    },
    "Industrie": {
-    "n": 16,
-    "rate": 12.5
+    "n": 18,
+    "rate": 16.7
    },
    "Rüstung": {
-    "n": 17,
-    "rate": 35.3
+    "n": 22,
+    "rate": 40.9
    },
    "Energie & Versorger": {
-    "n": 18,
-    "rate": 27.8
+    "n": 21,
+    "rate": 38.1
    },
    "Gesundheit & Pharma": {
-    "n": 14,
-    "rate": 71.4
+    "n": 18,
+    "rate": 72.2
    },
    "Edelmetalle": {
     "n": 11,
     "rate": 63.6
    },
    "Industriemetalle": {
-    "n": 10,
-    "rate": 40.0
+    "n": 12,
+    "rate": 50.0
    },
    "Halbleiter": {
-    "n": 24,
-    "rate": 8.3
+    "n": 31,
+    "rate": 12.9
    },
    "AI": {
-    "n": 24,
-    "rate": 37.5
+    "n": 29,
+    "rate": 41.4
    }
   },
   "by_direction": {
    "steigt": {
-    "n": 74,
-    "rate": 45.9
+    "n": 95,
+    "rate": 52.6
    },
    "fällt": {
-    "n": 141,
-    "rate": 24.1
+    "n": 162,
+    "rate": 27.2
    }
   },
   "by_component": {
    "Trend (Kurs über/unter SMA50)": {
-    "n": 215,
-    "rate": 31.6
+    "n": 257,
+    "rate": 36.6
    },
    "Momentum (5 Tage)": {
-    "n": 214,
-    "rate": 41.1
+    "n": 256,
+    "rate": 43.4
    },
    "RSI-Extreme (Gegenbewegung)": {
-    "n": 21,
-    "rate": 76.2
+    "n": 23,
+    "rate": 69.6
    },
    "Relative Stärke (Frühindikator)": {
-    "n": 141,
-    "rate": 28.4
+    "n": 174,
+    "rate": 37.9
    }
   }
  },
- "live_offen": 42,
+ "live_offen": 55,
  "backtest": {
-  "n": 9907,
-  "hits": 4857,
-  "rate": 49.0,
+  "n": 9952,
+  "hits": 4882,
+  "rate": 49.1,
   "ci": 1.0,
   "base_up": 51.6,
-  "edge": -2.6,
+  "edge": -2.5,
   "by_group": {
    "Welt-Indizes": {
-    "n": 1589,
+    "n": 1599,
     "rate": 47.3
    },
    "Zinsen & Währungen": {
-    "n": 875,
-    "rate": 50.3
+    "n": 877,
+    "rate": 50.4
    },
    "Finanzen": {
-    "n": 1032,
-    "rate": 49.4
+    "n": 1035,
+    "rate": 49.6
    },
    "Industrie": {
-    "n": 686,
-    "rate": 49.4
-   },
-   "Rüstung": {
-    "n": 896,
-    "rate": 50.3
-   },
-   "Energie & Versorger": {
-    "n": 915,
-    "rate": 51.7
-   },
-   "Gesundheit & Pharma": {
-    "n": 840,
+    "n": 689,
     "rate": 49.3
    },
+   "Rüstung": {
+    "n": 904,
+    "rate": 50.2
+   },
+   "Energie & Versorger": {
+    "n": 918,
+    "rate": 51.6
+   },
+   "Gesundheit & Pharma": {
+    "n": 844,
+    "rate": 49.5
+   },
    "Edelmetalle": {
-    "n": 455,
-    "rate": 47.7
+    "n": 454,
+    "rate": 47.6
    },
    "Industriemetalle": {
-    "n": 508,
-    "rate": 46.5
+    "n": 509,
+    "rate": 46.4
    },
    "Halbleiter": {
-    "n": 1231,
+    "n": 1238,
     "rate": 49.1
    },
    "AI": {
-    "n": 880,
-    "rate": 47.8
+    "n": 885,
+    "rate": 47.9
    }
   },
   "by_direction": {
    "steigt": {
-    "n": 5262,
+    "n": 5285,
     "rate": 50.5
    },
    "fällt": {
-    "n": 4645,
-    "rate": 47.3
+    "n": 4667,
+    "rate": 47.4
    }
   },
   "by_component": {
    "Trend (Kurs über/unter SMA50)": {
-    "n": 9907,
-    "rate": 49.0
+    "n": 9952,
+    "rate": 49.1
    },
    "Momentum (5 Tage)": {
-    "n": 9873,
+    "n": 9918,
     "rate": 48.4
    },
    "RSI-Extreme (Gegenbewegung)": {
@@ -161,14 +161,46 @@
     "rate": 54.2
    },
    "Relative Stärke (Frühindikator)": {
-    "n": 5903,
-    "rate": 50.2
+    "n": 5943,
+    "rate": 50.4
    }
   },
-  "tage_x_werte": 14246,
+  "tage_x_werte": 14300,
   "abdeckung": 69.9
  },
  "recent": [
+  {
+   "date": "2026-10-29",
+   "name": "Alphabet",
+   "symbol": "GOOGL",
+   "pred": -1,
+   "chg": -12.64,
+   "hit": true
+  },
+  {
+   "date": "2026-10-29",
+   "name": "Caterpillar",
+   "symbol": "CAT",
+   "pred": -1,
+   "chg": -9.25,
+   "hit": true
+  },
+  {
+   "date": "2026-10-29",
+   "name": "Eli Lilly",
+   "symbol": "LLY",
+   "pred": 1,
+   "chg": 6.63,
+   "hit": true
+  },
+  {
+   "date": "2026-10-29",
+   "name": "Micron",
+   "symbol": "MU",
+   "pred": 1,
+   "chg": -4.98,
+   "hit": false
+  },
   {
    "date": "2026-10-29",
    "name": "Platin",
@@ -176,6 +208,14 @@
    "pred": -1,
    "chg": -4.72,
    "hit": true
+  },
+  {
+   "date": "2026-10-29",
+   "name": "GE Aerospace",
+   "symbol": "GE",
+   "pred": -1,
+   "chg": 3.96,
+   "hit": false
   },
   {
    "date": "2026-10-29",
@@ -187,6 +227,14 @@
   },
   {
    "date": "2026-10-29",
+   "name": "Rheinmetall",
+   "symbol": "RHM.DE",
+   "pred": -1,
+   "chg": 3.58,
+   "hit": false
+  },
+  {
+   "date": "2026-10-29",
    "name": "Brent Öl",
    "symbol": "BZ=F",
    "pred": 1,
@@ -195,99 +243,51 @@
   },
   {
    "date": "2026-10-29",
-   "name": "Kupfer",
-   "symbol": "HG=F",
+   "name": "Gesundheit (US, ETF)",
+   "symbol": "XLV",
    "pred": 1,
-   "chg": -1.42,
-   "hit": false
-  },
-  {
-   "date": "2026-10-29",
-   "name": "Nasdaq 100",
-   "symbol": "^NDX",
-   "pred": -1,
-   "chg": -1.38,
+   "chg": 2.4,
    "hit": true
   },
   {
    "date": "2026-10-29",
-   "name": "Bovespa",
-   "symbol": "^BVSP",
+   "name": "AI & Big Data (ETF)",
+   "symbol": "AIQ",
+   "pred": 1,
+   "chg": -2.27,
+   "hit": false
+  },
+  {
+   "date": "2026-10-29",
+   "name": "Rüstung Europa (ETF)",
+   "symbol": "EUAD",
    "pred": -1,
-   "chg": -1.06,
+   "chg": 2.23,
+   "hit": false
+  },
+  {
+   "date": "2026-10-29",
+   "name": "BAE Systems",
+   "symbol": "BA.L",
+   "pred": 1,
+   "chg": 2.22,
    "hit": true
   },
   {
    "date": "2026-10-29",
-   "name": "Roche (ADR)",
-   "symbol": "RHHBY",
+   "name": "Novo Nordisk",
+   "symbol": "NVO",
+   "pred": -1,
+   "chg": 2.22,
+   "hit": false
+  },
+  {
+   "date": "2026-10-29",
+   "name": "Lockheed Martin",
+   "symbol": "LMT",
    "pred": 1,
-   "chg": 1.03,
+   "chg": 2.2,
    "hit": true
-  },
-  {
-   "date": "2026-10-29",
-   "name": "Gold",
-   "symbol": "GC=F",
-   "pred": -1,
-   "chg": -0.94,
-   "hit": true
-  },
-  {
-   "date": "2026-10-29",
-   "name": "Dollar-Index",
-   "symbol": "DX-Y.NYB",
-   "pred": 1,
-   "chg": -0.48,
-   "hit": false
-  },
-  {
-   "date": "2026-10-29",
-   "name": "Euro/Franken",
-   "symbol": "EURCHF=X",
-   "pred": -1,
-   "chg": 0.14,
-   "hit": false
-  },
-  {
-   "date": "2026-10-29",
-   "name": "WTI Öl",
-   "symbol": "CL=F",
-   "pred": 1,
-   "chg": -0.13,
-   "hit": false
-  },
-  {
-   "date": "2026-10-28",
-   "name": "Erdgas (US)",
-   "symbol": "NG=F",
-   "pred": -1,
-   "chg": 11.72,
-   "hit": false
-  },
-  {
-   "date": "2026-10-28",
-   "name": "Kospi",
-   "symbol": "^KS11",
-   "pred": -1,
-   "chg": 6.63,
-   "hit": false
-  },
-  {
-   "date": "2026-10-28",
-   "name": "Micron",
-   "symbol": "MU",
-   "pred": -1,
-   "chg": 5.86,
-   "hit": false
-  },
-  {
-   "date": "2026-10-28",
-   "name": "Deutsche Bank",
-   "symbol": "DBK.DE",
-   "pred": -1,
-   "chg": 3.97,
-   "hit": false
   }
  ],
  "method": "Prognose = Vorzeichen eines Punktesystems aus vier Indikatoren (Trend (Kurs über/unter SMA50); Momentum (5 Tage); RSI-Extreme (Gegenbewegung); Relative Stärke (Frühindikator)), nur ab Betrag 1.0. Sie nutzt ausschließlich Daten bis zum Vortagesschluss und wird morgens im Repo festgeschrieben. Bewertung: Schlusskurs des Tages gegen Vortagesschluss. Rückschau = dieselben Regeln auf die letzten 200 Handelstage, ohne spätere Daten; die Regeln wurden nicht an diesen Daten optimiert, sind aber vor der Rückschau festgelegt worden - Zufallstreffer sind möglich."
