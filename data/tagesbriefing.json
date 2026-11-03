@@ -1,67 +1,68 @@
 {
- "generated": "2026-10-30T11:05+00:00",
+ "generated": "2026-11-03T12:27+00:00",
  "mode": "regelbasiert",
- "date": "2026-10-30",
- "words": 320,
+ "date": "2026-11-03",
+ "words": 327,
  "sections": [
   {
    "title": "Marktüberblick",
    "lines": [
-    "Stand 30.10.2026: 4 von 13 Weltindizes im Plus (Ø -0,7 %).",
-    "USA: Dow Jones -0,2 %, S&P 500 -0,3 %, Nasdaq 100 -1,4 %.",
-    "Europa: DAX -0,6 %, Euro Stoxx 50 -0,8 %, FTSE 100 +0,2 %.",
-    "Asien/Pazifik: Nikkei 225 -2,1 %, Hang Seng +1,5 %, Shanghai Comp. -1,4 %, Kospi -3,5 %, ASX 200 +0,2 %."
+    "Stand 03.11.2026: 4 von 13 Weltindizes im Plus (Ø -0,5 %).",
+    "USA: Dow Jones +0,4 %, S&P 500 -0,5 %, Nasdaq 100 -1,4 %.",
+    "Europa: DAX -0,7 %, Euro Stoxx 50 -0,7 %, FTSE 100 -0,7 %.",
+    "Asien/Pazifik: Nikkei 225 -0,3 %, Hang Seng +0,6 %, Shanghai Comp. -0,8 %, Kospi -3,6 %, ASX 200 +0,3 %."
    ]
   },
   {
    "title": "Branchen",
    "lines": [
-    "Stärkste Branchen heute: Luft/Rüstung US (ETF) +3,2 %, Gesundheit (US, ETF) +2,4 %. Schwächste: AI & Big Data (ETF) -2,3 %, Robotik & AI (ETF) -1,8 %.",
-    "Frühsignal (relative Stärke dreht nach oben, Kurs noch nicht bestätigt): Luft/Rüstung US (ETF), Industrials (US, ETF).",
-    "Rohstoffe als mögliche Treiber: Gold -1,1 %, Öl (WTI) +2,2 %, Kupfer -1,0 %, US-Erdgas -1,6 %.",
-    "Zinsen und Währungen: US-Rendite 10 J. -1,1 %, Euro/Dollar +0,4 %, Dollar-Index -0,4 %."
+    "Stärkste Branchen heute: Luft/Rüstung US (ETF) +2,4 %, Banken (US, ETF) +2,3 %. Schwächste: Energie (US, ETF) -4,0 %, Halbleiter US (ETF) -3,8 %.",
+    "Frühsignal (relative Stärke dreht nach oben, Kurs noch nicht bestätigt): Industrials (US, ETF), Finanzen Europa (ETF), Rüstung Europa (ETF).",
+    "Rohstoffe als mögliche Treiber: Gold -1,4 %, Öl (WTI) +2,0 %, Kupfer -2,7 %, US-Erdgas +1,5 %.",
+    "Zinsen und Währungen: US-Rendite 10 J. -0,7 %, Euro/Dollar +0,2 %, Dollar-Index +0,1 %."
    ]
   },
   {
    "title": "Auffällige Einzelwerte",
    "lines": [
-    "Alphabet -12,6 % (RSI 22: überverkauft - mögliche Gegenbewegung). Schlagzeile: „Alphabet: Schwächeres Wachstum in Google-Kerngeschäft alarmiert US-Markt“ (Spiegel).",
-    "Caterpillar -9,2 % (RSI 27: überverkauft - mögliche Gegenbewegung). Schlagzeile: „Caterpillar-Aktie bricht ein: KI-Euphorie ebbt ab“ (Der Aktionär).",
-    "Eli Lilly +6,6 % (RSI 74: überkauft - Rücksetzer-Risiko). Schlagzeile: „Eli Lilly Aktie News: Investoren trennen sich am Abend vermehrt von Eli Lilly“ (Finanzen.net)."
+    "AMD -7,5 % (Starke Tagesbewegung -7,5 %). Schlagzeile: „AMD-Aktie gibt vor Intel-Zahlen nach: Alphabets Ausgaben verunsichern Anleger“ (Finanzen.net).",
+    "Micron -5,8 % (Starke Tagesbewegung -5,8 %). Schlagzeile: „Micron-Aktie: Physische KI als neuer Treiber – Prognose 2030“ (Der Aktionär).",
+    "Bayer +5,1 % (RSI 73: überkauft - Rücksetzer-Risiko). Schlagzeile: „Streit über Pestizid Glyphosat – Bayer siegt erneut vor US-Gericht“ (Spiegel)."
    ]
   },
   {
    "title": "Wirtschaft und Geopolitik",
    "lines": [
-    "China – Russland: Medienstimmung „Entspannung“ (Ton -0,7 gegenüber -1,9 im 30-Tage-Schnitt).",
-    "Erdgas Europa (TTF): 102,8 €/MWh, +4,3 % heute, Lage „Preisdruck steigt“.",
-    "Bitcoin: 77.570 $, -0,3 % heute, Lage „eher bullisch“.",
+    "USA – China: Medienstimmung „unverändert“ (Ton -0,6 gegenüber -1,0 im 30-Tage-Schnitt).",
+    "USA – Russland: Medienstimmung „unverändert“ (Ton -1,7 gegenüber -2,7 im 30-Tage-Schnitt).",
+    "Erdgas Europa (TTF): 96,5 €/MWh, +1,8 % heute, Lage „Preisdruck steigt“.",
+    "Bitcoin: 77.294 $, +0,8 % heute, Lage „neutral“.",
     "Konjunkturdaten sind nicht hinterlegt; keine Aussage dazu."
    ]
   },
   {
    "title": "Stimmung",
    "lines": [
-    "VIX 18,6 (+8,1 %): normale Schwankung; im Jahresvergleich Perzentil 69.",
-    "40 % der beobachteten Werte liegen über SMA50 und SMA200 (intakter Trend); 6 überkauft (RSI ≥ 70), 7 überverkauft (RSI ≤ 30).",
+    "VIX 21,8 (+2,8 %): normale Schwankung; im Jahresvergleich Perzentil 87.",
+    "29 % der beobachteten Werte liegen über SMA50 und SMA200 (intakter Trend); 5 überkauft (RSI ≥ 70), 6 überverkauft (RSI ≤ 30).",
     "Gesamtbild: eher vorsichtig."
    ]
   },
   {
    "title": "Ausblick",
    "lines": [
-    "02.11.: Quartalszahlen Palantir",
     "03.11.: Quartalszahlen Bayer",
     "03.11.: Quartalszahlen AMD",
     "04.11.: Quartalszahlen Novo Nordisk",
     "05.11.: Quartalszahlen Rheinmetall",
+    "05.11.: Quartalszahlen Hensoldt",
     "Beobachten: Hält die relative Stärke der führenden Branchen? Bleiben überkaufte Werte oben, oder kommt ein Rücksetzer?"
    ]
   },
   {
    "title": "Anlegerperspektive",
    "lines": [
-    "Mehrere überkaufte Werte (6): Rücksetzer-Risiko beachten.",
+    "Mehrere überkaufte Werte (5): Rücksetzer-Risiko beachten.",
     "Beobachtungen aus Kursdaten, keine Anlageberatung und keine Prognose."
    ]
   }
