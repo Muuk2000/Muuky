@@ -1,21 +1,21 @@
 {
- "generated": "2026-11-03T12:25+00:00",
+ "generated": "2026-11-04T01:32+00:00",
  "demo": false,
  "live": {
-  "n": 310,
-  "hits": 124,
-  "rate": 40.0,
-  "ci": 5.5,
-  "base_up": 58.7,
-  "edge": -18.7,
+  "n": 323,
+  "hits": 130,
+  "rate": 40.2,
+  "ci": 5.3,
+  "base_up": 58.2,
+  "edge": -18.0,
   "by_group": {
    "Welt-Indizes": {
-    "n": 58,
-    "rate": 44.8
+    "n": 62,
+    "rate": 45.2
    },
    "Zinsen & Währungen": {
-    "n": 20,
-    "rate": 35.0
+    "n": 25,
+    "rate": 36.0
    },
    "Finanzen": {
     "n": 30,
@@ -34,16 +34,16 @@
     "rate": 40.7
    },
    "Gesundheit & Pharma": {
-    "n": 24,
-    "rate": 70.8
+    "n": 25,
+    "rate": 68.0
    },
    "Edelmetalle": {
-    "n": 12,
-    "rate": 66.7
+    "n": 14,
+    "rate": 71.4
    },
    "Industriemetalle": {
-    "n": 16,
-    "rate": 50.0
+    "n": 17,
+    "rate": 47.1
    },
    "Halbleiter": {
     "n": 38,
@@ -56,44 +56,44 @@
   },
   "by_direction": {
    "steigt": {
-    "n": 126,
-    "rate": 48.4
+    "n": 129,
+    "rate": 48.1
    },
    "fällt": {
-    "n": 184,
-    "rate": 34.2
+    "n": 194,
+    "rate": 35.1
    }
   },
   "by_component": {
    "Trend (Kurs über/unter SMA50)": {
-    "n": 310,
-    "rate": 40.0
+    "n": 323,
+    "rate": 40.2
    },
    "Momentum (5 Tage)": {
-    "n": 309,
-    "rate": 41.1
+    "n": 322,
+    "rate": 41.3
    },
    "RSI-Extreme (Gegenbewegung)": {
-    "n": 31,
-    "rate": 58.1
+    "n": 32,
+    "rate": 56.2
    },
    "Relative Stärke (Frühindikator)": {
-    "n": 217,
-    "rate": 43.8
+    "n": 221,
+    "rate": 43.4
    }
   }
  },
- "live_offen": 56,
+ "live_offen": 43,
  "backtest": {
-  "n": 9953,
-  "hits": 4900,
+  "n": 9915,
+  "hits": 4876,
   "rate": 49.2,
   "ci": 1.0,
-  "base_up": 51.5,
+  "base_up": 51.4,
   "edge": -2.3,
   "by_group": {
    "Welt-Indizes": {
-    "n": 1600,
+    "n": 1595,
     "rate": 47.6
    },
    "Zinsen & Währungen": {
@@ -101,74 +101,178 @@
     "rate": 50.2
    },
    "Finanzen": {
-    "n": 1033,
+    "n": 1027,
     "rate": 49.7
    },
    "Industrie": {
-    "n": 686,
-    "rate": 49.7
+    "n": 683,
+    "rate": 49.5
    },
    "Rüstung": {
-    "n": 907,
+    "n": 903,
     "rate": 50.2
    },
    "Energie & Versorger": {
-    "n": 915,
-    "rate": 51.5
+    "n": 911,
+    "rate": 51.7
    },
    "Gesundheit & Pharma": {
-    "n": 847,
-    "rate": 49.5
+    "n": 844,
+    "rate": 49.4
    },
    "Edelmetalle": {
     "n": 452,
     "rate": 48.2
    },
    "Industriemetalle": {
-    "n": 508,
-    "rate": 46.5
+    "n": 506,
+    "rate": 46.2
    },
    "Halbleiter": {
-    "n": 1239,
-    "rate": 49.7
+    "n": 1232,
+    "rate": 49.4
    },
    "AI": {
-    "n": 886,
+    "n": 882,
     "rate": 48.2
    }
   },
   "by_direction": {
    "steigt": {
-    "n": 5264,
-    "rate": 50.6
+    "n": 5233,
+    "rate": 50.5
    },
    "fällt": {
-    "n": 4689,
+    "n": 4682,
     "rate": 47.7
    }
   },
   "by_component": {
    "Trend (Kurs über/unter SMA50)": {
-    "n": 9953,
+    "n": 9915,
     "rate": 49.2
    },
    "Momentum (5 Tage)": {
-    "n": 9919,
-    "rate": 48.4
+    "n": 9881,
+    "rate": 48.3
    },
    "RSI-Extreme (Gegenbewegung)": {
-    "n": 827,
-    "rate": 54.5
+    "n": 823,
+    "rate": 54.7
    },
    "Relative Stärke (Frühindikator)": {
-    "n": 5962,
+    "n": 5932,
     "rate": 50.6
    }
   },
-  "tage_x_werte": 14297,
+  "tage_x_werte": 14245,
   "abdeckung": 70.0
  },
  "recent": [
+  {
+   "date": "2026-11-03",
+   "name": "Aluminium",
+   "symbol": "ALI=F",
+   "pred": 1,
+   "chg": -4.16,
+   "hit": false
+  },
+  {
+   "date": "2026-11-03",
+   "name": "Roche (ADR)",
+   "symbol": "RHHBY",
+   "pred": 1,
+   "chg": -2.47,
+   "hit": false
+  },
+  {
+   "date": "2026-11-03",
+   "name": "Silber",
+   "symbol": "SI=F",
+   "pred": -1,
+   "chg": -1.45,
+   "hit": true
+  },
+  {
+   "date": "2026-11-03",
+   "name": "Bovespa",
+   "symbol": "^BVSP",
+   "pred": -1,
+   "chg": -1.43,
+   "hit": true
+  },
+  {
+   "date": "2026-11-03",
+   "name": "US-Rendite 10 J.",
+   "symbol": "^TNX",
+   "pred": -1,
+   "chg": 1.19,
+   "hit": false
+  },
+  {
+   "date": "2026-11-03",
+   "name": "US-Rendite 5 J.",
+   "symbol": "^FVX",
+   "pred": -1,
+   "chg": 1.07,
+   "hit": false
+  },
+  {
+   "date": "2026-11-03",
+   "name": "Nasdaq 100",
+   "symbol": "^NDX",
+   "pred": -1,
+   "chg": 0.68,
+   "hit": false
+  },
+  {
+   "date": "2026-11-03",
+   "name": "Euro/Franken",
+   "symbol": "EURCHF=X",
+   "pred": -1,
+   "chg": -0.43,
+   "hit": true
+  },
+  {
+   "date": "2026-11-03",
+   "name": "Dow Jones",
+   "symbol": "^DJI",
+   "pred": -1,
+   "chg": -0.38,
+   "hit": true
+  },
+  {
+   "date": "2026-11-03",
+   "name": "S&P 500",
+   "symbol": "^GSPC",
+   "pred": -1,
+   "chg": 0.36,
+   "hit": false
+  },
+  {
+   "date": "2026-11-03",
+   "name": "Euro/US-Dollar",
+   "symbol": "EURUSD=X",
+   "pred": -1,
+   "chg": 0.31,
+   "hit": false
+  },
+  {
+   "date": "2026-11-03",
+   "name": "Gold",
+   "symbol": "GC=F",
+   "pred": -1,
+   "chg": -0.26,
+   "hit": true
+  },
+  {
+   "date": "2026-11-03",
+   "name": "US-Dollar/Yen",
+   "symbol": "JPY=X",
+   "pred": 1,
+   "chg": 0.15,
+   "hit": true
+  },
   {
    "date": "2026-10-30",
    "name": "AMD",
@@ -183,110 +287,6 @@
    "symbol": "SOXX",
    "pred": -1,
    "chg": -8.24,
-   "hit": true
-  },
-  {
-   "date": "2026-10-30",
-   "name": "Halbleiter (ETF)",
-   "symbol": "SMH",
-   "pred": -1,
-   "chg": -6.98,
-   "hit": true
-  },
-  {
-   "date": "2026-10-30",
-   "name": "ASML",
-   "symbol": "ASML",
-   "pred": -1,
-   "chg": -6.55,
-   "hit": true
-  },
-  {
-   "date": "2026-10-30",
-   "name": "Infineon",
-   "symbol": "IFX.DE",
-   "pred": -1,
-   "chg": -6.39,
-   "hit": true
-  },
-  {
-   "date": "2026-10-30",
-   "name": "TSMC",
-   "symbol": "TSM",
-   "pred": -1,
-   "chg": -5.95,
-   "hit": true
-  },
-  {
-   "date": "2026-10-30",
-   "name": "Bayer",
-   "symbol": "BAYN.DE",
-   "pred": 1,
-   "chg": 5.46,
-   "hit": true
-  },
-  {
-   "date": "2026-10-30",
-   "name": "Micron",
-   "symbol": "MU",
-   "pred": -1,
-   "chg": -5.3,
-   "hit": true
-  },
-  {
-   "date": "2026-10-30",
-   "name": "Kupferminen (ETF)",
-   "symbol": "COPX",
-   "pred": -1,
-   "chg": -5.19,
-   "hit": true
-  },
-  {
-   "date": "2026-10-30",
-   "name": "Aluminium",
-   "symbol": "ALI=F",
-   "pred": 1,
-   "chg": -4.99,
-   "hit": false
-  },
-  {
-   "date": "2026-10-30",
-   "name": "AI & Big Data (ETF)",
-   "symbol": "AIQ",
-   "pred": -1,
-   "chg": -4.45,
-   "hit": true
-  },
-  {
-   "date": "2026-10-30",
-   "name": "Nvidia",
-   "symbol": "NVDA",
-   "pred": -1,
-   "chg": -4.22,
-   "hit": true
-  },
-  {
-   "date": "2026-10-30",
-   "name": "Caterpillar",
-   "symbol": "CAT",
-   "pred": -1,
-   "chg": -3.81,
-   "hit": true
-  },
-  {
-   "date": "2026-10-30",
-   "name": "Gold",
-   "symbol": "GC=F",
-   "pred": -1,
-   "chg": -3.63,
-   "hit": true
-  },
-  {
-   "date": "2026-10-30",
-   "name": "Robotik & AI (ETF)",
-   "symbol": "BOTZ",
-   "pred": -1,
-   "chg": -3.59,
    "hit": true
   }
  ],
