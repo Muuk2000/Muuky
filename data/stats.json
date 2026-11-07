@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-06T01:42+00:00",
+ "generated": "2026-11-07T01:02+00:00",
  "demo": false,
  "live": {
   "n": 365,
@@ -85,16 +85,16 @@
  },
  "live_offen": 1,
  "backtest": {
-  "n": 9930,
-  "hits": 4884,
+  "n": 9945,
+  "hits": 4895,
   "rate": 49.2,
   "ci": 1.0,
-  "base_up": 51.6,
-  "edge": -2.4,
+  "base_up": 51.5,
+  "edge": -2.3,
   "by_group": {
    "Welt-Indizes": {
-    "n": 1597,
-    "rate": 47.7
+    "n": 1603,
+    "rate": 47.4
    },
    "Zinsen & Währungen": {
     "n": 880,
@@ -105,16 +105,16 @@
     "rate": 49.8
    },
    "Industrie": {
-    "n": 679,
-    "rate": 49.2
+    "n": 678,
+    "rate": 49.4
    },
    "Rüstung": {
-    "n": 911,
-    "rate": 50.1
+    "n": 912,
+    "rate": 49.9
    },
    "Energie & Versorger": {
-    "n": 910,
-    "rate": 51.3
+    "n": 912,
+    "rate": 51.6
    },
    "Gesundheit & Pharma": {
     "n": 846,
@@ -122,15 +122,15 @@
    },
    "Edelmetalle": {
     "n": 455,
-    "rate": 48.1
+    "rate": 47.9
    },
    "Industriemetalle": {
-    "n": 510,
-    "rate": 46.1
+    "n": 511,
+    "rate": 46.4
    },
    "Halbleiter": {
-    "n": 1235,
-    "rate": 49.6
+    "n": 1241,
+    "rate": 50.0
    },
    "AI": {
     "n": 885,
@@ -139,34 +139,34 @@
   },
   "by_direction": {
    "steigt": {
-    "n": 5214,
+    "n": 5212,
     "rate": 50.5
    },
    "fällt": {
-    "n": 4716,
-    "rate": 47.7
+    "n": 4733,
+    "rate": 47.8
    }
   },
   "by_component": {
    "Trend (Kurs über/unter SMA50)": {
-    "n": 9930,
+    "n": 9945,
     "rate": 49.2
    },
    "Momentum (5 Tage)": {
-    "n": 9896,
+    "n": 9911,
     "rate": 48.4
    },
    "RSI-Extreme (Gegenbewegung)": {
-    "n": 823,
-    "rate": 54.7
+    "n": 824,
+    "rate": 54.5
    },
    "Relative Stärke (Frühindikator)": {
-    "n": 5955,
-    "rate": 50.5
+    "n": 5968,
+    "rate": 50.6
    }
   },
-  "tage_x_werte": 14244,
-  "abdeckung": 70.1
+  "tage_x_werte": 14248,
+  "abdeckung": 70.2
  },
  "recent": [
   {
