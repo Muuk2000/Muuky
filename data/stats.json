@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11T01:21+00:00",
+ "generated": "2026-11-11T12:13+00:00",
  "demo": false,
  "live": {
   "n": 365,
@@ -83,90 +83,90 @@
    }
   }
  },
- "live_offen": 0,
+ "live_offen": 62,
  "backtest": {
-  "n": 9960,
-  "hits": 4889,
-  "rate": 49.1,
+  "n": 9884,
+  "hits": 4870,
+  "rate": 49.3,
   "ci": 1.0,
   "base_up": 51.4,
-  "edge": -2.3,
+  "edge": -2.2,
   "by_group": {
    "Welt-Indizes": {
-    "n": 1604,
-    "rate": 47.3
+    "n": 1484,
+    "rate": 48.1
    },
    "Zinsen & Währungen": {
-    "n": 885,
-    "rate": 50.4
+    "n": 887,
+    "rate": 50.5
    },
    "Finanzen": {
-    "n": 1023,
-    "rate": 50.0
+    "n": 1030,
+    "rate": 50.1
    },
    "Industrie": {
-    "n": 677,
-    "rate": 48.7
+    "n": 683,
+    "rate": 49.2
    },
    "Rüstung": {
-    "n": 915,
+    "n": 920,
     "rate": 49.8
    },
    "Energie & Versorger": {
-    "n": 912,
-    "rate": 51.4
+    "n": 916,
+    "rate": 51.1
    },
    "Gesundheit & Pharma": {
-    "n": 845,
+    "n": 850,
     "rate": 50.1
    },
    "Edelmetalle": {
-    "n": 453,
-    "rate": 48.1
+    "n": 450,
+    "rate": 48.0
    },
    "Industriemetalle": {
-    "n": 516,
+    "n": 520,
     "rate": 46.3
    },
    "Halbleiter": {
-    "n": 1244,
-    "rate": 49.4
+    "n": 1252,
+    "rate": 49.3
    },
    "AI": {
-    "n": 886,
-    "rate": 48.0
+    "n": 892,
+    "rate": 48.2
    }
   },
   "by_direction": {
    "steigt": {
-    "n": 5196,
-    "rate": 50.3
+    "n": 5180,
+    "rate": 50.4
    },
    "fällt": {
-    "n": 4764,
-    "rate": 47.8
+    "n": 4704,
+    "rate": 48.0
    }
   },
   "by_component": {
    "Trend (Kurs über/unter SMA50)": {
-    "n": 9960,
-    "rate": 49.1
+    "n": 9884,
+    "rate": 49.3
    },
    "Momentum (5 Tage)": {
-    "n": 9926,
-    "rate": 48.4
+    "n": 9850,
+    "rate": 48.5
    },
    "RSI-Extreme (Gegenbewegung)": {
-    "n": 837,
-    "rate": 55.1
+    "n": 831,
+    "rate": 54.9
    },
    "Relative Stärke (Frühindikator)": {
-    "n": 5979,
-    "rate": 50.3
+    "n": 5960,
+    "rate": 50.6
    }
   },
-  "tage_x_werte": 14247,
-  "abdeckung": 70.3
+  "tage_x_werte": 14118,
+  "abdeckung": 70.4
  },
  "recent": [
   {

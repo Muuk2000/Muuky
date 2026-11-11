@@ -1,16 +1,13 @@
 {
- "generated": "2026-11-03T12:25+00:00",
+ "generated": "2026-11-11T12:14+00:00",
  "pairs": [
   {
-   "tone_now": -0.55,
-   "tone_base": -0.98,
-   "tone_z": 0.64,
+   "tone_now": -0.91,
+   "tone_base": -0.62,
+   "tone_z": -0.31,
    "tension_ratio": null,
    "state": "unverändert",
    "spark": [
-    -2.25,
-    0.0,
-    -2.29,
     -0.9,
     -0.43,
     -1.84,
@@ -24,20 +21,25 @@
     -0.92,
     -0.83,
     0.27,
-    -1.08
+    -1.08,
+    2.76,
+    -1.5,
+    -0.53,
+    -0.22,
+    -1.45,
+    -1.57,
+    -0.52,
+    -0.64
    ],
    "pair": "USA – China"
   },
   {
-   "tone_now": -1.73,
-   "tone_base": -2.66,
-   "tone_z": 0.69,
-   "tension_ratio": 0.64,
+   "tone_now": -2.99,
+   "tone_base": -2.21,
+   "tone_z": -0.85,
+   "tension_ratio": 0.61,
    "state": "unverändert",
    "spark": [
-    -6.42,
-    0.0,
-    -2.13,
     -3.56,
     -2.12,
     -3.96,
@@ -51,7 +53,15 @@
     -2.12,
     -1.71,
     -1.11,
-    -2.36
+    -2.36,
+    -2.0,
+    -2.48,
+    -1.91,
+    -2.29,
+    0.6,
+    -2.42,
+    -2.81,
+    -3.73
    ],
    "pair": "USA – Russland"
   }
@@ -59,28 +69,28 @@
  "markets": [
   {
    "name": "S&P 500",
-   "d1": -0.51,
-   "m1": -2.35
+   "d1": -0.38,
+   "m1": -3.67
   },
   {
    "name": "Luft/Rüstung (ETF)",
-   "d1": 2.36,
-   "m1": 3.32
+   "d1": 0.95,
+   "m1": 5.35
   },
   {
    "name": "Rheinmetall",
-   "d1": -0.14,
-   "m1": 1.88
+   "d1": -3.04,
+   "m1": -13.22
   },
   {
    "name": "Öl (WTI)",
-   "d1": 2.02,
-   "m1": 10.04
+   "d1": 1.05,
+   "m1": -7.65
   },
   {
    "name": "Gold",
-   "d1": -1.38,
-   "m1": -5.82
+   "d1": 0.55,
+   "m1": -2.99
   }
  ],
  "note": "Automatische Auswertung der Medien-Stimmung (GDELT), kein Lagebericht. Viel Rauschen."

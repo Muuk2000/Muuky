@@ -1,36 +1,6 @@
 {
  "events": [
   {
-   "date": "2026-11-03",
-   "what": "Quartalszahlen Bayer",
-   "kind": "earnings"
-  },
-  {
-   "date": "2026-11-03",
-   "what": "Quartalszahlen AMD",
-   "kind": "earnings"
-  },
-  {
-   "date": "2026-11-04",
-   "what": "Quartalszahlen Novo Nordisk",
-   "kind": "earnings"
-  },
-  {
-   "date": "2026-11-05",
-   "what": "Quartalszahlen Rheinmetall",
-   "kind": "earnings"
-  },
-  {
-   "date": "2026-11-05",
-   "what": "Quartalszahlen Hensoldt",
-   "kind": "earnings"
-  },
-  {
-   "date": "2026-11-10",
-   "what": "Quartalszahlen Infineon",
-   "kind": "earnings"
-  },
-  {
    "date": "2026-11-11",
    "what": "Quartalszahlen RWE",
    "kind": "earnings"

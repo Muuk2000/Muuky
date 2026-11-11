@@ -1,24 +1,16 @@
 {
- "price": 77294.0,
- "d1": 0.8,
- "d7": -4.35,
- "d30": -10.62,
- "rsi": 38.1,
- "vs_sma50": -5.6,
- "vs_sma200": 5.7,
- "mayer": 1.06,
- "from_high": -27.1,
- "vol30": 28.0,
+ "price": 73918.0,
+ "d1": 0.27,
+ "d7": -8.07,
+ "d30": -9.59,
+ "rsi": 35.3,
+ "vs_sma50": -8.9,
+ "vs_sma200": 1.1,
+ "mayer": 1.01,
+ "from_high": -27.3,
+ "vol30": 35.0,
  "vol_long": 44.0,
  "spark": [
-  79824.0,
-  80350.0,
-  79116.0,
-  78439.0,
-  78260.0,
-  76568.0,
-  77174.0,
-  77270.0,
   76838.0,
   78163.0,
   75613.0,
@@ -70,19 +62,26 @@
   77435.0,
   78248.0,
   76677.0,
-  77294.0
+  77345.0,
+  80405.0,
+  75942.0,
+  75747.0,
+  75748.0,
+  74585.0,
+  75223.0,
+  73720.0,
+  73918.0
  ],
- "corr_nasdaq": 0.57,
+ "corr_nasdaq": 0.69,
  "fear_greed": {
-  "value": 26,
+  "value": 29,
   "label": "Fear",
-  "avg30": 54.4
+  "avg30": 45.2
  },
- "points": 0,
- "state": "neutral",
+ "points": 1,
+ "state": "eher bullisch",
  "why": [
-  "Kurs über SMA200, aber unter SMA50 (Trend wackelt)",
-  "Monatsmomentum -11 %"
+  "Kurs über SMA200, aber unter SMA50 (Trend wackelt)"
  ],
- "generated": "2026-11-03T12:25+00:00"
+ "generated": "2026-11-11T12:14+00:00"
 }
