@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T02:00+00:00",
+ "generated": "2026-11-14T01:32+00:00",
  "demo": false,
  "live": {
   "n": 426,
@@ -85,88 +85,88 @@
  },
  "live_offen": 0,
  "backtest": {
-  "n": 9979,
-  "hits": 4897,
-  "rate": 49.1,
+  "n": 10018,
+  "hits": 4929,
+  "rate": 49.2,
   "ci": 1.0,
-  "base_up": 51.7,
-  "edge": -2.6,
+  "base_up": 51.6,
+  "edge": -2.4,
   "by_group": {
    "Welt-Indizes": {
-    "n": 1609,
-    "rate": 47.5
+    "n": 1619,
+    "rate": 47.8
    },
    "Zinsen & Währungen": {
-    "n": 889,
-    "rate": 50.5
-   },
-   "Finanzen": {
-    "n": 1024,
-    "rate": 50.2
-   },
-   "Industrie": {
-    "n": 679,
-    "rate": 49.0
-   },
-   "Rüstung": {
-    "n": 917,
-    "rate": 50.2
-   },
-   "Energie & Versorger": {
-    "n": 913,
+    "n": 888,
     "rate": 50.8
    },
-   "Gesundheit & Pharma": {
-    "n": 846,
+   "Finanzen": {
+    "n": 1029,
     "rate": 50.1
    },
+   "Industrie": {
+    "n": 683,
+    "rate": 49.2
+   },
+   "Rüstung": {
+    "n": 920,
+    "rate": 50.0
+   },
+   "Energie & Versorger": {
+    "n": 914,
+    "rate": 50.7
+   },
+   "Gesundheit & Pharma": {
+    "n": 853,
+    "rate": 49.9
+   },
    "Edelmetalle": {
-    "n": 449,
-    "rate": 48.6
+    "n": 450,
+    "rate": 48.7
    },
    "Industriemetalle": {
-    "n": 518,
-    "rate": 46.3
+    "n": 522,
+    "rate": 46.7
    },
    "Halbleiter": {
-    "n": 1248,
-    "rate": 48.9
+    "n": 1252,
+    "rate": 49.3
    },
    "AI": {
-    "n": 887,
-    "rate": 47.5
+    "n": 888,
+    "rate": 47.6
    }
   },
   "by_direction": {
    "steigt": {
-    "n": 5186,
+    "n": 5210,
     "rate": 50.6
    },
    "fällt": {
-    "n": 4793,
-    "rate": 47.5
+    "n": 4808,
+    "rate": 47.7
    }
   },
   "by_component": {
    "Trend (Kurs über/unter SMA50)": {
-    "n": 9979,
-    "rate": 49.1
+    "n": 10018,
+    "rate": 49.2
    },
    "Momentum (5 Tage)": {
-    "n": 9945,
-    "rate": 48.4
+    "n": 9984,
+    "rate": 48.6
    },
    "RSI-Extreme (Gegenbewegung)": {
-    "n": 822,
-    "rate": 55.4
+    "n": 819,
+    "rate": 55.1
    },
    "Relative Stärke (Frühindikator)": {
-    "n": 6012,
+    "n": 6052,
     "rate": 50.2
    }
   },
-  "tage_x_werte": 14246,
-  "abdeckung": 70.4
+  "tage_x_werte": 14285,
+  "abdeckung": 70.5
  },
  "recent": [
   {
