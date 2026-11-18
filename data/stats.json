@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T04:04+00:00",
+ "generated": "2026-11-18T03:00+00:00",
  "demo": false,
  "live": {
   "n": 426,
@@ -85,87 +85,87 @@
  },
  "live_offen": 0,
  "backtest": {
-  "n": 10004,
-  "hits": 4931,
+  "n": 10028,
+  "hits": 4947,
   "rate": 49.3,
   "ci": 1.0,
-  "base_up": 51.4,
-  "edge": -2.1,
+  "base_up": 51.2,
+  "edge": -1.9,
   "by_group": {
    "Welt-Indizes": {
-    "n": 1617,
+    "n": 1621,
     "rate": 47.9
    },
    "Zinsen & Währungen": {
-    "n": 885,
+    "n": 888,
     "rate": 50.7
    },
    "Finanzen": {
-    "n": 1027,
+    "n": 1028,
     "rate": 50.0
    },
    "Industrie": {
-    "n": 682,
+    "n": 685,
     "rate": 49.1
    },
    "Rüstung": {
-    "n": 916,
-    "rate": 49.9
+    "n": 918,
+    "rate": 49.8
    },
    "Energie & Versorger": {
-    "n": 915,
+    "n": 918,
     "rate": 50.8
    },
    "Gesundheit & Pharma": {
-    "n": 854,
-    "rate": 49.9
+    "n": 857,
+    "rate": 49.6
    },
    "Edelmetalle": {
-    "n": 448,
-    "rate": 49.3
+    "n": 451,
+    "rate": 49.7
    },
    "Industriemetalle": {
-    "n": 521,
-    "rate": 46.8
+    "n": 523,
+    "rate": 47.2
    },
    "Halbleiter": {
     "n": 1249,
-    "rate": 49.5
+    "rate": 49.8
    },
    "AI": {
     "n": 890,
-    "rate": 48.1
+    "rate": 48.3
    }
   },
   "by_direction": {
    "steigt": {
-    "n": 5193,
-    "rate": 50.4
+    "n": 5198,
+    "rate": 50.3
    },
    "fällt": {
-    "n": 4811,
-    "rate": 48.1
+    "n": 4830,
+    "rate": 48.3
    }
   },
   "by_component": {
    "Trend (Kurs über/unter SMA50)": {
-    "n": 10004,
+    "n": 10028,
     "rate": 49.3
    },
    "Momentum (5 Tage)": {
-    "n": 9970,
-    "rate": 48.4
+    "n": 9994,
+    "rate": 48.5
    },
    "RSI-Extreme (Gegenbewegung)": {
-    "n": 828,
-    "rate": 54.8
+    "n": 822,
+    "rate": 54.4
    },
    "Relative Stärke (Frühindikator)": {
-    "n": 6053,
-    "rate": 50.4
+    "n": 6070,
+    "rate": 50.3
    }
   },
-  "tage_x_werte": 14261,
+  "tage_x_werte": 14289,
   "abdeckung": 70.5
  },
  "recent": [
