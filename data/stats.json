@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T02:28+00:00",
+ "generated": "2026-11-21T02:40+00:00",
  "demo": false,
  "live": {
   "n": 426,
@@ -85,87 +85,87 @@
  },
  "live_offen": 0,
  "backtest": {
-  "n": 10021,
-  "hits": 4947,
+  "n": 10020,
+  "hits": 4952,
   "rate": 49.4,
   "ci": 1.0,
-  "base_up": 50.8,
-  "edge": -1.5,
+  "base_up": 50.6,
+  "edge": -1.2,
   "by_group": {
    "Welt-Indizes": {
-    "n": 1617,
-    "rate": 47.6
+    "n": 1614,
+    "rate": 47.8
    },
    "Zinsen & Währungen": {
-    "n": 882,
+    "n": 881,
     "rate": 50.6
    },
    "Finanzen": {
     "n": 1034,
-    "rate": 50.2
+    "rate": 50.4
    },
    "Industrie": {
     "n": 683,
-    "rate": 49.2
+    "rate": 49.0
    },
    "Rüstung": {
-    "n": 916,
-    "rate": 49.9
+    "n": 915,
+    "rate": 49.8
    },
    "Energie & Versorger": {
-    "n": 920,
-    "rate": 50.5
+    "n": 919,
+    "rate": 50.2
    },
    "Gesundheit & Pharma": {
-    "n": 858,
-    "rate": 49.3
+    "n": 857,
+    "rate": 49.0
    },
    "Edelmetalle": {
     "n": 450,
-    "rate": 50.0
+    "rate": 50.2
    },
    "Industriemetalle": {
     "n": 525,
-    "rate": 48.0
+    "rate": 48.2
    },
    "Halbleiter": {
-    "n": 1248,
+    "n": 1250,
     "rate": 50.0
    },
    "AI": {
-    "n": 888,
-    "rate": 48.4
+    "n": 892,
+    "rate": 49.0
    }
   },
   "by_direction": {
    "steigt": {
-    "n": 5171,
-    "rate": 49.9
+    "n": 5156,
+    "rate": 49.7
    },
    "fällt": {
-    "n": 4850,
-    "rate": 48.8
+    "n": 4864,
+    "rate": 49.1
    }
   },
   "by_component": {
    "Trend (Kurs über/unter SMA50)": {
-    "n": 10021,
+    "n": 10020,
     "rate": 49.4
    },
    "Momentum (5 Tage)": {
-    "n": 9989,
-    "rate": 48.8
+    "n": 9988,
+    "rate": 48.9
    },
    "RSI-Extreme (Gegenbewegung)": {
-    "n": 821,
-    "rate": 54.3
+    "n": 822,
+    "rate": 53.6
    },
    "Relative Stärke (Frühindikator)": {
-    "n": 6080,
-    "rate": 50.1
+    "n": 6083,
+    "rate": 50.2
    }
   },
-  "tage_x_werte": 14285,
+  "tage_x_werte": 14289,
   "abdeckung": 70.5
  },
  "recent": [
